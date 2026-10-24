@@ -1,0 +1,9 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/changeType", "label": "Type of change" },
+    { "type": "Control", "scope": "#/properties/description", "label": "Description" },
+    { "type": "Control", "scope": "#/properties/previousValue", "label": "Previous value" },
+    { "type": "Control", "scope": "#/properties/newValue", "label": "New value" }
+  ]
+}

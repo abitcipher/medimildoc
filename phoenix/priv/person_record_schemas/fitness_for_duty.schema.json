@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "readiness",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Fitness for duty",
+  "x-icon": "hero-check-badge",
+  "x-summary": "Whether a person is fit for duty, and any duty restrictions. No diagnoses.",
+  "title": "FitnessForDuty",
+  "description": "Medical readiness status — the only medically derived fact line commanders and HR see (docs/design/access-control-phase1.md). Holds the conclusion and any duty restrictions, never the diagnosis; diagnoses stay in medical_condition, which needs medical.read.",
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "x-help": "Downgraded means fit for limited duty; non-effective means not fit for duty.",
+      "type": "string",
+      "enum": [
+        "fit_for_duty",
+        "downgraded",
+        "non_effective"
+      ],
+      "x-enum-badges": {
+        "fit_for_duty": {
+          "symbol": "+",
+          "color": "success"
+        },
+        "non_effective": {
+          "symbol": "–",
+          "color": "error"
+        },
+        "downgraded": {
+          "symbol": "~",
+          "color": "warning"
+        }
+      },
+      "description": "Fit for duty; downgraded (limited duty); non-effective (not fit for duty)."
+    },
+    "restrictions": {
+      "x-help": "What the person must not do. Do not name a diagnosis here.",
+      "type": "string",
+      "description": "Duty limitations in plain terms (e.g. no heavy lifting). Must not name a diagnosis."
+    },
+    "reviewDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "assessedBy": {
+      "type": "string",
+      "description": "Who made the assessment (name or post)."
+    },
+    "basis": {
+      "type": "string",
+      "maxLength": 100,
+      "x-help": "The document this status is based on, e.g. a medical board conclusion number."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Language skills",
+  "x-icon": "hero-language",
+  "x-summary": "Proficiency in a language on the STANAG 6001 scale, 0 to 5.",
+  "title": "LanguageProficiency",
+  "description": "STANAG 6001-flavored language proficiency record. The 0-5 Standardized Language Profile (SLP) scale across four skills is widely known public information, but the detailed level descriptors are NOT verified against the primary standard here. Field-checked against FHIR's Patient.communication backbone element — that element is much thinner (just a coded language + a preferred flag), which only confirms STANAG's 4-skill/0-5-scale granularity is a genuine, deliberate addition beyond what FHIR itself models, not an oversight.",
+  "type": "object",
+  "required": ["language", "listening", "speaking", "reading", "writing"],
+  "properties": {
+    "language": {
+      "x-reference": "language",
+      "type": "string",
+      "minLength": 1,
+      "description": "ISO 639-1 code picked from IHDS (x-reference). Older free-text values stay valid and are shown as written."
+    },
+    "listening": {
+      "x-help": "STANAG 6001 level: 0 none, 1 survival, 2 functional, 3 professional, 4 expert, 5 native.", "type": "integer", "minimum": 0, "maximum": 5 },
+    "speaking": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "reading": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "writing": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "assessedOn": { "type": "string", "format": "date" },
+    "preferred": {
+      "x-help": "The language the person prefers to be addressed in.",
+      "type": "boolean",
+      "description": "FHIR Patient.communication.preferred (real field) — whether this is the person's preferred language among however many language_proficiency records they have."
+    }
+  },
+  "additionalProperties": false
+}

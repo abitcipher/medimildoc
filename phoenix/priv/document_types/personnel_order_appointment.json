@@ -1,0 +1,96 @@
+{
+  "id": "personnel_order_appointment",
+  "version": "1",
+  "label": "Order: appointment",
+  "icon": "hero-user-plus",
+  "summary": "Appoints the person to a post from a date.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "orders.sign"
+    ],
+    "write": "people.write"
+  },
+  "register": {
+    "code": "ос",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 75,
+  "template": "personnel_order.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Head of HR",
+      "permission": "people.write"
+    },
+    {
+      "action": "sign",
+      "label": "Commander",
+      "permission": "orders.sign"
+    }
+  ],
+  "effects": [
+    "assignment_start"
+  ],
+  "acknowledge": true,
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "position",
+      "effectiveDate"
+    ],
+    "properties": {
+      "position": {
+        "type": "string",
+        "x-entity": "position",
+        "x-help": "The post, from the staffing table.",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+      },
+      "effectiveDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "basis": {
+        "type": "string",
+        "maxLength": 500,
+        "x-help": "The request, contract or conclusion the order is based on, e.g. a report of 12.09.2026."
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/position",
+        "label": "Post"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/effectiveDate",
+        "label": "Effective from"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/basis",
+        "label": "Basis"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

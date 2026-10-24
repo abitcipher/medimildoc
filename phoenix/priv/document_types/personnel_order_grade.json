@@ -1,0 +1,105 @@
+{
+  "id": "personnel_order_grade",
+  "version": "1",
+  "label": "Order: grade or rank",
+  "icon": "hero-chevron-double-up",
+  "summary": "Gives the person a NATO grade (rank) from a date.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "orders.sign"
+    ],
+    "write": "people.write"
+  },
+  "register": {
+    "code": "ос",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 75,
+  "template": "personnel_order.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Head of HR",
+      "permission": "people.write"
+    },
+    {
+      "action": "sign",
+      "label": "Commander",
+      "permission": "orders.sign"
+    }
+  ],
+  "effects": [
+    "rank_record"
+  ],
+  "acknowledge": true,
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "grade",
+      "effectiveDate"
+    ],
+    "properties": {
+      "grade": {
+        "type": "string",
+        "pattern": "^(OF|OR)-?[0-9]{1,2}$|^OF\\(D\\)$",
+        "x-help": "NATO rank code: OR-1 to OR-9 for other ranks, OF-1 to OF-10 for officers, e.g. OF-3."
+      },
+      "gradeTitle": {
+        "type": "string",
+        "maxLength": 100,
+        "x-help": "The national title of the rank, e.g. Captain."
+      },
+      "effectiveDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "basis": {
+        "type": "string",
+        "maxLength": 500,
+        "x-help": "The request, contract or conclusion the order is based on, e.g. a report of 12.09.2026."
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/grade",
+        "label": "NATO grade"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/gradeTitle",
+        "label": "Rank title"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/effectiveDate",
+        "label": "Effective from"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/basis",
+        "label": "Basis"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

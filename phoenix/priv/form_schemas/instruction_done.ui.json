@@ -1,0 +1,6 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/done_note", "label": "Done", "options": { "multi": true } }
+  ]
+}

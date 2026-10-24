@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Instruction",
+  "type": "object",
+  "required": ["text", "executor_id"],
+  "properties": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "x-help": "What to do, e.g. prepare a reply, take into account, report."
+    },
+    "executor_id": { "type": "string" },
+    "due_on": { "type": "string", "format": "date" }
+  }
+}

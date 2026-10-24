@@ -1,0 +1,168 @@
+{
+  "id": "incoming_letter",
+  "version": "1",
+  "label": "Incoming letter",
+  "icon": "hero-envelope-open",
+  "summary": "A letter received: registered by the records officer with its scan; heads give instructions to executors.",
+  "category": "personnel",
+  "subject": "none",
+  "access": {
+    "read": [
+      "records.manage",
+      "orders.sign"
+    ],
+    "write": "records.manage"
+  },
+  "register": {
+    "code": "вх",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 3,
+  "template": "letter.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "Registration",
+      "permission": "records.manage"
+    }
+  ],
+  "effects": [],
+  "basis": [],
+  "files": true,
+  "instructions": true,
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "sender",
+      "receivedOn",
+      "summary",
+      "unit"
+    ],
+    "properties": {
+      "sender": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "The organisation or person the letter comes from."
+      },
+      "senderNumber": {
+        "type": "string",
+        "maxLength": 60,
+        "x-help": "The letter's number at the sender."
+      },
+      "senderDate": {
+        "type": "string",
+        "format": "date",
+        "x-help": "The letter's date at the sender."
+      },
+      "receivedOn": {
+        "type": "string",
+        "format": "date"
+      },
+      "delivery": {
+        "type": "string",
+        "enum": [
+          "post",
+          "email",
+          "courier",
+          "edms",
+          "by_hand"
+        ],
+        "x-enum-labels": {
+          "post": "Post",
+          "email": "E-mail",
+          "courier": "Courier",
+          "edms": "Electronic document exchange",
+          "by_hand": "By hand"
+        }
+      },
+      "unit": {
+        "type": "string",
+        "x-entity": "organization",
+        "x-help": "The unit the letter is addressed to; its head may give instructions on it."
+      },
+      "summary": {
+        "type": "string",
+        "maxLength": 2000,
+        "x-help": "What the letter is about, in a sentence or two."
+      },
+      "pages": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10000,
+        "x-widget": "number"
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/sender",
+        "label": "Sender"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/senderNumber",
+            "label": "Sender's number"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/senderDate",
+            "label": "Sender's date"
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/receivedOn",
+            "label": "Received on"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/delivery",
+            "label": "Delivery"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/unit",
+        "label": "Addressed to (unit)"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/summary",
+        "label": "Summary",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/pages",
+        "label": "Pages"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

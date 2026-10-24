@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "medical",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Medical condition",
+  "x-icon": "hero-heart",
+  "x-summary": "A diagnosis with its clinical status.",
+  "title": "MedicalCondition",
+  "description": "FHIR Condition-flavored (not conformant) record of a diagnosed condition. Modeled loosely after HL7 FHIR's Condition resource fields — no FHIR conformance library involved (that's an explicit M3 decision, revisit if real FHIR interop is needed later). Fields below cross-checked field-by-field against the vendored priv/fhir/R5/fhir.schema.json's real Condition definition — clinicalStatus/verificationStatus/severity/bodySite are genuinely FHIR CodeableConcept fields (coding+text), not invented; the actual ValueSet code lists (e.g. condition-clinical's 7 codes) aren't encoded in that JSON Schema file itself (CodeableConcept is a generic shape) and so aren't independently verified here — same 'shape, not verified terminology'.",
+  "type": "object",
+  "required": ["code", "clinicalStatus"],
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "enum": ["Condition"]
+    },
+    "code": {
+      "type": "object",
+      "description": "FHIR CodeableConcept-flavored: free text plus optional coded terms.",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "coding": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "system": { "type": "string" },
+              "code": { "type": "string" },
+              "display": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "clinicalStatus": {
+      "type": "string",
+      "description": "FHIR Condition.clinicalStatus's real condition-clinical CodeSystem codes, from memory — same unverified-against-the-vendored-schema caveat as verificationStatus below (CodeableConcept fields don't carry their ValueSet in priv/fhir/R5/fhir.schema.json).",
+      "enum": ["active", "recurrence", "relapse", "inactive", "remission", "resolved"]
+    },
+    "verificationStatus": {
+      "x-help": "How certain the diagnosis is.",
+      "type": "string",
+      "description": "FHIR Condition.verificationStatus (real field) — how confirmed this diagnosis is. Codes below are FHIR's condition-ver-status CodeSystem from memory, not re-derived from the vendored schema file (CodeableConcept fields don't carry their ValueSet's code list in that file) — same unverified-terminology caveat.",
+      "enum": ["unconfirmed", "provisional", "differential", "confirmed", "refuted", "entered-in-error"]
+    },
+    "severity": {
+      "x-help": "The clinician's assessment, e.g. mild, moderate, severe.",
+      "type": "string",
+      "description": "FHIR Condition.severity (real field) — subjective clinician assessment. Free text, not a closed enum: FHIR's own binding here is extensible against a broad terminology (SNOMED CT), not a fixed short code list — mild/moderate/severe are commonly-cited examples, not the complete set, so presenting them as a closed enum would overclaim completeness."
+    },
+    "bodySite": {
+      "type": "string",
+      "description": "FHIR Condition.bodySite (real field) — free text, not a coded anatomical terminology (no SNOMED/similar body-site codeset vendored here)."
+    },
+    "onsetDate": { "type": "string", "format": "date" },
+    "abatementDate": {
+      "x-help": "When the condition resolved or went into remission.",
+      "type": "string",
+      "format": "date",
+      "description": "FHIR Condition.abatementDateTime (real field) — when the condition resolved/went into remission. Date-only here, same simplification already used throughout this project (FHIR's real field is a full dateTime)."
+    },
+    "recordedDate": {
+      "x-help": "When this record was entered, not when the condition began.",
+      "type": "string",
+      "format": "date",
+      "description": "FHIR Condition.recordedDate (real field) — when this record was entered, distinct from onsetDate (when the condition itself began)."
+    },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

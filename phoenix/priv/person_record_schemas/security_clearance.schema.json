@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "clearance",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "2",
+  "x-label": "Security clearance",
+  "x-icon": "hero-shield-check",
+  "x-summary": "The level a person is cleared to, its status and validity.",
+  "title": "SecurityClearance",
+  "description": "Clearance status: level, status and validity dates — what HR and commanders need to know (category clearance). Investigation details live in the separate, restricted vetting_record kind (docs/design/access-control-phase1.md). Version 2: clearanceLevel uses NATO security markings, which are public; how AC/35-D/2000 maps them to personnel vetting is not verified here.",
+  "type": "object",
+  "required": ["clearanceLevel", "status"],
+  "properties": {
+    "clearanceLevel": {
+      "type": "string",
+      "enum": ["NONE", "NATO_RESTRICTED", "NATO_CONFIDENTIAL", "NATO_SECRET", "COSMIC_TOP_SECRET"],
+      "description": "NATO security marking the person is cleared to."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "granted", "denied", "revoked", "expired"]
+    },
+    "grantedDate": { "type": "string", "format": "date" },
+    "expiryDate": {
+      "x-help": "After this date the clearance must be renewed.", "type": "string", "format": "date" }
+  },
+  "additionalProperties": false
+}

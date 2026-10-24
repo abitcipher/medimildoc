@@ -1,0 +1,77 @@
+{
+  "key": "fitness_from_signed_conclusion",
+  "version": 1,
+  "label": "Fitness only from a signed conclusion",
+  "description": "A downgraded or non-effective fitness status names (in basis) a signed medical board conclusion of the same person; fit for duty may be recorded directly.",
+  "severity": "flag",
+  "points": [
+    "record.save"
+  ],
+  "subjects": [
+    "record:fitness_for_duty"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "Backed by a signed conclusion",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "(fitness.status == 'fit_for_duty' or fitness.basisSigned == true)"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(fitness.status == 'fit_for_duty' or fitness.basisSigned == true) ? null : 'fitness_without_conclusion'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(fitness.status == 'fit_for_duty' or fitness.basisSigned == true) ? null : 'This fitness status is not backed by a signed medical board conclusion.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

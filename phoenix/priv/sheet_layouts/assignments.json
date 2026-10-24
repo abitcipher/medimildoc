@@ -1,0 +1,17 @@
+{
+  "id": "assignments",
+  "description": "SHEETS-UI (docs/design/sheets-ui.md): the Assignments tab, written by App.Google.AssignmentSheets and formatted by AppWeb.SheetLayout. Columns with a `field` take their label, format and help from the form schema named in `form` (the same form the app shows); the others are read-only context. `key` is the column's name in App.People.AssignmentSync (row 1, hidden); `copyOf` keeps the exported value hidden so a changed cell is highlighted. `status`: the app writes each row's check or import result there (AppWeb.SheetStatus), coloured by its first sign.",
+  "tab": "Assignments",
+  "form": "assignment",
+  "columns": [
+    { "key": "PersonID", "label": "PersonID", "readOnly": true, "width": 130 },
+    { "key": "Name", "label": "Name", "readOnly": true, "width": 230 },
+    { "key": "Unit", "label": "Unit", "readOnly": true, "width": 200 },
+    { "key": "Position", "field": "position_id", "options": "Positions", "width": 300 },
+    { "key": "Since", "field": "starts_on", "width": 110 },
+    { "key": "Status", "label": "Status", "readOnly": true, "status": true, "width": 320 },
+    { "key": "Version", "hidden": true },
+    { "key": "ExportedPosition", "copyOf": "Position", "hidden": true },
+    { "key": "ExportedSince", "copyOf": "Since", "hidden": true }
+  ]
+}

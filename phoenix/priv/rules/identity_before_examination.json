@@ -1,0 +1,81 @@
+{
+  "key": "identity_before_examination",
+  "version": 2,
+  "label": "Identity verified before examination",
+  "description": "A person's identity (the first identity document entered in the system) must be established no later than any medical examination of them: identity is verified before data processing begins.",
+  "severity": "flag",
+  "points": [
+    "record.save",
+    "document.sign"
+  ],
+  "subjects": [
+    "record:encounter",
+    "record:vital_signs",
+    "record:medical_condition",
+    "document:medical_board_conclusion"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "Identity before examination",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "person.identityVerifiedAt != null and d(person.identityVerifiedAt).isSameOrBefore(d(event.at))"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "person.identityVerifiedAt == null ? 'identity_missing' : (d(person.identityVerifiedAt).isSameOrBefore(d(event.at)) ? null : 'identity_after_examination')"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "person.identityVerifiedAt == null ? 'No identity document was entered before this examination.' : (d(person.identityVerifiedAt).isSameOrBefore(d(event.at)) ? null : 'The identity document was entered after this examination.')"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "a",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "b",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

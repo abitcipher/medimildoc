@@ -1,0 +1,77 @@
+{
+  "key": "leave_within_unit_limit",
+  "version": 1,
+  "label": "Leave within the unit limit",
+  "description": "On the days requested, the unit doesn't have more people away than the limit in Settings (\"Most of a unit away at once\"; one person may always be away). Counts recorded leave, business trips and leave on its way (docs/design/leave-calendar.md).",
+  "severity": "flag",
+  "points": [
+    "document.submit"
+  ],
+  "subjects": [
+    "document:leave_request"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "Within the unit limit",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "leave.unitOver != true"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "leave.unitOver == true ? 'leave_over_unit_limit' : null"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "leave.unitOver == true ? 'Too many of the unit would be away on these days.' : null"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

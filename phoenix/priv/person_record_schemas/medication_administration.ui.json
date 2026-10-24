@@ -1,0 +1,14 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/medication/properties/text", "label": "Drug" },
+    { "type": "Control", "scope": "#/properties/dose/properties/value", "label": "Dose" },
+    { "type": "Control", "scope": "#/properties/dose/properties/unit", "label": "Unit" },
+    { "type": "Control", "scope": "#/properties/route", "label": "Route" },
+    { "type": "Control", "scope": "#/properties/occurrence", "label": "Given at" },
+    { "type": "Control", "scope": "#/properties/status", "label": "Status" },
+    { "type": "Control", "scope": "#/properties/site", "label": "Site" },
+    { "type": "Control", "scope": "#/properties/reason", "label": "Reason" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Notes", "options": { "multi": true } }
+  ]
+}

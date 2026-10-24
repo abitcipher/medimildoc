@@ -1,0 +1,43 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/test",
+          "label": "Test"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/value",
+          "label": "Value"
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/collectedAt",
+          "label": "Sample taken"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/laboratory",
+          "label": "Laboratory"
+        }
+      ]
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": {
+        "multi": true
+      }
+    }
+  ]
+}

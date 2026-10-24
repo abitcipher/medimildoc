@@ -1,0 +1,183 @@
+{
+  "id": "business_trip_report",
+  "version": "1",
+  "label": "Business trip report",
+  "icon": "hero-receipt-percent",
+  "summary": "After a trip: the actual dates, the costs and the advance; the allowance and what is due are computed when it is signed.",
+  "category": "personnel_private",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "orders.sign"
+    ],
+    "write": "people.write",
+    "self": true
+  },
+  "register": {
+    "code": "ав",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 5,
+  "template": "certificate.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Commander",
+      "permission": "orders.sign"
+    },
+    {
+      "action": "sign",
+      "label": "HR",
+      "permission": "people.write"
+    }
+  ],
+  "effects": [],
+  "basis": [
+    "personnel_order_business_trip"
+  ],
+  "facts": "trip_settlement",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "startDate",
+      "endDate",
+      "destinationType",
+      "results"
+    ],
+    "properties": {
+      "destination": {
+        "type": "string",
+        "maxLength": 300
+      },
+      "destinationType": {
+        "type": "string",
+        "enum": [
+          "domestic",
+          "abroad"
+        ],
+        "x-enum-labels": {
+          "domestic": "Within the country",
+          "abroad": "Abroad"
+        },
+        "x-help": "Decides the per-diem rate."
+      },
+      "startDate": {
+        "type": "string",
+        "format": "date",
+        "x-help": "The trip's actual first day."
+      },
+      "endDate": {
+        "type": "string",
+        "format": "date",
+        "x-help": "The trip's actual last day."
+      },
+      "results": {
+        "type": "string",
+        "maxLength": 4000,
+        "x-help": "What was done on the trip."
+      },
+      "travelCost": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10000000,
+        "x-widget": "number"
+      },
+      "accommodationCost": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10000000,
+        "x-widget": "number"
+      },
+      "otherCost": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10000000,
+        "x-widget": "number"
+      },
+      "advance": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10000000,
+        "x-widget": "number",
+        "x-help": "The advance paid before the trip."
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/destination",
+        "label": "Destination"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/startDate",
+            "label": "First day"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/endDate",
+            "label": "Last day"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/destinationType",
+            "label": "Destination type"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/results",
+        "label": "Results",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/travelCost",
+            "label": "Travel"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/accommodationCost",
+            "label": "Accommodation"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/otherCost",
+            "label": "Other costs"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/advance",
+            "label": "Advance received"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

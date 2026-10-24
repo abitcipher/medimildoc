@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Vital signs",
+  "x-icon": "hero-chart-bar",
+  "x-summary": "Blood pressure, pulse, breathing, oxygen, temperature, consciousness and pain at one time, with NEWS2.",
+  "x-part-of": ["encounter"],
+  "title": "VitalSigns",
+  "description": "One set of FHIR vital-signs Observations (not conformant). Each measurement carries its LOINC code in x-loinc (LOINC® content, © Regenstrief Institute, Inc.); consciousness is ACVPU as used by NEWS2 (no code attached here). Limits are plausibility bounds for data entry, not reference ranges (App.Clinical.Vitals).",
+  "type": "object",
+  "required": ["measuredAt"],
+  "properties": {
+    "measuredAt": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+    },
+    "systolic": { "type": "integer", "minimum": 40, "maximum": 300, "x-widget": "number", "x-unit": "mmHg", "x-loinc": "8480-6" },
+    "diastolic": { "type": "integer", "minimum": 20, "maximum": 200, "x-widget": "number", "x-unit": "mmHg", "x-loinc": "8462-4" },
+    "heartRate": { "type": "integer", "minimum": 20, "maximum": 250, "x-widget": "number", "x-unit": "/min", "x-loinc": "8867-4" },
+    "respiratoryRate": { "type": "integer", "minimum": 3, "maximum": 80, "x-widget": "number", "x-unit": "/min", "x-loinc": "9279-1" },
+    "spo2": { "type": "integer", "minimum": 50, "maximum": 100, "x-widget": "number", "x-unit": "%", "x-loinc": "59408-5" },
+    "onOxygen": {
+      "type": "boolean",
+      "x-help": "Breathing supplemental oxygen when measured (scores 2 in NEWS2)."
+    },
+    "temperature": { "type": "number", "minimum": 25, "maximum": 45, "multipleOf": 0.1, "x-widget": "number", "x-unit": "°C", "x-loinc": "8310-5" },
+    "consciousness": {
+      "type": "string",
+      "enum": ["alert", "new_confusion", "voice", "pain", "unresponsive"],
+      "x-enum-labels": {
+        "alert": "Alert",
+        "new_confusion": "New confusion",
+        "voice": "Responds to voice",
+        "pain": "Responds to pain",
+        "unresponsive": "Unresponsive"
+      },
+      "x-help": "ACVPU: anything but Alert scores 3 in NEWS2."
+    },
+    "gcs": { "type": "integer", "minimum": 3, "maximum": 15, "x-widget": "number", "x-loinc": "9269-2", "x-help": "Glasgow Coma Scale total, 3–15." },
+    "pain": { "type": "integer", "minimum": 0, "maximum": 10, "x-widget": "number", "x-loinc": "72514-3", "x-help": "0 no pain … 10 worst imaginable." },
+    "note": { "type": "string", "maxLength": 2000 }
+  }
+}

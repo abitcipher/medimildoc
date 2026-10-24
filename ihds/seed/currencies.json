@@ -1,0 +1,2910 @@
+{
+ "dataset": "currencies",
+ "description": "ISO 4217 active currencies (SIX list one, 2026-09-17)",
+ "entries": [
+  {
+   "alt_names": [
+    "UAE Dirham"
+   ],
+   "code": "AED",
+   "minor_units": 2,
+   "names": {
+    "en": "United Arab Emirates Dirham",
+    "es": "dírham de los Emiratos Árabes Unidos",
+    "fr": "dirham des Émirats arabes unis",
+    "pt": "Dirham dos Emirados Árabes Unidos",
+    "uk": "дирхам ОАЕ"
+   },
+   "numeric": "784",
+   "symbol": null,
+   "used_in": [
+    "UNITED ARAB EMIRATES (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Afghani"
+   ],
+   "code": "AFN",
+   "minor_units": 2,
+   "names": {
+    "en": "Afghan Afghani",
+    "es": "afgani afgano",
+    "fr": "afghani afghan",
+    "pt": "Afegane afegão",
+    "uk": "афганський афгані"
+   },
+   "numeric": "971",
+   "symbol": "؋",
+   "used_in": [
+    "AFGHANISTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Lek"
+   ],
+   "code": "ALL",
+   "minor_units": 2,
+   "names": {
+    "en": "Albanian Lek",
+    "es": "lek albanés",
+    "fr": "lek albanais",
+    "pt": "Lek albanês",
+    "uk": "албанський лек"
+   },
+   "numeric": "008",
+   "symbol": null,
+   "used_in": [
+    "ALBANIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "AMD",
+   "minor_units": 2,
+   "names": {
+    "en": "Armenian Dram",
+    "es": "dram armenio",
+    "fr": "dram arménien",
+    "pt": "Dram armênio",
+    "uk": "вірменський драм"
+   },
+   "numeric": "051",
+   "symbol": "֏",
+   "used_in": [
+    "ARMENIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Kwanza"
+   ],
+   "code": "AOA",
+   "minor_units": 2,
+   "names": {
+    "en": "Angolan Kwanza",
+    "es": "kuanza angoleño",
+    "fr": "kwanza angolais",
+    "pt": "Kwanza angolano",
+    "uk": "ангольська кванза"
+   },
+   "numeric": "973",
+   "symbol": "Kz",
+   "used_in": [
+    "ANGOLA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "ARS",
+   "minor_units": 2,
+   "names": {
+    "en": "Argentine Peso",
+    "es": "peso argentino",
+    "fr": "peso argentin",
+    "pt": "Peso argentino",
+    "uk": "аргентинський песо"
+   },
+   "numeric": "032",
+   "symbol": "$",
+   "used_in": [
+    "ARGENTINA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "AUD",
+   "minor_units": 2,
+   "names": {
+    "en": "Australian Dollar",
+    "es": "dólar australiano",
+    "fr": "dollar australien",
+    "pt": "Dólar australiano",
+    "uk": "австралійський долар"
+   },
+   "numeric": "036",
+   "symbol": "A$",
+   "used_in": [
+    "AUSTRALIA",
+    "CHRISTMAS ISLAND",
+    "COCOS (KEELING) ISLANDS (THE)",
+    "HEARD ISLAND AND McDONALD ISLANDS",
+    "KIRIBATI",
+    "NAURU",
+    "NORFOLK ISLAND",
+    "TUVALU"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "AWG",
+   "minor_units": 2,
+   "names": {
+    "en": "Aruban Florin",
+    "es": "florín arubeño",
+    "fr": "florin arubais",
+    "pt": "Florim arubano",
+    "uk": "арубський флорин"
+   },
+   "numeric": "533",
+   "symbol": null,
+   "used_in": [
+    "ARUBA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Azerbaijan Manat"
+   ],
+   "code": "AZN",
+   "minor_units": 2,
+   "names": {
+    "en": "Azerbaijani Manat",
+    "es": "manat azerbaiyano",
+    "fr": "manat azéri",
+    "pt": "Manat azeri",
+    "uk": "азербайджанський манат"
+   },
+   "numeric": "944",
+   "symbol": "₼",
+   "used_in": [
+    "AZERBAIJAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Convertible Mark"
+   ],
+   "code": "BAM",
+   "minor_units": 2,
+   "names": {
+    "en": "Bosnia-Herzegovina Convertible Mark",
+    "es": "marco convertible de Bosnia y Herzegovina",
+    "fr": "mark convertible bosniaque",
+    "pt": "Marco conversível da Bósnia e Herzegovina",
+    "uk": "конвертована марка Боснії і Герцеговини"
+   },
+   "numeric": "977",
+   "symbol": "KM",
+   "used_in": [
+    "BOSNIA AND HERZEGOVINA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Barbados Dollar"
+   ],
+   "code": "BBD",
+   "minor_units": 2,
+   "names": {
+    "en": "Barbadian Dollar",
+    "es": "dólar barbadense",
+    "fr": "dollar barbadien",
+    "pt": "Dólar barbadense",
+    "uk": "барбадоський долар"
+   },
+   "numeric": "052",
+   "symbol": "$",
+   "used_in": [
+    "BARBADOS"
+   ]
+  },
+  {
+   "alt_names": [
+    "Taka"
+   ],
+   "code": "BDT",
+   "minor_units": 2,
+   "names": {
+    "en": "Bangladeshi Taka",
+    "es": "taka bangladesí",
+    "fr": "taka bangladeshi",
+    "pt": "Taka bengali",
+    "uk": "бангладеська така"
+   },
+   "numeric": "050",
+   "symbol": "৳",
+   "used_in": [
+    "BANGLADESH"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BHD",
+   "minor_units": 3,
+   "names": {
+    "en": "Bahraini Dinar",
+    "es": "dinar bareiní",
+    "fr": "dinar bahreïni",
+    "pt": "Dinar bareinita",
+    "uk": "бахрейнський динар"
+   },
+   "numeric": "048",
+   "symbol": null,
+   "used_in": [
+    "BAHRAIN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Burundi Franc"
+   ],
+   "code": "BIF",
+   "minor_units": 0,
+   "names": {
+    "en": "Burundian Franc",
+    "es": "franco burundés",
+    "fr": "franc burundais",
+    "pt": "Franco burundiano",
+    "uk": "бурундійський франк"
+   },
+   "numeric": "108",
+   "symbol": null,
+   "used_in": [
+    "BURUNDI"
+   ]
+  },
+  {
+   "alt_names": [
+    "Bermudian Dollar"
+   ],
+   "code": "BMD",
+   "minor_units": 2,
+   "names": {
+    "en": "Bermudan Dollar",
+    "es": "dólar bermudeño",
+    "fr": "dollar bermudien",
+    "pt": "Dólar bermudense",
+    "uk": "бермудський долар"
+   },
+   "numeric": "060",
+   "symbol": "$",
+   "used_in": [
+    "BERMUDA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BND",
+   "minor_units": 2,
+   "names": {
+    "en": "Brunei Dollar",
+    "es": "dólar bruneano",
+    "fr": "dollar brunéien",
+    "pt": "Dólar bruneano",
+    "uk": "брунейський долар"
+   },
+   "numeric": "096",
+   "symbol": "$",
+   "used_in": [
+    "BRUNEI DARUSSALAM"
+   ]
+  },
+  {
+   "alt_names": [
+    "Boliviano"
+   ],
+   "code": "BOB",
+   "minor_units": 2,
+   "names": {
+    "en": "Bolivian Boliviano",
+    "es": "boliviano",
+    "fr": "boliviano bolivien",
+    "pt": "Boliviano da Bolívia",
+    "uk": "болівійський болівіано"
+   },
+   "numeric": "068",
+   "symbol": "Bs",
+   "used_in": [
+    "BOLIVIA (PLURINATIONAL STATE OF)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BRL",
+   "minor_units": 2,
+   "names": {
+    "en": "Brazilian Real",
+    "es": "real brasileño",
+    "fr": "réal brésilien",
+    "pt": "Real brasileiro",
+    "uk": "бразильський реал"
+   },
+   "numeric": "986",
+   "symbol": "R$",
+   "used_in": [
+    "BRAZIL"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BSD",
+   "minor_units": 2,
+   "names": {
+    "en": "Bahamian Dollar",
+    "es": "dólar bahameño",
+    "fr": "dollar bahaméen",
+    "pt": "Dólar bahamense",
+    "uk": "багамський долар"
+   },
+   "numeric": "044",
+   "symbol": "$",
+   "used_in": [
+    "BAHAMAS (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Ngultrum"
+   ],
+   "code": "BTN",
+   "minor_units": 2,
+   "names": {
+    "en": "Bhutanese Ngultrum",
+    "es": "gultrum butanés",
+    "fr": "ngultrum bouthanais",
+    "pt": "Ngultrum butanês",
+    "uk": "бутанський нгултрум"
+   },
+   "numeric": "064",
+   "symbol": null,
+   "used_in": [
+    "BHUTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Pula"
+   ],
+   "code": "BWP",
+   "minor_units": 2,
+   "names": {
+    "en": "Botswanan Pula",
+    "es": "pula botsuano",
+    "fr": "pula botswanais",
+    "pt": "Pula botsuanesa",
+    "uk": "ботсванська пула"
+   },
+   "numeric": "072",
+   "symbol": "P",
+   "used_in": [
+    "BOTSWANA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BYN",
+   "minor_units": 2,
+   "names": {
+    "en": "Belarusian Ruble",
+    "es": "rublo bielorruso",
+    "fr": "rouble biélorusse",
+    "pt": "Rublo bielorrusso",
+    "uk": "білоруський рубль"
+   },
+   "numeric": "933",
+   "symbol": null,
+   "used_in": [
+    "BELARUS"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "BZD",
+   "minor_units": 2,
+   "names": {
+    "en": "Belize Dollar",
+    "es": "dólar beliceño",
+    "fr": "dollar bélizéen",
+    "pt": "Dólar belizenho",
+    "uk": "белізький долар"
+   },
+   "numeric": "084",
+   "symbol": "$",
+   "used_in": [
+    "BELIZE"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CAD",
+   "minor_units": 2,
+   "names": {
+    "en": "Canadian Dollar",
+    "es": "dólar canadiense",
+    "fr": "dollar canadien",
+    "pt": "Dólar canadense",
+    "uk": "канадський долар"
+   },
+   "numeric": "124",
+   "symbol": "CA$",
+   "used_in": [
+    "CANADA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CDF",
+   "minor_units": 2,
+   "names": {
+    "en": "Congolese Franc",
+    "es": "franco congoleño",
+    "fr": "franc congolais",
+    "pt": "Franco congolês",
+    "uk": "конголезький франк"
+   },
+   "numeric": "976",
+   "symbol": null,
+   "used_in": [
+    "CONGO (THE DEMOCRATIC REPUBLIC OF THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CHF",
+   "minor_units": 2,
+   "names": {
+    "en": "Swiss Franc",
+    "es": "franco suizo",
+    "fr": "franc suisse",
+    "pt": "Franco suíço",
+    "uk": "швейцарський франк"
+   },
+   "numeric": "756",
+   "symbol": null,
+   "used_in": [
+    "LIECHTENSTEIN",
+    "SWITZERLAND"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CLP",
+   "minor_units": 0,
+   "names": {
+    "en": "Chilean Peso",
+    "es": "peso chileno",
+    "fr": "peso chilien",
+    "pt": "Peso chileno",
+    "uk": "чилійський песо"
+   },
+   "numeric": "152",
+   "symbol": "$",
+   "used_in": [
+    "CHILE"
+   ]
+  },
+  {
+   "alt_names": [
+    "Yuan Renminbi"
+   ],
+   "code": "CNY",
+   "minor_units": 2,
+   "names": {
+    "en": "Chinese Yuan",
+    "es": "yuan renminbi",
+    "fr": "yuan renminbi chinois",
+    "pt": "Yuan chinês",
+    "uk": "китайський юань"
+   },
+   "numeric": "156",
+   "symbol": "CN¥",
+   "used_in": [
+    "CHINA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "COP",
+   "minor_units": 2,
+   "names": {
+    "en": "Colombian Peso",
+    "es": "peso colombiano",
+    "fr": "peso colombien",
+    "pt": "Peso colombiano",
+    "uk": "колумбійський песо"
+   },
+   "numeric": "170",
+   "symbol": "$",
+   "used_in": [
+    "COLOMBIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Costa Rican Colon"
+   ],
+   "code": "CRC",
+   "minor_units": 2,
+   "names": {
+    "en": "Costa Rican Colón",
+    "es": "colón costarricense",
+    "fr": "colón costaricain",
+    "pt": "Colón costarriquenho",
+    "uk": "костариканський колон"
+   },
+   "numeric": "188",
+   "symbol": "₡",
+   "used_in": [
+    "COSTA RICA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CUP",
+   "minor_units": 2,
+   "names": {
+    "en": "Cuban Peso",
+    "es": "peso cubano",
+    "fr": "peso cubain",
+    "pt": "Peso cubano",
+    "uk": "кубинський песо"
+   },
+   "numeric": "192",
+   "symbol": "$",
+   "used_in": [
+    "CUBA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Cabo Verde Escudo"
+   ],
+   "code": "CVE",
+   "minor_units": 2,
+   "names": {
+    "en": "Cape Verdean Escudo",
+    "es": "escudo de Cabo Verde",
+    "fr": "escudo capverdien",
+    "pt": "Escudo cabo-verdiano",
+    "uk": "ескудо Кабо-Верде"
+   },
+   "numeric": "132",
+   "symbol": null,
+   "used_in": [
+    "CABO VERDE"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "CZK",
+   "minor_units": 2,
+   "names": {
+    "en": "Czech Koruna",
+    "es": "corona checa",
+    "fr": "couronne tchèque",
+    "pt": "Coroa tcheca",
+    "uk": "чеська крона"
+   },
+   "numeric": "203",
+   "symbol": "Kč",
+   "used_in": [
+    "CZECHIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Djibouti Franc"
+   ],
+   "code": "DJF",
+   "minor_units": 0,
+   "names": {
+    "en": "Djiboutian Franc",
+    "es": "franco yibutiano",
+    "fr": "franc djiboutien",
+    "pt": "Franco djiboutiano",
+    "uk": "джибутійський франк"
+   },
+   "numeric": "262",
+   "symbol": null,
+   "used_in": [
+    "DJIBOUTI"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "DKK",
+   "minor_units": 2,
+   "names": {
+    "en": "Danish Krone",
+    "es": "corona danesa",
+    "fr": "couronne danoise",
+    "pt": "Coroa dinamarquesa",
+    "uk": "данська крона"
+   },
+   "numeric": "208",
+   "symbol": "kr",
+   "used_in": [
+    "DENMARK",
+    "FAROE ISLANDS (THE)",
+    "GREENLAND"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "DOP",
+   "minor_units": 2,
+   "names": {
+    "en": "Dominican Peso",
+    "es": "peso dominicano",
+    "fr": "peso dominicain",
+    "pt": "Peso dominicano",
+    "uk": "домініканський песо"
+   },
+   "numeric": "214",
+   "symbol": "$",
+   "used_in": [
+    "DOMINICAN REPUBLIC (THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "DZD",
+   "minor_units": 2,
+   "names": {
+    "en": "Algerian Dinar",
+    "es": "dinar argelino",
+    "fr": "dinar algérien",
+    "pt": "Dinar argelino",
+    "uk": "алжирський динар"
+   },
+   "numeric": "012",
+   "symbol": null,
+   "used_in": [
+    "ALGERIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "EGP",
+   "minor_units": 2,
+   "names": {
+    "en": "Egyptian Pound",
+    "es": "libra egipcia",
+    "fr": "livre égyptienne",
+    "pt": "Libra egípcia",
+    "uk": "єгипетський фунт"
+   },
+   "numeric": "818",
+   "symbol": "E£",
+   "used_in": [
+    "EGYPT"
+   ]
+  },
+  {
+   "alt_names": [
+    "Nakfa"
+   ],
+   "code": "ERN",
+   "minor_units": 2,
+   "names": {
+    "en": "Eritrean Nakfa",
+    "es": "nakfa eritreo",
+    "fr": "nafka érythréen",
+    "pt": "Nakfa da Eritreia",
+    "uk": "еритрейська накфа"
+   },
+   "numeric": "232",
+   "symbol": null,
+   "used_in": [
+    "ERITREA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "ETB",
+   "minor_units": 2,
+   "names": {
+    "en": "Ethiopian Birr",
+    "es": "bir etíope",
+    "fr": "birr éthiopien",
+    "pt": "Birr etíope",
+    "uk": "ефіопський бир"
+   },
+   "numeric": "230",
+   "symbol": null,
+   "used_in": [
+    "ETHIOPIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "EUR",
+   "minor_units": 2,
+   "names": {
+    "en": "Euro",
+    "es": "euro",
+    "fr": "euro",
+    "pt": "Euro",
+    "uk": "євро"
+   },
+   "numeric": "978",
+   "symbol": "€",
+   "used_in": [
+    "ANDORRA",
+    "AUSTRIA",
+    "BELGIUM",
+    "BULGARIA",
+    "CROATIA",
+    "CYPRUS",
+    "ESTONIA",
+    "EUROPEAN UNION",
+    "FINLAND",
+    "FRANCE",
+    "FRENCH GUIANA",
+    "FRENCH SOUTHERN TERRITORIES (THE)",
+    "GERMANY",
+    "GREECE",
+    "GUADELOUPE",
+    "HOLY SEE (THE)",
+    "IRELAND",
+    "ITALY",
+    "LATVIA",
+    "LITHUANIA",
+    "LUXEMBOURG",
+    "MALTA",
+    "MARTINIQUE",
+    "MAYOTTE",
+    "MONACO",
+    "MONTENEGRO",
+    "NETHERLANDS (THE)",
+    "PORTUGAL",
+    "RÉUNION",
+    "SAINT BARTHÉLEMY",
+    "SAINT MARTIN (FRENCH PART)",
+    "SAINT PIERRE AND MIQUELON",
+    "SAN MARINO",
+    "SLOVAKIA",
+    "SLOVENIA",
+    "SPAIN",
+    "ÅLAND ISLANDS"
+   ]
+  },
+  {
+   "alt_names": [
+    "Fiji Dollar"
+   ],
+   "code": "FJD",
+   "minor_units": 2,
+   "names": {
+    "en": "Fijian Dollar",
+    "es": "dólar fiyiano",
+    "fr": "dollar fidjien",
+    "pt": "Dólar fijiano",
+    "uk": "фіджійський долар"
+   },
+   "numeric": "242",
+   "symbol": "$",
+   "used_in": [
+    "FIJI"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "FKP",
+   "minor_units": 2,
+   "names": {
+    "en": "Falkland Islands Pound",
+    "es": "libra malvinense",
+    "fr": "livre des îles Malouines",
+    "pt": "Libra malvinense",
+    "uk": "фунт Фолклендських островів"
+   },
+   "numeric": "238",
+   "symbol": "£",
+   "used_in": [
+    "FALKLAND ISLANDS (THE) [MALVINAS]"
+   ]
+  },
+  {
+   "alt_names": [
+    "Pound Sterling"
+   ],
+   "code": "GBP",
+   "minor_units": 2,
+   "names": {
+    "en": "British Pound",
+    "es": "libra esterlina",
+    "fr": "livre sterling",
+    "pt": "Libra esterlina",
+    "uk": "англійський фунт"
+   },
+   "numeric": "826",
+   "symbol": "£",
+   "used_in": [
+    "GUERNSEY",
+    "ISLE OF MAN",
+    "JERSEY",
+    "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Lari"
+   ],
+   "code": "GEL",
+   "minor_units": 2,
+   "names": {
+    "en": "Georgian Lari",
+    "es": "lari georgiano",
+    "fr": "lari géorgien",
+    "pt": "Lari georgiano",
+    "uk": "грузинський ларі"
+   },
+   "numeric": "981",
+   "symbol": "₾",
+   "used_in": [
+    "GEORGIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Ghana Cedi"
+   ],
+   "code": "GHS",
+   "minor_units": 2,
+   "names": {
+    "en": "Ghanaian Cedi",
+    "es": "cedi ghanés",
+    "fr": "cédi ghanéen",
+    "pt": "Cedi ganês",
+    "uk": "ганський седі"
+   },
+   "numeric": "936",
+   "symbol": "GH₵",
+   "used_in": [
+    "GHANA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "GIP",
+   "minor_units": 2,
+   "names": {
+    "en": "Gibraltar Pound",
+    "es": "libra gibraltareña",
+    "fr": "livre de Gibraltar",
+    "pt": "Libra de Gibraltar",
+    "uk": "гібралтарський фунт"
+   },
+   "numeric": "292",
+   "symbol": "£",
+   "used_in": [
+    "GIBRALTAR"
+   ]
+  },
+  {
+   "alt_names": [
+    "Dalasi"
+   ],
+   "code": "GMD",
+   "minor_units": 2,
+   "names": {
+    "en": "Gambian Dalasi",
+    "es": "dalasi gambiano",
+    "fr": "dalasi gambien",
+    "pt": "Dalasi gambiano",
+    "uk": "гамбійський даласі"
+   },
+   "numeric": "270",
+   "symbol": null,
+   "used_in": [
+    "GAMBIA (THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "GNF",
+   "minor_units": 0,
+   "names": {
+    "en": "Guinean Franc",
+    "es": "franco guineano",
+    "fr": "franc guinéen",
+    "pt": "Franco guineano",
+    "uk": "гвінейський франк"
+   },
+   "numeric": "324",
+   "symbol": "FG",
+   "used_in": [
+    "GUINEA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Quetzal"
+   ],
+   "code": "GTQ",
+   "minor_units": 2,
+   "names": {
+    "en": "Guatemalan Quetzal",
+    "es": "quetzal guatemalteco",
+    "fr": "quetzal guatémaltèque",
+    "pt": "Quetzal guatemalteco",
+    "uk": "гватемальський кетсаль"
+   },
+   "numeric": "320",
+   "symbol": "Q",
+   "used_in": [
+    "GUATEMALA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Guyana Dollar"
+   ],
+   "code": "GYD",
+   "minor_units": 2,
+   "names": {
+    "en": "Guyanaese Dollar",
+    "es": "dólar guyanés",
+    "fr": "dollar du Guyana",
+    "pt": "Dólar guianense",
+    "uk": "гаянський долар"
+   },
+   "numeric": "328",
+   "symbol": "$",
+   "used_in": [
+    "GUYANA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "HKD",
+   "minor_units": 2,
+   "names": {
+    "en": "Hong Kong Dollar",
+    "es": "dólar hongkonés",
+    "fr": "dollar de Hong Kong",
+    "pt": "Dólar de Hong Kong",
+    "uk": "гонконгський долар"
+   },
+   "numeric": "344",
+   "symbol": "HK$",
+   "used_in": [
+    "HONG KONG"
+   ]
+  },
+  {
+   "alt_names": [
+    "Lempira"
+   ],
+   "code": "HNL",
+   "minor_units": 2,
+   "names": {
+    "en": "Honduran Lempira",
+    "es": "lempira hondureño",
+    "fr": "lempira hondurien",
+    "pt": "Lempira hondurenha",
+    "uk": "гондураська лемпіра"
+   },
+   "numeric": "340",
+   "symbol": "L",
+   "used_in": [
+    "HONDURAS"
+   ]
+  },
+  {
+   "alt_names": [
+    "Gourde"
+   ],
+   "code": "HTG",
+   "minor_units": 2,
+   "names": {
+    "en": "Haitian Gourde",
+    "es": "gurde haitiano",
+    "fr": "gourde haïtienne",
+    "pt": "Gourde haitiano",
+    "uk": "гаїтянський гурд"
+   },
+   "numeric": "332",
+   "symbol": null,
+   "used_in": [
+    "HAITI"
+   ]
+  },
+  {
+   "alt_names": [
+    "Forint"
+   ],
+   "code": "HUF",
+   "minor_units": 2,
+   "names": {
+    "en": "Hungarian Forint",
+    "es": "forinto húngaro",
+    "fr": "forint hongrois",
+    "pt": "Florim húngaro",
+    "uk": "угорський форинт"
+   },
+   "numeric": "348",
+   "symbol": "Ft",
+   "used_in": [
+    "HUNGARY"
+   ]
+  },
+  {
+   "alt_names": [
+    "Rupiah"
+   ],
+   "code": "IDR",
+   "minor_units": 2,
+   "names": {
+    "en": "Indonesian Rupiah",
+    "es": "rupia indonesia",
+    "fr": "roupie indonésienne",
+    "pt": "Rupia indonésia",
+    "uk": "індонезійська рупія"
+   },
+   "numeric": "360",
+   "symbol": "Rp",
+   "used_in": [
+    "INDONESIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "New Israeli Sheqel"
+   ],
+   "code": "ILS",
+   "minor_units": 2,
+   "names": {
+    "en": "Israeli New Shekel",
+    "es": "nuevo séquel israelí",
+    "fr": "nouveau shekel israélien",
+    "pt": "Novo shekel israelense",
+    "uk": "ізраїльський новий шекель"
+   },
+   "numeric": "376",
+   "symbol": "₪",
+   "used_in": [
+    "ISRAEL"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "INR",
+   "minor_units": 2,
+   "names": {
+    "en": "Indian Rupee",
+    "es": "rupia india",
+    "fr": "roupie indienne",
+    "pt": "Rupia indiana",
+    "uk": "індійська рупія"
+   },
+   "numeric": "356",
+   "symbol": "₹",
+   "used_in": [
+    "BHUTAN",
+    "INDIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "IQD",
+   "minor_units": 3,
+   "names": {
+    "en": "Iraqi Dinar",
+    "es": "dinar iraquí",
+    "fr": "dinar irakien",
+    "pt": "Dinar iraquiano",
+    "uk": "іракський динар"
+   },
+   "numeric": "368",
+   "symbol": null,
+   "used_in": [
+    "IRAQ"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "IRR",
+   "minor_units": 2,
+   "names": {
+    "en": "Iranian Rial",
+    "es": "rial iraní",
+    "fr": "riyal iranien",
+    "pt": "Rial iraniano",
+    "uk": "іранський ріал"
+   },
+   "numeric": "364",
+   "symbol": null,
+   "used_in": [
+    "IRAN (ISLAMIC REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Iceland Krona"
+   ],
+   "code": "ISK",
+   "minor_units": 0,
+   "names": {
+    "en": "Icelandic Króna",
+    "es": "corona islandesa",
+    "fr": "couronne islandaise",
+    "pt": "Coroa islandesa",
+    "uk": "ісландська крона"
+   },
+   "numeric": "352",
+   "symbol": "kr",
+   "used_in": [
+    "ICELAND"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "JMD",
+   "minor_units": 2,
+   "names": {
+    "en": "Jamaican Dollar",
+    "es": "dólar jamaicano",
+    "fr": "dollar jamaïcain",
+    "pt": "Dólar jamaicano",
+    "uk": "ямайський долар"
+   },
+   "numeric": "388",
+   "symbol": "$",
+   "used_in": [
+    "JAMAICA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "JOD",
+   "minor_units": 3,
+   "names": {
+    "en": "Jordanian Dinar",
+    "es": "dinar jordano",
+    "fr": "dinar jordanien",
+    "pt": "Dinar jordaniano",
+    "uk": "йорданський динар"
+   },
+   "numeric": "400",
+   "symbol": null,
+   "used_in": [
+    "JORDAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Yen"
+   ],
+   "code": "JPY",
+   "minor_units": 0,
+   "names": {
+    "en": "Japanese Yen",
+    "es": "yen japonés",
+    "fr": "yen japonais",
+    "pt": "Iene japonês",
+    "uk": "японська єна"
+   },
+   "numeric": "392",
+   "symbol": "¥",
+   "used_in": [
+    "JAPAN"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "KES",
+   "minor_units": 2,
+   "names": {
+    "en": "Kenyan Shilling",
+    "es": "chelín keniano",
+    "fr": "shilling kényan",
+    "pt": "Xelim queniano",
+    "uk": "кенійський шилінг"
+   },
+   "numeric": "404",
+   "symbol": null,
+   "used_in": [
+    "KENYA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Som"
+   ],
+   "code": "KGS",
+   "minor_units": 2,
+   "names": {
+    "en": "Kyrgyz Som",
+    "es": "som kirguís",
+    "fr": "som kirghize",
+    "pt": "Som quirguiz",
+    "uk": "киргизький сом"
+   },
+   "numeric": "417",
+   "symbol": "⃀",
+   "used_in": [
+    "KYRGYZSTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Riel"
+   ],
+   "code": "KHR",
+   "minor_units": 2,
+   "names": {
+    "en": "Cambodian Riel",
+    "es": "riel camboyano",
+    "fr": "riel cambodgien",
+    "pt": "Riel cambojano",
+    "uk": "камбоджійський рієль"
+   },
+   "numeric": "116",
+   "symbol": "៛",
+   "used_in": [
+    "CAMBODIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "KMF",
+   "minor_units": 0,
+   "names": {
+    "en": "Comorian Franc",
+    "es": "franco comorense",
+    "fr": "franc comorien",
+    "pt": "Franco comoriano",
+    "uk": "коморський франк"
+   },
+   "numeric": "174",
+   "symbol": "CF",
+   "used_in": [
+    "COMOROS (THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "KPW",
+   "minor_units": 2,
+   "names": {
+    "en": "North Korean Won",
+    "es": "won norcoreano",
+    "fr": "won nord-coréen",
+    "pt": "Won norte-coreano",
+    "uk": "північнокорейський вон"
+   },
+   "numeric": "408",
+   "symbol": "₩",
+   "used_in": [
+    "KOREA (THE DEMOCRATIC PEOPLE’S REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Won"
+   ],
+   "code": "KRW",
+   "minor_units": 0,
+   "names": {
+    "en": "South Korean Won",
+    "es": "won surcoreano",
+    "fr": "won sud-coréen",
+    "pt": "Won sul-coreano",
+    "uk": "південнокорейський вон"
+   },
+   "numeric": "410",
+   "symbol": "₩",
+   "used_in": [
+    "KOREA (THE REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "KWD",
+   "minor_units": 3,
+   "names": {
+    "en": "Kuwaiti Dinar",
+    "es": "dinar kuwaití",
+    "fr": "dinar koweïtien",
+    "pt": "Dinar kuwaitiano",
+    "uk": "кувейтський динар"
+   },
+   "numeric": "414",
+   "symbol": null,
+   "used_in": [
+    "KUWAIT"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "KYD",
+   "minor_units": 2,
+   "names": {
+    "en": "Cayman Islands Dollar",
+    "es": "dólar de las Islas Caimán",
+    "fr": "dollar des îles Caïmans",
+    "pt": "Dólar das Ilhas Cayman",
+    "uk": "долар Кайманових островів"
+   },
+   "numeric": "136",
+   "symbol": "$",
+   "used_in": [
+    "CAYMAN ISLANDS (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Tenge"
+   ],
+   "code": "KZT",
+   "minor_units": 2,
+   "names": {
+    "en": "Kazakhstani Tenge",
+    "es": "tengue kazajo",
+    "fr": "tenge kazakh",
+    "pt": "Tenge cazaque",
+    "uk": "казахстанський тенге"
+   },
+   "numeric": "398",
+   "symbol": "₸",
+   "used_in": [
+    "KAZAKHSTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Lao Kip"
+   ],
+   "code": "LAK",
+   "minor_units": 2,
+   "names": {
+    "en": "Laotian Kip",
+    "es": "kip laosiano",
+    "fr": "kip laotien",
+    "pt": "Kip laosiano",
+    "uk": "лаоський кіп"
+   },
+   "numeric": "418",
+   "symbol": "₭",
+   "used_in": [
+    "LAO PEOPLE’S DEMOCRATIC REPUBLIC (THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "LBP",
+   "minor_units": 2,
+   "names": {
+    "en": "Lebanese Pound",
+    "es": "libra libanesa",
+    "fr": "livre libanaise",
+    "pt": "Libra libanesa",
+    "uk": "ліванський фунт"
+   },
+   "numeric": "422",
+   "symbol": "L£",
+   "used_in": [
+    "LEBANON"
+   ]
+  },
+  {
+   "alt_names": [
+    "Sri Lanka Rupee"
+   ],
+   "code": "LKR",
+   "minor_units": 2,
+   "names": {
+    "en": "Sri Lankan Rupee",
+    "es": "rupia esrilanquesa",
+    "fr": "roupie srilankaise",
+    "pt": "Rupia cingalesa",
+    "uk": "шрі-ланкійська рупія"
+   },
+   "numeric": "144",
+   "symbol": "Rs",
+   "used_in": [
+    "SRI LANKA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "LRD",
+   "minor_units": 2,
+   "names": {
+    "en": "Liberian Dollar",
+    "es": "dólar liberiano",
+    "fr": "dollar libérien",
+    "pt": "Dólar liberiano",
+    "uk": "ліберійський долар"
+   },
+   "numeric": "430",
+   "symbol": "$",
+   "used_in": [
+    "LIBERIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Loti"
+   ],
+   "code": "LSL",
+   "minor_units": 2,
+   "names": {
+    "en": "Lesotho Loti",
+    "es": "loti lesotense",
+    "fr": "loti lesothan",
+    "pt": "Loti lesotiano",
+    "uk": "лесотський лоті"
+   },
+   "numeric": "426",
+   "symbol": null,
+   "used_in": [
+    "LESOTHO"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "LYD",
+   "minor_units": 3,
+   "names": {
+    "en": "Libyan Dinar",
+    "es": "dinar libio",
+    "fr": "dinar libyen",
+    "pt": "Dinar líbio",
+    "uk": "лівійський динар"
+   },
+   "numeric": "434",
+   "symbol": null,
+   "used_in": [
+    "LIBYA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "MAD",
+   "minor_units": 2,
+   "names": {
+    "en": "Moroccan Dirham",
+    "es": "dírham marroquí",
+    "fr": "dirham marocain",
+    "pt": "Dirham marroquino",
+    "uk": "марокканський дирхам"
+   },
+   "numeric": "504",
+   "symbol": null,
+   "used_in": [
+    "MOROCCO",
+    "WESTERN SAHARA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "MDL",
+   "minor_units": 2,
+   "names": {
+    "en": "Moldovan Leu",
+    "es": "leu moldavo",
+    "fr": "leu moldave",
+    "pt": "Leu moldávio",
+    "uk": "молдовський лей"
+   },
+   "numeric": "498",
+   "symbol": null,
+   "used_in": [
+    "MOLDOVA (THE REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "MGA",
+   "minor_units": 2,
+   "names": {
+    "en": "Malagasy Ariary",
+    "es": "ariari malgache",
+    "fr": "ariary malgache",
+    "pt": "Ariary malgaxe",
+    "uk": "малагасійський аріарі"
+   },
+   "numeric": "969",
+   "symbol": "Ar",
+   "used_in": [
+    "MADAGASCAR"
+   ]
+  },
+  {
+   "alt_names": [
+    "Denar"
+   ],
+   "code": "MKD",
+   "minor_units": 2,
+   "names": {
+    "en": "Macedonian Denar",
+    "es": "dinar macedonio",
+    "fr": "denar macédonien",
+    "pt": "Dinar macedônio",
+    "uk": "македонський денар"
+   },
+   "numeric": "807",
+   "symbol": null,
+   "used_in": [
+    "NORTH MACEDONIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Kyat"
+   ],
+   "code": "MMK",
+   "minor_units": 2,
+   "names": {
+    "en": "Myanmar Kyat",
+    "es": "kiat de Myanmar",
+    "fr": "kyat myanmarais",
+    "pt": "Quiate mianmarense",
+    "uk": "кʼят Мʼянми"
+   },
+   "numeric": "104",
+   "symbol": "K",
+   "used_in": [
+    "MYANMAR"
+   ]
+  },
+  {
+   "alt_names": [
+    "Tugrik"
+   ],
+   "code": "MNT",
+   "minor_units": 2,
+   "names": {
+    "en": "Mongolian Tugrik",
+    "es": "tugrik mongol",
+    "fr": "tugrik mongol",
+    "pt": "Tugrik mongol",
+    "uk": "монгольський тугрик"
+   },
+   "numeric": "496",
+   "symbol": "₮",
+   "used_in": [
+    "MONGOLIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Pataca"
+   ],
+   "code": "MOP",
+   "minor_units": 2,
+   "names": {
+    "en": "Macanese Pataca",
+    "es": "pataca macaense",
+    "fr": "pataca macanaise",
+    "pt": "Pataca macaense",
+    "uk": "патака Макао"
+   },
+   "numeric": "446",
+   "symbol": null,
+   "used_in": [
+    "MACAO"
+   ]
+  },
+  {
+   "alt_names": [
+    "Ouguiya"
+   ],
+   "code": "MRU",
+   "minor_units": 2,
+   "names": {
+    "en": "Mauritanian Ouguiya",
+    "es": "uguiya mauritano",
+    "fr": "ouguiya mauritanien",
+    "pt": "Ouguiya mauritana",
+    "uk": "мавританська угія"
+   },
+   "numeric": "929",
+   "symbol": null,
+   "used_in": [
+    "MAURITANIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Mauritius Rupee"
+   ],
+   "code": "MUR",
+   "minor_units": 2,
+   "names": {
+    "en": "Mauritian Rupee",
+    "es": "rupia mauriciana",
+    "fr": "roupie mauricienne",
+    "pt": "Rupia mauriciana",
+    "uk": "маврикійська рупія"
+   },
+   "numeric": "480",
+   "symbol": "Rs",
+   "used_in": [
+    "MAURITIUS"
+   ]
+  },
+  {
+   "alt_names": [
+    "Rufiyaa"
+   ],
+   "code": "MVR",
+   "minor_units": 2,
+   "names": {
+    "en": "Maldivian Rufiyaa",
+    "es": "rufiya maldiva",
+    "fr": "rufiyaa maldivienne",
+    "pt": "Rupia maldivana",
+    "uk": "мальдівська руфія"
+   },
+   "numeric": "462",
+   "symbol": null,
+   "used_in": [
+    "MALDIVES"
+   ]
+  },
+  {
+   "alt_names": [
+    "Malawi Kwacha"
+   ],
+   "code": "MWK",
+   "minor_units": 2,
+   "names": {
+    "en": "Malawian Kwacha",
+    "es": "kuacha malauí",
+    "fr": "kwacha malawite",
+    "pt": "Kwacha malauiana",
+    "uk": "малавійська квача"
+   },
+   "numeric": "454",
+   "symbol": null,
+   "used_in": [
+    "MALAWI"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "MXN",
+   "minor_units": 2,
+   "names": {
+    "en": "Mexican Peso",
+    "es": "peso mexicano",
+    "fr": "peso mexicain",
+    "pt": "Peso mexicano",
+    "uk": "мексиканський песо"
+   },
+   "numeric": "484",
+   "symbol": "MX$",
+   "used_in": [
+    "MEXICO"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "MYR",
+   "minor_units": 2,
+   "names": {
+    "en": "Malaysian Ringgit",
+    "es": "ringit malasio",
+    "fr": "ringgit malais",
+    "pt": "Ringgit malaio",
+    "uk": "малайзійський рингіт"
+   },
+   "numeric": "458",
+   "symbol": "RM",
+   "used_in": [
+    "MALAYSIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Mozambique Metical"
+   ],
+   "code": "MZN",
+   "minor_units": 2,
+   "names": {
+    "en": "Mozambican Metical",
+    "es": "metical mozambiqueño",
+    "fr": "metical mozambicain",
+    "pt": "Metical moçambicano",
+    "uk": "мозамбіцький метикал"
+   },
+   "numeric": "943",
+   "symbol": null,
+   "used_in": [
+    "MOZAMBIQUE"
+   ]
+  },
+  {
+   "alt_names": [
+    "Namibia Dollar"
+   ],
+   "code": "NAD",
+   "minor_units": 2,
+   "names": {
+    "en": "Namibian Dollar",
+    "es": "dólar namibio",
+    "fr": "dollar namibien",
+    "pt": "Dólar namibiano",
+    "uk": "намібійський долар"
+   },
+   "numeric": "516",
+   "symbol": "$",
+   "used_in": [
+    "NAMIBIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Naira"
+   ],
+   "code": "NGN",
+   "minor_units": 2,
+   "names": {
+    "en": "Nigerian Naira",
+    "es": "naira nigeriano",
+    "fr": "naira nigérian",
+    "pt": "Naira nigeriana",
+    "uk": "нігерійська найра"
+   },
+   "numeric": "566",
+   "symbol": "₦",
+   "used_in": [
+    "NIGERIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Cordoba Oro"
+   ],
+   "code": "NIO",
+   "minor_units": 2,
+   "names": {
+    "en": "Nicaraguan Córdoba",
+    "es": "córdoba oro",
+    "fr": "córdoba oro nicaraguayen",
+    "pt": "Córdoba nicaraguense",
+    "uk": "нікарагуанська кордоба"
+   },
+   "numeric": "558",
+   "symbol": "C$",
+   "used_in": [
+    "NICARAGUA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "NOK",
+   "minor_units": 2,
+   "names": {
+    "en": "Norwegian Krone",
+    "es": "corona noruega",
+    "fr": "couronne norvégienne",
+    "pt": "Coroa norueguesa",
+    "uk": "норвезька крона"
+   },
+   "numeric": "578",
+   "symbol": "kr",
+   "used_in": [
+    "BOUVET ISLAND",
+    "NORWAY",
+    "SVALBARD AND JAN MAYEN"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "NPR",
+   "minor_units": 2,
+   "names": {
+    "en": "Nepalese Rupee",
+    "es": "rupia nepalí",
+    "fr": "roupie népalaise",
+    "pt": "Rupia nepalesa",
+    "uk": "непальська рупія"
+   },
+   "numeric": "524",
+   "symbol": "Rs",
+   "used_in": [
+    "NEPAL"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "NZD",
+   "minor_units": 2,
+   "names": {
+    "en": "New Zealand Dollar",
+    "es": "dólar neozelandés",
+    "fr": "dollar néo-zélandais",
+    "pt": "Dólar neozelandês",
+    "uk": "новозеландський долар"
+   },
+   "numeric": "554",
+   "symbol": "NZ$",
+   "used_in": [
+    "COOK ISLANDS (THE)",
+    "NEW ZEALAND",
+    "NIUE",
+    "PITCAIRN",
+    "TOKELAU"
+   ]
+  },
+  {
+   "alt_names": [
+    "Rial Omani"
+   ],
+   "code": "OMR",
+   "minor_units": 3,
+   "names": {
+    "en": "Omani Rial",
+    "es": "rial omaní",
+    "fr": "riyal omanais",
+    "pt": "Rial omanense",
+    "uk": "оманський ріал"
+   },
+   "numeric": "512",
+   "symbol": null,
+   "used_in": [
+    "OMAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Balboa"
+   ],
+   "code": "PAB",
+   "minor_units": 2,
+   "names": {
+    "en": "Panamanian Balboa",
+    "es": "balboa panameño",
+    "fr": "balboa panaméen",
+    "pt": "Balboa panamenho",
+    "uk": "панамське бальбоа"
+   },
+   "numeric": "590",
+   "symbol": null,
+   "used_in": [
+    "PANAMA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Sol"
+   ],
+   "code": "PEN",
+   "minor_units": 2,
+   "names": {
+    "en": "Peruvian Sol",
+    "es": "sol peruano",
+    "fr": "sol péruvien",
+    "pt": "Novo sol peruano",
+    "uk": "перуанський новий сол"
+   },
+   "numeric": "604",
+   "symbol": null,
+   "used_in": [
+    "PERU"
+   ]
+  },
+  {
+   "alt_names": [
+    "Kina"
+   ],
+   "code": "PGK",
+   "minor_units": 2,
+   "names": {
+    "en": "Papua New Guinean Kina",
+    "es": "kina papú",
+    "fr": "kina papouan-néo-guinéen",
+    "pt": "Kina papuásia",
+    "uk": "кіна Папуа-Нової Ґвінеї"
+   },
+   "numeric": "598",
+   "symbol": null,
+   "used_in": [
+    "PAPUA NEW GUINEA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "PHP",
+   "minor_units": 2,
+   "names": {
+    "en": "Philippine Peso",
+    "es": "peso filipino",
+    "fr": "peso philippin",
+    "pt": "Peso filipino",
+    "uk": "філіппінський песо"
+   },
+   "numeric": "608",
+   "symbol": "₱",
+   "used_in": [
+    "PHILIPPINES (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Pakistan Rupee"
+   ],
+   "code": "PKR",
+   "minor_units": 2,
+   "names": {
+    "en": "Pakistani Rupee",
+    "es": "rupia pakistaní",
+    "fr": "roupie pakistanaise",
+    "pt": "Rupia paquistanesa",
+    "uk": "пакистанська рупія"
+   },
+   "numeric": "586",
+   "symbol": "Rs",
+   "used_in": [
+    "PAKISTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Zloty"
+   ],
+   "code": "PLN",
+   "minor_units": 2,
+   "names": {
+    "en": "Polish Zloty",
+    "es": "esloti polaco",
+    "fr": "zloty polonais",
+    "pt": "Zloty polonês",
+    "uk": "польський злотий"
+   },
+   "numeric": "985",
+   "symbol": "zł",
+   "used_in": [
+    "POLAND"
+   ]
+  },
+  {
+   "alt_names": [
+    "Guarani"
+   ],
+   "code": "PYG",
+   "minor_units": 0,
+   "names": {
+    "en": "Paraguayan Guarani",
+    "es": "guaraní paraguayo",
+    "fr": "guaraní paraguayen",
+    "pt": "Guarani paraguaio",
+    "uk": "парагвайський гуарані"
+   },
+   "numeric": "600",
+   "symbol": "₲",
+   "used_in": [
+    "PARAGUAY"
+   ]
+  },
+  {
+   "alt_names": [
+    "Qatari Rial"
+   ],
+   "code": "QAR",
+   "minor_units": 2,
+   "names": {
+    "en": "Qatari Riyal",
+    "es": "rial catarí",
+    "fr": "riyal qatari",
+    "pt": "Rial catariano",
+    "uk": "катарський ріал"
+   },
+   "numeric": "634",
+   "symbol": null,
+   "used_in": [
+    "QATAR"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "RON",
+   "minor_units": 2,
+   "names": {
+    "en": "Romanian Leu",
+    "es": "leu rumano",
+    "fr": "leu roumain",
+    "pt": "Leu romeno",
+    "uk": "румунський лей"
+   },
+   "numeric": "946",
+   "symbol": "lei",
+   "used_in": [
+    "ROMANIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "RSD",
+   "minor_units": 2,
+   "names": {
+    "en": "Serbian Dinar",
+    "es": "dinar serbio",
+    "fr": "dinar serbe",
+    "pt": "Dinar sérvio",
+    "uk": "сербський динар"
+   },
+   "numeric": "941",
+   "symbol": null,
+   "used_in": [
+    "SERBIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "RUB",
+   "minor_units": 2,
+   "names": {
+    "en": "Russian Ruble",
+    "es": "rublo ruso",
+    "fr": "rouble russe",
+    "pt": "Rublo russo",
+    "uk": "російський рубль"
+   },
+   "numeric": "643",
+   "symbol": "₽",
+   "used_in": [
+    "RUSSIAN FEDERATION (THE)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Rwanda Franc"
+   ],
+   "code": "RWF",
+   "minor_units": 0,
+   "names": {
+    "en": "Rwandan Franc",
+    "es": "franco ruandés",
+    "fr": "franc rwandais",
+    "pt": "Franco ruandês",
+    "uk": "руандійський франк"
+   },
+   "numeric": "646",
+   "symbol": "RF",
+   "used_in": [
+    "RWANDA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SAR",
+   "minor_units": 2,
+   "names": {
+    "en": "Saudi Riyal",
+    "es": "rial saudí",
+    "fr": "riyal saoudien",
+    "pt": "Riyal saudita",
+    "uk": "саудівський ріал"
+   },
+   "numeric": "682",
+   "symbol": null,
+   "used_in": [
+    "SAUDI ARABIA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SBD",
+   "minor_units": 2,
+   "names": {
+    "en": "Solomon Islands Dollar",
+    "es": "dólar salomonense",
+    "fr": "dollar des îles Salomon",
+    "pt": "Dólar das Ilhas Salomão",
+    "uk": "долар Соломонових Островів"
+   },
+   "numeric": "090",
+   "symbol": "$",
+   "used_in": [
+    "SOLOMON ISLANDS"
+   ]
+  },
+  {
+   "alt_names": [
+    "Seychelles Rupee"
+   ],
+   "code": "SCR",
+   "minor_units": 2,
+   "names": {
+    "en": "Seychellois Rupee",
+    "es": "rupia seychellense",
+    "fr": "roupie des Seychelles",
+    "pt": "Rupia seichelense",
+    "uk": "сейшельська рупія"
+   },
+   "numeric": "690",
+   "symbol": null,
+   "used_in": [
+    "SEYCHELLES"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SDG",
+   "minor_units": 2,
+   "names": {
+    "en": "Sudanese Pound",
+    "es": "libra sudanesa",
+    "fr": "livre soudanaise",
+    "pt": "Libra sudanesa",
+    "uk": "суданський фунт"
+   },
+   "numeric": "938",
+   "symbol": null,
+   "used_in": [
+    "SUDAN (THE)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SEK",
+   "minor_units": 2,
+   "names": {
+    "en": "Swedish Krona",
+    "es": "corona sueca",
+    "fr": "couronne suédoise",
+    "pt": "Coroa sueca",
+    "uk": "шведська крона"
+   },
+   "numeric": "752",
+   "symbol": "kr",
+   "used_in": [
+    "SWEDEN"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SGD",
+   "minor_units": 2,
+   "names": {
+    "en": "Singapore Dollar",
+    "es": "dólar singapurense",
+    "fr": "dollar de Singapour",
+    "pt": "Dólar singapuriano",
+    "uk": "сінгапурський долар"
+   },
+   "numeric": "702",
+   "symbol": "$",
+   "used_in": [
+    "SINGAPORE"
+   ]
+  },
+  {
+   "alt_names": [
+    "Saint Helena Pound"
+   ],
+   "code": "SHP",
+   "minor_units": 2,
+   "names": {
+    "en": "St. Helena Pound",
+    "es": "libra de Santa Elena",
+    "fr": "livre de Sainte-Hélène",
+    "pt": "Libra de Santa Helena",
+    "uk": "фунт острова Святої Єлени"
+   },
+   "numeric": "654",
+   "symbol": "£",
+   "used_in": [
+    "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Leone"
+   ],
+   "code": "SLE",
+   "minor_units": 2,
+   "names": {
+    "en": "Sierra Leonean Leone",
+    "es": "leona sierraleonesa",
+    "fr": "leone sierra-léonais",
+    "pt": "Leone de Serra Leoa",
+    "uk": "леоне Сьєрра-Леоне"
+   },
+   "numeric": "925",
+   "symbol": null,
+   "used_in": [
+    "SIERRA LEONE"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SOS",
+   "minor_units": 2,
+   "names": {
+    "en": "Somali Shilling",
+    "es": "chelín somalí",
+    "fr": "shilling somalien",
+    "pt": "Xelim somali",
+    "uk": "сомалійський шилінг"
+   },
+   "numeric": "706",
+   "symbol": null,
+   "used_in": [
+    "SOMALIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Surinam Dollar"
+   ],
+   "code": "SRD",
+   "minor_units": 2,
+   "names": {
+    "en": "Surinamese Dollar",
+    "es": "dólar surinamés",
+    "fr": "dollar surinamais",
+    "pt": "Dólar surinamês",
+    "uk": "суринамський долар"
+   },
+   "numeric": "968",
+   "symbol": "$",
+   "used_in": [
+    "SURINAME"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SSP",
+   "minor_units": 2,
+   "names": {
+    "en": "South Sudanese Pound",
+    "es": "libra sursudanesa",
+    "fr": "livre sud-soudanaise",
+    "pt": "Libra sul-sudanesa",
+    "uk": "південносуданський фунт"
+   },
+   "numeric": "728",
+   "symbol": "£",
+   "used_in": [
+    "SOUTH SUDAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Dobra"
+   ],
+   "code": "STN",
+   "minor_units": 2,
+   "names": {
+    "en": "São Tomé & Príncipe Dobra",
+    "es": "dobra santotomense",
+    "fr": "dobra santoméen",
+    "pt": "Dobra de São Tomé e Príncipe",
+    "uk": "добра Сан-Томе і Прінсіпі"
+   },
+   "numeric": "930",
+   "symbol": "Db",
+   "used_in": [
+    "SAO TOME AND PRINCIPE"
+   ]
+  },
+  {
+   "alt_names": [
+    "El Salvador Colon"
+   ],
+   "code": "SVC",
+   "minor_units": 2,
+   "names": {
+    "en": "Salvadoran Colón",
+    "es": "colón salvadoreño",
+    "fr": "colón salvadorien",
+    "pt": "Colom salvadorenho",
+    "uk": "сальвадорський колон"
+   },
+   "numeric": "222",
+   "symbol": null,
+   "used_in": [
+    "EL SALVADOR"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "SYP",
+   "minor_units": 2,
+   "names": {
+    "en": "Syrian Pound",
+    "es": "libra siria",
+    "fr": "livre syrienne",
+    "pt": "Libra síria",
+    "uk": "сирійський фунт"
+   },
+   "numeric": "760",
+   "symbol": "£",
+   "used_in": [
+    "SYRIAN ARAB REPUBLIC"
+   ]
+  },
+  {
+   "alt_names": [
+    "Lilangeni"
+   ],
+   "code": "SZL",
+   "minor_units": 2,
+   "names": {
+    "en": "Swazi Lilangeni",
+    "es": "lilangeni esuatiní",
+    "fr": "lilangeni swazi",
+    "pt": "Lilangeni suazi",
+    "uk": "свазілендський лілангені"
+   },
+   "numeric": "748",
+   "symbol": null,
+   "used_in": [
+    "ESWATINI"
+   ]
+  },
+  {
+   "alt_names": [
+    "Baht"
+   ],
+   "code": "THB",
+   "minor_units": 2,
+   "names": {
+    "en": "Thai Baht",
+    "es": "bat tailandés",
+    "fr": "baht thaïlandais",
+    "pt": "Baht tailandês",
+    "uk": "таїландський бат"
+   },
+   "numeric": "764",
+   "symbol": "฿",
+   "used_in": [
+    "THAILAND"
+   ]
+  },
+  {
+   "alt_names": [
+    "Somoni"
+   ],
+   "code": "TJS",
+   "minor_units": 2,
+   "names": {
+    "en": "Tajikistani Somoni",
+    "es": "somoni tayiko",
+    "fr": "somoni tadjik",
+    "pt": "Somoni tadjique",
+    "uk": "таджицький сомоні"
+   },
+   "numeric": "972",
+   "symbol": null,
+   "used_in": [
+    "TAJIKISTAN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Turkmenistan New Manat"
+   ],
+   "code": "TMT",
+   "minor_units": 2,
+   "names": {
+    "en": "Turkmenistani Manat",
+    "es": "manat turcomano",
+    "fr": "nouveau manat turkmène",
+    "pt": "Manat turcomeno",
+    "uk": "туркменський манат"
+   },
+   "numeric": "934",
+   "symbol": null,
+   "used_in": [
+    "TURKMENISTAN"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "TND",
+   "minor_units": 3,
+   "names": {
+    "en": "Tunisian Dinar",
+    "es": "dinar tunecino",
+    "fr": "dinar tunisien",
+    "pt": "Dinar tunisiano",
+    "uk": "туніський динар"
+   },
+   "numeric": "788",
+   "symbol": null,
+   "used_in": [
+    "TUNISIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Pa’anga"
+   ],
+   "code": "TOP",
+   "minor_units": 2,
+   "names": {
+    "en": "Tongan Paʻanga",
+    "es": "paanga tongano",
+    "fr": "pa’anga tongan",
+    "pt": "Paʻanga tonganesa",
+    "uk": "тонганська паанга"
+   },
+   "numeric": "776",
+   "symbol": "T$",
+   "used_in": [
+    "TONGA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "TRY",
+   "minor_units": 2,
+   "names": {
+    "en": "Turkish Lira",
+    "es": "lira turca",
+    "fr": "livre turque",
+    "pt": "Lira turca",
+    "uk": "турецька ліра"
+   },
+   "numeric": "949",
+   "symbol": "₺",
+   "used_in": [
+    "TÜRKİYE"
+   ]
+  },
+  {
+   "alt_names": [
+    "Trinidad and Tobago Dollar"
+   ],
+   "code": "TTD",
+   "minor_units": 2,
+   "names": {
+    "en": "Trinidad & Tobago Dollar",
+    "es": "dólar de Trinidad y Tobago",
+    "fr": "dollar de Trinité-et-Tobago",
+    "pt": "Dólar de Trinidad e Tobago",
+    "uk": "долар Тринідаду і Тобаго"
+   },
+   "numeric": "780",
+   "symbol": "$",
+   "used_in": [
+    "TRINIDAD AND TOBAGO"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "TWD",
+   "minor_units": 2,
+   "names": {
+    "en": "New Taiwan Dollar",
+    "es": "nuevo dólar taiwanés",
+    "fr": "nouveau dollar taïwanais",
+    "pt": "Novo dólar taiwanês",
+    "uk": "новий тайванський долар"
+   },
+   "numeric": "901",
+   "symbol": "NT$",
+   "used_in": [
+    "TAIWAN (PROVINCE OF CHINA)"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "TZS",
+   "minor_units": 2,
+   "names": {
+    "en": "Tanzanian Shilling",
+    "es": "chelín tanzano",
+    "fr": "shilling tanzanien",
+    "pt": "Xelim tanzaniano",
+    "uk": "танзанійський шилінг"
+   },
+   "numeric": "834",
+   "symbol": null,
+   "used_in": [
+    "TANZANIA, UNITED REPUBLIC OF"
+   ]
+  },
+  {
+   "alt_names": [
+    "Hryvnia"
+   ],
+   "code": "UAH",
+   "minor_units": 2,
+   "names": {
+    "en": "Ukrainian Hryvnia",
+    "es": "grivna ucraniana",
+    "fr": "hryvnia ukrainienne",
+    "pt": "Hryvnia ucraniano",
+    "uk": "українська гривня"
+   },
+   "numeric": "980",
+   "symbol": "₴",
+   "used_in": [
+    "UKRAINE"
+   ]
+  },
+  {
+   "alt_names": [
+    "Uganda Shilling"
+   ],
+   "code": "UGX",
+   "minor_units": 0,
+   "names": {
+    "en": "Ugandan Shilling",
+    "es": "chelín ugandés",
+    "fr": "shilling ougandais",
+    "pt": "Xelim ugandense",
+    "uk": "угандійський шилінг"
+   },
+   "numeric": "800",
+   "symbol": null,
+   "used_in": [
+    "UGANDA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "USD",
+   "minor_units": 2,
+   "names": {
+    "en": "US Dollar",
+    "es": "dólar estadounidense",
+    "fr": "dollar des États-Unis",
+    "pt": "Dólar americano",
+    "uk": "долар США"
+   },
+   "numeric": "840",
+   "symbol": "$",
+   "used_in": [
+    "AMERICAN SAMOA",
+    "BONAIRE, SINT EUSTATIUS AND SABA",
+    "BRITISH INDIAN OCEAN TERRITORY (THE)",
+    "ECUADOR",
+    "EL SALVADOR",
+    "GUAM",
+    "HAITI",
+    "MARSHALL ISLANDS (THE)",
+    "MICRONESIA (FEDERATED STATES OF)",
+    "NORTHERN MARIANA ISLANDS (THE)",
+    "PALAU",
+    "PANAMA",
+    "PUERTO RICO",
+    "TIMOR-LESTE",
+    "TURKS AND CAICOS ISLANDS (THE)",
+    "UNITED STATES MINOR OUTLYING ISLANDS (THE)",
+    "UNITED STATES OF AMERICA (THE)",
+    "VIRGIN ISLANDS (BRITISH)",
+    "VIRGIN ISLANDS (U.S.)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Peso Uruguayo"
+   ],
+   "code": "UYU",
+   "minor_units": 2,
+   "names": {
+    "en": "Uruguayan Peso",
+    "es": "peso uruguayo",
+    "fr": "peso uruguayen",
+    "pt": "Peso uruguaio",
+    "uk": "уругвайський песо"
+   },
+   "numeric": "858",
+   "symbol": "$",
+   "used_in": [
+    "URUGUAY"
+   ]
+  },
+  {
+   "alt_names": [
+    "Uzbekistan Sum"
+   ],
+   "code": "UZS",
+   "minor_units": 2,
+   "names": {
+    "en": "Uzbekistani Som",
+    "es": "sum uzbeko",
+    "fr": "sum ouzbek",
+    "pt": "Som uzbeque",
+    "uk": "узбецький сум"
+   },
+   "numeric": "860",
+   "symbol": null,
+   "used_in": [
+    "UZBEKISTAN"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "VED",
+   "minor_units": 2,
+   "names": {
+    "en": "Bolívar Soberano",
+    "es": "Bolívar Soberano",
+    "fr": "Bolívar Soberano",
+    "pt": "Bolívar Soberano",
+    "uk": "Bolívar Soberano"
+   },
+   "numeric": "926",
+   "symbol": null,
+   "used_in": [
+    "VENEZUELA (BOLIVARIAN REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Bolívar Soberano"
+   ],
+   "code": "VES",
+   "minor_units": 2,
+   "names": {
+    "en": "Venezuelan Bolívar",
+    "es": "bolívar venezolano",
+    "fr": "bolivar vénézuélien",
+    "pt": "Bolívar venezuelano",
+    "uk": "венесуельський болівар"
+   },
+   "numeric": "928",
+   "symbol": null,
+   "used_in": [
+    "VENEZUELA (BOLIVARIAN REPUBLIC OF)"
+   ]
+  },
+  {
+   "alt_names": [
+    "Dong"
+   ],
+   "code": "VND",
+   "minor_units": 0,
+   "names": {
+    "en": "Vietnamese Dong",
+    "es": "dong vietnamita",
+    "fr": "dông vietnamien",
+    "pt": "Dong vietnamita",
+    "uk": "вʼєтнамський донг"
+   },
+   "numeric": "704",
+   "symbol": "₫",
+   "used_in": [
+    "VIET NAM"
+   ]
+  },
+  {
+   "alt_names": [
+    "Vatu"
+   ],
+   "code": "VUV",
+   "minor_units": 0,
+   "names": {
+    "en": "Vanuatu Vatu",
+    "es": "vatu vanuatense",
+    "fr": "vatu vanuatuan",
+    "pt": "Vatu de Vanuatu",
+    "uk": "вануатський вату"
+   },
+   "numeric": "548",
+   "symbol": null,
+   "used_in": [
+    "VANUATU"
+   ]
+  },
+  {
+   "alt_names": [
+    "Tala"
+   ],
+   "code": "WST",
+   "minor_units": 2,
+   "names": {
+    "en": "Samoan Tala",
+    "es": "tala samoano",
+    "fr": "tala samoan",
+    "pt": "Tala samoano",
+    "uk": "самоанська тала"
+   },
+   "numeric": "882",
+   "symbol": null,
+   "used_in": [
+    "SAMOA"
+   ]
+  },
+  {
+   "alt_names": [
+    "CFA Franc BEAC"
+   ],
+   "code": "XAF",
+   "minor_units": 0,
+   "names": {
+    "en": "Central African CFA Franc",
+    "es": "franco CFA de África Central",
+    "fr": "franc CFA (BEAC)",
+    "pt": "Franco CFA de BEAC",
+    "uk": "центральноафриканський франк"
+   },
+   "numeric": "950",
+   "symbol": "FCFA",
+   "used_in": [
+    "CAMEROON",
+    "CENTRAL AFRICAN REPUBLIC (THE)",
+    "CHAD",
+    "CONGO (THE)",
+    "EQUATORIAL GUINEA",
+    "GABON"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "XCD",
+   "minor_units": 2,
+   "names": {
+    "en": "East Caribbean Dollar",
+    "es": "dólar del Caribe Oriental",
+    "fr": "dollar des Caraïbes orientales",
+    "pt": "Dólar do Caribe Oriental",
+    "uk": "східнокарибський долар"
+   },
+   "numeric": "951",
+   "symbol": "EC$",
+   "used_in": [
+    "ANGUILLA",
+    "ANTIGUA AND BARBUDA",
+    "DOMINICA",
+    "GRENADA",
+    "MONTSERRAT",
+    "SAINT KITTS AND NEVIS",
+    "SAINT LUCIA",
+    "SAINT VINCENT AND THE GRENADINES"
+   ]
+  },
+  {
+   "alt_names": [
+    "Caribbean Guilder"
+   ],
+   "code": "XCG",
+   "minor_units": 2,
+   "names": {
+    "en": "Caribbean guilder",
+    "es": "florín caribeño",
+    "fr": "florin caribéen",
+    "pt": "Florim do Caribe",
+    "uk": "карибський гульден"
+   },
+   "numeric": "532",
+   "symbol": "Cg.",
+   "used_in": [
+    "CURAÇAO",
+    "SINT MAARTEN (DUTCH PART)"
+   ]
+  },
+  {
+   "alt_names": [
+    "CFA Franc BCEAO"
+   ],
+   "code": "XOF",
+   "minor_units": 0,
+   "names": {
+    "en": "West African CFA Franc",
+    "es": "franco CFA de África Occidental",
+    "fr": "franc CFA (BCEAO)",
+    "pt": "Franco CFA de BCEAO",
+    "uk": "західноафриканський франк"
+   },
+   "numeric": "952",
+   "symbol": "F CFA",
+   "used_in": [
+    "BENIN",
+    "BURKINA FASO",
+    "CÔTE D'IVOIRE",
+    "GUINEA-BISSAU",
+    "MALI",
+    "NIGER (THE)",
+    "SENEGAL",
+    "TOGO"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "XPF",
+   "minor_units": 0,
+   "names": {
+    "en": "CFP Franc",
+    "es": "franco CFP",
+    "fr": "franc CFP",
+    "pt": "Franco CFP",
+    "uk": "французький тихоокеанський франк"
+   },
+   "numeric": "953",
+   "symbol": "CFPF",
+   "used_in": [
+    "FRENCH POLYNESIA",
+    "NEW CALEDONIA",
+    "WALLIS AND FUTUNA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "YER",
+   "minor_units": 2,
+   "names": {
+    "en": "Yemeni Rial",
+    "es": "rial yemení",
+    "fr": "riyal yéménite",
+    "pt": "Rial iemenita",
+    "uk": "єменський ріал"
+   },
+   "numeric": "886",
+   "symbol": null,
+   "used_in": [
+    "YEMEN"
+   ]
+  },
+  {
+   "alt_names": [
+    "Rand"
+   ],
+   "code": "ZAR",
+   "minor_units": 2,
+   "names": {
+    "en": "South African Rand",
+    "es": "rand sudafricano",
+    "fr": "rand sud-africain",
+    "pt": "Rand sul-africano",
+    "uk": "південноафриканський ранд"
+   },
+   "numeric": "710",
+   "symbol": "R",
+   "used_in": [
+    "LESOTHO",
+    "NAMIBIA",
+    "SOUTH AFRICA"
+   ]
+  },
+  {
+   "alt_names": [],
+   "code": "ZMW",
+   "minor_units": 2,
+   "names": {
+    "en": "Zambian Kwacha",
+    "es": "kuacha zambiano",
+    "fr": "kwacha zambien",
+    "pt": "Kwacha zambiano",
+    "uk": "замбійська квача"
+   },
+   "numeric": "967",
+   "symbol": "ZK",
+   "used_in": [
+    "ZAMBIA"
+   ]
+  },
+  {
+   "alt_names": [
+    "Zimbabwe Gold"
+   ],
+   "code": "ZWG",
+   "minor_units": 2,
+   "names": {
+    "en": "Zimbabwean Gold",
+    "es": "oro zimbabuense",
+    "fr": "or du Zimbabwe",
+    "pt": "Ouro zimbabueano",
+    "uk": "зімбабвійський золотий"
+   },
+   "numeric": "924",
+   "symbol": null,
+   "used_in": [
+    "ZIMBABWE"
+   ]
+  }
+ ]
+}

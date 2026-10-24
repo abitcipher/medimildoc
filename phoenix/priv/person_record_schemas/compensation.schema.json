@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel_private",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Pay",
+  "x-icon": "hero-banknotes",
+  "x-summary": "A salary or allowance amount and when it took effect.",
+  "title": "Compensation",
+  "description": "A pay/compensation change — payment-change angle, split out of the generic :status_change escape hatch into a first-class kind (same rationale as :family_status). Not FHIR-modeled (pay isn't a clinical concept HL7 FHIR covers) — plain structured fields instead.",
+  "type": "object",
+  "required": ["amount", "currency", "effectiveDate", "reason"],
+  "properties": {
+    "amount": { "type": "number" },
+    "currency": {
+      "x-reference": "currency",
+      "type": "string",
+      "description": "ISO 4217 code picked from IHDS (x-reference); the schema checks only its shape.",
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "effectiveDate": { "type": "string", "format": "date" },
+    "reason": {
+      "x-enum-labels": {"cola_adjustment": "Cost-of-living adjustment"},
+      "type": "string",
+      "enum": ["base_pay", "promotion", "cola_adjustment", "bonus", "allowance", "other"]
+    },
+    "previousAmount": { "type": "number" },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

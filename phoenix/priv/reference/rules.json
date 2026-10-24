@@ -1,0 +1,278 @@
+{
+  "expected": [
+    {
+      "code": "assignment_overlap",
+      "person": "marie.laurent.9@demo.test",
+      "rule": "assignments_no_overlap",
+      "subject": "assignment"
+    },
+    {
+      "code": "assignment_overlap",
+      "person": "marie.laurent.9@demo.test",
+      "rule": "assignments_no_overlap",
+      "subject": "assignment"
+    },
+    {
+      "code": "assignment_overlap",
+      "person": "nataliia.savchenko.90@demo.test",
+      "rule": "assignments_no_overlap",
+      "subject": "assignment"
+    },
+    {
+      "code": "assignment_overlap",
+      "person": "nataliia.savchenko.90@demo.test",
+      "rule": "assignments_no_overlap",
+      "subject": "assignment"
+    },
+    {
+      "code": "diagnosis_in_restrictions",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "no_diagnosis_in_restrictions",
+      "subject": "record:fitness_for_duty"
+    },
+    {
+      "code": "fitness_without_conclusion",
+      "person": "iryna.hrytsenko.58@demo.test",
+      "rule": "fitness_from_signed_conclusion",
+      "subject": "record:fitness_for_duty"
+    },
+    {
+      "code": "fitness_without_conclusion",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "fitness_from_signed_conclusion",
+      "subject": "record:fitness_for_duty"
+    },
+    {
+      "code": "fitness_without_conclusion",
+      "person": "tetiana.moroz.3@demo.test",
+      "rule": "fitness_from_signed_conclusion",
+      "subject": "record:fitness_for_duty"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "andrii.savchenko.97@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "antoine.garnier.111@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "ivan.marchenko.7@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:encounter"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "ivan.marchenko.7@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "ivan.marchenko.7@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "ivan.marchenko.7@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "linda.wilson.85@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:encounter"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "linda.wilson.85@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "linda.wilson.85@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "linda.wilson.85@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "marie.laurent.9@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "mariia.bondarenko.101@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:encounter"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "mariia.bondarenko.101@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "mariia.bondarenko.101@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "sarah.brown.75@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:encounter"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "sarah.brown.75@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "sarah.brown.75@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "sarah.brown.75@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "tetiana.melnyk.89@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "document:medical_board_conclusion"
+    },
+    {
+      "code": "identity_after_examination",
+      "person": "tetiana.melnyk.89@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_missing",
+      "person": "hannah.wilson.92@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_missing",
+      "person": "jean.martin.16@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_missing",
+      "person": "laura.johnson.38@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "document:medical_board_conclusion"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:encounter"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:medical_condition"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "identity_missing",
+      "person": "nicolas.dubois.124@demo.test",
+      "rule": "identity_before_examination",
+      "subject": "record:vital_signs"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "chloe.moreau.109@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "chloe.moreau.109@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "robert.clark.65@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "robert.clark.65@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "vasyl.melnyk.47@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_over_balance",
+      "person": "vasyl.melnyk.47@demo.test",
+      "rule": "leave_within_balance",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_overlap",
+      "person": "jean.martin.16@demo.test",
+      "rule": "leave_no_overlap",
+      "subject": "record:leave"
+    },
+    {
+      "code": "leave_overlap",
+      "person": "jean.martin.16@demo.test",
+      "rule": "leave_no_overlap",
+      "subject": "record:leave"
+    }
+  ],
+  "invalid": 45,
+  "items": 1956,
+  "people": 150,
+  "seed": 1
+}

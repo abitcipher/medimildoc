@@ -1,0 +1,132 @@
+{
+  "id": "leave_request",
+  "version": "1",
+  "label": "Leave request",
+  "icon": "hero-sun",
+  "summary": "The person asks for leave; the commander approves, HR accepts and drafts the order.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "orders.sign"
+    ],
+    "write": "people.write",
+    "self": true
+  },
+  "register": {
+    "code": "рап",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 5,
+  "template": "leave_request.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Commander",
+      "permission": "orders.sign"
+    },
+    {
+      "action": "sign",
+      "label": "HR",
+      "permission": "people.write"
+    }
+  ],
+  "effects": [
+    "leave_order_draft"
+  ],
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "leaveType",
+      "startDate",
+      "endDate"
+    ],
+    "properties": {
+      "leaveType": {
+        "type": "string",
+        "enum": [
+          "annual",
+          "family",
+          "study",
+          "sick",
+          "unpaid"
+        ],
+        "x-enum-labels": {
+          "annual": "Annual leave",
+          "family": "Family circumstances",
+          "study": "Study leave",
+          "sick": "Sick leave",
+          "unpaid": "Unpaid leave"
+        }
+      },
+      "startDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "endDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "destination": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "Where the person will be, e.g. a town and region."
+      },
+      "reason": {
+        "type": "string",
+        "maxLength": 1000
+      },
+      "contact": {
+        "type": "string",
+        "maxLength": 100,
+        "x-help": "A phone number during the leave."
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/leaveType",
+        "label": "Type of leave"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/startDate",
+            "label": "First day"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/endDate",
+            "label": "Last day"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/destination",
+        "label": "Destination"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/contact",
+        "label": "Contact during leave"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/reason",
+        "label": "Reason",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstructionDone",
+  "type": "object",
+  "properties": {
+    "done_note": {
+      "type": "string",
+      "maxLength": 2000,
+      "x-help": "What was done; leave empty if a reply letter says it."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/maritalStatus", "label": "Marital status" },
+    { "type": "Control", "scope": "#/properties/spouseName", "label": "Spouse name" },
+    { "type": "Control", "scope": "#/properties/dependentsCount", "label": "Dependents" },
+    {
+      "type": "Control",
+      "scope": "#/properties/emergencyContactName",
+      "label": "Emergency contact name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/emergencyContactRelationship",
+      "label": "Relationship"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/emergencyContactPhone",
+      "label": "Emergency contact phone"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PersonIdentifier",
+  "type": "object",
+  "required": ["id_type", "value"],
+  "properties": {
+    "id_type": {
+      "x-enum-labels": {"passport": "Passport number", "inn": "INN (tax number)", "rnokpp": "RNOKPP (Ukrainian tax number)", "unzr": "UNZR (Ukrainian register number)", "pesel": "PESEL (Poland)", "nip": "NIP (Polish tax number)", "id_nr": "Identification number (Germany)", "steuer_id": "Steuer-ID (German tax number)", "nino": "National Insurance number (UK)", "nie": "NIE (Spain, foreign nationals)", "nif": "NIF (tax number, Spain/Portugal)", "codice_fiscale": "Codice fiscale (Italy)", "ssn": "Social Security number (USA)", "sin": "Social Insurance number (Canada)", "other": "Other"},
+      "type": "string",
+      "enum": [
+        "passport",
+        "inn",
+        "rnokpp",
+        "unzr",
+        "pesel",
+        "nip",
+        "id_nr",
+        "steuer_id",
+        "nino",
+        "nie",
+        "nif",
+        "codice_fiscale",
+        "ssn",
+        "sin",
+        "other"
+      ]
+    },
+    "other_type_label": { "type": "string", "maxLength": 100 },
+    "country": { "type": "string", "maxLength": 2, "x-reference": "country" },
+    "value": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "is_current": { "type": "boolean" },
+    "issuing_authority": { "x-suggest": "issuing_authority", "type": "string", "maxLength": 255 },
+    "issued_on": { "type": "string", "format": "date" },
+    "expires_on": { "type": "string", "format": "date" },
+    "note": { "type": "string", "maxLength": 1000 }
+  }
+}

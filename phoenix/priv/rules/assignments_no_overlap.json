@@ -1,0 +1,77 @@
+{
+  "key": "assignments_no_overlap",
+  "version": 1,
+  "label": "Assignments of a person do not overlap",
+  "description": "A person holds one post at a time: the period of an assignment overlaps no other assignment of the person. Moving to another post is a transfer, which ends the old assignment the day before.",
+  "severity": "flag",
+  "points": [
+    "assignment.save"
+  ],
+  "subjects": [
+    "assignment"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "No overlap",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "assignment.overlaps == 0"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(assignment.overlaps == 0) ? null : 'assignment_overlap'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(assignment.overlaps == 0) ? null : 'The assignment overlaps another assignment of this person.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

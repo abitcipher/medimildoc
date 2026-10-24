@@ -1,0 +1,68 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/medication/properties/text",
+      "label": "Drug"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dose/properties/value",
+      "label": "Dose"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dose/properties/unit",
+      "label": "Unit"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/route",
+      "label": "Route"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/frequency",
+      "label": "How often"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dosageText",
+      "label": "Instructions"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/adherence",
+      "label": "Taking"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/effectiveStart",
+      "label": "Since"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/effectiveEnd",
+      "label": "Until"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/reason",
+      "label": "Reason"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/informationSource",
+      "label": "Source"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": {
+        "multi": true
+      }
+    }
+  ]
+}

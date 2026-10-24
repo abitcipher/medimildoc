@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "id": "tasks",
+      "label": "Tasks",
+      "icon": "hero-inbox",
+      "path": "/tasks",
+      "permission": null,
+      "description": "Documents waiting for you: to approve, sign or complete."
+    },
+    {
+      "id": "my_data",
+      "label": "My data",
+      "icon": "hero-user-circle",
+      "path": "/me",
+      "permission": null,
+      "description": "What the system holds about you, to read and download."
+    },
+    {
+      "id": "people",
+      "label": "People",
+      "icon": "hero-users",
+      "path": "/people",
+      "permission": "people.read",
+      "description": "Personnel files: identity, assignments and records."
+    },
+    {
+      "id": "organizations",
+      "label": "Organizations",
+      "icon": "hero-building-office",
+      "path": "/organizations",
+      "permission": "people.read",
+      "description": "Units and their hierarchy."
+    },
+    {
+      "id": "org_graph",
+      "label": "Org graph",
+      "icon": "hero-share",
+      "path": "/org-graph",
+      "permission": [
+        "people.read"
+      ],
+      "description": "The structure as a graph: units, posts, people, reporting lines, deputies, care providers and places."
+    },
+    {
+      "id": "positions",
+      "label": "Positions",
+      "icon": "hero-briefcase",
+      "path": "/positions",
+      "permission": "people.read",
+      "description": "Posts, their grades and who fills them."
+    },
+    {
+      "id": "care_providers",
+      "label": "Care providers",
+      "icon": "hero-building-library",
+      "path": "/care-providers",
+      "permission": "people.read",
+      "description": "Organizations providing medical care; our own units first."
+    },
+    {
+      "id": "import_export",
+      "label": "Import / export",
+      "icon": "hero-arrows-up-down",
+      "path": "/import-export",
+      "permission": "people.write",
+      "description": "Assignments as a spreadsheet, offline or in Google Sheets."
+    },
+    {
+      "id": "acknowledgements",
+      "label": "Acknowledgements",
+      "icon": "hero-check-badge",
+      "path": "/acknowledgements",
+      "permission": [
+        "people.write",
+        "orders.sign",
+        "medical.write"
+      ],
+      "description": "Signed orders still to be acknowledged; record them in bulk."
+    },
+    {
+      "id": "leave_calendar",
+      "label": "Leave calendar",
+      "icon": "hero-calendar-days",
+      "path": "/leave-calendar",
+      "permission": [
+        "people.write",
+        "orders.sign",
+        "readiness.read"
+      ],
+      "description": "Who of a unit is away when; days with too many away."
+    },
+    {
+      "id": "duty_roster",
+      "label": "Duty roster",
+      "icon": "hero-shield-check",
+      "path": "/duty-roster",
+      "permission": [
+        "people.write",
+        "orders.sign",
+        "readiness.read"
+      ],
+      "description": "Who of a unit is on which duty which day; duties while away, without rest, days short of people."
+    },
+    {
+      "id": "registers",
+      "label": "Registers",
+      "icon": "hero-book-open",
+      "path": "/registers",
+      "permission": [
+        "records.manage",
+        "people.write"
+      ],
+      "description": "Signed documents by register and year, with their numbers and cases."
+    },
+    {
+      "id": "file_plan",
+      "label": "File plan",
+      "icon": "hero-archive-box",
+      "path": "/file-plan",
+      "permission": [
+        "records.manage",
+        "people.write"
+      ],
+      "description": "Cases for each year: index, retention period, the documents filed into them."
+    },
+    {
+      "id": "admin",
+      "label": "Admin",
+      "icon": "hero-cog-6-tooth",
+      "permission": null,
+      "children": [
+        {
+          "id": "users",
+          "label": "Users",
+          "icon": "hero-user-group",
+          "path": "/users",
+          "permission": "users.manage",
+          "description": "Who can sign in, and what each person may see and change."
+        },
+        {
+          "id": "change_conflicts",
+          "label": "Change conflicts",
+          "icon": "hero-exclamation-triangle",
+          "path": "/change-conflicts",
+          "permission": "audit.read",
+          "description": "Edits that overwrote someone else's newer change."
+        },
+        {
+          "id": "access_log",
+          "label": "Access log",
+          "icon": "hero-eye",
+          "path": "/access-log",
+          "permission": "audit.read",
+          "description": "Who opened sensitive records, and when."
+        },
+        {
+          "id": "event_log",
+          "label": "Event log",
+          "icon": "hero-queue-list",
+          "path": "/events",
+          "permission": "audit.read",
+          "description": "Sign-ins and other system events; publishing them to subscribers."
+        },
+        {
+          "id": "incidents",
+          "label": "Incidents",
+          "icon": "hero-shield-exclamation",
+          "path": "/incidents",
+          "permission": "audit.read",
+          "description": "Data that broke a consistency rule, to review."
+        },
+        {
+          "id": "rules",
+          "label": "Rules",
+          "icon": "hero-adjustments-horizontal",
+          "path": "/rules",
+          "permission": "rules.manage",
+          "description": "Data consistency rules: what is checked, where, and how strictly."
+        },
+        {
+          "id": "settings",
+          "label": "Settings",
+          "icon": "hero-wrench-screwdriver",
+          "path": "/settings",
+          "permission": "settings.manage",
+          "description": "System settings."
+        },
+        {
+          "id": "sidebar_layout",
+          "label": "Sidebar layout",
+          "icon": "hero-view-columns",
+          "path": "/sidebar-layout",
+          "permission": "settings.manage",
+          "description": "What the Google Sheets sidebar shows to each role."
+        }
+      ]
+    }
+  ]
+}

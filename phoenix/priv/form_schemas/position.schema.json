@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Position",
+  "type": "object",
+  "required": ["title", "organization_id"],
+  "properties": {
+    "title": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "organization_id": {
+      "type": "string",
+      "description": "Options supplied at render time (existing organizations) — see field_options in AppWeb.Components.JsonSchemaForm."
+    },
+    "reports_to_id": {
+      "type": "string",
+      "description": "Options supplied at render time (existing positions); optional."
+    },
+    "strength": {
+      "type": "integer",
+      "minimum": 1,
+      "x-help": "How many people this post is for. Identical posts are one post with a strength.",
+      "description": "Authorised strength (App.People.Position.strength)."
+    },
+    "authorised_grade": {
+      "type": "string",
+      "pattern": "^(OF|OR)-?[0-9]{1,2}$|^OF\\(D\\)$",
+      "description": "The billet's established grade (e.g. OF-3, OR-6) — illustrative APERSP-01 shape, not verified. Optional; separate from any incumbent's actual rank (App.People.PersonRecordSchema's :rank_history)."
+    }
+  }
+}

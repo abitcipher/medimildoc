@@ -1,0 +1,194 @@
+{
+  "permissions": {
+    "people.read": "People, units, positions, ordinary personnel records",
+    "people.write": "People, units, positions, assignments",
+    "people.private.read": "National IDs, identity documents, biometrics",
+    "people.private.write": "National IDs, identity documents, biometrics",
+    "people.hr_private.read": "Pay, family status, dependants",
+    "people.hr_private.write": "Pay, family status, dependants",
+    "readiness.read": "Fitness for duty",
+    "readiness.write": "Fitness for duty",
+    "care.read": "Point of care: allergies, encounters, vital signs",
+    "care.write": "Point of care: allergies, encounters, vital signs",
+    "clearance.read": "Security clearance status",
+    "clearance.write": "Security clearance status",
+    "medical.read": "Clinical history (conditions, diagnoses)",
+    "medical.write": "Clinical history (conditions, diagnoses)",
+    "vetting.read": "Vetting records",
+    "vetting.write": "Vetting records",
+    "audit.read": "Access log, change conflicts",
+    "users.manage": "Users and their access",
+    "btg.invoke": "Emergency access to allergies outside the unit",
+    "orders.sign": "Sign personnel orders",
+    "settings.manage": "System settings",
+    "rules.manage": "Data consistency rules",
+    "providers.manage": "Register of medical care providers",
+    "medical.sign": "Sign discharge summaries (head of department)",
+    "records.manage": "Registers and the file plan (номенклатура справ)"
+  },
+  "roles": {
+    "person": [],
+    "viewer": [
+      "people.read"
+    ],
+    "hr": [
+      "people.read",
+      "people.write",
+      "people.private.read",
+      "people.private.write",
+      "people.hr_private.read",
+      "people.hr_private.write",
+      "readiness.read",
+      "clearance.read"
+    ],
+    "admin": [
+      "users.manage",
+      "people.read",
+      "people.write",
+      "settings.manage",
+      "rules.manage",
+      "providers.manage",
+      "records.manage"
+    ]
+  },
+  "profiles": {
+    "registrar": {
+      "label": "Registrar",
+      "scope": "global",
+      "permissions": [
+        "people.read",
+        "people.write",
+        "people.private.read",
+        "people.private.write",
+        "providers.manage"
+      ],
+      "sensitive": false
+    },
+    "line_commander": {
+      "label": "Line commander",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "readiness.read"
+      ],
+      "sensitive": false
+    },
+    "commander": {
+      "label": "Commander",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "readiness.read",
+        "orders.sign"
+      ],
+      "sensitive": false
+    },
+    "clinician": {
+      "label": "Clinician",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "people.private.read",
+        "care.read",
+        "care.write",
+        "medical.read",
+        "medical.write",
+        "readiness.read",
+        "readiness.write",
+        "btg.invoke"
+      ],
+      "sensitive": true
+    },
+    "command_surgeon": {
+      "label": "Command surgeon",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "care.read",
+        "medical.read",
+        "readiness.read",
+        "readiness.write",
+        "btg.invoke"
+      ],
+      "sensitive": true
+    },
+    "nurse": {
+      "label": "Nurse",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "care.read",
+        "care.write",
+        "medical.read",
+        "readiness.read"
+      ],
+      "sensitive": true
+    },
+    "combat_medic": {
+      "label": "Combat medic",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "care.read",
+        "care.write"
+      ],
+      "sensitive": true
+    },
+    "security_officer": {
+      "label": "Security officer",
+      "scope": "global",
+      "permissions": [
+        "people.read",
+        "clearance.read",
+        "clearance.write",
+        "vetting.read",
+        "vetting.write"
+      ],
+      "sensitive": true
+    },
+    "ciso": {
+      "label": "CISO",
+      "scope": "global",
+      "permissions": [
+        "people.read",
+        "audit.read",
+        "rules.manage"
+      ],
+      "sensitive": true
+    },
+    "head_of_department": {
+      "label": "Head of department",
+      "scope": "unit",
+      "permissions": [
+        "people.read",
+        "care.read",
+        "medical.read",
+        "medical.write",
+        "medical.sign",
+        "readiness.read"
+      ],
+      "sensitive": true
+    },
+    "health_data_reader": {
+      "label": "Health data reader (integrations)",
+      "scope": "global",
+      "permissions": [
+        "people.read",
+        "people.private.read",
+        "care.read",
+        "medical.read",
+        "readiness.read"
+      ],
+      "sensitive": true
+    },
+    "records_officer": {
+      "label": "Records officer",
+      "scope": "global",
+      "permissions": [
+        "people.read",
+        "records.manage"
+      ],
+      "sensitive": false
+    }
+  }
+}

@@ -1,0 +1,2101 @@
+{
+ "description": "Common field, emergency and long-term drugs by International Nonproprietary Name (WHO INN; English, Ukrainian and French names), for choosing a drug in medication records and matching recorded allergies (App.Clinical.Drugs, docs/design/clinical-medications.md). Not a formulary: no doses, no indications. `classes` are drug classes used only to match allergy text; `routes` are the usual routes offered first; `unit` is the usual dose unit. `class_parents`: a class within a wider one (a penicillin is a beta-lactam).",
+ "version": "2",
+ "classes": {
+  "penicillin": {
+   "en": [
+    "penicillin"
+   ],
+   "uk": [
+    "пеніцилін"
+   ],
+   "fr": [
+    "pénicilline"
+   ]
+  },
+  "beta_lactam": {
+   "en": [
+    "beta-lactam",
+    "β-lactam"
+   ],
+   "uk": [
+    "бета-лактам"
+   ],
+   "fr": [
+    "bêta-lactamine"
+   ]
+  },
+  "cephalosporin": {
+   "en": [
+    "cephalosporin"
+   ],
+   "uk": [
+    "цефалоспорин"
+   ],
+   "fr": [
+    "céphalosporine"
+   ]
+  },
+  "carbapenem": {
+   "en": [
+    "carbapenem"
+   ],
+   "uk": [
+    "карбапенем"
+   ],
+   "fr": [
+    "carbapénème"
+   ]
+  },
+  "fluoroquinolone": {
+   "en": [
+    "fluoroquinolone",
+    "quinolone"
+   ],
+   "uk": [
+    "фторхінолон",
+    "хінолон"
+   ],
+   "fr": [
+    "fluoroquinolone",
+    "quinolone"
+   ]
+  },
+  "macrolide": {
+   "en": [
+    "macrolide"
+   ],
+   "uk": [
+    "макролід"
+   ],
+   "fr": [
+    "macrolide"
+   ]
+  },
+  "tetracycline": {
+   "en": [
+    "tetracycline"
+   ],
+   "uk": [
+    "тетрациклін"
+   ],
+   "fr": [
+    "tétracycline"
+   ]
+  },
+  "aminoglycoside": {
+   "en": [
+    "aminoglycoside"
+   ],
+   "uk": [
+    "аміноглікозид"
+   ],
+   "fr": [
+    "aminoside",
+    "aminoglycoside"
+   ]
+  },
+  "lincosamide": {
+   "en": [
+    "lincosamide"
+   ],
+   "uk": [
+    "лінкозамід"
+   ],
+   "fr": [
+    "lincosamide"
+   ]
+  },
+  "nitroimidazole": {
+   "en": [
+    "nitroimidazole"
+   ],
+   "uk": [
+    "нітроімідазол"
+   ],
+   "fr": [
+    "nitroimidazole"
+   ]
+  },
+  "glycopeptide": {
+   "en": [
+    "glycopeptide"
+   ],
+   "uk": [
+    "глікопептид"
+   ],
+   "fr": [
+    "glycopeptide"
+   ]
+  },
+  "nsaid": {
+   "en": [
+    "nsaid",
+    "nsaids",
+    "non-steroidal"
+   ],
+   "uk": [
+    "нпзз",
+    "нестероїдн"
+   ],
+   "fr": [
+    "ains",
+    "anti-inflammatoire non stéroïdien"
+   ]
+  },
+  "salicylate": {
+   "en": [
+    "salicylate",
+    "aspirin"
+   ],
+   "uk": [
+    "саліцилат",
+    "аспірин"
+   ],
+   "fr": [
+    "salicylé",
+    "aspirine"
+   ]
+  },
+  "opioid": {
+   "en": [
+    "opioid",
+    "opiate"
+   ],
+   "uk": [
+    "опіоїд",
+    "опіат"
+   ],
+   "fr": [
+    "opioïde",
+    "opiacé"
+   ]
+  },
+  "benzodiazepine": {
+   "en": [
+    "benzodiazepine"
+   ],
+   "uk": [
+    "бензодіазепін"
+   ],
+   "fr": [
+    "benzodiazépine"
+   ]
+  },
+  "corticosteroid": {
+   "en": [
+    "corticosteroid",
+    "steroid"
+   ],
+   "uk": [
+    "кортикостероїд",
+    "глюкокортикоїд"
+   ],
+   "fr": [
+    "corticoïde",
+    "corticostéroïde"
+   ]
+  },
+  "heparin": {
+   "en": [
+    "heparin"
+   ],
+   "uk": [
+    "гепарин"
+   ],
+   "fr": [
+    "héparine"
+   ]
+  },
+  "local_anaesthetic": {
+   "en": [
+    "local anaesthetic",
+    "local anesthetic"
+   ],
+   "uk": [
+    "місцевий анестетик"
+   ],
+   "fr": [
+    "anesthésique local"
+   ]
+  },
+  "iodine": {
+   "en": [
+    "iodine"
+   ],
+   "uk": [
+    "йод"
+   ],
+   "fr": [
+    "iode"
+   ]
+  },
+  "blood_product": {
+   "en": [
+    "blood product",
+    "transfusion"
+   ],
+   "uk": [
+    "препарати крові",
+    "трансфузі"
+   ],
+   "fr": [
+    "produit sanguin",
+    "transfusion"
+   ]
+  },
+  "calcium_channel_blocker": {
+   "en": [
+    "calcium channel blocker",
+    "calcium antagonist"
+   ],
+   "uk": [
+    "блокатор кальцієвих каналів",
+    "антагоніст кальцію"
+   ],
+   "fr": [
+    "inhibiteur calcique"
+   ]
+  },
+  "ace_inhibitor": {
+   "en": [
+    "ace inhibitor",
+    "ace-inhibitor"
+   ],
+   "uk": [
+    "інгібітор апф",
+    "іапф"
+   ],
+   "fr": [
+    "ieca",
+    "inhibiteur de l’enzyme de conversion"
+   ]
+  },
+  "arb": {
+   "en": [
+    "angiotensin receptor blocker",
+    "sartan"
+   ],
+   "uk": [
+    "сартан",
+    "блокатор рецепторів ангіотензину"
+   ],
+   "fr": [
+    "sartan",
+    "antagoniste des récepteurs de l’angiotensine"
+   ]
+  },
+  "beta_blocker": {
+   "en": [
+    "beta blocker",
+    "beta-blocker",
+    "β-blocker"
+   ],
+   "uk": [
+    "бета-блокатор",
+    "бета-адреноблокатор"
+   ],
+   "fr": [
+    "bêtabloquant",
+    "bêta-bloquant"
+   ]
+  },
+  "thiazide": {
+   "en": [
+    "thiazide"
+   ],
+   "uk": [
+    "тіазид"
+   ],
+   "fr": [
+    "thiazidique",
+    "thiazide"
+   ]
+  },
+  "statin": {
+   "en": [
+    "statin"
+   ],
+   "uk": [
+    "статин"
+   ],
+   "fr": [
+    "statine"
+   ]
+  },
+  "biguanide": {
+   "en": [
+    "biguanide"
+   ],
+   "uk": [
+    "бігуанід"
+   ],
+   "fr": [
+    "biguanide"
+   ]
+  },
+  "insulin": {
+   "en": [
+    "insulin"
+   ],
+   "uk": [
+    "інсулін"
+   ],
+   "fr": [
+    "insuline"
+   ]
+  },
+  "ppi": {
+   "en": [
+    "proton pump inhibitor",
+    "ppi"
+   ],
+   "uk": [
+    "інгібітор протонної помпи",
+    "іпп"
+   ],
+   "fr": [
+    "inhibiteur de la pompe à protons",
+    "ipp"
+   ]
+  },
+  "ssri": {
+   "en": [
+    "ssri",
+    "selective serotonin reuptake inhibitor"
+   ],
+   "uk": [
+    "сіозс",
+    "селективний інгібітор зворотного захоплення серотоніну"
+   ],
+   "fr": [
+    "isrs"
+   ]
+  },
+  "anticoagulant": {
+   "en": [
+    "anticoagulant",
+    "blood thinner"
+   ],
+   "uk": [
+    "антикоагулянт"
+   ],
+   "fr": [
+    "anticoagulant"
+   ]
+  },
+  "antiplatelet": {
+   "en": [
+    "antiplatelet"
+   ],
+   "uk": [
+    "антиагрегант"
+   ],
+   "fr": [
+    "antiagrégant",
+    "antiplaquettaire"
+   ]
+  },
+  "antihistamine": {
+   "en": [
+    "antihistamine"
+   ],
+   "uk": [
+    "антигістамін"
+   ],
+   "fr": [
+    "antihistaminique"
+   ]
+  }
+ },
+ "class_parents": {
+  "penicillin": "beta_lactam",
+  "cephalosporin": "beta_lactam",
+  "carbapenem": "beta_lactam",
+  "salicylate": "nsaid",
+  "heparin": "anticoagulant"
+ },
+ "drugs": [
+  {
+   "id": "ketamine",
+   "names": {
+    "en": "Ketamine",
+    "uk": "Кетамін",
+    "fr": "Kétamine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io",
+    "im",
+    "in"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "fentanyl",
+   "names": {
+    "en": "Fentanyl",
+    "uk": "Фентаніл",
+    "fr": "Fentanyl"
+   },
+   "also": [],
+   "classes": [
+    "opioid"
+   ],
+   "routes": [
+    "iv",
+    "io",
+    "in",
+    "buccal"
+   ],
+   "unit": "mcg"
+  },
+  {
+   "id": "morphine",
+   "names": {
+    "en": "Morphine",
+    "uk": "Морфін",
+    "fr": "Morphine"
+   },
+   "also": [],
+   "classes": [
+    "opioid"
+   ],
+   "routes": [
+    "iv",
+    "io",
+    "im",
+    "sc"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "nalbuphine",
+   "names": {
+    "en": "Nalbuphine",
+    "uk": "Налбуфін",
+    "fr": "Nalbuphine"
+   },
+   "also": [],
+   "classes": [
+    "opioid"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "sc"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "buprenorphine",
+   "names": {
+    "en": "Buprenorphine",
+    "uk": "Бупренорфін",
+    "fr": "Buprénorphine"
+   },
+   "also": [],
+   "classes": [
+    "opioid"
+   ],
+   "routes": [
+    "sl",
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "tramadol",
+   "names": {
+    "en": "Tramadol",
+    "uk": "Трамадол",
+    "fr": "Tramadol"
+   },
+   "also": [],
+   "classes": [
+    "opioid"
+   ],
+   "routes": [
+    "po",
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "methoxyflurane",
+   "names": {
+    "en": "Methoxyflurane",
+    "uk": "Метоксифлуран",
+    "fr": "Méthoxyflurane"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "inh"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "paracetamol",
+   "names": {
+    "en": "Paracetamol",
+    "uk": "Парацетамол",
+    "fr": "Paracétamol"
+   },
+   "also": [
+    "acetaminophen",
+    "ацетамінофен"
+   ],
+   "classes": [],
+   "routes": [
+    "po",
+    "iv",
+    "pr"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "metamizole",
+   "names": {
+    "en": "Metamizole",
+    "uk": "Метамізол",
+    "fr": "Métamizole"
+   },
+   "also": [
+    "dipyrone",
+    "анальгін",
+    "analgin"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "meloxicam",
+   "names": {
+    "en": "Meloxicam",
+    "uk": "Мелоксикам",
+    "fr": "Méloxicam"
+   },
+   "also": [],
+   "classes": [
+    "nsaid"
+   ],
+   "routes": [
+    "po",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ibuprofen",
+   "names": {
+    "en": "Ibuprofen",
+    "uk": "Ібупрофен",
+    "fr": "Ibuprofène"
+   },
+   "also": [],
+   "classes": [
+    "nsaid"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ketorolac",
+   "names": {
+    "en": "Ketorolac",
+    "uk": "Кеторолак",
+    "fr": "Kétorolac"
+   },
+   "also": [],
+   "classes": [
+    "nsaid"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "dexketoprofen",
+   "names": {
+    "en": "Dexketoprofen",
+    "uk": "Декскетопрофен",
+    "fr": "Dexkétoprofène"
+   },
+   "also": [],
+   "classes": [
+    "nsaid"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "acetylsalicylic_acid",
+   "names": {
+    "en": "Acetylsalicylic acid",
+    "uk": "Ацетилсаліцилова кислота",
+    "fr": "Acide acétylsalicylique"
+   },
+   "also": [
+    "aspirin",
+    "аспірин",
+    "aspirine"
+   ],
+   "classes": [
+    "nsaid",
+    "salicylate",
+    "antiplatelet"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "lidocaine",
+   "names": {
+    "en": "Lidocaine",
+    "uk": "Лідокаїн",
+    "fr": "Lidocaïne"
+   },
+   "also": [],
+   "classes": [
+    "local_anaesthetic"
+   ],
+   "routes": [
+    "sc",
+    "iv",
+    "topical"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "naloxone",
+   "names": {
+    "en": "Naloxone",
+    "uk": "Налоксон",
+    "fr": "Naloxone"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io",
+    "im",
+    "in"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "tranexamic_acid",
+   "names": {
+    "en": "Tranexamic acid",
+    "uk": "Транексамова кислота",
+    "fr": "Acide tranexamique"
+   },
+   "also": [
+    "txa"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "calcium_chloride",
+   "names": {
+    "en": "Calcium chloride",
+    "uk": "Кальцію хлорид",
+    "fr": "Chlorure de calcium"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "calcium_gluconate",
+   "names": {
+    "en": "Calcium gluconate",
+    "uk": "Кальцію глюконат",
+    "fr": "Gluconate de calcium"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "whole_blood",
+   "names": {
+    "en": "Whole blood",
+    "uk": "Цільна кров",
+    "fr": "Sang total"
+   },
+   "also": [],
+   "classes": [
+    "blood_product"
+   ],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "red_blood_cells",
+   "names": {
+    "en": "Red blood cells",
+    "uk": "Еритроцитна маса",
+    "fr": "Concentré de globules rouges"
+   },
+   "also": [],
+   "classes": [
+    "blood_product"
+   ],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "plasma",
+   "names": {
+    "en": "Plasma",
+    "uk": "Плазма",
+    "fr": "Plasma"
+   },
+   "also": [
+    "freeze-dried plasma",
+    "ліофілізована плазма",
+    "plasma lyophilisé"
+   ],
+   "classes": [
+    "blood_product"
+   ],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "sodium_chloride",
+   "names": {
+    "en": "Sodium chloride 0.9%",
+    "uk": "Натрію хлорид 0,9 %",
+    "fr": "Chlorure de sodium 0,9 %"
+   },
+   "also": [
+    "normal saline",
+    "saline",
+    "фізіологічний розчин"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "ringer_lactate",
+   "names": {
+    "en": "Ringer's lactate",
+    "uk": "Розчин Рінгера лактат",
+    "fr": "Ringer lactate"
+   },
+   "also": [
+    "hartmann",
+    "compound sodium lactate"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "glucose",
+   "names": {
+    "en": "Glucose",
+    "uk": "Глюкоза",
+    "fr": "Glucose"
+   },
+   "also": [
+    "dextrose",
+    "декстроза"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io",
+    "po"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "sodium_bicarbonate",
+   "names": {
+    "en": "Sodium bicarbonate",
+    "uk": "Натрію гідрокарбонат",
+    "fr": "Bicarbonate de sodium"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mmol"
+  },
+  {
+   "id": "mannitol",
+   "names": {
+    "en": "Mannitol",
+    "uk": "Маніт",
+    "fr": "Mannitol"
+   },
+   "also": [
+    "маннітол"
+   ],
+   "classes": [],
+   "routes": [
+    "iv"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "magnesium_sulfate",
+   "names": {
+    "en": "Magnesium sulfate",
+    "uk": "Магнію сульфат",
+    "fr": "Sulfate de magnésium"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "moxifloxacin",
+   "names": {
+    "en": "Moxifloxacin",
+    "uk": "Моксифлоксацин",
+    "fr": "Moxifloxacine"
+   },
+   "also": [],
+   "classes": [
+    "fluoroquinolone"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "levofloxacin",
+   "names": {
+    "en": "Levofloxacin",
+    "uk": "Левофлоксацин",
+    "fr": "Lévofloxacine"
+   },
+   "also": [],
+   "classes": [
+    "fluoroquinolone"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ertapenem",
+   "names": {
+    "en": "Ertapenem",
+    "uk": "Ертапенем",
+    "fr": "Ertapénème"
+   },
+   "also": [],
+   "classes": [
+    "carbapenem",
+    "beta_lactam"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "cefazolin",
+   "names": {
+    "en": "Cefazolin",
+    "uk": "Цефазолін",
+    "fr": "Céfazoline"
+   },
+   "also": [],
+   "classes": [
+    "cephalosporin",
+    "beta_lactam"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "ceftriaxone",
+   "names": {
+    "en": "Ceftriaxone",
+    "uk": "Цефтріаксон",
+    "fr": "Ceftriaxone"
+   },
+   "also": [],
+   "classes": [
+    "cephalosporin",
+    "beta_lactam"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "amoxicillin",
+   "names": {
+    "en": "Amoxicillin",
+    "uk": "Амоксицилін",
+    "fr": "Amoxicilline"
+   },
+   "also": [],
+   "classes": [
+    "penicillin",
+    "beta_lactam"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "amoxicillin_clavulanic_acid",
+   "names": {
+    "en": "Amoxicillin and clavulanic acid",
+    "uk": "Амоксицилін і клавуланова кислота",
+    "fr": "Amoxicilline et acide clavulanique"
+   },
+   "also": [
+    "co-amoxiclav",
+    "augmentin"
+   ],
+   "classes": [
+    "penicillin",
+    "beta_lactam"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "benzylpenicillin",
+   "names": {
+    "en": "Benzylpenicillin",
+    "uk": "Бензилпеніцилін",
+    "fr": "Benzylpénicilline"
+   },
+   "also": [
+    "penicillin g"
+   ],
+   "classes": [
+    "penicillin",
+    "beta_lactam"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "IU"
+  },
+  {
+   "id": "clindamycin",
+   "names": {
+    "en": "Clindamycin",
+    "uk": "Кліндаміцин",
+    "fr": "Clindamycine"
+   },
+   "also": [],
+   "classes": [
+    "lincosamide"
+   ],
+   "routes": [
+    "po",
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "metronidazole",
+   "names": {
+    "en": "Metronidazole",
+    "uk": "Метронідазол",
+    "fr": "Métronidazole"
+   },
+   "also": [],
+   "classes": [
+    "nitroimidazole"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "doxycycline",
+   "names": {
+    "en": "Doxycycline",
+    "uk": "Доксициклін",
+    "fr": "Doxycycline"
+   },
+   "also": [],
+   "classes": [
+    "tetracycline"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "azithromycin",
+   "names": {
+    "en": "Azithromycin",
+    "uk": "Азитроміцин",
+    "fr": "Azithromycine"
+   },
+   "also": [],
+   "classes": [
+    "macrolide"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "gentamicin",
+   "names": {
+    "en": "Gentamicin",
+    "uk": "Гентаміцин",
+    "fr": "Gentamicine"
+   },
+   "also": [],
+   "classes": [
+    "aminoglycoside"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "vancomycin",
+   "names": {
+    "en": "Vancomycin",
+    "uk": "Ванкоміцин",
+    "fr": "Vancomycine"
+   },
+   "also": [],
+   "classes": [
+    "glycopeptide"
+   ],
+   "routes": [
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ondansetron",
+   "names": {
+    "en": "Ondansetron",
+    "uk": "Ондансетрон",
+    "fr": "Ondansétron"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po",
+    "sl"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "metoclopramide",
+   "names": {
+    "en": "Metoclopramide",
+    "uk": "Метоклопрамід",
+    "fr": "Métoclopramide"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "promethazine",
+   "names": {
+    "en": "Promethazine",
+    "uk": "Прометазин",
+    "fr": "Prométhazine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "midazolam",
+   "names": {
+    "en": "Midazolam",
+    "uk": "Мідазолам",
+    "fr": "Midazolam"
+   },
+   "also": [],
+   "classes": [
+    "benzodiazepine"
+   ],
+   "routes": [
+    "iv",
+    "io",
+    "im",
+    "in",
+    "buccal"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "diazepam",
+   "names": {
+    "en": "Diazepam",
+    "uk": "Діазепам",
+    "fr": "Diazépam"
+   },
+   "also": [],
+   "classes": [
+    "benzodiazepine"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po",
+    "pr"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "lorazepam",
+   "names": {
+    "en": "Lorazepam",
+    "uk": "Лоразепам",
+    "fr": "Lorazépam"
+   },
+   "also": [],
+   "classes": [
+    "benzodiazepine"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po",
+    "sl"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "haloperidol",
+   "names": {
+    "en": "Haloperidol",
+    "uk": "Галоперидол",
+    "fr": "Halopéridol"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "epinephrine",
+   "names": {
+    "en": "Epinephrine",
+    "uk": "Епінефрин",
+    "fr": "Épinéphrine"
+   },
+   "also": [
+    "adrenaline",
+    "адреналін",
+    "adrénaline"
+   ],
+   "classes": [],
+   "routes": [
+    "im",
+    "iv",
+    "io",
+    "neb"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "norepinephrine",
+   "names": {
+    "en": "Norepinephrine",
+    "uk": "Норепінефрин",
+    "fr": "Norépinéphrine"
+   },
+   "also": [
+    "noradrenaline",
+    "норадреналін",
+    "noradrénaline"
+   ],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io"
+   ],
+   "unit": "mcg"
+  },
+  {
+   "id": "atropine",
+   "names": {
+    "en": "Atropine",
+    "uk": "Атропін",
+    "fr": "Atropine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "io",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "amiodarone",
+   "names": {
+    "en": "Amiodarone",
+    "uk": "Аміодарон",
+    "fr": "Amiodarone"
+   },
+   "also": [],
+   "classes": [
+    "iodine"
+   ],
+   "routes": [
+    "iv",
+    "io",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "diphenhydramine",
+   "names": {
+    "en": "Diphenhydramine",
+    "uk": "Дифенгідрамін",
+    "fr": "Diphénhydramine"
+   },
+   "also": [
+    "dimedrol",
+    "димедрол"
+   ],
+   "classes": [
+    "antihistamine"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "hydrocortisone",
+   "names": {
+    "en": "Hydrocortisone",
+    "uk": "Гідрокортизон",
+    "fr": "Hydrocortisone"
+   },
+   "also": [],
+   "classes": [
+    "corticosteroid"
+   ],
+   "routes": [
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "dexamethasone",
+   "names": {
+    "en": "Dexamethasone",
+    "uk": "Дексаметазон",
+    "fr": "Dexaméthasone"
+   },
+   "also": [],
+   "classes": [
+    "corticosteroid"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "methylprednisolone",
+   "names": {
+    "en": "Methylprednisolone",
+    "uk": "Метилпреднізолон",
+    "fr": "Méthylprednisolone"
+   },
+   "also": [],
+   "classes": [
+    "corticosteroid"
+   ],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "prednisolone",
+   "names": {
+    "en": "Prednisolone",
+    "uk": "Преднізолон",
+    "fr": "Prednisolone"
+   },
+   "also": [],
+   "classes": [
+    "corticosteroid"
+   ],
+   "routes": [
+    "po",
+    "iv",
+    "im"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "salbutamol",
+   "names": {
+    "en": "Salbutamol",
+    "uk": "Сальбутамол",
+    "fr": "Salbutamol"
+   },
+   "also": [
+    "albuterol"
+   ],
+   "classes": [],
+   "routes": [
+    "inh",
+    "neb"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ipratropium_bromide",
+   "names": {
+    "en": "Ipratropium bromide",
+    "uk": "Іпратропію бромід",
+    "fr": "Bromure d'ipratropium"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "inh",
+    "neb"
+   ],
+   "unit": "mcg"
+  },
+  {
+   "id": "oxygen",
+   "names": {
+    "en": "Oxygen",
+    "uk": "Кисень",
+    "fr": "Oxygène"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "inh"
+   ],
+   "unit": "L/min"
+  },
+  {
+   "id": "glyceryl_trinitrate",
+   "names": {
+    "en": "Glyceryl trinitrate",
+    "uk": "Нітрогліцерин",
+    "fr": "Trinitrine"
+   },
+   "also": [
+    "nitroglycerin",
+    "nitroglycérine"
+   ],
+   "classes": [],
+   "routes": [
+    "sl",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "furosemide",
+   "names": {
+    "en": "Furosemide",
+    "uk": "Фуросемід",
+    "fr": "Furosémide"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv",
+    "im",
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "heparin",
+   "names": {
+    "en": "Heparin",
+    "uk": "Гепарин",
+    "fr": "Héparine"
+   },
+   "also": [],
+   "classes": [
+    "heparin"
+   ],
+   "routes": [
+    "iv",
+    "sc"
+   ],
+   "unit": "IU"
+  },
+  {
+   "id": "enoxaparin",
+   "names": {
+    "en": "Enoxaparin",
+    "uk": "Еноксапарин",
+    "fr": "Énoxaparine"
+   },
+   "also": [],
+   "classes": [
+    "heparin"
+   ],
+   "routes": [
+    "sc",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "omeprazole",
+   "names": {
+    "en": "Omeprazole",
+    "uk": "Омепразол",
+    "fr": "Oméprazole"
+   },
+   "also": [],
+   "classes": [
+    "ppi"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "tetanus_toxoid",
+   "names": {
+    "en": "Tetanus toxoid",
+    "uk": "Правцевий анатоксин",
+    "fr": "Anatoxine tétanique"
+   },
+   "also": [
+    "tetanus vaccine",
+    "вакцина проти правця"
+   ],
+   "classes": [],
+   "routes": [
+    "im"
+   ],
+   "unit": "mL"
+  },
+  {
+   "id": "tetanus_immunoglobulin",
+   "names": {
+    "en": "Tetanus immunoglobulin",
+    "uk": "Протиправцевий імуноглобулін",
+    "fr": "Immunoglobuline tétanique"
+   },
+   "also": [],
+   "classes": [
+    "blood_product"
+   ],
+   "routes": [
+    "im"
+   ],
+   "unit": "IU"
+  },
+  {
+   "id": "pralidoxime",
+   "names": {
+    "en": "Pralidoxime",
+    "uk": "Пралідоксим",
+    "fr": "Pralidoxime"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "im",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "hydroxocobalamin",
+   "names": {
+    "en": "Hydroxocobalamin",
+    "uk": "Гідроксокобаламін",
+    "fr": "Hydroxocobalamine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "iv"
+   ],
+   "unit": "g"
+  },
+  {
+   "id": "potassium_iodide",
+   "names": {
+    "en": "Potassium iodide",
+    "uk": "Калію йодид",
+    "fr": "Iodure de potassium"
+   },
+   "also": [],
+   "classes": [
+    "iodine"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "amlodipine",
+   "names": {
+    "en": "Amlodipine",
+    "uk": "Амлодипін",
+    "fr": "Amlodipine"
+   },
+   "also": [],
+   "classes": [
+    "calcium_channel_blocker"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "lisinopril",
+   "names": {
+    "en": "Lisinopril",
+    "uk": "Лізиноприл",
+    "fr": "Lisinopril"
+   },
+   "also": [],
+   "classes": [
+    "ace_inhibitor"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "ramipril",
+   "names": {
+    "en": "Ramipril",
+    "uk": "Раміприл",
+    "fr": "Ramipril"
+   },
+   "also": [],
+   "classes": [
+    "ace_inhibitor"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "enalapril",
+   "names": {
+    "en": "Enalapril",
+    "uk": "Еналаприл",
+    "fr": "Énalapril"
+   },
+   "also": [],
+   "classes": [
+    "ace_inhibitor"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "losartan",
+   "names": {
+    "en": "Losartan",
+    "uk": "Лозартан",
+    "fr": "Losartan"
+   },
+   "also": [],
+   "classes": [
+    "arb"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "valsartan",
+   "names": {
+    "en": "Valsartan",
+    "uk": "Валсартан",
+    "fr": "Valsartan"
+   },
+   "also": [],
+   "classes": [
+    "arb"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "bisoprolol",
+   "names": {
+    "en": "Bisoprolol",
+    "uk": "Бісопролол",
+    "fr": "Bisoprolol"
+   },
+   "also": [],
+   "classes": [
+    "beta_blocker"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "metoprolol",
+   "names": {
+    "en": "Metoprolol",
+    "uk": "Метопролол",
+    "fr": "Métoprolol"
+   },
+   "also": [],
+   "classes": [
+    "beta_blocker"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "hydrochlorothiazide",
+   "names": {
+    "en": "Hydrochlorothiazide",
+    "uk": "Гідрохлоротіазид",
+    "fr": "Hydrochlorothiazide"
+   },
+   "also": [],
+   "classes": [
+    "thiazide"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "atorvastatin",
+   "names": {
+    "en": "Atorvastatin",
+    "uk": "Аторвастатин",
+    "fr": "Atorvastatine"
+   },
+   "also": [],
+   "classes": [
+    "statin"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "rosuvastatin",
+   "names": {
+    "en": "Rosuvastatin",
+    "uk": "Розувастатин",
+    "fr": "Rosuvastatine"
+   },
+   "also": [],
+   "classes": [
+    "statin"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "metformin",
+   "names": {
+    "en": "Metformin",
+    "uk": "Метформін",
+    "fr": "Metformine"
+   },
+   "also": [],
+   "classes": [
+    "biguanide"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "insulin_glargine",
+   "names": {
+    "en": "Insulin glargine",
+    "uk": "Інсулін гларгін",
+    "fr": "Insuline glargine"
+   },
+   "also": [],
+   "classes": [
+    "insulin"
+   ],
+   "routes": [
+    "sc"
+   ],
+   "unit": "IU"
+  },
+  {
+   "id": "levothyroxine",
+   "names": {
+    "en": "Levothyroxine",
+    "uk": "Левотироксин",
+    "fr": "Lévothyroxine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "po"
+   ],
+   "unit": "mcg"
+  },
+  {
+   "id": "pantoprazole",
+   "names": {
+    "en": "Pantoprazole",
+    "uk": "Пантопразол",
+    "fr": "Pantoprazole"
+   },
+   "also": [],
+   "classes": [
+    "ppi"
+   ],
+   "routes": [
+    "po",
+    "iv"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "sertraline",
+   "names": {
+    "en": "Sertraline",
+    "uk": "Сертралін",
+    "fr": "Sertraline"
+   },
+   "also": [],
+   "classes": [
+    "ssri"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "escitalopram",
+   "names": {
+    "en": "Escitalopram",
+    "uk": "Есциталопрам",
+    "fr": "Escitalopram"
+   },
+   "also": [],
+   "classes": [
+    "ssri"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "warfarin",
+   "names": {
+    "en": "Warfarin",
+    "uk": "Варфарин",
+    "fr": "Warfarine"
+   },
+   "also": [],
+   "classes": [
+    "anticoagulant"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "apixaban",
+   "names": {
+    "en": "Apixaban",
+    "uk": "Апіксабан",
+    "fr": "Apixaban"
+   },
+   "also": [],
+   "classes": [
+    "anticoagulant"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "rivaroxaban",
+   "names": {
+    "en": "Rivaroxaban",
+    "uk": "Ривароксабан",
+    "fr": "Rivaroxaban"
+   },
+   "also": [],
+   "classes": [
+    "anticoagulant"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "clopidogrel",
+   "names": {
+    "en": "Clopidogrel",
+    "uk": "Клопідогрель",
+    "fr": "Clopidogrel"
+   },
+   "also": [],
+   "classes": [
+    "antiplatelet"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "montelukast",
+   "names": {
+    "en": "Montelukast",
+    "uk": "Монтелукаст",
+    "fr": "Montélukast"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "fluticasone",
+   "names": {
+    "en": "Fluticasone",
+    "uk": "Флутиказон",
+    "fr": "Fluticasone"
+   },
+   "also": [],
+   "classes": [
+    "corticosteroid"
+   ],
+   "routes": [
+    "inh",
+    "in"
+   ],
+   "unit": "mcg"
+  },
+  {
+   "id": "cetirizine",
+   "names": {
+    "en": "Cetirizine",
+    "uk": "Цетиризин",
+    "fr": "Cétirizine"
+   },
+   "also": [],
+   "classes": [
+    "antihistamine"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "loratadine",
+   "names": {
+    "en": "Loratadine",
+    "uk": "Лоратадин",
+    "fr": "Loratadine"
+   },
+   "also": [],
+   "classes": [
+    "antihistamine"
+   ],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "allopurinol",
+   "names": {
+    "en": "Allopurinol",
+    "uk": "Алопуринол",
+    "fr": "Allopurinol"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "gabapentin",
+   "names": {
+    "en": "Gabapentin",
+    "uk": "Габапентин",
+    "fr": "Gabapentine"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  },
+  {
+   "id": "pregabalin",
+   "names": {
+    "en": "Pregabalin",
+    "uk": "Прегабалін",
+    "fr": "Prégabaline"
+   },
+   "also": [],
+   "classes": [],
+   "routes": [
+    "po"
+   ],
+   "unit": "mg"
+  }
+ ]
+}

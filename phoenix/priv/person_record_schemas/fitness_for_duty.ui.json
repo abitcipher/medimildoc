@@ -1,0 +1,33 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/status",
+      "label": "Fitness status"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/restrictions",
+      "label": "Duty restrictions",
+      "options": {
+        "multi": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/reviewDate",
+      "label": "Review date"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/assessedBy",
+      "label": "Assessed by"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/basis",
+      "label": "Basis"
+    }
+  ]
+}

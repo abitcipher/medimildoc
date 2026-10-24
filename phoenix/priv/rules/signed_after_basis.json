@@ -1,0 +1,79 @@
+{
+  "key": "signed_after_basis",
+  "version": 2,
+  "label": "Signed after its basis",
+  "description": "A document is signed no earlier than the document it is based on (a board conclusion after its referral, a leave order after the request, a discharge summary after the referral).",
+  "severity": "flag",
+  "points": [
+    "document.sign"
+  ],
+  "subjects": [
+    "document:medical_board_conclusion",
+    "document:personnel_order_leave",
+    "document:discharge_summary"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "After the basis",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "basis.signedAt == null or d(event.at).isSameOrAfter(d(basis.signedAt))"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(basis.signedAt == null or d(event.at).isSameOrAfter(d(basis.signedAt))) ? null : 'signed_before_basis'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(basis.signedAt == null or d(event.at).isSameOrAfter(d(basis.signedAt))) ? null : 'The document is signed before the document it is based on.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

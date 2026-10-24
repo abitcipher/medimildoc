@@ -1,0 +1,282 @@
+# Bare-minimum single-VPS deploy: db + app, no host port
+# exposed for db. See infra/README.md for the full setup walkthrough.
+#
+# TLS termination + reverse proxying is handled by an Nginx already
+# running on the host (not in this compose file) — see infra/nginx/ for
+# its config. `app` binds only to loopback, never directly reachable from
+# the internet.
+#
+# Terraform (the *provisioning* half of ADR-6) isn't part of this pass —
+# this assumes the VPS already exists and Docker is installed on it.
+
+services:
+  db:
+    # Latest stable (per project decision). Not required for uuid_v7
+    # (Ash.UUIDv7.generate/0 runs app-side, not PG's native uuidv7()) —
+    # just the general "use latest stable" policy.
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-app_prod}
+    # PG18+'s official image changed convention: it now wants a single
+    # mount at /var/lib/postgresql (not .../data) and manages a
+    # major-version-specific subdirectory under it itself — mounting at
+    # .../data (the pre-18 convention) makes the container refuse to start.
+    # Confirmed by an actual failed boot against this exact image before
+    # this fix (see git history / commit message).
+    volumes:
+      - db_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-app} -d ${POSTGRES_DB:-app_prod}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    # No `ports:` mapping on purpose — only reachable from other containers
+    # on this compose network, never from the host/internet.
+
+  # IHDS, the reference-data service (docs/design/reference-data-and-files.md
+  # §3): countries, languages, currencies, places for pickers and
+  # search-as-you-type. The index is rebuilt from the seed files baked into
+  # the image at every start; the only state is the learned values
+  # (organisational names entered before, no link to any person) on the
+  # ihds_data volume. No `ports:`: only the app talks to it.
+  ihds:
+    build:
+      context: ../ihds
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ihds_data:/data
+
+  # RustFS: S3-compatible file storage (photos, scans, imaging; docs/design/
+  # reference-data-and-files.md §4). The bucket is private: browsers get
+  # short-lived signed links from the app and fetch through the host's
+  # Nginx (`location /hrda-files/`, GET/HEAD only), hence the loopback port.
+  # Files are not encrypted by the app; protect the volume with disk
+  # encryption (infra/README.md go-live checklist). Console disabled.
+  rustfs:
+    image: rustfs/rustfs:1.0.0
+    restart: unless-stopped
+    environment:
+      RUSTFS_ACCESS_KEY: ${RUSTFS_ACCESS_KEY:?set RUSTFS_ACCESS_KEY in .env}
+      RUSTFS_SECRET_KEY: ${RUSTFS_SECRET_KEY:?set RUSTFS_SECRET_KEY in .env}
+      RUSTFS_ADDRESS: 0.0.0.0:9000
+      RUSTFS_CONSOLE_ENABLE: "false"
+    volumes:
+      - rustfs_data:/data
+    ports:
+      - "127.0.0.1:9100:9000"
+
+  # Notifications (docs/design/search-timeline-notifications.md): RabbitMQ
+  # carries the app's outbox to its dispatcher; Apprise API (stateless)
+  # delivers to e-mail, Telegram, Signal, Matrix. Neither has a host port.
+  rabbitmq:
+    image: rabbitmq:4.3.6-alpine
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-hrda}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:?set RABBITMQ_PASSWORD in .env}
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+
+  apprise:
+    image: caronc/apprise:2.0.0
+    restart: unless-stopped
+    environment:
+      APPRISE_STATEFUL_MODE: disabled
+
+  # Mail server for artcomplect.com (infra/README.md → Mail): SMTP 25,
+  # submission 465 (TLS) and 587 (STARTTLS), IMAPS 993. Its web admin listens
+  # on 8080, reached only through the host Nginx at https://mail.artcomplect.com.
+  # TLS: the host certbot certificate, copied to ./mail-certs by the renewal
+  # hook (infra/mail/certbot-deploy-hook.sh). The alias lets Apprise reach it
+  # inside this network by the name on its certificate.
+  stalwart:
+    image: stalwartlabs/stalwart:v0.16.25
+    restart: unless-stopped
+    environment:
+      STALWART_PUBLIC_URL: https://mail.artcomplect.com
+    volumes:
+      - stalwart_etc:/etc/stalwart
+      - stalwart_data:/var/lib/stalwart
+      - ./mail-certs:/certs:ro
+    ports:
+      - "25:25"
+      - "465:465"
+      - "587:587"
+      - "993:993"
+      - "127.0.0.1:8086:8080"
+    networks:
+      default:
+        aliases:
+          - mail.artcomplect.com
+
+  app:
+    build:
+      context: ../phoenix
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      ihds:
+        condition: service_started
+      rustfs:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+      apprise:
+        condition: service_started
+    environment:
+      DATABASE_URL: ecto://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB:-app_prod}
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE:?set SECRET_KEY_BASE in .env}
+      # ADR-3/ADR-5: must match the Apps Script shim's SHARED_SECRET script
+      # property exactly — see apps_script/README.md.
+      SHEETS_SHARED_SECRET: ${SHEETS_SHARED_SECRET:?set SHEETS_SHARED_SECRET in .env}
+      # Signs JWTs for the standalone forms UI's login sessions
+      # (App.Accounts.User) — unrelated to
+      # SHEETS_SHARED_SECRET above. `openssl rand -base64 48` or similar.
+      TOKEN_SIGNING_SECRET: ${TOKEN_SIGNING_SECRET:?set TOKEN_SIGNING_SECRET in .env}
+      # Google Cloud Console OAuth client (APIs & Services -> Credentials)
+      # for the same login — see infra/README.md. Authorized redirect URI
+      # must be https://${PHX_HOST}/auth/user/google/callback exactly.
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:?set GOOGLE_CLIENT_ID in .env}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:?set GOOGLE_CLIENT_SECRET in .env}
+      GOOGLE_REDIRECT_URI: ${GOOGLE_REDIRECT_URI:?set GOOGLE_REDIRECT_URI in .env}
+      PHX_HOST: ${PHX_HOST:?set PHX_HOST in .env}
+      # docs/design/access-control-phase1.md  — true only while in
+      # development/testing; unset or false before go-live.
+      ADMIN_FULL_DATA_ACCESS: ${ADMIN_FULL_DATA_ACCESS:-false}
+      REQUIRE_SECOND_APPROVAL: ${REQUIRE_SECOND_APPROVAL:-false}
+      # Encryption at rest (docs/design/access-control-phase1.md §5).
+      CLOAK_KEY: ${CLOAK_KEY:?set CLOAK_KEY in .env}
+      # Reference data (country names, flags, search). If IHDS is down the
+      # app still works: pickers fall back to plain code input.
+      IHDS_URL: http://ihds:4100
+      # File storage (RustFS). Signed links point at the public host, where
+      # Nginx forwards /hrda-files/ to RustFS.
+      STORAGE_ENDPOINT: http://rustfs:9000
+      STORAGE_PUBLIC_URL: https://${PHX_HOST}
+      STORAGE_ACCESS_KEY: ${RUSTFS_ACCESS_KEY}
+      STORAGE_SECRET_KEY: ${RUSTFS_SECRET_KEY}
+      # Notifications: each NOTIFY_*_URL is the Apprise URL of the sender for
+      # that channel (App.Notify.Apprise); unset = channel not used.
+      RABBITMQ_URL: amqp://${RABBITMQ_USER:-hrda}:${RABBITMQ_PASSWORD}@rabbitmq:5672
+      APPRISE_URL: http://apprise:8000
+      APP_URL: ${APP_URL:-}
+      NOTIFY_EMAIL_URL: ${NOTIFY_EMAIL_URL:-}
+      NOTIFY_TELEGRAM_URL: ${NOTIFY_TELEGRAM_URL:-}
+      NOTIFY_SIGNAL_URL: ${NOTIFY_SIGNAL_URL:-}
+      NOTIFY_MATRIX_URL: ${NOTIFY_MATRIX_URL:-}
+      PHX_SERVER: "true"
+      PORT: "4000"
+      POOL_SIZE: ${POOL_SIZE:-10}
+    # Runs pending migrations, then starts the release server. Simple and
+    # fine for a single-node deploy; split into two `docker compose run`
+    # steps yourself if you ever run more than one app replica (concurrent
+    # migration runs on deploy would race).
+    command: sh -c "/app/bin/migrate && /app/bin/server"
+    # Bound to loopback only — the host's own Nginx (infra/nginx/) reverse
+    # proxies to this from outside Docker entirely; nothing here is ever
+    # directly reachable from the internet. Host-side port (5085) is
+    # whatever the VPS's shared Nginx config expects on that box (its
+    # `default` site's `upstream` block) — the container's own internal
+    # port (PORT env var above) stays 4000 regardless; only the host-side
+    # mapping needs to match Nginx.
+    ports:
+      - "127.0.0.1:5085:4000"
+
+  # Local-dev tunnel mode — only started with
+  # `docker compose --profile tunnel up`, never as part of a bare
+  # `docker compose up`. Holds a reverse SSH tunnel open to the VPS so
+  # that dev.hrda.artcomplect.com (infra/nginx/dev.hrda.artcomplect.com.conf)
+  # can reach this locally-running `app` container — the Apps Script
+  # sidebar (a third party running on Google's own servers) can never
+  # reach a bare localhost, so *some* real, internet-reachable HTTPS
+  # endpoint is unavoidable for live local dev against a real Sheet;
+  # this replaces an ad-hoc third-party tunnel service (localtunnel/
+  # localhost.run — confirmed live to be genuinely unreliable, not a
+  # misconfiguration on our end) with infrastructure we already own
+  # (own VPS, not third-party dependencies).
+  #
+  # The SSH key used here (TUNNEL_SSH_KEY_PATH) must be a DEDICATED key,
+  # never the account's own login credential — see infra/README.md for
+  # how to generate one and restrict it server-side via authorized_keys
+  # (`command="/bin/false",restrict,port-forwarding,permitopen="127.0.0.1:<port>"`),
+  # so a leaked/compromised key can do nothing but forward exactly that
+  # one port, not get a shell or forward anywhere else. Confirmed live
+  # that `restrict` alone does NOT block non-interactive command
+  # execution (only pty/agent/X11/~/.ssh/rc) — `command="/bin/false"` is
+  # required too, or the "restricted" key can still run arbitrary
+  # one-off commands.
+  #
+  # TUNNEL_* below use `:-` (default-if-unset), NOT `:?` (required-or-
+  # error) — deliberately, confirmed live to matter: `docker-compose`
+  # (v1, standalone, what the VPS actually runs)
+  # interpolates EVERY service's environment/volumes up front for ANY
+  # command, `profiles:` filtering or not, `tunnel` targeted or not — a
+  # `:?` here broke the VPS's own routine `docker-compose up -d app`
+  # entirely once this service existed, even though VPS mode never
+  # touches `tunnel` at all. The entrypoint below does its own presence
+  # check instead, so local-dev tunnel mode still fails loudly (just
+  # inside the container's own log, not at `docker-compose`'s
+  # interpolation step) if actually started with the vars genuinely
+  # missing.
+  tunnel:
+    profiles: ["tunnel"]
+    image: alpine:3.20
+    restart: unless-stopped
+    depends_on:
+      - app
+    environment:
+      TUNNEL_USER: ${TUNNEL_USER:-}
+      TUNNEL_HOST: ${TUNNEL_HOST:-}
+      # Must match the `permitopen` port in the VPS's authorized_keys
+      # entry for this key, and the upstream port in
+      # infra/nginx/dev.hrda.artcomplect.com.conf.
+      TUNNEL_REMOTE_PORT: ${TUNNEL_REMOTE_PORT:-5086}
+    volumes:
+      # /dev/null fallback when unset: a real path is only required if
+      # this service actually starts (--profile tunnel) — see the `:-`
+      # note above. Bind-mounting /dev/null itself is harmless; the
+      # entrypoint's own check below fails first regardless.
+      - ${TUNNEL_SSH_KEY_PATH:-/dev/null}:/tunnel_key:ro
+    # `autossh` (via apk at container start, not baked into a custom
+    # image — this is dev-only tooling, not part of the deployed
+    # release) restarts the ssh process itself on drop; `-M 0` disables
+    # its own legacy echo-port monitoring (unneeded noise/complexity —
+    # ServerAliveInterval/CountMax below already detect a dead
+    # connection and exit, which is all autossh needs to know to
+    # restart it).
+    entrypoint:
+      - sh
+      - -c
+      - >
+        if [ -z "$TUNNEL_USER" ] || [ -z "$TUNNEL_HOST" ]; then
+        echo "tunnel: TUNNEL_USER and TUNNEL_HOST must be set in .env — see infra/README.md" >&2;
+        exit 1;
+        fi &&
+        apk add --no-cache openssh-client autossh >/dev/null &&
+        exec autossh -M 0 -N
+        -o StrictHostKeyChecking=accept-new
+        -o ServerAliveInterval=15
+        -o ServerAliveCountMax=3
+        -o ExitOnForwardFailure=yes
+        -i /tunnel_key
+        -R 127.0.0.1:${TUNNEL_REMOTE_PORT}:app:4000
+        ${TUNNEL_USER}@${TUNNEL_HOST}
+
+volumes:
+  db_data:
+  ihds_data:
+  rustfs_data:
+  rabbitmq_data:
+  stalwart_etc:
+  stalwart_data:

@@ -1,0 +1,11 @@
+{
+  "description": "Duty types for unit duty rosters (docs/design/duty-roster.md): how many people each needs a day, and the rest between two duties of one person. Placeholder set for a battalion; adjust to the unit's orders.",
+  "min_rest_days": 1,
+  "types": [
+    { "id": "duty_officer", "label": "Duty officer", "per_day": 1 },
+    { "id": "assistant_duty_officer", "label": "Assistant duty officer", "per_day": 1 },
+    { "id": "orderly", "label": "Orderly", "per_day": 2 },
+    { "id": "medic_on_duty", "label": "Medic on duty", "per_day": 1 },
+    { "id": "driver_on_duty", "label": "Driver on duty", "per_day": 1 }
+  ]
+}

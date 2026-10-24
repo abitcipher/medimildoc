@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LabResult",
+  "description": "FHIR R5 Observation (category laboratory)-flavored (not conformant). `test` names a test of the app's own list (priv/clinical/lab_tests.json, App.Clinical.LabTests) with its LOINC code; `unit`, `referenceRange`, `interpretation` and `previous` are set by the server (App.Clinical.Changes.InterpretLab), never taken from the form. Reference ranges are placeholders: each laboratory reports its own.",
+  "type": "object",
+  "x-category": "medical",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Lab result",
+  "x-icon": "hero-beaker",
+  "x-summary": "One laboratory test: value, the reference range, high or low, and the previous value of the same test.",
+  "x-part-of": [
+    "encounter"
+  ],
+  "required": [
+    "test",
+    "value",
+    "collectedAt"
+  ],
+  "properties": {
+    "test": {
+      "type": "string",
+      "enum": [
+        "hemoglobin",
+        "hematocrit",
+        "wbc",
+        "platelets",
+        "glucose",
+        "hba1c",
+        "creatinine",
+        "urea",
+        "sodium",
+        "potassium",
+        "alt",
+        "ast",
+        "bilirubin",
+        "crp",
+        "inr",
+        "troponin_i",
+        "lactate",
+        "cholesterol"
+      ],
+      "x-enum-labels": {
+        "hemoglobin": "Haemoglobin",
+        "hematocrit": "Haematocrit",
+        "wbc": "White blood cells",
+        "platelets": "Platelets",
+        "glucose": "Glucose",
+        "hba1c": "HbA1c",
+        "creatinine": "Creatinine",
+        "urea": "Urea",
+        "sodium": "Sodium",
+        "potassium": "Potassium",
+        "alt": "ALT",
+        "ast": "AST",
+        "bilirubin": "Total bilirubin",
+        "crp": "C-reactive protein",
+        "inr": "INR",
+        "troponin_i": "Troponin I",
+        "lactate": "Lactate",
+        "cholesterol": "Total cholesterol"
+      }
+    },
+    "value": {
+      "type": "number",
+      "x-widget": "number"
+    },
+    "collectedAt": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$",
+      "x-help": "When the sample was taken (local time)."
+    },
+    "laboratory": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 20,
+      "x-system": "value",
+      "x-label": "Unit of measure"
+    },
+    "referenceRange": {
+      "type": "string",
+      "maxLength": 40,
+      "x-system": "value",
+      "x-label": "Reference range"
+    },
+    "interpretation": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "low",
+        "high"
+      ],
+      "x-system": "value",
+      "x-label": "Interpretation",
+      "x-enum-labels": {
+        "normal": "Normal",
+        "low": "Low",
+        "high": "High"
+      },
+      "x-enum-badges": {
+        "normal": {
+          "symbol": "N",
+          "color": "success"
+        },
+        "low": {
+          "symbol": "L",
+          "color": "warning"
+        },
+        "high": {
+          "symbol": "H",
+          "color": "error"
+        }
+      }
+    },
+    "previous": {
+      "type": "string",
+      "maxLength": 100,
+      "x-system": "value",
+      "x-label": "Previous value"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  },
+  "additionalProperties": false
+}

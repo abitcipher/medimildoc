@@ -1,0 +1,44 @@
+# Monorepo root. Each of apps_script/ and phoenix/ also has its own
+# .gitignore for tool-specific build output — this file is for cross-cutting
+# and OS/editor noise only.
+
+.DS_Store
+*.swp
+.env
+.env.*
+!.env.example
+
+# Claude Code session-local state, not project content.
+/.claude/
+
+# Playwright MCP tool's own debug artifacts (snapshots/console logs from
+# ad-hoc browser verification sessions), not project content.
+/.playwright-mcp/
+
+# infra/ (added at M2/deploy): never commit Terraform state or vars
+# that may carry secrets.
+infra/terraform/**/*.tfstate
+infra/terraform/**/*.tfstate.backup
+infra/terraform/**/.terraform/
+infra/terraform/**/*.tfvars
+
+# Local-dev tunnel mode's dedicated SSH key, if someone
+# points TUNNEL_SSH_KEY_PATH at a file inside the repo instead of
+# outside it (the recommended location) — belt and suspenders, this key
+# should never be committed either way.
+infra/*tunnel_key*
+
+# sentrux (structural quality gate): baseline.json is a
+# machine/session-local snapshot (re-saved via `sentrux gate --save`),
+# not project content — same treatment as the dialyzer PLT cache above.
+# .sentrux/rules.toml (the actual policy) IS committed, in each of
+# phoenix/ and apps_script/ where present — this pattern only excludes
+# the baseline file, not the whole directory.
+**/.sentrux/baseline.json
+
+# TLS certificate copies for Stalwart (infra/mail/certbot-deploy-hook.sh)
+infra/mail-certs/
+
+# Local scratch material (e.g. UI examples from the user to review) —
+# never project content.
+/tmp/

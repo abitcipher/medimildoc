@@ -1,0 +1,54 @@
+{
+  "id": "certificate_service",
+  "version": "1",
+  "label": "Service certificate",
+  "icon": "hero-identification",
+  "summary": "Confirms the person's current post, unit, rank and service start; HR signs.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read"
+    ],
+    "write": "people.write",
+    "self": true
+  },
+  "register": {
+    "code": "дов",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 5,
+  "template": "certificate.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "HR",
+      "permission": "people.write"
+    }
+  ],
+  "effects": [],
+  "basis": [],
+  "facts": "service",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [],
+    "properties": {
+      "presentTo": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "Where the certificate will be presented; leave empty for \"wherever required\"."
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/presentTo",
+        "label": "To be presented at"
+      }
+    ]
+  }
+}

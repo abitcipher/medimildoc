@@ -1,0 +1,14 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/code", "label": "Procedure" },
+    { "type": "Control", "scope": "#/properties/detail", "label": "Details" },
+    { "type": "Control", "scope": "#/properties/performed", "label": "Done at" },
+    { "type": "Control", "scope": "#/properties/endedAt", "label": "Ended at" },
+    { "type": "Control", "scope": "#/properties/status", "label": "Status" },
+    { "type": "Control", "scope": "#/properties/bodySite", "label": "Body site" },
+    { "type": "Control", "scope": "#/properties/side", "label": "Side" },
+    { "type": "Control", "scope": "#/properties/outcome", "label": "Outcome" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Notes", "options": { "multi": true } }
+  ]
+}

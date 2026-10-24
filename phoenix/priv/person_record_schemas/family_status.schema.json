@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel_private",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Family status",
+  "x-icon": "hero-home",
+  "x-summary": "Marital status, number of dependants and an emergency contact.",
+  "title": "FamilyStatus",
+  "description": "Marital status, dependents, and an emergency contact \u2014  \u00a71 explicitly calls out family-status changes as one of the life events a person's record should grow to hold. Split out of the generic :status_change escape hatch (which still exists for one-off events that don't warrant a dedicated kind) into a first-class kind, demonstrating the modular-growth mechanism that escape hatch exists to enable.",
+  "type": "object",
+  "required": [
+    "maritalStatus"
+  ],
+  "properties": {
+    "maritalStatus": {
+      "type": "string",
+      "enum": [
+        "single",
+        "married",
+        "divorced",
+        "widowed",
+        "separated",
+        "other"
+      ]
+    },
+    "spouseName": {
+      "type": "string"
+    },
+    "dependentsCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Count only, not a nested list of dependents \u2014 modular-growth story means a dedicated :dependent kind (name/DOB/relationship per person) is a natural, non-breaking follow-up if that level of detail is ever needed; not built ahead of an actual requirement.",
+      "maximum": 20
+    },
+    "emergencyContactName": {
+      "type": "string"
+    },
+    "emergencyContactRelationship": {
+      "type": "string"
+    },
+    "emergencyContactPhone": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

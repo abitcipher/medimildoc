@@ -1,0 +1,18 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/destination", "label": "Destination" },
+    { "type": "Control", "scope": "#/properties/purpose", "label": "Purpose", "options": { "multi": true } },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/startDate", "label": "First day" },
+        { "type": "Control", "scope": "#/properties/endDate", "label": "Last day" }
+      ]
+    },
+    { "type": "Control", "scope": "#/properties/days", "label": "Days" },
+    { "type": "Control", "scope": "#/properties/transport", "label": "Transport" },
+    { "type": "Control", "scope": "#/properties/basis", "label": "Order" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Notes", "options": { "multi": true } }
+  ]
+}

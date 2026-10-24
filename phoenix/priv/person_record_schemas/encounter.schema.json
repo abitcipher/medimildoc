@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Encounter",
+  "x-icon": "hero-clipboard-document-check",
+  "x-summary": "A contact with care: when, where, why, triage, evacuation and outcome.",
+  "title": "Encounter",
+  "description": "FHIR Encounter-flavoured (not conformant): status and class codes follow FHIR R5 / HL7 v3 ActCode; triage (NATO T1–T4), evacuation priority (9-line MEDEVAC precedence) and mechanism of injury are military field-care additions (docs/design/clinical-module.md). Times are local wall-clock times.",
+  "type": "object",
+  "required": ["status", "class", "start"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["in-progress", "completed", "planned", "cancelled", "entered-in-error"]
+    },
+    "class": {
+      "type": "string",
+      "enum": ["EMER", "FLD", "AMB", "IMP", "VR"],
+      "x-enum-labels": {
+        "EMER": "Emergency",
+        "FLD": "Field",
+        "AMB": "Outpatient",
+        "IMP": "Inpatient",
+        "VR": "Virtual"
+      },
+      "description": "HL7 v3 ActCode encounter class."
+    },
+    "start": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+    },
+    "end": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+    },
+    "reason": { "type": "string", "maxLength": 500 },
+    "location": { "type": "string", "maxLength": 255 },
+    "practitioner": {
+      "type": "string",
+      "maxLength": 255,
+      "x-help": "Who provided the care (name or post)."
+    },
+    "triage": {
+      "type": "string",
+      "enum": ["T1", "T2", "T3", "T4"],
+      "x-enum-labels": {
+        "T1": "T1 — Immediate",
+        "T2": "T2 — Delayed",
+        "T3": "T3 — Minimal",
+        "T4": "T4 — Expectant"
+      },
+      "x-help": "NATO triage category: T1 needs life-saving care now; T2 can wait hours; T3 walking wounded; T4 not expected to survive with the care available."
+    },
+    "evacuationPriority": {
+      "type": "string",
+      "enum": ["urgent", "urgent_surgical", "priority", "routine", "convenience"],
+      "x-enum-labels": {
+        "urgent": "Urgent (within 2 hours)",
+        "urgent_surgical": "Urgent surgical",
+        "priority": "Priority (within 4 hours)",
+        "routine": "Routine (within 24 hours)",
+        "convenience": "Convenience"
+      },
+      "x-help": "Evacuation precedence as in a 9-line MEDEVAC request."
+    },
+    "mechanismOfInjury": {
+      "type": "string",
+      "enum": ["blast", "gunshot", "fragment", "burn", "fall", "vehicle", "crush", "illness", "other"],
+      "x-enum-labels": {
+        "blast": "Blast",
+        "gunshot": "Gunshot wound",
+        "fragment": "Fragment / shrapnel",
+        "burn": "Burn",
+        "fall": "Fall",
+        "vehicle": "Vehicle accident",
+        "crush": "Crush",
+        "illness": "Illness (not an injury)",
+        "other": "Other"
+      }
+    },
+    "disposition": {
+      "type": "string",
+      "enum": ["returned_to_duty", "evacuated", "admitted", "discharged", "deceased", "other"]
+    },
+    "note": { "type": "string", "maxLength": 4000 }
+  }
+}

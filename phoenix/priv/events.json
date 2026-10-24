@@ -1,0 +1,98 @@
+{
+  "hrda.events.logging.enabled": {
+    "severity": "notice",
+    "publish": true,
+    "data": [],
+    "description": "An administrator switched the general event log on."
+  },
+  "hrda.events.logging.disabled": {
+    "severity": "critical",
+    "publish": true,
+    "data": [],
+    "description": "An administrator switched the general event log off. Always written, even with the log off."
+  },
+  "hrda.events.publishing.enabled": {
+    "severity": "notice",
+    "publish": true,
+    "data": [],
+    "description": "An administrator switched publishing to external subscribers on."
+  },
+  "hrda.events.publishing.disabled": {
+    "severity": "critical",
+    "publish": true,
+    "data": [],
+    "description": "An administrator switched publishing to external subscribers off. Published itself, as the last one."
+  },
+  "hrda.auth.session.started": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["method", "ip"],
+    "description": "A user signed in. method: google | person_id."
+  },
+  "hrda.auth.session.ended": {
+    "severity": "info",
+    "publish": false,
+    "data": ["ip"],
+    "description": "A user signed out."
+  },
+  "hrda.auth.sign_in.failed": {
+    "severity": "warning",
+    "publish": true,
+    "data": ["method", "reason", "ip", "login_digest"],
+    "description": "A sign-in failed. reason: bad_credentials | locked | bad_link (expired or used set-password link) | provider_error. login_digest: HMAC of the attempted PersonID."
+  },
+  "hrda.auth.sign_in.locked": {
+    "severity": "critical",
+    "publish": true,
+    "data": ["scope", "ip", "login_digest", "until"],
+    "description": "Too many failed sign-ins: a PersonID (scope login) or an address (scope ip) is locked until the given time."
+  },
+  "hrda.auth.first_sign_in.requested": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["outcome", "ip", "login_digest"],
+    "description": "Someone asked to set or reset the password of a PersonID. outcome: sent | unknown | no_contact | conflict | disabled | locked."
+  },
+  "hrda.auth.password.set": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["ip"],
+    "description": "A user set their password through the e-mailed link."
+  },
+  "hrda.auth.confirmation.succeeded": {
+    "severity": "info",
+    "publish": false,
+    "data": ["method", "purpose"],
+    "description": "A user confirmed an action with their password or a fresh sign-in."
+  },
+  "hrda.auth.confirmation.failed": {
+    "severity": "warning",
+    "publish": true,
+    "data": ["method", "purpose"],
+    "description": "A wrong password was given to confirm an action."
+  },
+  "hrda.accounts.user.created": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["method", "role"],
+    "description": "An account was created: by a first Google sign-in, or for a person asking to sign in with their PersonID."
+  },
+  "hrda.accounts.access.changed": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["role", "profiles"],
+    "description": "An administrator changed an account's role or access profiles."
+  },
+  "hrda.privacy.export.downloaded": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["format"],
+    "description": "A person downloaded their own data. format: pdf | markdown | json."
+  },
+  "hrda.documents.document.signed": {
+    "severity": "notice",
+    "publish": true,
+    "data": ["document_type"],
+    "description": "A document was signed (its type only)."
+  }
+}

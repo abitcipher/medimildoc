@@ -1,0 +1,17 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/given_name", "label": "Given name" },
+    { "type": "Control", "scope": "#/properties/patronymic", "label": "Patronymic" },
+    { "type": "Control", "scope": "#/properties/family_name", "label": "Family name" },
+    { "type": "Control", "scope": "#/properties/email", "label": "Email" },
+    { "type": "Control", "scope": "#/properties/date_of_birth", "label": "Date of birth" },
+    {
+      "type": "Control",
+      "scope": "#/properties/birth_country",
+      "label": "Birth country"
+    },
+    { "type": "Control", "scope": "#/properties/birth_locality", "label": "Birth locality" },
+    { "type": "Control", "scope": "#/properties/birth_region", "label": "Birth region" }
+  ]
+}

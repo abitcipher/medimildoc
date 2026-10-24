@@ -1,0 +1,17 @@
+{
+  "serverHostname": "mail.artcomplect.com",
+  "defaultDomain": "artcomplect.com",
+  "requestTlsCertificate": false,
+  "generateDkimKeys": true,
+  "tracer": {
+    "@type": "Stdout",
+    "level": "info",
+    "enable": true,
+    "ansi": false,
+    "buffered": false,
+    "multiline": false,
+    "lossy": false,
+    "events": {},
+    "eventsPolicy": "exclude"
+  }
+}

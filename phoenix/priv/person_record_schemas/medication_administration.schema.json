@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Medication given",
+  "x-icon": "hero-beaker",
+  "x-summary": "A drug given to the person: what, how much, how and when, with a warning when it matches a recorded allergy.",
+  "x-part-of": [
+    "encounter"
+  ],
+  "title": "MedicationAdministration",
+  "description": "FHIR MedicationAdministration-flavored (not conformant). `medication` has the CodeableConcept shape (text plus coding) shared with a future medication list (MedicationStatement): `coding` is set by the server when the text names a drug on the app's own INN list (App.Clinical.Drugs, system urn:hrda:drug). `dose` is FHIR dosage.dose (value + unit). `allergyWarning` is set by the server (App.Clinical.Changes.CodeMedication) when the drug matches a recorded allergy; the save is never blocked. Route codes are the app's own (FHIR uses SNOMED CT, which needs a licence).",
+  "type": "object",
+  "required": [
+    "occurrence",
+    "status",
+    "medication"
+  ],
+  "properties": {
+    "occurrence": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "in-progress",
+        "not-done",
+        "entered-in-error"
+      ],
+      "x-enum-labels": {
+        "completed": "Given",
+        "in-progress": "Being given (infusion)",
+        "not-done": "Not given",
+        "entered-in-error": "Entered in error"
+      }
+    },
+    "medication": {
+      "type": "object",
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "x-suggest-list": "drugs",
+          "x-help": "Choose from the list or type another name."
+        },
+        "coding": {
+          "type": "array",
+          "maxItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "system",
+              "code"
+            ],
+            "properties": {
+              "system": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "display": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "dose": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 100000,
+          "x-unit-field": "unit"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "mg",
+            "mcg",
+            "g",
+            "mL",
+            "IU",
+            "mmol",
+            "L/min",
+            "puff",
+            "drop"
+          ],
+          "x-enum-labels": {
+            "mg": "mg",
+            "mcg": "mcg",
+            "g": "g",
+            "mL": "mL",
+            "IU": "IU",
+            "mmol": "mmol",
+            "L/min": "L/min",
+            "puff": "puff",
+            "drop": "drop"
+          },
+          "x-card": false
+        }
+      }
+    },
+    "route": {
+      "type": "string",
+      "enum": [
+        "iv",
+        "io",
+        "im",
+        "sc",
+        "po",
+        "in",
+        "buccal",
+        "sl",
+        "pr",
+        "inh",
+        "neb",
+        "topical"
+      ],
+      "x-enum-labels": {
+        "iv": "Intravenous (IV)",
+        "io": "Intraosseous (IO)",
+        "im": "Intramuscular (IM)",
+        "sc": "Subcutaneous (SC)",
+        "po": "By mouth (PO)",
+        "in": "Intranasal (IN)",
+        "buccal": "Buccal / transmucosal",
+        "sl": "Sublingual",
+        "pr": "Rectal",
+        "inh": "Inhaled",
+        "neb": "Nebulised",
+        "topical": "On the skin"
+      }
+    },
+    "site": {
+      "type": "string",
+      "maxLength": 200,
+      "x-help": "Where it was given, e.g. left thigh, right humeral head (IO)."
+    },
+    "reason": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "allergyWarning": {
+      "type": "string",
+      "maxLength": 1000,
+      "x-system": "alert",
+      "x-label": "Allergy warning"
+    },
+    "interactionWarning": {
+      "type": "string",
+      "maxLength": 1000,
+      "x-system": "alert",
+      "x-label": "Interaction warning"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  },
+  "additionalProperties": false
+}

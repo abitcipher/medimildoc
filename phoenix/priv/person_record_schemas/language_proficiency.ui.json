@@ -1,0 +1,12 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/language", "label": "Language" },
+    { "type": "Control", "scope": "#/properties/listening", "label": "Listening (0-5)" },
+    { "type": "Control", "scope": "#/properties/speaking", "label": "Speaking (0-5)" },
+    { "type": "Control", "scope": "#/properties/reading", "label": "Reading (0-5)" },
+    { "type": "Control", "scope": "#/properties/writing", "label": "Writing (0-5)" },
+    { "type": "Control", "scope": "#/properties/assessedOn", "label": "Assessed on" },
+    { "type": "Control", "scope": "#/properties/preferred", "label": "Preferred language" }
+  ]
+}

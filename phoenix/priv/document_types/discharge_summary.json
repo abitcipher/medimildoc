@@ -1,0 +1,210 @@
+{
+  "id": "discharge_summary",
+  "version": "1",
+  "label": "Discharge summary",
+  "icon": "hero-clipboard-document-check",
+  "summary": "What was found and done during care, the outcome and recommendations; sick leave becomes an absence when signed.",
+  "category": "medical",
+  "access": {
+    "read": [
+      "medical.read"
+    ],
+    "write": "medical.write"
+  },
+  "register": {
+    "code": "вип",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 25,
+  "template": "discharge_summary.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Treating clinician",
+      "permission": "medical.write"
+    },
+    {
+      "action": "sign",
+      "label": "Head of department",
+      "permission": "medical.sign"
+    }
+  ],
+  "effects": [
+    "sick_leave"
+  ],
+  "basis": [
+    "care_referral"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "provider",
+      "careType",
+      "admissionDate",
+      "dischargeDate",
+      "diagnosis",
+      "outcome"
+    ],
+    "properties": {
+      "provider": {
+        "type": "string",
+        "x-entity": "provider",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+        "x-help": "From the register of care providers; our own units are listed first."
+      },
+      "careType": {
+        "type": "string",
+        "enum": [
+          "inpatient",
+          "day_care",
+          "outpatient"
+        ],
+        "x-enum-labels": {
+          "inpatient": "Inpatient",
+          "day_care": "Day care",
+          "outpatient": "Outpatient"
+        }
+      },
+      "admissionDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "dischargeDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "diagnosis": {
+        "type": "string",
+        "maxLength": 1000
+      },
+      "diagnosisCode": {
+        "type": "string",
+        "pattern": "^[A-TV-Z][0-9]{2}(\\.[0-9A-Z]{1,4})?$",
+        "x-help": "ICD-10 code, e.g. S83.2."
+      },
+      "treatment": {
+        "type": "string",
+        "maxLength": 4000
+      },
+      "outcome": {
+        "type": "string",
+        "enum": [
+          "recovered",
+          "improved",
+          "unchanged",
+          "worsened",
+          "transferred",
+          "died"
+        ],
+        "x-enum-labels": {
+          "recovered": "Recovered",
+          "improved": "Improved",
+          "unchanged": "Unchanged",
+          "worsened": "Worsened",
+          "transferred": "Transferred",
+          "died": "Died"
+        }
+      },
+      "recommendations": {
+        "type": "string",
+        "maxLength": 4000
+      },
+      "sickLeaveFrom": {
+        "type": "string",
+        "format": "date",
+        "x-help": "Sick leave issued: recorded as the person's absence when the summary is signed, without the diagnosis."
+      },
+      "sickLeaveTo": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/provider",
+        "label": "Care provider"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/careType",
+            "label": "Type of care"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/admissionDate",
+            "label": "Admitted"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/dischargeDate",
+            "label": "Discharged"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/diagnosis",
+        "label": "Diagnosis",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/diagnosisCode",
+        "label": "ICD-10 code"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/treatment",
+        "label": "Treatment",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/outcome",
+        "label": "Outcome"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/recommendations",
+        "label": "Recommendations",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Group",
+        "label": "Sick leave",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/sickLeaveFrom",
+                "label": "From"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/sickLeaveTo",
+                "label": "To"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

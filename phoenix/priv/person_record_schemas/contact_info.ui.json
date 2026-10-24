@@ -1,0 +1,15 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/contactType", "label": "Type" },
+    { "type": "Control", "scope": "#/properties/value", "label": "Value" },
+    { "type": "Control", "scope": "#/properties/use", "label": "Use" },
+    { "type": "Control", "scope": "#/properties/unit", "label": "Unit" },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

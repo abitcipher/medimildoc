@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Business trip",
+  "x-icon": "hero-paper-airplane",
+  "x-summary": "A business trip ordered for a period: where and why.",
+  "title": "Business trip",
+  "description": "A business trip (відрядження) recorded by a signed business trip order (docs/design/business-trips.md). The person is away for the period — the leave calendar counts it — but it is not leave and takes nothing from leave balances.",
+  "type": "object",
+  "required": ["destination", "purpose", "startDate", "endDate"],
+  "properties": {
+    "destination": {
+      "type": "string",
+      "maxLength": 300,
+      "x-help": "Where the person goes: a unit, an organisation, a town."
+    },
+    "purpose": { "type": "string", "maxLength": 1000 },
+    "startDate": { "type": "string", "format": "date" },
+    "endDate": { "type": "string", "format": "date" },
+    "days": {
+      "type": "integer",
+      "minimum": 1,
+      "x-help": "Calendar days, first and last day included."
+    },
+    "transport": {
+      "type": "string",
+      "enum": ["official_vehicle", "public_transport", "own_vehicle", "air", "other"],
+      "x-enum-labels": {
+        "official_vehicle": "Official vehicle",
+        "public_transport": "Public transport",
+        "own_vehicle": "Own vehicle",
+        "air": "Air",
+        "other": "Other"
+      }
+    },
+    "basis": {
+      "type": "string",
+      "maxLength": 100,
+      "x-help": "The number of the order that sent the person."
+    },
+    "note": { "type": "string", "maxLength": 2000 }
+  },
+  "additionalProperties": false
+}

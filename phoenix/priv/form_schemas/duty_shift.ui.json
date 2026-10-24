@@ -1,0 +1,7 @@
+{
+  "type": "HorizontalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/duty_type", "label": "Duty" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Note" }
+  ]
+}

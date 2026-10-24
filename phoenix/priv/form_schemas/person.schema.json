@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Person",
+  "type": "object",
+  "required": ["given_name", "family_name"],
+  "properties": {
+    "given_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "family_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "patronymic": { "type": "string", "maxLength": 255 },
+    "email": { "type": "string", "format": "email" },
+    "date_of_birth": { "type": "string", "format": "date" },
+    "birth_country": { "type": "string", "maxLength": 2, "x-reference": "country" },
+    "birth_region": {
+      "type": "string",
+      "maxLength": 255,
+      "x-reference": "region",
+      "x-code-field": "birth_region_code",
+      "x-country-field": "birth_country"
+    },
+    "birth_region_code": { "type": "string", "maxLength": 32 },
+    "birth_locality": {
+      "type": "string",
+      "maxLength": 255,
+      "x-reference": "place",
+      "x-code-field": "birth_locality_code",
+      "x-country-field": "birth_country",
+      "x-region-field": "birth_region"
+    },
+    "birth_locality_code": { "type": "string", "maxLength": 32 }
+  }
+}

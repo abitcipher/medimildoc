@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/code/properties/text", "label": "Substance" },
+    { "type": "Control", "scope": "#/properties/clinicalStatus", "label": "Status" },
+    { "type": "Control", "scope": "#/properties/verificationStatus", "label": "Verification status" },
+    { "type": "Control", "scope": "#/properties/type", "label": "Type" },
+    { "type": "Control", "scope": "#/properties/category", "label": "Category" },
+    { "type": "Control", "scope": "#/properties/criticality", "label": "Criticality" },
+    { "type": "Control", "scope": "#/properties/reactionManifestation", "label": "Reaction" },
+    { "type": "Control", "scope": "#/properties/reactionSeverity", "label": "Reaction severity" },
+    { "type": "Control", "scope": "#/properties/onsetDate", "label": "Onset date" },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

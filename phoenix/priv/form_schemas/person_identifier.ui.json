@@ -1,0 +1,22 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/id_type", "label": "Type" },
+    {
+      "type": "Control",
+      "scope": "#/properties/other_type_label",
+      "label": "Type (if \"other\")"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/country",
+      "label": "Country"
+    },
+    { "type": "Control", "scope": "#/properties/value", "label": "Value" },
+    { "type": "Control", "scope": "#/properties/is_current", "label": "Currently valid" },
+    { "type": "Control", "scope": "#/properties/issuing_authority", "label": "Issuing authority" },
+    { "type": "Control", "scope": "#/properties/issued_on", "label": "Issued on" },
+    { "type": "Control", "scope": "#/properties/expires_on", "label": "Expires on" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Note" }
+  ]
+}

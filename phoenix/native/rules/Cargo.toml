@@ -1,0 +1,20 @@
+[package]
+name = "rules"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "FSDC rules engine for the app: GoRules ZEN (JDM) as an Erlang NIF (docs/design/data-consistency.md)."
+
+[lib]
+name = "rules"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.36"
+zen-engine = "=2.0.1"
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread"] }
+
+[profile.release]
+strip = "symbols"
+lto = "thin"

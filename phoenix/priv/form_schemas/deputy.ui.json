@@ -1,0 +1,14 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/deputy_id", "label": "Deputy" },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/starts_on", "label": "From" },
+        { "type": "Control", "scope": "#/properties/ends_on", "label": "Until" }
+      ]
+    },
+    { "type": "Control", "scope": "#/properties/note", "label": "Note" }
+  ]
+}

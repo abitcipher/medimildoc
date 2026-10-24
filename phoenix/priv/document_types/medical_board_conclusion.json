@@ -1,0 +1,657 @@
+{
+  "id": "medical_board_conclusion",
+  "version": "1",
+  "label": "Medical board conclusion",
+  "icon": "hero-clipboard-document-check",
+  "summary": "The board's assessment: examinations, diagnoses, functional limitation, fitness, restrictions and recommendations.",
+  "category": "medical",
+  "access": {
+    "read": [
+      "medical.read"
+    ],
+    "write": "medical.write"
+  },
+  "register": {
+    "code": "влк",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 75,
+  "template": "medical_board_conclusion.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Board member",
+      "permission": "medical.write",
+      "multiple": true,
+      "parallel": true
+    },
+    {
+      "action": "sign",
+      "label": "Board chair",
+      "permission": "medical.write"
+    }
+  ],
+  "effects": [
+    "fitness_for_duty",
+    "schedule_reexamination"
+  ],
+  "acknowledge": true,
+  "basis": [
+    "medical_board_referral"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "description": "Neutral categories with Ukrainian labels, not a quotation of any regulation. Functional limitation uses the WHO ICF generic qualifier scale. ICD-10 codes are checked by pattern only; no code list is bundled.",
+    "required": [
+      "conclusion"
+    ],
+    "properties": {
+      "examinations": {
+        "type": "object",
+        "properties": {
+          "therapist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "surgeon": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "neurologist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "psychiatrist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "ophthalmologist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "ent": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "dentist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          },
+          "dermatologist": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "opinion": {
+                "type": "string",
+                "enum": [
+                  "fit",
+                  "fit_with_restrictions",
+                  "temporarily_unfit",
+                  "unfit"
+                ],
+                "x-enum-labels": {
+                  "fit": "Fit",
+                  "fit_with_restrictions": "Fit with restrictions",
+                  "temporarily_unfit": "Temporarily unfit",
+                  "unfit": "Unfit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "mainDiagnosis": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "icd10": {
+            "type": "string",
+            "pattern": "^[A-Z][0-9]{2}(\\.[0-9A-Z]{1,4})?$",
+            "x-help": "ICD-10 code, e.g. I10 or S82.1."
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "mild",
+              "moderate",
+              "severe"
+            ]
+          }
+        }
+      },
+      "concomitantDiagnoses": {
+        "type": "string",
+        "maxLength": 2000
+      },
+      "functionalLimitation": {
+        "type": "string",
+        "enum": [
+          "none",
+          "mild",
+          "moderate",
+          "severe",
+          "complete"
+        ],
+        "x-enum-labels": {
+          "none": "No limitation (0–4 %)",
+          "mild": "Mild (5–24 %)",
+          "moderate": "Moderate (25–49 %)",
+          "severe": "Severe (50–95 %)",
+          "complete": "Complete (96–100 %)"
+        },
+        "x-help": "WHO ICF generic qualifier: how much the person's functioning is limited overall."
+      },
+      "conclusion": {
+        "type": "string",
+        "enum": [
+          "fit",
+          "fit_with_restrictions",
+          "temporarily_unfit",
+          "unfit"
+        ],
+        "x-enum-labels": {
+          "fit": "Fit",
+          "fit_with_restrictions": "Fit with restrictions",
+          "temporarily_unfit": "Temporarily unfit",
+          "unfit": "Unfit"
+        },
+        "x-help": "Temporarily unfit needs a re-examination date."
+      },
+      "restrictions": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "no_heavy_lifting",
+            "no_night_duty",
+            "no_field_duty",
+            "no_driving",
+            "no_work_at_height",
+            "no_firearms",
+            "limited_marching",
+            "no_prolonged_standing"
+          ]
+        },
+        "x-enum-labels": {
+          "no_heavy_lifting": "No heavy lifting",
+          "no_night_duty": "No night duty",
+          "no_field_duty": "No field duty",
+          "no_driving": "No driving",
+          "no_work_at_height": "No work at height",
+          "no_firearms": "No firearms",
+          "limited_marching": "Limited marching",
+          "no_prolonged_standing": "No prolonged standing"
+        }
+      },
+      "restrictionsText": {
+        "type": "string",
+        "maxLength": 1000,
+        "x-help": "Other restrictions in plain terms. Do not name a diagnosis: this text goes to HR and commanders."
+      },
+      "recommendations": {
+        "type": "string",
+        "maxLength": 4000,
+        "x-help": "Treatment, follow-up, workplace adjustments."
+      },
+      "reexaminationDate": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "if": {
+      "properties": {
+        "conclusion": {
+          "const": "temporarily_unfit"
+        }
+      },
+      "required": [
+        "conclusion"
+      ]
+    },
+    "then": {
+      "required": [
+        "reexaminationDate"
+      ]
+    },
+    "additionalProperties": false,
+    "x-then-message": "Temporarily unfit needs a re-examination date."
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Group",
+        "label": "Examinations",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/therapist/properties/findings",
+                "label": "Therapist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/therapist/properties/opinion",
+                "label": "Therapist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/surgeon/properties/findings",
+                "label": "Surgeon: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/surgeon/properties/opinion",
+                "label": "Surgeon: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/neurologist/properties/findings",
+                "label": "Neurologist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/neurologist/properties/opinion",
+                "label": "Neurologist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/psychiatrist/properties/findings",
+                "label": "Psychiatrist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/psychiatrist/properties/opinion",
+                "label": "Psychiatrist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/ophthalmologist/properties/findings",
+                "label": "Ophthalmologist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/ophthalmologist/properties/opinion",
+                "label": "Ophthalmologist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/ent/properties/findings",
+                "label": "ENT specialist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/ent/properties/opinion",
+                "label": "ENT specialist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/dentist/properties/findings",
+                "label": "Dentist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/dentist/properties/opinion",
+                "label": "Dentist: opinion"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/dermatologist/properties/findings",
+                "label": "Dermatologist: findings",
+                "options": {
+                  "multi": true
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/examinations/properties/dermatologist/properties/opinion",
+                "label": "Dermatologist: opinion"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Group",
+        "label": "Diagnosis",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "options": {
+              "widths": [
+                2,
+                1
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/mainDiagnosis/properties/text",
+                "label": "Main diagnosis"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/mainDiagnosis/properties/icd10",
+                "label": "ICD-10 code"
+              }
+            ]
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/mainDiagnosis/properties/severity",
+            "label": "Severity"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/concomitantDiagnoses",
+            "label": "Concomitant diagnoses",
+            "options": {
+              "multi": true
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/functionalLimitation",
+            "label": "Functional limitation"
+          }
+        ]
+      },
+      {
+        "type": "Group",
+        "label": "Conclusion and recommendations",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/conclusion",
+                "label": "Conclusion"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/reexaminationDate",
+                "label": "Re-examination date"
+              }
+            ]
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/restrictions",
+            "label": "Duty restrictions"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/restrictionsText",
+            "label": "Other restrictions",
+            "options": {
+              "multi": true
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/recommendations",
+            "label": "Recommendations",
+            "options": {
+              "multi": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

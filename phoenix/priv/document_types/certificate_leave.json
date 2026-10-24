@@ -1,0 +1,67 @@
+{
+  "id": "certificate_leave",
+  "version": "1",
+  "label": "Leave certificate",
+  "icon": "hero-calendar-days",
+  "summary": "Leave entitled, used and left in a year, with every recorded leave; HR signs.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read"
+    ],
+    "write": "people.write",
+    "self": true
+  },
+  "register": {
+    "code": "дов",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 5,
+  "template": "certificate.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "HR",
+      "permission": "people.write"
+    }
+  ],
+  "effects": [],
+  "basis": [],
+  "facts": "leave_balance",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "year"
+    ],
+    "properties": {
+      "year": {
+        "type": "integer",
+        "minimum": 2000,
+        "maximum": 2100,
+        "x-widget": "number"
+      },
+      "presentTo": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "Where the certificate will be presented; leave empty for \"wherever required\"."
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/year",
+        "label": "Year"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/presentTo",
+        "label": "To be presented at"
+      }
+    ]
+  }
+}

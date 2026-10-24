@@ -1,0 +1,111 @@
+{
+  "id": "personnel_order_dismissal",
+  "version": "1",
+  "label": "Order: release",
+  "icon": "hero-user-minus",
+  "summary": "Releases the person from their post on a date.",
+  "category": "personnel",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "orders.sign"
+    ],
+    "write": "people.write"
+  },
+  "register": {
+    "code": "ос",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 75,
+  "template": "personnel_order.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Head of HR",
+      "permission": "people.write"
+    },
+    {
+      "action": "sign",
+      "label": "Commander",
+      "permission": "orders.sign"
+    }
+  ],
+  "effects": [
+    "assignment_end"
+  ],
+  "acknowledge": true,
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "effectiveDate",
+      "reason"
+    ],
+    "properties": {
+      "effectiveDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "reason": {
+        "type": "string",
+        "enum": [
+          "end_of_contract",
+          "own_request",
+          "health",
+          "disciplinary",
+          "transfer_out",
+          "retirement",
+          "other"
+        ],
+        "x-enum-labels": {
+          "end_of_contract": "End of contract",
+          "own_request": "Own request",
+          "health": "Health (medical board conclusion)",
+          "disciplinary": "Disciplinary",
+          "transfer_out": "Transfer to another organisation",
+          "retirement": "Retirement",
+          "other": "Other"
+        }
+      },
+      "basis": {
+        "type": "string",
+        "maxLength": 500,
+        "x-help": "The request, contract or conclusion the order is based on, e.g. a report of 12.09.2026."
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/effectiveDate",
+        "label": "Last day in post"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/reason",
+        "label": "Reason"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/basis",
+        "label": "Basis"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

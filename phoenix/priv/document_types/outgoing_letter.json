@@ -1,0 +1,152 @@
+{
+  "id": "outgoing_letter",
+  "version": "1",
+  "label": "Outgoing letter",
+  "icon": "hero-paper-airplane",
+  "summary": "A letter sent: the records officer checks it, the head of the sending unit signs; a reply closes the instructions on its incoming letter.",
+  "category": "personnel",
+  "subject": "none",
+  "access": {
+    "read": [
+      "records.manage",
+      "orders.sign"
+    ],
+    "write": "records.manage"
+  },
+  "register": {
+    "code": "вих",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 3,
+  "template": "outgoing_letter.typ",
+  "route": [
+    {
+      "action": "approve",
+      "label": "Co-approvers",
+      "permission": "people.read",
+      "multiple": true,
+      "parallel": true,
+      "optional": true
+    },
+    {
+      "action": "approve",
+      "label": "Records officer",
+      "permission": "records.manage"
+    },
+    {
+      "action": "sign",
+      "label": "Head",
+      "permission": "orders.sign"
+    }
+  ],
+  "effects": [
+    "close_instructions"
+  ],
+  "basis": [
+    "incoming_letter"
+  ],
+  "files": true,
+  "reply_by_executor": true,
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "addressee",
+      "subject",
+      "text",
+      "unit"
+    ],
+    "properties": {
+      "addressee": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "The organisation or person the letter goes to."
+      },
+      "address": {
+        "type": "string",
+        "maxLength": 500
+      },
+      "unit": {
+        "type": "string",
+        "x-entity": "organization",
+        "x-help": "The unit the letter is sent from; its head signs."
+      },
+      "subject": {
+        "type": "string",
+        "maxLength": 300
+      },
+      "text": {
+        "type": "string",
+        "maxLength": 20000
+      },
+      "delivery": {
+        "type": "string",
+        "enum": [
+          "post",
+          "email",
+          "courier",
+          "edms",
+          "by_hand"
+        ],
+        "x-enum-labels": {
+          "post": "Post",
+          "email": "E-mail",
+          "courier": "Courier",
+          "edms": "Electronic document exchange",
+          "by_hand": "By hand"
+        }
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/addressee",
+        "label": "Addressee"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/address",
+        "label": "Address"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/unit",
+        "label": "From (unit)"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/subject",
+        "label": "Subject"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/text",
+        "label": "Text",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/delivery",
+        "label": "Delivery"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

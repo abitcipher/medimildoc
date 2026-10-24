@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IdentityDocument",
+  "type": "object",
+  "required": ["document_type", "number"],
+  "properties": {
+    "document_type": {
+      "x-enum-labels": {"passport": "Passport", "national_id_card": "National ID card", "military_id": "Military ID", "drivers_license": "Driving licence", "birth_certificate": "Birth certificate", "residence_permit": "Residence permit", "other": "Other"},
+      "type": "string",
+      "enum": [
+        "passport",
+        "national_id_card",
+        "military_id",
+        "drivers_license",
+        "birth_certificate",
+        "residence_permit",
+        "other"
+      ]
+    },
+    "series": { "type": "string", "maxLength": 50 },
+    "number": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "issuing_authority": { "x-suggest": "issuing_authority", "type": "string", "maxLength": 255 },
+    "issuing_country": { "type": "string", "maxLength": 2, "x-reference": "country" },
+    "issued_on": { "type": "string", "format": "date" },
+    "expires_on": { "type": "string", "format": "date" },
+    "note": { "type": "string", "maxLength": 1000 }
+  }
+}

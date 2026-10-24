@@ -1,0 +1,21 @@
+{
+  "name": "sheets-app-shim",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Thin Apps Script shim: menu item, sidebar iframe host, getContext()/mintToken(). No business logic here.",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c && cp src/sidebar.html src/appsscript.json dist/",
+    "watch": "rollup -c -w",
+    "push": "npm run build && clasp push",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^6.0.3",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/google-apps-script": "^1.0.86",
+    "rollup": "^4.24.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.3"
+  }
+}

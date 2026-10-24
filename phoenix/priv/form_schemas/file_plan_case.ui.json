@@ -1,0 +1,63 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/index",
+          "label": "Index"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/retention",
+          "label": "Retention period"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/retention_ref",
+          "label": "Article"
+        }
+      ]
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/title",
+      "label": "Title"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/retention_years",
+          "label": "Years kept"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/permanent",
+          "label": "Permanent"
+        }
+      ]
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/document_types",
+      "label": "Document types"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/organization_id",
+      "label": "Unit"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Note",
+      "options": {
+        "multi": true
+      }
+    }
+  ]
+}

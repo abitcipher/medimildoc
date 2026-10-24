@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Organization",
+  "type": "object",
+  "required": [
+    "name",
+    "kind"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "company",
+        "department",
+        "team",
+        "unit",
+        "brigade",
+        "battalion",
+        "division"
+      ]
+    },
+    "parent_id": {
+      "type": "string",
+      "description": "Options supplied at render time (existing organizations, minus this one when editing) — see field_options in AppWeb.Components.JsonSchemaForm. Optional; a top-level org has none."
+    },
+    "country": {
+      "type": "string",
+      "maxLength": 2,
+      "x-reference": "country",
+      "x-help": "Where the unit is stationed. Leave empty when it is where its parent unit is."
+    },
+    "locality": {
+      "type": "string",
+      "maxLength": 255,
+      "x-reference": "place",
+      "x-code-field": "locality_code",
+      "x-country-field": "country"
+    },
+    "locality_code": {
+      "type": "string",
+      "maxLength": 32
+    }
+  }
+}

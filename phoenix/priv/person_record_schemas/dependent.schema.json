@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel_private",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Dependant",
+  "x-icon": "hero-user-plus",
+  "x-summary": "One child, spouse or other dependant.",
+  "title": "Dependent",
+  "description": "One dependent (child/spouse/other) tied to a person — the follow-up flagged when :family_status's dependentsCount was left as a plain integer rather than a nested list. One PersonRecord per dependent, not an array-valued field on a single record — consistent with how every other repeatable per-person fact in this domain works (:rank_history, :compensation, ...: one record per occurrence, kind + recorded_at + data doing the grouping/ordering, not a nested structure inside one record's data).",
+  "type": "object",
+  "required": ["name", "relationship"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "relationship": {
+      "type": "string",
+      "enum": ["child", "spouse", "parent", "other"]
+    },
+    "dateOfBirth": { "type": "string", "format": "date" },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "vetting",
+  "x-confidentiality": "v",
+  "x-classification": "nato_restricted",
+  "x-version": "1",
+  "x-label": "Vetting",
+  "x-icon": "hero-finger-print",
+  "x-summary": "Details of a security investigation behind a clearance.",
+  "title": "VettingRecord",
+  "description": "Personnel security investigation details, readable only with vetting.read (docs/design/access-control-phase1.md). The resulting clearance status is recorded separately in security_clearance, which HR can see. Structure is illustrative; it is not verified against AC/35-D/2000.",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "investigationType": {
+      "type": "string",
+      "enum": ["initial", "periodic_review", "upgrade", "for_cause"]
+    },
+    "investigatingAuthority": { "x-suggest": "vetting_authority",
+      "type": "string",
+      "description": "Who conducted the investigation, free text."
+    },
+    "openedOn": { "type": "string", "format": "date" },
+    "closedOn": { "type": "string", "format": "date" },
+    "outcome": {
+      "x-help": "The result of the investigation, or in progress.",
+      "type": "string",
+      "enum": ["in_progress", "favourable", "favourable_with_conditions", "unfavourable", "withdrawn"]
+    },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

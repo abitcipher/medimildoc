@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Current medication",
+  "x-icon": "hero-clipboard-document-list",
+  "x-summary": "A medicine the person takes regularly or as needed: what, how much, how often, since when.",
+  "title": "MedicationStatement",
+  "description": "FHIR R5 MedicationStatement-flavored (not conformant); field names checked against the vendored priv/fhir/R5/fhir.schema.json. R5 keeps the record's own status separate from whether the person takes the medicine; the latter is `adherence` (MedicationStatement.adherence.code; codes from the FHIR value set from memory, a subset). `medication` and `dose` have the same shape as in medication_administration (App.Clinical.Drugs coding, server-set `allergyWarning`, App.Clinical.Changes.CodeMedication). `frequency` is a short list for the usual cases; `dosageText` is FHIR renderedDosageInstruction for anything else. Category care: point-of-care staff need current medicines (anticoagulants, insulin) as they need allergies.",
+  "type": "object",
+  "required": [
+    "medication",
+    "adherence"
+  ],
+  "properties": {
+    "medication": {
+      "type": "object",
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "x-suggest-list": "drugs",
+          "x-help": "Choose from the list or type another name."
+        },
+        "coding": {
+          "type": "array",
+          "maxItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "system",
+              "code"
+            ],
+            "properties": {
+              "system": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "display": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "adherence": {
+      "type": "string",
+      "enum": [
+        "taking",
+        "on-hold",
+        "stopped",
+        "not-taking",
+        "unknown"
+      ],
+      "x-enum-labels": {
+        "taking": "Taking",
+        "on-hold": "On hold",
+        "stopped": "Stopped",
+        "not-taking": "Not taking",
+        "unknown": "Unknown"
+      }
+    },
+    "dose": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 100000,
+          "x-unit-field": "unit"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "mg",
+            "mcg",
+            "g",
+            "mL",
+            "IU",
+            "mmol",
+            "L/min",
+            "puff",
+            "drop"
+          ],
+          "x-enum-labels": {
+            "mg": "mg",
+            "mcg": "mcg",
+            "g": "g",
+            "mL": "mL",
+            "IU": "IU",
+            "mmol": "mmol",
+            "L/min": "L/min",
+            "puff": "puff",
+            "drop": "drop"
+          },
+          "x-card": false
+        }
+      }
+    },
+    "route": {
+      "type": "string",
+      "enum": [
+        "iv",
+        "io",
+        "im",
+        "sc",
+        "po",
+        "in",
+        "buccal",
+        "sl",
+        "pr",
+        "inh",
+        "neb",
+        "topical"
+      ],
+      "x-enum-labels": {
+        "iv": "Intravenous (IV)",
+        "io": "Intraosseous (IO)",
+        "im": "Intramuscular (IM)",
+        "sc": "Subcutaneous (SC)",
+        "po": "By mouth (PO)",
+        "in": "Intranasal (IN)",
+        "buccal": "Buccal / transmucosal",
+        "sl": "Sublingual",
+        "pr": "Rectal",
+        "inh": "Inhaled",
+        "neb": "Nebulised",
+        "topical": "On the skin"
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "enum": [
+        "once_daily",
+        "twice_daily",
+        "three_times_daily",
+        "four_times_daily",
+        "every_other_day",
+        "weekly",
+        "as_needed",
+        "other"
+      ],
+      "x-enum-labels": {
+        "once_daily": "Once a day",
+        "twice_daily": "Twice a day",
+        "three_times_daily": "Three times a day",
+        "four_times_daily": "Four times a day",
+        "every_other_day": "Every other day",
+        "weekly": "Once a week",
+        "as_needed": "As needed",
+        "other": "Other (see instructions)"
+      }
+    },
+    "dosageText": {
+      "type": "string",
+      "maxLength": 500,
+      "x-help": "Instructions in words, e.g. 1 tablet in the morning with food."
+    },
+    "effectiveStart": {
+      "type": "string",
+      "format": "date"
+    },
+    "effectiveEnd": {
+      "type": "string",
+      "format": "date"
+    },
+    "reason": {
+      "type": "string",
+      "maxLength": 500,
+      "x-help": "What it is taken for."
+    },
+    "informationSource": {
+      "type": "string",
+      "enum": [
+        "patient",
+        "prescription",
+        "clinician",
+        "relative"
+      ],
+      "x-enum-labels": {
+        "patient": "The person themselves",
+        "prescription": "Prescription or record",
+        "clinician": "Clinician",
+        "relative": "Relative"
+      }
+    },
+    "allergyWarning": {
+      "type": "string",
+      "maxLength": 1000,
+      "x-system": "alert",
+      "x-label": "Allergy warning"
+    },
+    "interactionWarning": {
+      "type": "string",
+      "maxLength": 1000,
+      "x-system": "alert",
+      "x-label": "Interaction warning"
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/starts_on", "label": "Start date" },
+    { "type": "Control", "scope": "#/properties/ends_on", "label": "End date" }
+  ]
+}

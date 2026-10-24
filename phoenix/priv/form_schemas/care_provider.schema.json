@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CareProvider",
+  "type": "object",
+  "required": ["name", "provider_type"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "provider_type": {
+      "type": "string",
+      "enum": ["hospital", "clinic", "medical_unit", "diagnostic_center", "laboratory", "rehabilitation", "dental", "pharmacy", "other"],
+      "x-enum-labels": {
+        "hospital": "Hospital",
+        "clinic": "Clinic",
+        "medical_unit": "Medical unit",
+        "diagnostic_center": "Diagnostic centre",
+        "laboratory": "Laboratory",
+        "rehabilitation": "Rehabilitation centre",
+        "dental": "Dental clinic",
+        "pharmacy": "Pharmacy",
+        "other": "Other"
+      }
+    },
+    "priority": {
+      "type": "boolean",
+      "x-help": "One of our own medical units: no service contract or transfer of information to a third party is needed. Listed first."
+    },
+    "organization_id": {
+      "type": "string",
+      "x-help": "For our own units: the unit in the organization tree."
+    },
+    "registry_code": {
+      "type": "string",
+      "maxLength": 50,
+      "x-help": "The code in a national register of healthcare facilities or companies."
+    },
+    "country": { "type": "string", "maxLength": 2, "x-reference": "country" },
+    "locality": { "type": "string", "maxLength": 200 },
+    "address": { "type": "string", "maxLength": 500 },
+    "phone": { "type": "string", "maxLength": 50 },
+    "email": { "type": "string", "maxLength": 255 },
+    "agreement_ref": {
+      "type": "string",
+      "maxLength": 200,
+      "x-help": "The service contract or data-sharing agreement with an external provider."
+    },
+    "agreement_until": { "type": "string", "format": "date" },
+    "active": { "type": "boolean" },
+    "notes": { "type": "string", "maxLength": 2000 }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Leave",
+  "x-icon": "hero-sun",
+  "x-summary": "A period of leave granted by an order.",
+  "title": "Leave",
+  "description": "Leave taken by the person (docs/design/leave.md). Recorded by a signed leave order; the source of leave balances. Types and entitlement: priv/leave_types.json.",
+  "type": "object",
+  "required": ["leaveType", "startDate", "endDate"],
+  "properties": {
+    "leaveType": {
+      "type": "string",
+      "enum": ["annual", "family", "study", "sick", "unpaid"],
+      "x-enum-labels": {
+        "annual": "Annual leave",
+        "family": "Family circumstances",
+        "study": "Study leave",
+        "sick": "Sick leave",
+        "unpaid": "Unpaid leave"
+      }
+    },
+    "startDate": { "type": "string", "format": "date" },
+    "endDate": { "type": "string", "format": "date" },
+    "days": {
+      "type": "integer",
+      "minimum": 1,
+      "x-help": "Calendar days, first and last day included."
+    },
+    "destination": { "type": "string", "maxLength": 300 },
+    "basis": {
+      "type": "string",
+      "maxLength": 100,
+      "x-help": "The number of the order that granted the leave."
+    }
+  },
+  "additionalProperties": false
+}

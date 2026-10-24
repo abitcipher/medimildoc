@@ -1,0 +1,17 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/class", "label": "Type of encounter" },
+    { "type": "Control", "scope": "#/properties/status", "label": "Status" },
+    { "type": "Control", "scope": "#/properties/start", "label": "Start" },
+    { "type": "Control", "scope": "#/properties/end", "label": "End" },
+    { "type": "Control", "scope": "#/properties/triage", "label": "Triage" },
+    { "type": "Control", "scope": "#/properties/evacuationPriority", "label": "Evacuation priority" },
+    { "type": "Control", "scope": "#/properties/mechanismOfInjury", "label": "Mechanism of injury" },
+    { "type": "Control", "scope": "#/properties/reason", "label": "Reason" },
+    { "type": "Control", "scope": "#/properties/location", "label": "Location" },
+    { "type": "Control", "scope": "#/properties/practitioner", "label": "Practitioner" },
+    { "type": "Control", "scope": "#/properties/disposition", "label": "Disposition" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Notes", "options": { "multi": true } }
+  ]
+}

@@ -1,0 +1,9928 @@
+{
+ "dataset": "countries",
+ "description": "ISO 3166-1 countries; code = alpha-2",
+ "entries": [
+  {
+   "alpha3": "AND",
+   "alt_names": [
+    "AD",
+    "Andora",
+    "Andorra",
+    "Andorre",
+    "Principality of Andorra",
+    "Principat d'Andorra",
+    "Андорра",
+    "アンドラ"
+   ],
+   "calling_codes": [
+    "376"
+   ],
+   "capital": "Andorra la Vella",
+   "code": "AD",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "ad",
+   "languages": [
+    "cat"
+   ],
+   "names": {
+    "en": "Andorra",
+    "es": "Andorra",
+    "fr": "Andorre",
+    "pt": "Andorra",
+    "uk": "Андорра"
+   },
+   "numeric": "020",
+   "official_name": "Principality of Andorra",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "ARE",
+   "alt_names": [
+    "AE",
+    "Arabiemiraatit",
+    "Emirados Árabes Unidos",
+    "Emirates",
+    "Emirati Arabi Uniti",
+    "Emiratos Árabes Unidos",
+    "UAE",
+    "Ujedinjeni Arapski Emirati",
+    "United Arab Emirates",
+    "Vereinigte Arabische Emirate",
+    "Verenigde Arabische Emiraten",
+    "Émirats arabes unis",
+    "Объединённые Арабские Эмираты",
+    "دولة الإمارات العربية المتحدة",
+    "アラブ首長国連邦"
+   ],
+   "calling_codes": [
+    "971"
+   ],
+   "capital": "Abu Dhabi",
+   "code": "AE",
+   "currencies": [
+    "AED"
+   ],
+   "flag": "ae",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "United Arab Emirates",
+    "es": "Emiratos Árabes Unidos",
+    "fr": "Émirats arabes unis",
+    "pt": "Emirados Árabes Unidos",
+    "uk": "Обʼєднані Арабські Емірати"
+   },
+   "numeric": "784",
+   "official_name": "United Arab Emirates",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "AFG",
+   "alt_names": [
+    "AF",
+    "Afeganistão",
+    "Affganistan",
+    "Afganistan",
+    "Afganistán",
+    "Afghanistan",
+    "Afġānistān",
+    "Islamic Republic of Afghanistan",
+    "Owganystan",
+    "Афганистан",
+    "افغانستان",
+    "アフガニスタン"
+   ],
+   "calling_codes": [
+    "93"
+   ],
+   "capital": "Kabul",
+   "code": "AF",
+   "currencies": [
+    "AFN"
+   ],
+   "flag": "af",
+   "languages": [
+    "prs",
+    "pus",
+    "tuk"
+   ],
+   "names": {
+    "en": "Afghanistan",
+    "es": "Afganistán",
+    "fr": "Afghanistan",
+    "pt": "Afeganistão",
+    "uk": "Афганістан"
+   },
+   "numeric": "004",
+   "official_name": "Islamic Republic of Afghanistan",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "ATG",
+   "alt_names": [
+    "AG",
+    "Antigua and Barbuda",
+    "Antigua e Barbuda",
+    "Antigua en Barbuda",
+    "Antigua ja Barbuda",
+    "Antigua und Barbuda",
+    "Antigua y Barbuda",
+    "Antigua-et-Barbuda",
+    "Antigva i Barbuda",
+    "Antigwa a Barbiwda",
+    "Antígua e Barbuda",
+    "Антигуа и Барбуда",
+    "アンティグア・バーブーダ"
+   ],
+   "calling_codes": [
+    "1268"
+   ],
+   "capital": "Saint John's",
+   "code": "AG",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "ag",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Antigua & Barbuda",
+    "es": "Antigua y Barbuda",
+    "fr": "Antigua-et-Barbuda",
+    "pt": "Antígua e Barbuda",
+    "uk": "Антигуа і Барбуда"
+   },
+   "numeric": "028",
+   "official_name": "Antigua and Barbuda",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "AIA",
+   "alt_names": [
+    "AI",
+    "Anguilla",
+    "Angvila",
+    "Ангилья",
+    "アンギラ"
+   ],
+   "calling_codes": [
+    "1264"
+   ],
+   "capital": "The Valley",
+   "code": "AI",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "ai",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Anguilla",
+    "es": "Anguila",
+    "fr": "Anguilla",
+    "pt": "Anguila",
+    "uk": "Ангілья"
+   },
+   "numeric": "660",
+   "official_name": "Anguilla",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "ALB",
+   "alt_names": [
+    "AL",
+    "Albania",
+    "Albanie",
+    "Albanien",
+    "Albanija",
+    "Albanië",
+    "Albânia",
+    "Republic of Albania",
+    "Shqipnia",
+    "Shqipëri",
+    "Shqipëria",
+    "Албания",
+    "アルバニア"
+   ],
+   "calling_codes": [
+    "355"
+   ],
+   "capital": "Tirana",
+   "code": "AL",
+   "currencies": [
+    "ALL"
+   ],
+   "flag": "al",
+   "languages": [
+    "sqi"
+   ],
+   "names": {
+    "en": "Albania",
+    "es": "Albania",
+    "fr": "Albanie",
+    "pt": "Albânia",
+    "uk": "Албанія"
+   },
+   "numeric": "008",
+   "official_name": "Republic of Albania",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "ARM",
+   "alt_names": [
+    "AM",
+    "Armenia",
+    "Armenien",
+    "Armenija",
+    "Armenië",
+    "Arménia",
+    "Arménie",
+    "Hayastan",
+    "Republic of Armenia",
+    "Армения",
+    "Հայաստան",
+    "Հայաստանի Հանրապետություն",
+    "アルメニア"
+   ],
+   "calling_codes": [
+    "374"
+   ],
+   "capital": "Yerevan",
+   "code": "AM",
+   "currencies": [
+    "AMD"
+   ],
+   "flag": "am",
+   "languages": [
+    "hye",
+    "rus"
+   ],
+   "names": {
+    "en": "Armenia",
+    "es": "Armenia",
+    "fr": "Arménie",
+    "pt": "Armênia",
+    "uk": "Вірменія"
+   },
+   "numeric": "051",
+   "official_name": "Republic of Armenia",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "AGO",
+   "alt_names": [
+    "AO",
+    "Angola",
+    "Republic of Angola",
+    "República de Angola",
+    "ʁɛpublika de an'ɡɔla",
+    "Ангола",
+    "アンゴラ"
+   ],
+   "calling_codes": [
+    "244"
+   ],
+   "capital": "Luanda",
+   "code": "AO",
+   "currencies": [
+    "AOA"
+   ],
+   "flag": "ao",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Angola",
+    "es": "Angola",
+    "fr": "Angola",
+    "pt": "Angola",
+    "uk": "Ангола"
+   },
+   "numeric": "024",
+   "official_name": "Republic of Angola",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "ATA",
+   "alt_names": [
+    "AQ",
+    "Antarctica",
+    "Antarctique",
+    "Antarktika",
+    "Antarktis",
+    "Antartide",
+    "Antártida",
+    "Etelämanner",
+    "Антарктида",
+    "南極"
+   ],
+   "calling_codes": [],
+   "capital": null,
+   "code": "AQ",
+   "currencies": [],
+   "flag": "aq",
+   "languages": [],
+   "names": {
+    "en": "Antarctica",
+    "es": "Antártida",
+    "fr": "Antarctique",
+    "pt": "Antártida",
+    "uk": "Антарктика"
+   },
+   "numeric": "010",
+   "official_name": "Antarctica",
+   "region": null,
+   "subregion": null
+  },
+  {
+   "alpha3": "ARG",
+   "alt_names": [
+    "AR",
+    "Argentiina",
+    "Argentina",
+    "Argentine",
+    "Argentine Republic",
+    "Argentinien",
+    "Argentinië",
+    "Ariannin",
+    "República Argentina",
+    "Аргентина",
+    "アルゼンチン"
+   ],
+   "calling_codes": [
+    "54"
+   ],
+   "capital": "Buenos Aires",
+   "code": "AR",
+   "currencies": [
+    "ARS"
+   ],
+   "flag": "ar",
+   "languages": [
+    "grn",
+    "spa"
+   ],
+   "names": {
+    "en": "Argentina",
+    "es": "Argentina",
+    "fr": "Argentine",
+    "pt": "Argentina",
+    "uk": "Аргентина"
+   },
+   "numeric": "032",
+   "official_name": "Argentine Republic",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "ASM",
+   "alt_names": [
+    "AS",
+    "Amelika Sāmoa",
+    "American Samoa",
+    "Amerika Sāmoa",
+    "Amerikaans Samoa",
+    "Amerikan Samoa",
+    "Amerikanisch-Samoa",
+    "Američka Samoa",
+    "Samoa Americana",
+    "Samoa Americane",
+    "Samoa américaines",
+    "Sāmoa Amelika",
+    "Американское Самоа",
+    "アメリカ領サモア"
+   ],
+   "calling_codes": [
+    "1684"
+   ],
+   "capital": "Pago Pago",
+   "code": "AS",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "as",
+   "languages": [
+    "eng",
+    "smo"
+   ],
+   "names": {
+    "en": "American Samoa",
+    "es": "Samoa Americana",
+    "fr": "Samoa américaines",
+    "pt": "Samoa Americana",
+    "uk": "Американське Самоа"
+   },
+   "numeric": "016",
+   "official_name": "American Samoa",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "AUT",
+   "alt_names": [
+    "AT",
+    "Austria",
+    "Austrija",
+    "Autriche",
+    "Awstria",
+    "Itävalta",
+    "Oesterreich",
+    "Oostenrijk",
+    "Osterreich",
+    "Republic of Austria",
+    "Áustria",
+    "Österreich",
+    "Австрия",
+    "オーストリア"
+   ],
+   "calling_codes": [
+    "43"
+   ],
+   "capital": "Vienna",
+   "code": "AT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "at",
+   "languages": [
+    "bar"
+   ],
+   "names": {
+    "en": "Austria",
+    "es": "Austria",
+    "fr": "Autriche",
+    "pt": "Áustria",
+    "uk": "Австрія"
+   },
+   "numeric": "040",
+   "official_name": "Republic of Austria",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "AUS",
+   "alt_names": [
+    "AU",
+    "Australia",
+    "Australie",
+    "Australien",
+    "Australija",
+    "Australië",
+    "Austrália",
+    "Awstralia",
+    "Commonwealth of Australia",
+    "Австралия",
+    "オーストラリア"
+   ],
+   "calling_codes": [
+    "61"
+   ],
+   "capital": "Canberra",
+   "code": "AU",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "au",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Australia",
+    "es": "Australia",
+    "fr": "Australie",
+    "pt": "Austrália",
+    "uk": "Австралія"
+   },
+   "numeric": "036",
+   "official_name": "Commonwealth of Australia",
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand"
+  },
+  {
+   "alpha3": "ABW",
+   "alt_names": [
+    "AW",
+    "Aruba",
+    "Аруба",
+    "アルバ"
+   ],
+   "calling_codes": [
+    "297"
+   ],
+   "capital": "Oranjestad",
+   "code": "AW",
+   "currencies": [
+    "AWG"
+   ],
+   "flag": "aw",
+   "languages": [
+    "nld",
+    "pap"
+   ],
+   "names": {
+    "en": "Aruba",
+    "es": "Aruba",
+    "fr": "Aruba",
+    "pt": "Aruba",
+    "uk": "Аруба"
+   },
+   "numeric": "533",
+   "official_name": "Aruba",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "ALA",
+   "alt_names": [
+    "AX",
+    "Aaland",
+    "Ahvenanmaa",
+    "Aland",
+    "Alandia",
+    "Alândia",
+    "Isole Aland",
+    "Åland",
+    "Åland Islands",
+    "Ålandeilanden",
+    "Ålandski otoci",
+    "Аландские острова",
+    "オーランド諸島"
+   ],
+   "calling_codes": [
+    "358"
+   ],
+   "capital": "Mariehamn",
+   "code": "AX",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "ax",
+   "languages": [
+    "swe"
+   ],
+   "names": {
+    "en": "Åland Islands",
+    "es": "Islas Aland",
+    "fr": "Îles Åland",
+    "pt": "Ilhas Aland",
+    "uk": "Аландські Острови"
+   },
+   "numeric": "248",
+   "official_name": "Åland Islands",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "AZE",
+   "alt_names": [
+    "AZ",
+    "Aserbaidschan",
+    "Aserbaijan",
+    "Azerbaidzan",
+    "Azerbaijan",
+    "Azerbaiyán",
+    "Azerbajdžan",
+    "Azerbaïdjan",
+    "Azerbeidzjan",
+    "Azerbeijão",
+    "Azərbaycan",
+    "Azərbaycan Respublikası",
+    "Republic of Azerbaijan",
+    "Азербайджан",
+    "アゼルバイジャン"
+   ],
+   "calling_codes": [
+    "994"
+   ],
+   "capital": "Baku",
+   "code": "AZ",
+   "currencies": [
+    "AZN"
+   ],
+   "flag": "az",
+   "languages": [
+    "aze",
+    "rus"
+   ],
+   "names": {
+    "en": "Azerbaijan",
+    "es": "Azerbaiyán",
+    "fr": "Azerbaïdjan",
+    "pt": "Azerbaijão",
+    "uk": "Азербайджан"
+   },
+   "numeric": "031",
+   "official_name": "Republic of Azerbaijan",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "BIH",
+   "alt_names": [
+    "BA",
+    "Bosna i Hercegovina",
+    "Bosnia a Hercegovina",
+    "Bosnia and Herzegovina",
+    "Bosnia ed Erzegovina",
+    "Bosnia ja Hertsegovina",
+    "Bosnia y Herzegovina",
+    "Bosnia-Herzegovina",
+    "Bosnie-Herzégovine",
+    "Bosnien und Herzegowina",
+    "Bosnië en Herzegovina",
+    "Bósnia e Herzegovina",
+    "Боснa и Херцеговина",
+    "Босна и Херцеговина",
+    "Босния и Герцеговина",
+    "ボスニア・ヘルツェゴビナ"
+   ],
+   "calling_codes": [
+    "387"
+   ],
+   "capital": "Sarajevo",
+   "code": "BA",
+   "currencies": [
+    "BAM"
+   ],
+   "flag": "ba",
+   "languages": [
+    "bos",
+    "hrv",
+    "srp"
+   ],
+   "names": {
+    "en": "Bosnia & Herzegovina",
+    "es": "Bosnia y Herzegovina",
+    "fr": "Bosnie-Herzégovine",
+    "pt": "Bósnia e Herzegovina",
+    "uk": "Боснія і Герцеговина"
+   },
+   "numeric": "070",
+   "official_name": "Bosnia and Herzegovina",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "BRB",
+   "alt_names": [
+    "BB",
+    "Barbade",
+    "Barbados",
+    "Барбадос",
+    "バルバドス"
+   ],
+   "calling_codes": [
+    "1246"
+   ],
+   "capital": "Bridgetown",
+   "code": "BB",
+   "currencies": [
+    "BBD"
+   ],
+   "flag": "bb",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Barbados",
+    "es": "Barbados",
+    "fr": "Barbade",
+    "pt": "Barbados",
+    "uk": "Барбадос"
+   },
+   "numeric": "052",
+   "official_name": "Barbados",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "BGD",
+   "alt_names": [
+    "BD",
+    "Bangladesch",
+    "Bangladesh",
+    "Bangladeš",
+    "Gônôprôjatôntri Bangladesh",
+    "People's Republic of Bangladesh",
+    "Бангладеш",
+    "বাংলাদেশ",
+    "バングラデシュ"
+   ],
+   "calling_codes": [
+    "880"
+   ],
+   "capital": "Dhaka",
+   "code": "BD",
+   "currencies": [
+    "BDT"
+   ],
+   "flag": "bd",
+   "languages": [
+    "ben"
+   ],
+   "names": {
+    "en": "Bangladesh",
+    "es": "Bangladés",
+    "fr": "Bangladesh",
+    "pt": "Bangladesh",
+    "uk": "Бангладеш"
+   },
+   "numeric": "050",
+   "official_name": "People's Republic of Bangladesh",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "BEL",
+   "alt_names": [
+    "BE",
+    "Belgia",
+    "Belgie",
+    "Belgien",
+    "Belgija",
+    "Belgio",
+    "Belgique",
+    "Belgium",
+    "België",
+    "Bélgica",
+    "Gwlad Belg",
+    "Kingdom of Belgium",
+    "Koninkrijk België",
+    "Königreich Belgien",
+    "Royaume de Belgique",
+    "Бельгия",
+    "ベルギー"
+   ],
+   "calling_codes": [
+    "32"
+   ],
+   "capital": "Brussels",
+   "code": "BE",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "be",
+   "languages": [
+    "deu",
+    "fra",
+    "nld"
+   ],
+   "names": {
+    "en": "Belgium",
+    "es": "Bélgica",
+    "fr": "Belgique",
+    "pt": "Bélgica",
+    "uk": "Бельгія"
+   },
+   "numeric": "056",
+   "official_name": "Kingdom of Belgium",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "BFA",
+   "alt_names": [
+    "BF",
+    "Burkina Faso",
+    "Буркина-Фасо",
+    "ブルキナファソ"
+   ],
+   "calling_codes": [
+    "226"
+   ],
+   "capital": "Ouagadougou",
+   "code": "BF",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "bf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Burkina Faso",
+    "es": "Burkina Faso",
+    "fr": "Burkina Faso",
+    "pt": "Burquina Faso",
+    "uk": "Буркіна-Фасо"
+   },
+   "numeric": "854",
+   "official_name": "Burkina Faso",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "BGR",
+   "alt_names": [
+    "BG",
+    "Bugarska",
+    "Bulgaria",
+    "Bulgarie",
+    "Bulgarien",
+    "Bulgarije",
+    "Bulgária",
+    "Bwlgaria",
+    "Republic of Bulgaria",
+    "Болгария",
+    "България",
+    "Република България",
+    "ブルガリア"
+   ],
+   "calling_codes": [
+    "359"
+   ],
+   "capital": "Sofia",
+   "code": "BG",
+   "currencies": [
+    "BGN"
+   ],
+   "flag": "bg",
+   "languages": [
+    "bul"
+   ],
+   "names": {
+    "en": "Bulgaria",
+    "es": "Bulgaria",
+    "fr": "Bulgarie",
+    "pt": "Bulgária",
+    "uk": "Болгарія"
+   },
+   "numeric": "100",
+   "official_name": "Republic of Bulgaria",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "BHR",
+   "alt_names": [
+    "BH",
+    "Bahrain",
+    "Bahrein",
+    "Bahreïn",
+    "Kingdom of Bahrain",
+    "Mamlakat al-Baḥrayn",
+    "Бахрейн",
+    "‏البحرين",
+    "バーレーン"
+   ],
+   "calling_codes": [
+    "973"
+   ],
+   "capital": "Manama",
+   "code": "BH",
+   "currencies": [
+    "BHD"
+   ],
+   "flag": "bh",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Bahrain",
+    "es": "Baréin",
+    "fr": "Bahreïn",
+    "pt": "Barein",
+    "uk": "Бахрейн"
+   },
+   "numeric": "048",
+   "official_name": "Kingdom of Bahrain",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "BDI",
+   "alt_names": [
+    "BI",
+    "Burundi",
+    "Bwrwndi",
+    "Republic of Burundi",
+    "Republika y'Uburundi",
+    "République du Burundi",
+    "Uburundi",
+    "Бурунди",
+    "ブルンジ"
+   ],
+   "calling_codes": [
+    "257"
+   ],
+   "capital": "Bujumbura",
+   "code": "BI",
+   "currencies": [
+    "BIF"
+   ],
+   "flag": "bi",
+   "languages": [
+    "fra",
+    "run"
+   ],
+   "names": {
+    "en": "Burundi",
+    "es": "Burundi",
+    "fr": "Burundi",
+    "pt": "Burundi",
+    "uk": "Бурунді"
+   },
+   "numeric": "108",
+   "official_name": "Republic of Burundi",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "BEN",
+   "alt_names": [
+    "BJ",
+    "Benin",
+    "Benín",
+    "Bénin",
+    "Republic of Benin",
+    "République du Bénin",
+    "Бенин",
+    "ベナン"
+   ],
+   "calling_codes": [
+    "229"
+   ],
+   "capital": "Porto-Novo",
+   "code": "BJ",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "bj",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Benin",
+    "es": "Benín",
+    "fr": "Bénin",
+    "pt": "Benin",
+    "uk": "Бенін"
+   },
+   "numeric": "204",
+   "official_name": "Republic of Benin",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "BLM",
+   "alt_names": [
+    "Antille Francesi",
+    "BL",
+    "Collectivity of Saint Barthélemy",
+    "Collectivité de Saint-Barthélemy",
+    "Saint Barthélemy",
+    "Saint-Barthélemy",
+    "San Bartolomé",
+    "St. Barthelemy",
+    "São Bartolomeu",
+    "Сен-Бартелеми",
+    "サン・バルテルミー"
+   ],
+   "calling_codes": [
+    "590"
+   ],
+   "capital": "Gustavia",
+   "code": "BL",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "bl",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "St. Barthélemy",
+    "es": "San Bartolomé",
+    "fr": "Saint-Barthélemy",
+    "pt": "São Bartolomeu",
+    "uk": "Сен-Бартелемі"
+   },
+   "numeric": "652",
+   "official_name": "Collectivity of Saint Barthélemy",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "BMU",
+   "alt_names": [
+    "BM",
+    "Bermiwda",
+    "Bermuda",
+    "Bermudas",
+    "Bermudes",
+    "Bermudi",
+    "Somers Isles",
+    "The Bermudas",
+    "The Islands of Bermuda",
+    "Бермудские Острова",
+    "バミューダ"
+   ],
+   "calling_codes": [
+    "1441"
+   ],
+   "capital": "Hamilton",
+   "code": "BM",
+   "currencies": [
+    "BMD"
+   ],
+   "flag": "bm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Bermuda",
+    "es": "Bermudas",
+    "fr": "Bermudes",
+    "pt": "Bermudas",
+    "uk": "Бермудські Острови"
+   },
+   "numeric": "060",
+   "official_name": "Bermuda",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "BRN",
+   "alt_names": [
+    "BN",
+    "Brunei",
+    "Brunei Darussalam",
+    "Brunej",
+    "Nation of Brunei",
+    "Nation of Brunei, Abode of Peace",
+    "Negara Brunei Darussalam",
+    "the Abode of Peace",
+    "Бруней",
+    "ブルネイ・ダルサラーム"
+   ],
+   "calling_codes": [
+    "673"
+   ],
+   "capital": "Bandar Seri Begawan",
+   "code": "BN",
+   "currencies": [
+    "BND"
+   ],
+   "flag": "bn",
+   "languages": [
+    "msa"
+   ],
+   "names": {
+    "en": "Brunei",
+    "es": "Brunéi",
+    "fr": "Brunei",
+    "pt": "Brunei",
+    "uk": "Бруней"
+   },
+   "numeric": "096",
+   "official_name": "Nation of Brunei, Abode of Peace",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "BOL",
+   "alt_names": [
+    "BO",
+    "Bolifia",
+    "Bolivia",
+    "Bolivia, Plurinational State of",
+    "Bolivie",
+    "Bolivien",
+    "Bolivija",
+    "Bolívia",
+    "Buliwya",
+    "Buliwya Mamallaqta",
+    "Estado Plurinacional de Bolivia",
+    "Plurinational State of Bolivia",
+    "Tetã Volívia",
+    "Volívia",
+    "Wuliwya",
+    "Wuliwya Suyu",
+    "Боливия",
+    "ボリビア多民族国"
+   ],
+   "calling_codes": [
+    "591"
+   ],
+   "capital": "Sucre",
+   "code": "BO",
+   "currencies": [
+    "BOB",
+    "BOV"
+   ],
+   "flag": "bo",
+   "languages": [
+    "aym",
+    "grn",
+    "que",
+    "spa"
+   ],
+   "names": {
+    "en": "Bolivia",
+    "es": "Bolivia",
+    "fr": "Bolivie",
+    "pt": "Bolívia",
+    "uk": "Болівія"
+   },
+   "numeric": "068",
+   "official_name": "Plurinational State of Bolivia",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "BRA",
+   "alt_names": [
+    "BR",
+    "Brasil",
+    "Brasile",
+    "Brasilia",
+    "Brasilien",
+    "Brazil",
+    "Brazilië",
+    "Brésil",
+    "Federative Republic of Brazil",
+    "República Federativa do Brasil",
+    "Бразилия",
+    "ブラジル"
+   ],
+   "calling_codes": [
+    "55"
+   ],
+   "capital": "Brasília",
+   "code": "BR",
+   "currencies": [
+    "BRL"
+   ],
+   "flag": "br",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Brazil",
+    "es": "Brasil",
+    "fr": "Brésil",
+    "pt": "Brasil",
+    "uk": "Бразилія"
+   },
+   "numeric": "076",
+   "official_name": "Federative Republic of Brazil",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "BHS",
+   "alt_names": [
+    "BS",
+    "Bahamas",
+    "Bahamasaaret",
+    "Bahama’s",
+    "Bahami",
+    "Commonwealth of the Bahamas",
+    "Багамские Острова",
+    "バハマ"
+   ],
+   "calling_codes": [
+    "1242"
+   ],
+   "capital": "Nassau",
+   "code": "BS",
+   "currencies": [
+    "BSD"
+   ],
+   "flag": "bs",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Bahamas",
+    "es": "Bahamas",
+    "fr": "Bahamas",
+    "pt": "Bahamas",
+    "uk": "Багамські Острови"
+   },
+   "numeric": "044",
+   "official_name": "Commonwealth of the Bahamas",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "BTN",
+   "alt_names": [
+    "BT",
+    "Bhoutan",
+    "Bhutan",
+    "Bhwtan",
+    "Butan",
+    "Bután",
+    "Butão",
+    "Kingdom of Bhutan",
+    "Бутан",
+    "འབྲུག་ཡུལ་",
+    "ブータン"
+   ],
+   "calling_codes": [
+    "975"
+   ],
+   "capital": "Thimphu",
+   "code": "BT",
+   "currencies": [
+    "BTN",
+    "INR"
+   ],
+   "flag": "bt",
+   "languages": [
+    "dzo"
+   ],
+   "names": {
+    "en": "Bhutan",
+    "es": "Bután",
+    "fr": "Bhoutan",
+    "pt": "Butão",
+    "uk": "Бутан"
+   },
+   "numeric": "064",
+   "official_name": "Kingdom of Bhutan",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "BVT",
+   "alt_names": [
+    "BV",
+    "Bouvet Island",
+    "Bouvet'nsaari",
+    "Bouvet-øya",
+    "Bouveteiland",
+    "Bouvetinsel",
+    "Bouvetøya",
+    "Ilha Bouvet",
+    "Isla Bouvet",
+    "Isola Bouvet",
+    "Otok Bouvet",
+    "Île Bouvet",
+    "Остров Буве",
+    "ブーベ島"
+   ],
+   "calling_codes": [],
+   "capital": null,
+   "code": "BV",
+   "currencies": [
+    "NOK"
+   ],
+   "flag": "bv",
+   "languages": [
+    "nor"
+   ],
+   "names": {
+    "en": "Bouvet Island",
+    "es": "Isla Bouvet",
+    "fr": "Île Bouvet",
+    "pt": "Ilha Bouvet",
+    "uk": "Острів Буве"
+   },
+   "numeric": "074",
+   "official_name": "Bouvet Island",
+   "region": null,
+   "subregion": null
+  },
+  {
+   "alpha3": "BWA",
+   "alt_names": [
+    "BW",
+    "Bocvana",
+    "Botswana",
+    "Lefatshe la Botswana",
+    "Republic of Botswana",
+    "Ботсвана",
+    "ボツワナ"
+   ],
+   "calling_codes": [
+    "267"
+   ],
+   "capital": "Gaborone",
+   "code": "BW",
+   "currencies": [
+    "BWP"
+   ],
+   "flag": "bw",
+   "languages": [
+    "eng",
+    "tsn"
+   ],
+   "names": {
+    "en": "Botswana",
+    "es": "Botsuana",
+    "fr": "Botswana",
+    "pt": "Botsuana",
+    "uk": "Ботсвана"
+   },
+   "numeric": "072",
+   "official_name": "Republic of Botswana",
+   "region": "Africa",
+   "subregion": "Southern Africa"
+  },
+  {
+   "alpha3": "BLR",
+   "alt_names": [
+    "BY",
+    "Belarus",
+    "Belarws",
+    "Belorussiya",
+    "Bielaruś",
+    "Bielorrusia",
+    "Bielorussia",
+    "Bielorússia",
+    "Biélorussie",
+    "Bjelorusija",
+    "Republic of Belarus",
+    "Respublika Belarus’",
+    "Valko-Venäjä",
+    "Weißrussland",
+    "Wit-Rusland",
+    "Белару́сь",
+    "Белоруссия",
+    "Республика Беларусь",
+    "ベラルーシ"
+   ],
+   "calling_codes": [
+    "375"
+   ],
+   "capital": "Minsk",
+   "code": "BY",
+   "currencies": [
+    "BYR"
+   ],
+   "flag": "by",
+   "languages": [
+    "bel",
+    "rus"
+   ],
+   "names": {
+    "en": "Belarus",
+    "es": "Bielorrusia",
+    "fr": "Biélorussie",
+    "pt": "Bielorrússia",
+    "uk": "Білорусь"
+   },
+   "numeric": "112",
+   "official_name": "Republic of Belarus",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "BLZ",
+   "alt_names": [
+    "BZ",
+    "Belice",
+    "Belize",
+    "Белиз",
+    "ベリーズ"
+   ],
+   "calling_codes": [
+    "501"
+   ],
+   "capital": "Belmopan",
+   "code": "BZ",
+   "currencies": [
+    "BZD"
+   ],
+   "flag": "bz",
+   "languages": [
+    "bjz",
+    "eng",
+    "spa"
+   ],
+   "names": {
+    "en": "Belize",
+    "es": "Belice",
+    "fr": "Belize",
+    "pt": "Belize",
+    "uk": "Беліз"
+   },
+   "numeric": "084",
+   "official_name": "Belize",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "CAN",
+   "alt_names": [
+    "CA",
+    "Canada",
+    "Canadá",
+    "Kanada",
+    "Канада",
+    "カナダ"
+   ],
+   "calling_codes": [
+    "1"
+   ],
+   "capital": "Ottawa",
+   "code": "CA",
+   "currencies": [
+    "CAD"
+   ],
+   "flag": "ca",
+   "languages": [
+    "eng",
+    "fra"
+   ],
+   "names": {
+    "en": "Canada",
+    "es": "Canadá",
+    "fr": "Canada",
+    "pt": "Canadá",
+    "uk": "Канада"
+   },
+   "numeric": "124",
+   "official_name": "Canada",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "CCK",
+   "alt_names": [
+    "CC",
+    "Cocos (Keeling) Islands",
+    "Cocoseilanden",
+    "Ilhas Cocos (Keeling)",
+    "Islas Cocos o Islas Keeling",
+    "Isole Cocos e Keeling",
+    "Keeling Islands",
+    "Kokosinseln",
+    "Kokosovi Otoci",
+    "Kookossaaret",
+    "Territory of the Cocos (Keeling) Islands",
+    "Ynysoedd Cocos",
+    "Îles Cocos",
+    "Кокосовые острова",
+    "ココス（キーリング）諸島"
+   ],
+   "calling_codes": [
+    "61"
+   ],
+   "capital": "West Island",
+   "code": "CC",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "cc",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Cocos (Keeling) Islands",
+    "es": "Islas Cocos",
+    "fr": "Îles Cocos",
+    "pt": "Ilhas Cocos (Keeling)",
+    "uk": "Кокосові (Кілінг) Острови"
+   },
+   "numeric": "166",
+   "official_name": "Territory of the Cocos (Keeling) Islands",
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand"
+  },
+  {
+   "alpha3": "COD",
+   "alt_names": [
+    "CD",
+    "Congo (DRC)",
+    "Congo (Rep. Dem.)",
+    "Congo (Rép. dém.)",
+    "Congo, the Democratic Republic of the",
+    "Congo-Kinshasa",
+    "DR Congo",
+    "DRC",
+    "Democratic Republic of the Congo",
+    "Ditunga dia Kongu wa Mungalaata",
+    "Gweriniaeth Ddemocrataidd Congo",
+    "Jamhuri ya Kidemokrasia ya Kongo",
+    "Kongo (Dem. Rep.)",
+    "Kongo, Demokratska Republika",
+    "Kongon demokraattinen tasavalta",
+    "RD Congo",
+    "Repubilika ya Kongo Demokratiki",
+    "Republiki ya Kongó Demokratiki",
+    "República Democrática do Congo",
+    "Демократическая Республика Конго",
+    "コンゴ民主共和国"
+   ],
+   "calling_codes": [
+    "243"
+   ],
+   "capital": "Kinshasa",
+   "code": "CD",
+   "currencies": [
+    "CDF"
+   ],
+   "flag": "cd",
+   "languages": [
+    "fra",
+    "kon",
+    "lin",
+    "lua",
+    "swa"
+   ],
+   "names": {
+    "en": "Congo - Kinshasa",
+    "es": "República Democrática del Congo",
+    "fr": "Congo-Kinshasa",
+    "pt": "Congo - Kinshasa",
+    "uk": "Конго – Кіншаса"
+   },
+   "numeric": "180",
+   "official_name": "Democratic Republic of the Congo",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "CAF",
+   "alt_names": [
+    "Bêafrîka",
+    "CF",
+    "Centraal-Afrikaanse Republiek",
+    "Central African Republic",
+    "Gweriniaeth Canolbarth Affrica",
+    "Keski-Afrikan tasavalta",
+    "Repubblica Centrafricana",
+    "República Centro-Africana",
+    "República Centroafricana",
+    "République centrafricaine",
+    "Srednjoafrička Republika",
+    "Zentralafrikanische Republik",
+    "Центральноафриканская Республика",
+    "中央アフリカ共和国"
+   ],
+   "calling_codes": [
+    "236"
+   ],
+   "capital": "Bangui",
+   "code": "CF",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "cf",
+   "languages": [
+    "fra",
+    "sag"
+   ],
+   "names": {
+    "en": "Central African Republic",
+    "es": "República Centroafricana",
+    "fr": "République centrafricaine",
+    "pt": "República Centro-Africana",
+    "uk": "Центральноафриканська Республіка"
+   },
+   "numeric": "140",
+   "official_name": "Central African Republic",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "COG",
+   "alt_names": [
+    "CG",
+    "Congo",
+    "Congo-Brazzaville",
+    "Gweriniaeth y Congo",
+    "Kongo",
+    "Kongo-Brazzaville",
+    "Repubilika ya Kongo",
+    "Republic of the Congo",
+    "Republíki ya Kongó",
+    "République du Congo",
+    "Республика Конго",
+    "コンゴ共和国"
+   ],
+   "calling_codes": [
+    "242"
+   ],
+   "capital": "Brazzaville",
+   "code": "CG",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "cg",
+   "languages": [
+    "fra",
+    "kon",
+    "lin"
+   ],
+   "names": {
+    "en": "Congo - Brazzaville",
+    "es": "Congo",
+    "fr": "Congo-Brazzaville",
+    "pt": "República do Congo",
+    "uk": "Конго – Браззавіль"
+   },
+   "numeric": "178",
+   "official_name": "Republic of the Congo",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "CHE",
+   "alt_names": [
+    "CH",
+    "Schweiz",
+    "Suisse",
+    "Suiza",
+    "Suíça",
+    "Sveitsi",
+    "Svizra",
+    "Svizzera",
+    "Swiss Confederation",
+    "Switzerland",
+    "Zwitserland",
+    "Švicarska",
+    "Швейцария",
+    "スイス"
+   ],
+   "calling_codes": [
+    "41"
+   ],
+   "capital": "Bern",
+   "code": "CH",
+   "currencies": [
+    "CHE",
+    "CHF",
+    "CHW"
+   ],
+   "flag": "ch",
+   "languages": [
+    "fra",
+    "gsw",
+    "ita",
+    "roh"
+   ],
+   "names": {
+    "en": "Switzerland",
+    "es": "Suiza",
+    "fr": "Suisse",
+    "pt": "Suíça",
+    "uk": "Швейцарія"
+   },
+   "numeric": "756",
+   "official_name": "Swiss Confederation",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "CIV",
+   "alt_names": [
+    "CI",
+    "Costa d'Avorio",
+    "Costa de Marfil",
+    "Costa do Marfim",
+    "Côte d'Ivoire",
+    "Elfenbeinküste",
+    "Ivoorkust",
+    "Ivory Coast",
+    "Norsunluurannikko",
+    "Obala Bjelokosti",
+    "Republic of Côte d'Ivoire",
+    "République de Côte d'Ivoire",
+    "Кот-д’Ивуар",
+    "コートジボワール"
+   ],
+   "calling_codes": [
+    "225"
+   ],
+   "capital": "Yamoussoukro",
+   "code": "CI",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "ci",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Côte d’Ivoire",
+    "es": "Côte d’Ivoire",
+    "fr": "Côte d’Ivoire",
+    "pt": "Costa do Marfim",
+    "uk": "Кот-дʼІвуар"
+   },
+   "numeric": "384",
+   "official_name": "Republic of Côte d'Ivoire",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "COK",
+   "alt_names": [
+    "CK",
+    "Cook Islands",
+    "Cookeilanden",
+    "Cookinsaaret",
+    "Cookinseln",
+    "Cookovo Otočje",
+    "Ilhas Cook",
+    "Islas Cook",
+    "Isole Cook",
+    "Kūki 'Āirani",
+    "Ynysoedd Cook",
+    "Îles Cook",
+    "Острова Кука",
+    "クック諸島"
+   ],
+   "calling_codes": [
+    "682"
+   ],
+   "capital": "Avarua",
+   "code": "CK",
+   "currencies": [
+    "NZD"
+   ],
+   "flag": "ck",
+   "languages": [
+    "eng",
+    "rar"
+   ],
+   "names": {
+    "en": "Cook Islands",
+    "es": "Islas Cook",
+    "fr": "Îles Cook",
+    "pt": "Ilhas Cook",
+    "uk": "Острови Кука"
+   },
+   "numeric": "184",
+   "official_name": "Cook Islands",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "CHL",
+   "alt_names": [
+    "CL",
+    "Chile",
+    "Chili",
+    "Cile",
+    "Republic of Chile",
+    "República de Chile",
+    "Čile",
+    "Чили",
+    "チリ"
+   ],
+   "calling_codes": [
+    "56"
+   ],
+   "capital": "Santiago",
+   "code": "CL",
+   "currencies": [
+    "CLF",
+    "CLP"
+   ],
+   "flag": "cl",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Chile",
+    "es": "Chile",
+    "fr": "Chili",
+    "pt": "Chile",
+    "uk": "Чилі"
+   },
+   "numeric": "152",
+   "official_name": "Republic of Chile",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "CMR",
+   "alt_names": [
+    "CM",
+    "Camarões",
+    "Cameroon",
+    "Cameroun",
+    "Camerun",
+    "Camerún",
+    "Camerŵn",
+    "Kameroen",
+    "Kamerun",
+    "Republic of Cameroon",
+    "République du Cameroun",
+    "Камерун",
+    "カメルーン"
+   ],
+   "calling_codes": [
+    "237"
+   ],
+   "capital": "Yaoundé",
+   "code": "CM",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "cm",
+   "languages": [
+    "eng",
+    "fra"
+   ],
+   "names": {
+    "en": "Cameroon",
+    "es": "Camerún",
+    "fr": "Cameroun",
+    "pt": "Camarões",
+    "uk": "Камерун"
+   },
+   "numeric": "120",
+   "official_name": "Republic of Cameroon",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "CHN",
+   "alt_names": [
+    "CN",
+    "China",
+    "Chine",
+    "Cina",
+    "Kiina",
+    "Kina",
+    "People's Republic of China",
+    "Tsieina",
+    "Zhongguo",
+    "Zhonghua",
+    "Zhōngguó",
+    "Zhōnghuá Rénmín Gònghéguó",
+    "Китай",
+    "中华人民共和国",
+    "中国"
+   ],
+   "calling_codes": [
+    "86"
+   ],
+   "capital": "Beijing",
+   "code": "CN",
+   "currencies": [
+    "CNY"
+   ],
+   "flag": "cn",
+   "languages": [
+    "cmn"
+   ],
+   "names": {
+    "en": "China",
+    "es": "China",
+    "fr": "Chine",
+    "pt": "China",
+    "uk": "Китай"
+   },
+   "numeric": "156",
+   "official_name": "People's Republic of China",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "COL",
+   "alt_names": [
+    "CO",
+    "Colombia",
+    "Colombie",
+    "Colômbia",
+    "Kolumbia",
+    "Kolumbien",
+    "Kolumbija",
+    "Republic of Colombia",
+    "República de Colombia",
+    "Колумбия",
+    "コロンビア"
+   ],
+   "calling_codes": [
+    "57"
+   ],
+   "capital": "Bogotá",
+   "code": "CO",
+   "currencies": [
+    "COP"
+   ],
+   "flag": "co",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Colombia",
+    "es": "Colombia",
+    "fr": "Colombie",
+    "pt": "Colômbia",
+    "uk": "Колумбія"
+   },
+   "numeric": "170",
+   "official_name": "Republic of Colombia",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "CRI",
+   "alt_names": [
+    "CR",
+    "Costa Rica",
+    "Kostarika",
+    "Republic of Costa Rica",
+    "República de Costa Rica",
+    "Коста-Рика",
+    "コスタリカ"
+   ],
+   "calling_codes": [
+    "506"
+   ],
+   "capital": "San José",
+   "code": "CR",
+   "currencies": [
+    "CRC"
+   ],
+   "flag": "cr",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Costa Rica",
+    "es": "Costa Rica",
+    "fr": "Costa Rica",
+    "pt": "Costa Rica",
+    "uk": "Коста-Рика"
+   },
+   "numeric": "188",
+   "official_name": "Republic of Costa Rica",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "CUB",
+   "alt_names": [
+    "CU",
+    "Ciwba",
+    "Cuba",
+    "Kuba",
+    "Kuuba",
+    "Republic of Cuba",
+    "República de Cuba",
+    "Куба",
+    "キューバ"
+   ],
+   "calling_codes": [
+    "53"
+   ],
+   "capital": "Havana",
+   "code": "CU",
+   "currencies": [
+    "CUC",
+    "CUP"
+   ],
+   "flag": "cu",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Cuba",
+    "es": "Cuba",
+    "fr": "Cuba",
+    "pt": "Cuba",
+    "uk": "Куба"
+   },
+   "numeric": "192",
+   "official_name": "Republic of Cuba",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "CPV",
+   "alt_names": [
+    "CV",
+    "Cabo Verde",
+    "Cape Verde",
+    "Capo Verde",
+    "Kaapverdië",
+    "Kap Verde",
+    "Republic of Cabo Verde",
+    "República de Cabo Verde",
+    "Zelenortska Republika",
+    "Îles du Cap-Vert",
+    "Кабо-Верде",
+    "カーボベルデ"
+   ],
+   "calling_codes": [
+    "238"
+   ],
+   "capital": "Praia",
+   "code": "CV",
+   "currencies": [
+    "CVE"
+   ],
+   "flag": "cv",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Cape Verde",
+    "es": "Cabo Verde",
+    "fr": "Cap-Vert",
+    "pt": "Cabo Verde",
+    "uk": "Кабо-Верде"
+   },
+   "numeric": "132",
+   "official_name": "Republic of Cabo Verde",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "CUW",
+   "alt_names": [
+    "CW",
+    "Country of Curaçao",
+    "Curacao",
+    "Curazao",
+    "Curaçao",
+    "Kòrsou",
+    "Land Curaçao",
+    "Pais Kòrsou",
+    "ilha da Curação",
+    "Кюрасао"
+   ],
+   "calling_codes": [
+    "5999"
+   ],
+   "capital": "Willemstad",
+   "code": "CW",
+   "currencies": [
+    "ANG"
+   ],
+   "flag": "cw",
+   "languages": [
+    "eng",
+    "nld",
+    "pap"
+   ],
+   "names": {
+    "en": "Curaçao",
+    "es": "Curazao",
+    "fr": "Curaçao",
+    "pt": "Curaçao",
+    "uk": "Кюрасао"
+   },
+   "numeric": "531",
+   "official_name": "Country of Curaçao",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "CXR",
+   "alt_names": [
+    "Božićni otok",
+    "CX",
+    "Christmas Island",
+    "Christmaseiland",
+    "Ilha do Natal",
+    "Isla de Navidad",
+    "Isola di Natale",
+    "Joulusaari",
+    "Territory of Christmas Island",
+    "Weihnachtsinsel",
+    "Ynys y Nadolig",
+    "Île Christmas",
+    "Остров Рождества",
+    "クリスマス島"
+   ],
+   "calling_codes": [
+    "61"
+   ],
+   "capital": "Flying Fish Cove",
+   "code": "CX",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "cx",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Christmas Island",
+    "es": "Isla de Navidad",
+    "fr": "Île Christmas",
+    "pt": "Ilha Christmas",
+    "uk": "Острів Різдва"
+   },
+   "numeric": "162",
+   "official_name": "Territory of Christmas Island",
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand"
+  },
+  {
+   "alpha3": "CYP",
+   "alt_names": [
+    "CY",
+    "Chipre",
+    "Chypre",
+    "Cipar",
+    "Cipro",
+    "Cyprus",
+    "Kypros",
+    "Kýpros",
+    "Kıbrıs",
+    "Kıbrıs Cumhuriyeti",
+    "Republic of Cyprus",
+    "Zypern",
+    "Κυπριακή Δημοκρατία",
+    "Κύπρος",
+    "Кипр",
+    "キプロス"
+   ],
+   "calling_codes": [
+    "357"
+   ],
+   "capital": "Nicosia",
+   "code": "CY",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "cy",
+   "languages": [
+    "ell",
+    "tur"
+   ],
+   "names": {
+    "en": "Cyprus",
+    "es": "Chipre",
+    "fr": "Chypre",
+    "pt": "Chipre",
+    "uk": "Кіпр"
+   },
+   "numeric": "196",
+   "official_name": "Republic of Cyprus",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "CZE",
+   "alt_names": [
+    "CZ",
+    "Czech Republic",
+    "Repubblica Ceca",
+    "República Checa",
+    "République tchèque",
+    "Tschechische Republik",
+    "Tsjechië",
+    "Tšekki",
+    "Y Weriniaeth Tsiec",
+    "Česko",
+    "Česká republika",
+    "Češka",
+    "Чехия",
+    "チェコ"
+   ],
+   "calling_codes": [
+    "420"
+   ],
+   "capital": "Prague",
+   "code": "CZ",
+   "currencies": [
+    "CZK"
+   ],
+   "flag": "cz",
+   "languages": [
+    "ces",
+    "slk"
+   ],
+   "names": {
+    "en": "Czechia",
+    "es": "Chequia",
+    "fr": "Tchéquie",
+    "pt": "Tchéquia",
+    "uk": "Чехія"
+   },
+   "numeric": "203",
+   "official_name": "Czech Republic",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "DEU",
+   "alt_names": [
+    "Alemanha",
+    "Alemania",
+    "Allemagne",
+    "Bundesrepublik Deutschland",
+    "DE",
+    "Deutschland",
+    "Duitsland",
+    "Federal Republic of Germany",
+    "Germania",
+    "Germany",
+    "Njemačka",
+    "Saksa",
+    "Германия",
+    "ドイツ"
+   ],
+   "calling_codes": [
+    "49"
+   ],
+   "capital": "Berlin",
+   "code": "DE",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "de",
+   "languages": [
+    "deu"
+   ],
+   "names": {
+    "en": "Germany",
+    "es": "Alemania",
+    "fr": "Allemagne",
+    "pt": "Alemanha",
+    "uk": "Німеччина"
+   },
+   "numeric": "276",
+   "official_name": "Federal Republic of Germany",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "DJI",
+   "alt_names": [
+    "DJ",
+    "Dijibouti",
+    "Djibouti",
+    "Dschibuti",
+    "Džibuti",
+    "Gabuuti",
+    "Gabuutih Ummuuno",
+    "Gibuti",
+    "Jabuuti",
+    "Jamhuuriyadda Jabuuti",
+    "Republic of Djibouti",
+    "République de Djibouti",
+    "Джибути",
+    "جيبوتي‎",
+    "ジブチ"
+   ],
+   "calling_codes": [
+    "253"
+   ],
+   "capital": "Djibouti",
+   "code": "DJ",
+   "currencies": [
+    "DJF"
+   ],
+   "flag": "dj",
+   "languages": [
+    "ara",
+    "fra"
+   ],
+   "names": {
+    "en": "Djibouti",
+    "es": "Yibuti",
+    "fr": "Djibouti",
+    "pt": "Djibuti",
+    "uk": "Джибуті"
+   },
+   "numeric": "262",
+   "official_name": "Republic of Djibouti",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "DNK",
+   "alt_names": [
+    "DK",
+    "Danemark",
+    "Danimarca",
+    "Danmark",
+    "Danska",
+    "Denemarken",
+    "Denmarc",
+    "Denmark",
+    "Dinamarca",
+    "Dänemark",
+    "Kingdom of Denmark",
+    "Kongeriget Danmark",
+    "Tanska",
+    "Дания",
+    "デンマーク"
+   ],
+   "calling_codes": [
+    "45"
+   ],
+   "capital": "Copenhagen",
+   "code": "DK",
+   "currencies": [
+    "DKK"
+   ],
+   "flag": "dk",
+   "languages": [
+    "dan"
+   ],
+   "names": {
+    "en": "Denmark",
+    "es": "Dinamarca",
+    "fr": "Danemark",
+    "pt": "Dinamarca",
+    "uk": "Данія"
+   },
+   "numeric": "208",
+   "official_name": "Kingdom of Denmark",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "DMA",
+   "alt_names": [
+    "Commonwealth of Dominica",
+    "DM",
+    "Dominica",
+    "Dominika",
+    "Dominique",
+    "Wai‘tu kubuli",
+    "Доминика",
+    "ドミニカ国"
+   ],
+   "calling_codes": [
+    "1767"
+   ],
+   "capital": "Roseau",
+   "code": "DM",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "dm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Dominica",
+    "es": "Dominica",
+    "fr": "Dominique",
+    "pt": "Dominica",
+    "uk": "Домініка"
+   },
+   "numeric": "212",
+   "official_name": "Commonwealth of Dominica",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "DOM",
+   "alt_names": [
+    "DO",
+    "Dominicaanse Republiek",
+    "Dominican Republic",
+    "Dominikaaninen tasavalta",
+    "Dominikanische Republik",
+    "Dominikanska Republika",
+    "Gweriniaeth_Dominica",
+    "Repubblica Dominicana",
+    "República Dominicana",
+    "République dominicaine",
+    "Доминиканская Республика",
+    "ドミニカ共和国"
+   ],
+   "calling_codes": [
+    "1809",
+    "1829",
+    "1849"
+   ],
+   "capital": "Santo Domingo",
+   "code": "DO",
+   "currencies": [
+    "DOP"
+   ],
+   "flag": "do",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Dominican Republic",
+    "es": "República Dominicana",
+    "fr": "République dominicaine",
+    "pt": "República Dominicana",
+    "uk": "Домініканська Республіка"
+   },
+   "numeric": "214",
+   "official_name": "Dominican Republic",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "DZA",
+   "alt_names": [
+    "Algeria",
+    "Algerien",
+    "Algerije",
+    "Algérie",
+    "Alžir",
+    "Argelia",
+    "Argélia",
+    "DZ",
+    "Dzayer",
+    "People's Democratic Republic of Algeria",
+    "Алжир",
+    "الجزائر",
+    "アルジェリア"
+   ],
+   "calling_codes": [
+    "213"
+   ],
+   "capital": "Algiers",
+   "code": "DZ",
+   "currencies": [
+    "DZD"
+   ],
+   "flag": "dz",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Algeria",
+    "es": "Argelia",
+    "fr": "Algérie",
+    "pt": "Argélia",
+    "uk": "Алжир"
+   },
+   "numeric": "012",
+   "official_name": "People's Democratic Republic of Algeria",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "ECU",
+   "alt_names": [
+    "EC",
+    "Ecuador",
+    "Ecwador",
+    "Ekvador",
+    "Equador",
+    "Republic of Ecuador",
+    "República del Ecuador",
+    "Équateur",
+    "Эквадор",
+    "エクアドル"
+   ],
+   "calling_codes": [
+    "593"
+   ],
+   "capital": "Quito",
+   "code": "EC",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "ec",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Ecuador",
+    "es": "Ecuador",
+    "fr": "Équateur",
+    "pt": "Equador",
+    "uk": "Еквадор"
+   },
+   "numeric": "218",
+   "official_name": "Republic of Ecuador",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "EST",
+   "alt_names": [
+    "EE",
+    "Eesti",
+    "Eesti Vabariik",
+    "Estland",
+    "Estonia",
+    "Estonie",
+    "Estonija",
+    "Estónia",
+    "Republic of Estonia",
+    "Viro",
+    "Эстония",
+    "エストニア"
+   ],
+   "calling_codes": [
+    "372"
+   ],
+   "capital": "Tallinn",
+   "code": "EE",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "ee",
+   "languages": [
+    "est"
+   ],
+   "names": {
+    "en": "Estonia",
+    "es": "Estonia",
+    "fr": "Estonie",
+    "pt": "Estônia",
+    "uk": "Естонія"
+   },
+   "numeric": "233",
+   "official_name": "Republic of Estonia",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "EGY",
+   "alt_names": [
+    "Arab Republic of Egypt",
+    "EG",
+    "Egipat",
+    "Egipto",
+    "Egito",
+    "Egitto",
+    "Egypt",
+    "Egypte",
+    "Egypti",
+    "Yr Aifft",
+    "Ägypten",
+    "Égypte",
+    "Египет",
+    "مصر",
+    "エジプト"
+   ],
+   "calling_codes": [
+    "20"
+   ],
+   "capital": "Cairo",
+   "code": "EG",
+   "currencies": [
+    "EGP"
+   ],
+   "flag": "eg",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Egypt",
+    "es": "Egipto",
+    "fr": "Égypte",
+    "pt": "Egito",
+    "uk": "Єгипет"
+   },
+   "numeric": "818",
+   "official_name": "Arab Republic of Egypt",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "ESH",
+   "alt_names": [
+    "EH",
+    "Länsi-Sahara",
+    "Saara Ocidental",
+    "Sahara Occidental",
+    "Sahara Occidentale",
+    "Sahrawi Arab Democratic Republic",
+    "Taneẓroft Tutrimt",
+    "Westelijke Sahara",
+    "Western Sahara",
+    "Westsahara",
+    "Zapadna Sahara",
+    "Западная Сахара",
+    "الصحراء الغربية",
+    "西サハラ"
+   ],
+   "calling_codes": [
+    "212"
+   ],
+   "capital": "El Aaiún",
+   "code": "EH",
+   "currencies": [
+    "MAD",
+    "DZD",
+    "MRO"
+   ],
+   "flag": "eh",
+   "languages": [
+    "ber",
+    "mey",
+    "spa"
+   ],
+   "names": {
+    "en": "Western Sahara",
+    "es": "Sáhara Occidental",
+    "fr": "Sahara occidental",
+    "pt": "Saara Ocidental",
+    "uk": "Західна Сахара"
+   },
+   "numeric": "732",
+   "official_name": "Sahrawi Arab Democratic Republic",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "ERI",
+   "alt_names": [
+    "Dawlat Iritriyá",
+    "ER",
+    "Eritrea",
+    "Eritreia",
+    "Eritreja",
+    "Iritriyā",
+    "State of Eritrea",
+    "Érythrée",
+    "ʾErtrā",
+    "Эритрея",
+    "إرتريا‎",
+    "ሃገረ ኤርትራ",
+    "ኤርትራ",
+    "エリトリア"
+   ],
+   "calling_codes": [
+    "291"
+   ],
+   "capital": "Asmara",
+   "code": "ER",
+   "currencies": [
+    "ERN"
+   ],
+   "flag": "er",
+   "languages": [
+    "ara",
+    "eng",
+    "tir"
+   ],
+   "names": {
+    "en": "Eritrea",
+    "es": "Eritrea",
+    "fr": "Érythrée",
+    "pt": "Eritreia",
+    "uk": "Еритрея"
+   },
+   "numeric": "232",
+   "official_name": "State of Eritrea",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "ESP",
+   "alt_names": [
+    "ES",
+    "Espagne",
+    "Espainia",
+    "Espanha",
+    "Espanja",
+    "Espanya",
+    "España",
+    "Kingdom of Spain",
+    "Reino de España",
+    "Spagna",
+    "Spain",
+    "Spanien",
+    "Spanje",
+    "Španjolska",
+    "Испания",
+    "スペイン"
+   ],
+   "calling_codes": [
+    "34"
+   ],
+   "capital": "Madrid",
+   "code": "ES",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "es",
+   "languages": [
+    "cat",
+    "eus",
+    "glg",
+    "oci",
+    "spa"
+   ],
+   "names": {
+    "en": "Spain",
+    "es": "España",
+    "fr": "Espagne",
+    "pt": "Espanha",
+    "uk": "Іспанія"
+   },
+   "numeric": "724",
+   "official_name": "Kingdom of Spain",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "ETH",
+   "alt_names": [
+    "ET",
+    "Ethiopia",
+    "Ethiopië",
+    "Etiopia",
+    "Etiopija",
+    "Etiopía",
+    "Etiópia",
+    "Federal Democratic Republic of Ethiopia",
+    "Äthiopien",
+    "Éthiopie",
+    "ʾĪtyōṗṗyā",
+    "Эфиопия",
+    "ኢትዮጵያ",
+    "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ",
+    "エチオピア"
+   ],
+   "calling_codes": [
+    "251"
+   ],
+   "capital": "Addis Ababa",
+   "code": "ET",
+   "currencies": [
+    "ETB"
+   ],
+   "flag": "et",
+   "languages": [
+    "amh"
+   ],
+   "names": {
+    "en": "Ethiopia",
+    "es": "Etiopía",
+    "fr": "Éthiopie",
+    "pt": "Etiópia",
+    "uk": "Ефіопія"
+   },
+   "numeric": "231",
+   "official_name": "Federal Democratic Republic of Ethiopia",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "FIN",
+   "alt_names": [
+    "FI",
+    "Finland",
+    "Finlande",
+    "Finlandia",
+    "Finlândia",
+    "Finnland",
+    "Finska",
+    "Republic of Finland",
+    "Republiken Finland",
+    "Suomen tasavalta",
+    "Suomi",
+    "Финляндия",
+    "フィンランド"
+   ],
+   "calling_codes": [
+    "358"
+   ],
+   "capital": "Helsinki",
+   "code": "FI",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "fi",
+   "languages": [
+    "fin",
+    "swe"
+   ],
+   "names": {
+    "en": "Finland",
+    "es": "Finlandia",
+    "fr": "Finlande",
+    "pt": "Finlândia",
+    "uk": "Фінляндія"
+   },
+   "numeric": "246",
+   "official_name": "Republic of Finland",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "FJI",
+   "alt_names": [
+    "FJ",
+    "Fidji",
+    "Fidschi",
+    "Fidži",
+    "Figi",
+    "Fiji",
+    "Fijī Gaṇarājya",
+    "Fiyi",
+    "Fiđi",
+    "Matanitu ko Viti",
+    "Republic of Fiji",
+    "Viti",
+    "Фиджи",
+    "फिजी",
+    "フィジー"
+   ],
+   "calling_codes": [
+    "679"
+   ],
+   "capital": "Suva",
+   "code": "FJ",
+   "currencies": [
+    "FJD"
+   ],
+   "flag": "fj",
+   "languages": [
+    "eng",
+    "fij",
+    "hif"
+   ],
+   "names": {
+    "en": "Fiji",
+    "es": "Fiyi",
+    "fr": "Fidji",
+    "pt": "Fiji",
+    "uk": "Фіджі"
+   },
+   "numeric": "242",
+   "official_name": "Republic of Fiji",
+   "region": "Oceania",
+   "subregion": "Melanesia"
+  },
+  {
+   "alpha3": "FLK",
+   "alt_names": [
+    "FK",
+    "Falkandinsaaret",
+    "Falkland Islands",
+    "Falkland Islands (Malvinas)",
+    "Falklandeilanden",
+    "Falklandinseln",
+    "Falklandski Otoci",
+    "Ilhas Malvinas",
+    "Islas Malvinas",
+    "Isole Falkland o Isole Malvine",
+    "Îles Malouines",
+    "Фолклендские острова",
+    "フォークランド（マルビナス）諸島"
+   ],
+   "calling_codes": [
+    "500"
+   ],
+   "capital": "Stanley",
+   "code": "FK",
+   "currencies": [
+    "FKP"
+   ],
+   "flag": "fk",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Falkland Islands",
+    "es": "Islas Malvinas",
+    "fr": "Îles Malouines",
+    "pt": "Ilhas Malvinas",
+    "uk": "Фолклендські Острови"
+   },
+   "numeric": "238",
+   "official_name": "Falkland Islands",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "FSM",
+   "alt_names": [
+    "FM",
+    "Federated States of Micronesia",
+    "Micronesia",
+    "Micronesia, Federated States of",
+    "Micronesië",
+    "Micronésia",
+    "Micronésie",
+    "Mikronesia",
+    "Mikronesien",
+    "Mikronezija",
+    "Федеративные Штаты Микронезии",
+    "ミクロネシア連邦"
+   ],
+   "calling_codes": [
+    "691"
+   ],
+   "capital": "Palikir",
+   "code": "FM",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "fm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Micronesia",
+    "es": "Micronesia",
+    "fr": "Micronésie",
+    "pt": "Micronésia",
+    "uk": "Мікронезія"
+   },
+   "numeric": "583",
+   "official_name": "Federated States of Micronesia",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "FRO",
+   "alt_names": [
+    "FO",
+    "Faeröer",
+    "Faroe Islands",
+    "Farski Otoci",
+    "Färsaaret",
+    "Färöer-Inseln",
+    "Færøerne",
+    "Føroyar",
+    "Ilhas Faroé",
+    "Islas Faroe",
+    "Isole Far Oer",
+    "Îles Féroé",
+    "Фарерские острова",
+    "フェロー諸島"
+   ],
+   "calling_codes": [
+    "298"
+   ],
+   "capital": "Tórshavn",
+   "code": "FO",
+   "currencies": [
+    "DKK"
+   ],
+   "flag": "fo",
+   "languages": [
+    "dan",
+    "fao"
+   ],
+   "names": {
+    "en": "Faroe Islands",
+    "es": "Islas Feroe",
+    "fr": "Îles Féroé",
+    "pt": "Ilhas Faroé",
+    "uk": "Фарерські Острови"
+   },
+   "numeric": "234",
+   "official_name": "Faroe Islands",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "FRA",
+   "alt_names": [
+    "FR",
+    "France",
+    "Francia",
+    "Francuska",
+    "Frankreich",
+    "Frankrijk",
+    "França",
+    "French Republic",
+    "Ranska",
+    "République française",
+    "Франция",
+    "フランス"
+   ],
+   "calling_codes": [
+    "33"
+   ],
+   "capital": "Paris",
+   "code": "FR",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "fr",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "France",
+    "es": "Francia",
+    "fr": "France",
+    "pt": "França",
+    "uk": "Франція"
+   },
+   "numeric": "250",
+   "official_name": "French Republic",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "GAB",
+   "alt_names": [
+    "GA",
+    "Gabon",
+    "Gabonese Republic",
+    "Gabun",
+    "Gabão",
+    "Gabón",
+    "République Gabonaise",
+    "Габон",
+    "ガボン"
+   ],
+   "calling_codes": [
+    "241"
+   ],
+   "capital": "Libreville",
+   "code": "GA",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "ga",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Gabon",
+    "es": "Gabón",
+    "fr": "Gabon",
+    "pt": "Gabão",
+    "uk": "Габон"
+   },
+   "numeric": "266",
+   "official_name": "Gabonese Republic",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "GBR",
+   "alt_names": [
+    "GB",
+    "Great Britain",
+    "Regno Unito",
+    "Reino Unido",
+    "Royaume-Uni",
+    "UK",
+    "Ujedinjeno Kraljevstvo",
+    "United Kingdom",
+    "United Kingdom of Great Britain and Northern Ireland",
+    "Vereinigtes Königreich",
+    "Verenigd Koninkrijk",
+    "Yhdistynyt kuningaskunta",
+    "Великобритания",
+    "イギリス"
+   ],
+   "calling_codes": [
+    "44"
+   ],
+   "capital": "London",
+   "code": "GB",
+   "currencies": [
+    "GBP"
+   ],
+   "flag": "gb",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "United Kingdom",
+    "es": "Reino Unido",
+    "fr": "Royaume-Uni",
+    "pt": "Reino Unido",
+    "uk": "Велика Британія"
+   },
+   "numeric": "826",
+   "official_name": "United Kingdom of Great Britain and Northern Ireland",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "GRD",
+   "alt_names": [
+    "GD",
+    "Granada",
+    "Grenada",
+    "Grenade",
+    "Гренада",
+    "グレナダ"
+   ],
+   "calling_codes": [
+    "1473"
+   ],
+   "capital": "St. George's",
+   "code": "GD",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "gd",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Grenada",
+    "es": "Granada",
+    "fr": "Grenade",
+    "pt": "Granada",
+    "uk": "Гренада"
+   },
+   "numeric": "308",
+   "official_name": "Grenada",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "GEO",
+   "alt_names": [
+    "GE",
+    "Georgia",
+    "Georgien",
+    "Georgië",
+    "Geórgia",
+    "Gruzija",
+    "Géorgie",
+    "Sakartvelo",
+    "Грузия",
+    "საქართველო",
+    "グルジア"
+   ],
+   "calling_codes": [
+    "995"
+   ],
+   "capital": "Tbilisi",
+   "code": "GE",
+   "currencies": [
+    "GEL"
+   ],
+   "flag": "ge",
+   "languages": [
+    "kat"
+   ],
+   "names": {
+    "en": "Georgia",
+    "es": "Georgia",
+    "fr": "Géorgie",
+    "pt": "Geórgia",
+    "uk": "Грузія"
+   },
+   "numeric": "268",
+   "official_name": "Georgia",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "GUF",
+   "alt_names": [
+    "Francuska Gvajana",
+    "Frans-Guyana",
+    "Französisch Guyana",
+    "French Guiana",
+    "GF",
+    "Guayana Francesa",
+    "Guiana",
+    "Guiana Francesa",
+    "Guyana francese",
+    "Guyane",
+    "Guyane française",
+    "Ranskan Guayana",
+    "Французская Гвиана",
+    "フランス領ギアナ"
+   ],
+   "calling_codes": [
+    "594"
+   ],
+   "capital": "Cayenne",
+   "code": "GF",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "gf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "French Guiana",
+    "es": "Guayana Francesa",
+    "fr": "Guyane française",
+    "pt": "Guiana Francesa",
+    "uk": "Французька Гвіана"
+   },
+   "numeric": "254",
+   "official_name": "Guiana",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "GGY",
+   "alt_names": [
+    "Bailiwick of Guernsey",
+    "Bailliage de Guernesey",
+    "Dgèrnésiais",
+    "GG",
+    "Guernesey",
+    "Guernsey",
+    "Гернси",
+    "ガーンジー"
+   ],
+   "calling_codes": [
+    "44"
+   ],
+   "capital": "St. Peter Port",
+   "code": "GG",
+   "currencies": [
+    "GBP"
+   ],
+   "flag": "gg",
+   "languages": [
+    "eng",
+    "fra",
+    "nfr"
+   ],
+   "names": {
+    "en": "Guernsey",
+    "es": "Guernesey",
+    "fr": "Guernesey",
+    "pt": "Guernsey",
+    "uk": "Гернсі"
+   },
+   "numeric": "831",
+   "official_name": "Bailiwick of Guernsey",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "GHA",
+   "alt_names": [
+    "GH",
+    "Gana",
+    "Ghana",
+    "Republic of Ghana",
+    "Гана",
+    "ガーナ"
+   ],
+   "calling_codes": [
+    "233"
+   ],
+   "capital": "Accra",
+   "code": "GH",
+   "currencies": [
+    "GHS"
+   ],
+   "flag": "gh",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Ghana",
+    "es": "Ghana",
+    "fr": "Ghana",
+    "pt": "Gana",
+    "uk": "Гана"
+   },
+   "numeric": "288",
+   "official_name": "Republic of Ghana",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "GIB",
+   "alt_names": [
+    "GI",
+    "Gibilterra",
+    "Gibraltar",
+    "Гибралтар",
+    "ジブラルタル"
+   ],
+   "calling_codes": [
+    "350"
+   ],
+   "capital": "Gibraltar",
+   "code": "GI",
+   "currencies": [
+    "GIP"
+   ],
+   "flag": "gi",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Gibraltar",
+    "es": "Gibraltar",
+    "fr": "Gibraltar",
+    "pt": "Gibraltar",
+    "uk": "Гібралтар"
+   },
+   "numeric": "292",
+   "official_name": "Gibraltar",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "GRL",
+   "alt_names": [
+    "GL",
+    "Greenland",
+    "Grenland",
+    "Groenland",
+    "Groenlandia",
+    "Gronelândia",
+    "Groönlanti",
+    "Grönland",
+    "Grønland",
+    "Kalaallit Nunaat",
+    "Гренландия",
+    "グリーンランド"
+   ],
+   "calling_codes": [
+    "299"
+   ],
+   "capital": "Nuuk",
+   "code": "GL",
+   "currencies": [
+    "DKK"
+   ],
+   "flag": "gl",
+   "languages": [
+    "kal"
+   ],
+   "names": {
+    "en": "Greenland",
+    "es": "Groenlandia",
+    "fr": "Groenland",
+    "pt": "Groenlândia",
+    "uk": "Гренландія"
+   },
+   "numeric": "304",
+   "official_name": "Greenland",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "GMB",
+   "alt_names": [
+    "GM",
+    "Gambia",
+    "Gambie",
+    "Gambija",
+    "Gâmbia",
+    "Republic of the Gambia",
+    "Гамбия",
+    "ガンビア"
+   ],
+   "calling_codes": [
+    "220"
+   ],
+   "capital": "Banjul",
+   "code": "GM",
+   "currencies": [
+    "GMD"
+   ],
+   "flag": "gm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Gambia",
+    "es": "Gambia",
+    "fr": "Gambie",
+    "pt": "Gâmbia",
+    "uk": "Гамбія"
+   },
+   "numeric": "270",
+   "official_name": "Republic of the Gambia",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "GIN",
+   "alt_names": [
+    "GN",
+    "Guinea",
+    "Guinee",
+    "Guiné",
+    "Guinée",
+    "Gvineja",
+    "Republic of Guinea",
+    "République de Guinée",
+    "Гвинея",
+    "ギニア"
+   ],
+   "calling_codes": [
+    "224"
+   ],
+   "capital": "Conakry",
+   "code": "GN",
+   "currencies": [
+    "GNF"
+   ],
+   "flag": "gn",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Guinea",
+    "es": "Guinea",
+    "fr": "Guinée",
+    "pt": "Guiné",
+    "uk": "Гвінея"
+   },
+   "numeric": "324",
+   "official_name": "Republic of Guinea",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "GLP",
+   "alt_names": [
+    "GP",
+    "Guadalupe",
+    "Guadeloupa",
+    "Guadeloupe",
+    "Gvadalupa",
+    "Gwadloup",
+    "Гваделупа",
+    "グアドループ"
+   ],
+   "calling_codes": [
+    "590"
+   ],
+   "capital": "Basse-Terre",
+   "code": "GP",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "gp",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Guadeloupe",
+    "es": "Guadalupe",
+    "fr": "Guadeloupe",
+    "pt": "Guadalupe",
+    "uk": "Гваделупа"
+   },
+   "numeric": "312",
+   "official_name": "Guadeloupe",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "GNQ",
+   "alt_names": [
+    "Ekvatorijalna Gvineja",
+    "Equatoriaal-Guinea",
+    "Equatorial Guinea",
+    "GQ",
+    "Gini Gyhydeddol",
+    "Guinea Ecuatorial",
+    "Guinea Equatoriale",
+    "Guiné Equatorial",
+    "Guinée équatoriale",
+    "Päiväntasaajan Guinea",
+    "Republic of Equatorial Guinea",
+    "República da Guiné Equatorial",
+    "República de Guinea Ecuatorial",
+    "République de Guinée équatoriale",
+    "Äquatorialguinea",
+    "Экваториальная Гвинея",
+    "赤道ギニア"
+   ],
+   "calling_codes": [
+    "240"
+   ],
+   "capital": "Malabo",
+   "code": "GQ",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "gq",
+   "languages": [
+    "fra",
+    "por",
+    "spa"
+   ],
+   "names": {
+    "en": "Equatorial Guinea",
+    "es": "Guinea Ecuatorial",
+    "fr": "Guinée équatoriale",
+    "pt": "Guiné Equatorial",
+    "uk": "Екваторіальна Гвінея"
+   },
+   "numeric": "226",
+   "official_name": "Republic of Equatorial Guinea",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "GRC",
+   "alt_names": [
+    "Elláda",
+    "GR",
+    "Grecia",
+    "Greece",
+    "Griechenland",
+    "Griekenland",
+    "Grèce",
+    "Grécia",
+    "Grčka",
+    "Hellenic Republic",
+    "Kreikka",
+    "Ελλάδα",
+    "Ελληνική Δημοκρατία",
+    "Греция",
+    "ギリシャ"
+   ],
+   "calling_codes": [
+    "30"
+   ],
+   "capital": "Athens",
+   "code": "GR",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "gr",
+   "languages": [
+    "ell"
+   ],
+   "names": {
+    "en": "Greece",
+    "es": "Grecia",
+    "fr": "Grèce",
+    "pt": "Grécia",
+    "uk": "Греція"
+   },
+   "numeric": "300",
+   "official_name": "Hellenic Republic",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "SGS",
+   "alt_names": [
+    "Etelä-Georgia ja Eteläiset Sandwichsaaret",
+    "GS",
+    "Georgia del Sud e Isole Sandwich Meridionali",
+    "Géorgie du Sud-et-les Îles Sandwich du Sud",
+    "Ilhas Geórgia do Sul e Sandwich do Sul",
+    "Islas Georgias del Sur y Sandwich del Sur",
+    "Južna Georgija i otočje Južni Sandwich",
+    "South Georgia",
+    "South Georgia and the South Sandwich Islands",
+    "Südgeorgien und die Südlichen Sandwichinseln",
+    "Zuid-Georgia en Zuidelijke Sandwicheilanden",
+    "Южная Георгия и Южные Сандвичевы острова",
+    "サウスジョージア・サウスサンドウィッチ諸島"
+   ],
+   "calling_codes": [
+    "500"
+   ],
+   "capital": "King Edward Point",
+   "code": "GS",
+   "currencies": [
+    "GBP"
+   ],
+   "flag": "gs",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "South Georgia & South Sandwich Islands",
+    "es": "Islas Georgia del Sur y Sandwich del Sur",
+    "fr": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+    "pt": "Ilhas Geórgia do Sul e Sandwich do Sul",
+    "uk": "Південна Джорджія та Південні Сандвічеві Острови"
+   },
+   "numeric": "239",
+   "official_name": "South Georgia and the South Sandwich Islands",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "GTM",
+   "alt_names": [
+    "GT",
+    "Guatemala",
+    "Gvatemala",
+    "Republic of Guatemala",
+    "Гватемала",
+    "グアテマラ"
+   ],
+   "calling_codes": [
+    "502"
+   ],
+   "capital": "Guatemala City",
+   "code": "GT",
+   "currencies": [
+    "GTQ"
+   ],
+   "flag": "gt",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Guatemala",
+    "es": "Guatemala",
+    "fr": "Guatemala",
+    "pt": "Guatemala",
+    "uk": "Гватемала"
+   },
+   "numeric": "320",
+   "official_name": "Republic of Guatemala",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "GUM",
+   "alt_names": [
+    "GU",
+    "Guam",
+    "Guåhån",
+    "Гуам",
+    "グアム"
+   ],
+   "calling_codes": [
+    "1671"
+   ],
+   "capital": "Hagåtña",
+   "code": "GU",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "gu",
+   "languages": [
+    "cha",
+    "eng",
+    "spa"
+   ],
+   "names": {
+    "en": "Guam",
+    "es": "Guam",
+    "fr": "Guam",
+    "pt": "Guam",
+    "uk": "Гуам"
+   },
+   "numeric": "316",
+   "official_name": "Guam",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "GNB",
+   "alt_names": [
+    "GW",
+    "Guinea-Bissau",
+    "Guinea-Bisáu",
+    "Guinee-Bissau",
+    "Guiné-Bissau",
+    "Guinée-Bissau",
+    "Gvineja Bisau",
+    "Republic of Guinea-Bissau",
+    "República da Guiné-Bissau",
+    "Гвинея-Бисау",
+    "ギニアビサウ"
+   ],
+   "calling_codes": [
+    "245"
+   ],
+   "capital": "Bissau",
+   "code": "GW",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "gw",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Guinea-Bissau",
+    "es": "Guinea-Bisáu",
+    "fr": "Guinée-Bissau",
+    "pt": "Guiné-Bissau",
+    "uk": "Гвінея-Бісау"
+   },
+   "numeric": "624",
+   "official_name": "Republic of Guinea-Bissau",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "GUY",
+   "alt_names": [
+    "Co-operative Republic of Guyana",
+    "GY",
+    "Guayana",
+    "Guiana",
+    "Guyana",
+    "Gvajana",
+    "Гайана",
+    "ガイアナ"
+   ],
+   "calling_codes": [
+    "592"
+   ],
+   "capital": "Georgetown",
+   "code": "GY",
+   "currencies": [
+    "GYD"
+   ],
+   "flag": "gy",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Guyana",
+    "es": "Guyana",
+    "fr": "Guyana",
+    "pt": "Guiana",
+    "uk": "Гаяна"
+   },
+   "numeric": "328",
+   "official_name": "Co-operative Republic of Guyana",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "HKG",
+   "alt_names": [
+    "HK",
+    "Hong Kong",
+    "Hong Kong Special Administrative Region of the People's Republic of China",
+    "Hongkong",
+    "Гонконг",
+    "香港"
+   ],
+   "calling_codes": [
+    "852"
+   ],
+   "capital": "City of Victoria",
+   "code": "HK",
+   "currencies": [
+    "HKD"
+   ],
+   "flag": "hk",
+   "languages": [
+    "eng",
+    "zho"
+   ],
+   "names": {
+    "en": "Hong Kong SAR China",
+    "es": "RAE de Hong Kong (China)",
+    "fr": "R.A.S. chinoise de Hong Kong",
+    "pt": "Hong Kong, RAE da China",
+    "uk": "Гонконг, ОАР Китаю"
+   },
+   "numeric": "344",
+   "official_name": "Hong Kong Special Administrative Region of the People's Republic of China",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "HMD",
+   "alt_names": [
+    "HM",
+    "Heard Island and McDonald Islands",
+    "Heard Island and McDonald Mcdonald Islands",
+    "Heard ja McDonaldinsaaret",
+    "Heard und die McDonaldinseln",
+    "Heard-en McDonaldeilanden",
+    "Ilha Heard e Ilhas McDonald",
+    "Islas Heard y McDonald",
+    "Isole Heard e McDonald",
+    "Otok Heard i otočje McDonald",
+    "Îles Heard-et-MacDonald",
+    "Остров Херд и острова Макдональд",
+    "ハード島とマクドナルド諸島"
+   ],
+   "calling_codes": [],
+   "capital": null,
+   "code": "HM",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "hm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Heard & McDonald Islands",
+    "es": "Islas Heard y McDonald",
+    "fr": "Îles Heard-et-MacDonald",
+    "pt": "Ilhas Heard e McDonald",
+    "uk": "Острови Герд і Макдоналд"
+   },
+   "numeric": "334",
+   "official_name": "Heard Island and McDonald Islands",
+   "region": null,
+   "subregion": null
+  },
+  {
+   "alpha3": "HND",
+   "alt_names": [
+    "HN",
+    "Honduras",
+    "Republic of Honduras",
+    "República de Honduras",
+    "Гондурас",
+    "ホンジュラス"
+   ],
+   "calling_codes": [
+    "504"
+   ],
+   "capital": "Tegucigalpa",
+   "code": "HN",
+   "currencies": [
+    "HNL"
+   ],
+   "flag": "hn",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Honduras",
+    "es": "Honduras",
+    "fr": "Honduras",
+    "pt": "Honduras",
+    "uk": "Гондурас"
+   },
+   "numeric": "340",
+   "official_name": "Republic of Honduras",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "HRV",
+   "alt_names": [
+    "Croacia",
+    "Croatia",
+    "Croatie",
+    "Croazia",
+    "Croácia",
+    "HR",
+    "Hrvatska",
+    "Kroatia",
+    "Kroatien",
+    "Kroatië",
+    "Republic of Croatia",
+    "Republika Hrvatska",
+    "Хорватия",
+    "クロアチア"
+   ],
+   "calling_codes": [
+    "385"
+   ],
+   "capital": "Zagreb",
+   "code": "HR",
+   "currencies": [
+    "HRK"
+   ],
+   "flag": "hr",
+   "languages": [
+    "hrv"
+   ],
+   "names": {
+    "en": "Croatia",
+    "es": "Croacia",
+    "fr": "Croatie",
+    "pt": "Croácia",
+    "uk": "Хорватія"
+   },
+   "numeric": "191",
+   "official_name": "Republic of Croatia",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "HTI",
+   "alt_names": [
+    "Ayiti",
+    "HT",
+    "Haiti",
+    "Haïti",
+    "Repiblik Ayiti",
+    "Republic of Haiti",
+    "République d'Haïti",
+    "Гаити",
+    "ハイチ"
+   ],
+   "calling_codes": [
+    "509"
+   ],
+   "capital": "Port-au-Prince",
+   "code": "HT",
+   "currencies": [
+    "HTG",
+    "USD"
+   ],
+   "flag": "ht",
+   "languages": [
+    "fra",
+    "hat"
+   ],
+   "names": {
+    "en": "Haiti",
+    "es": "Haití",
+    "fr": "Haïti",
+    "pt": "Haiti",
+    "uk": "Гаїті"
+   },
+   "numeric": "332",
+   "official_name": "Republic of Haiti",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "HUN",
+   "alt_names": [
+    "HU",
+    "Hongarije",
+    "Hongrie",
+    "Hungary",
+    "Hungria",
+    "Hungría",
+    "Magyarország",
+    "Mađarska",
+    "Ungarn",
+    "Ungheria",
+    "Unkari",
+    "Венгрия",
+    "ハンガリー"
+   ],
+   "calling_codes": [
+    "36"
+   ],
+   "capital": "Budapest",
+   "code": "HU",
+   "currencies": [
+    "HUF"
+   ],
+   "flag": "hu",
+   "languages": [
+    "hun"
+   ],
+   "names": {
+    "en": "Hungary",
+    "es": "Hungría",
+    "fr": "Hongrie",
+    "pt": "Hungria",
+    "uk": "Угорщина"
+   },
+   "numeric": "348",
+   "official_name": "Hungary",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "IDN",
+   "alt_names": [
+    "ID",
+    "Indonesia",
+    "Indonesien",
+    "Indonesië",
+    "Indonezija",
+    "Indonésia",
+    "Indonésie",
+    "Republic of Indonesia",
+    "Republik Indonesia",
+    "Индонезия",
+    "インドネシア"
+   ],
+   "calling_codes": [
+    "62"
+   ],
+   "capital": "Jakarta",
+   "code": "ID",
+   "currencies": [
+    "IDR"
+   ],
+   "flag": "id",
+   "languages": [
+    "ind"
+   ],
+   "names": {
+    "en": "Indonesia",
+    "es": "Indonesia",
+    "fr": "Indonésie",
+    "pt": "Indonésia",
+    "uk": "Індонезія"
+   },
+   "numeric": "360",
+   "official_name": "Republic of Indonesia",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "IRL",
+   "alt_names": [
+    "IE",
+    "Ierland",
+    "Ireland",
+    "Irland",
+    "Irlanda",
+    "Irlande",
+    "Irlanti",
+    "Irska",
+    "Poblacht na hÉireann",
+    "Republic of Ireland",
+    "Éire",
+    "Ирландия",
+    "アイルランド"
+   ],
+   "calling_codes": [
+    "353"
+   ],
+   "capital": "Dublin",
+   "code": "IE",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "ie",
+   "languages": [
+    "eng",
+    "gle"
+   ],
+   "names": {
+    "en": "Ireland",
+    "es": "Irlanda",
+    "fr": "Irlande",
+    "pt": "Irlanda",
+    "uk": "Ірландія"
+   },
+   "numeric": "372",
+   "official_name": "Republic of Ireland",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "ISR",
+   "alt_names": [
+    "IL",
+    "Israel",
+    "Israele",
+    "Israël",
+    "Izrael",
+    "Medīnat Yisrā'el",
+    "State of Israel",
+    "Израиль",
+    "ישראל",
+    "إسرائيل",
+    "イスラエル"
+   ],
+   "calling_codes": [
+    "972"
+   ],
+   "capital": "Jerusalem",
+   "code": "IL",
+   "currencies": [
+    "ILS"
+   ],
+   "flag": "il",
+   "languages": [
+    "ara",
+    "heb"
+   ],
+   "names": {
+    "en": "Israel",
+    "es": "Israel",
+    "fr": "Israël",
+    "pt": "Israel",
+    "uk": "Ізраїль"
+   },
+   "numeric": "376",
+   "official_name": "State of Israel",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "IMN",
+   "alt_names": [
+    "Ellan Vannin",
+    "IM",
+    "Ilha de Man",
+    "Insel Man",
+    "Isla de Man",
+    "Isle of Man",
+    "Isola di Man",
+    "Mann",
+    "Mannin",
+    "Mansaari",
+    "Otok Man",
+    "Île de Man",
+    "Остров Мэн",
+    "マン島"
+   ],
+   "calling_codes": [
+    "44"
+   ],
+   "capital": "Douglas",
+   "code": "IM",
+   "currencies": [
+    "GBP"
+   ],
+   "flag": "im",
+   "languages": [
+    "eng",
+    "glv"
+   ],
+   "names": {
+    "en": "Isle of Man",
+    "es": "Isla de Man",
+    "fr": "Île de Man",
+    "pt": "Ilha de Man",
+    "uk": "Острів Мен"
+   },
+   "numeric": "833",
+   "official_name": "Isle of Man",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "IND",
+   "alt_names": [
+    "Bharat Ganrajya",
+    "Bhārat",
+    "IN",
+    "Inde",
+    "India",
+    "Indien",
+    "Indija",
+    "Intia",
+    "Republic of India",
+    "Índia",
+    "Индия",
+    "भारत",
+    "இந்தியா",
+    "インド"
+   ],
+   "calling_codes": [
+    "91"
+   ],
+   "capital": "New Delhi",
+   "code": "IN",
+   "currencies": [
+    "INR"
+   ],
+   "flag": "in",
+   "languages": [
+    "eng",
+    "hin",
+    "tam"
+   ],
+   "names": {
+    "en": "India",
+    "es": "India",
+    "fr": "Inde",
+    "pt": "Índia",
+    "uk": "Індія"
+   },
+   "numeric": "356",
+   "official_name": "Republic of India",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "IOT",
+   "alt_names": [
+    "Britanski Indijskooceanski teritorij",
+    "Britisches Territorium im Indischen Ozean",
+    "British Indian Ocean Territory",
+    "Britse Gebieden in de Indische Oceaan",
+    "Brittiläinen Intian valtameren alue",
+    "IO",
+    "Territoire britannique de l'océan Indien",
+    "Territorio Británico del Océano Índico",
+    "Territorio britannico dell'oceano indiano",
+    "Território Britânico do Oceano Índico",
+    "Tiriogaeth Brydeinig Cefnfor India",
+    "Британская территория в Индийском океане",
+    "イギリス領インド洋地域"
+   ],
+   "calling_codes": [
+    "246"
+   ],
+   "capital": "Diego Garcia",
+   "code": "IO",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "io",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "British Indian Ocean Territory",
+    "es": "Territorio Británico del Océano Índico",
+    "fr": "Territoire britannique de l’océan Indien",
+    "pt": "Território Britânico do Oceano Índico",
+    "uk": "Британська територія в Індійському океані"
+   },
+   "numeric": "086",
+   "official_name": "British Indian Ocean Territory",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "IRQ",
+   "alt_names": [
+    "IQ",
+    "Irak",
+    "Iraq",
+    "Iraque",
+    "Jumhūriyyat al-‘Irāq",
+    "Republic of Iraq",
+    "Ирак",
+    "العراق",
+    "کۆماری",
+    "ܩܘܼܛܢܵܐ",
+    "イラク"
+   ],
+   "calling_codes": [
+    "964"
+   ],
+   "capital": "Baghdad",
+   "code": "IQ",
+   "currencies": [
+    "IQD"
+   ],
+   "flag": "iq",
+   "languages": [
+    "ara",
+    "arc",
+    "ckb"
+   ],
+   "names": {
+    "en": "Iraq",
+    "es": "Irak",
+    "fr": "Irak",
+    "pt": "Iraque",
+    "uk": "Ірак"
+   },
+   "numeric": "368",
+   "official_name": "Republic of Iraq",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "IRN",
+   "alt_names": [
+    "IR",
+    "Iran",
+    "Iran, Islamic Republic of",
+    "Irão",
+    "Islamic Republic of Iran",
+    "Jomhuri-ye Eslāmi-ye Irān",
+    "Иран",
+    "ایران",
+    "イラン・イスラム共和国"
+   ],
+   "calling_codes": [
+    "98"
+   ],
+   "capital": "Tehran",
+   "code": "IR",
+   "currencies": [
+    "IRR"
+   ],
+   "flag": "ir",
+   "languages": [
+    "fas"
+   ],
+   "names": {
+    "en": "Iran",
+    "es": "Irán",
+    "fr": "Iran",
+    "pt": "Irã",
+    "uk": "Іран"
+   },
+   "numeric": "364",
+   "official_name": "Islamic Republic of Iran",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "ISL",
+   "alt_names": [
+    "IJsland",
+    "IS",
+    "Iceland",
+    "Island",
+    "Islanda",
+    "Islande",
+    "Islandia",
+    "Islanti",
+    "Islândia",
+    "Lýðveldið Ísland",
+    "Republic of Iceland",
+    "Ísland",
+    "Исландия",
+    "アイスランド"
+   ],
+   "calling_codes": [
+    "354"
+   ],
+   "capital": "Reykjavik",
+   "code": "IS",
+   "currencies": [
+    "ISK"
+   ],
+   "flag": "is",
+   "languages": [
+    "isl"
+   ],
+   "names": {
+    "en": "Iceland",
+    "es": "Islandia",
+    "fr": "Islande",
+    "pt": "Islândia",
+    "uk": "Ісландія"
+   },
+   "numeric": "352",
+   "official_name": "Iceland",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "ITA",
+   "alt_names": [
+    "IT",
+    "Italia",
+    "Italian Republic",
+    "Italie",
+    "Italien",
+    "Italija",
+    "Italië",
+    "Italy",
+    "Itália",
+    "Repubblica italiana",
+    "Италия",
+    "イタリア"
+   ],
+   "calling_codes": [
+    "39"
+   ],
+   "capital": "Rome",
+   "code": "IT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "it",
+   "languages": [
+    "bar",
+    "ita",
+    "srd"
+   ],
+   "names": {
+    "en": "Italy",
+    "es": "Italia",
+    "fr": "Italie",
+    "pt": "Itália",
+    "uk": "Італія"
+   },
+   "numeric": "380",
+   "official_name": "Italian Republic",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "JEY",
+   "alt_names": [
+    "Bailiwick of Jersey",
+    "Bailliage de Jersey",
+    "Bailliage dé Jèrri",
+    "Isola di Jersey",
+    "JE",
+    "Jersey",
+    "Jèrri",
+    "Джерси",
+    "ジャージー"
+   ],
+   "calling_codes": [
+    "44"
+   ],
+   "capital": "Saint Helier",
+   "code": "JE",
+   "currencies": [
+    "GBP"
+   ],
+   "flag": "je",
+   "languages": [
+    "eng",
+    "fra",
+    "nrf"
+   ],
+   "names": {
+    "en": "Jersey",
+    "es": "Jersey",
+    "fr": "Jersey",
+    "pt": "Jersey",
+    "uk": "Джерсі"
+   },
+   "numeric": "832",
+   "official_name": "Bailiwick of Jersey",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "JAM",
+   "alt_names": [
+    "Giamaica",
+    "JM",
+    "Jamaica",
+    "Jamaika",
+    "Jamajka",
+    "Jamaïque",
+    "Ямайка",
+    "ジャマイカ"
+   ],
+   "calling_codes": [
+    "1876"
+   ],
+   "capital": "Kingston",
+   "code": "JM",
+   "currencies": [
+    "JMD"
+   ],
+   "flag": "jm",
+   "languages": [
+    "eng",
+    "jam"
+   ],
+   "names": {
+    "en": "Jamaica",
+    "es": "Jamaica",
+    "fr": "Jamaïque",
+    "pt": "Jamaica",
+    "uk": "Ямайка"
+   },
+   "numeric": "388",
+   "official_name": "Jamaica",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "JOR",
+   "alt_names": [
+    "Giordania",
+    "Hashemite Kingdom of Jordan",
+    "JO",
+    "Jordan",
+    "Jordania",
+    "Jordanie",
+    "Jordanien",
+    "Jordanië",
+    "Jordânia",
+    "al-Mamlakah al-Urdunīyah al-Hāshimīyah",
+    "Иордания",
+    "الأردن",
+    "ヨルダン"
+   ],
+   "calling_codes": [
+    "962"
+   ],
+   "capital": "Amman",
+   "code": "JO",
+   "currencies": [
+    "JOD"
+   ],
+   "flag": "jo",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Jordan",
+    "es": "Jordania",
+    "fr": "Jordanie",
+    "pt": "Jordânia",
+    "uk": "Йорданія"
+   },
+   "numeric": "400",
+   "official_name": "Hashemite Kingdom of Jordan",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "JPN",
+   "alt_names": [
+    "Giappone",
+    "JP",
+    "Japan",
+    "Japani",
+    "Japon",
+    "Japão",
+    "Japón",
+    "Nihon",
+    "Nippon",
+    "Япония",
+    "日本"
+   ],
+   "calling_codes": [
+    "81"
+   ],
+   "capital": "Tokyo",
+   "code": "JP",
+   "currencies": [
+    "JPY"
+   ],
+   "flag": "jp",
+   "languages": [
+    "jpn"
+   ],
+   "names": {
+    "en": "Japan",
+    "es": "Japón",
+    "fr": "Japon",
+    "pt": "Japão",
+    "uk": "Японія"
+   },
+   "numeric": "392",
+   "official_name": "Japan",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "KEN",
+   "alt_names": [
+    "Jamhuri ya Kenya",
+    "KE",
+    "Kenia",
+    "Kenija",
+    "Kenya",
+    "Quénia",
+    "Republic of Kenya",
+    "Кения",
+    "ケニア"
+   ],
+   "calling_codes": [
+    "254"
+   ],
+   "capital": "Nairobi",
+   "code": "KE",
+   "currencies": [
+    "KES"
+   ],
+   "flag": "ke",
+   "languages": [
+    "eng",
+    "swa"
+   ],
+   "names": {
+    "en": "Kenya",
+    "es": "Kenia",
+    "fr": "Kenya",
+    "pt": "Quênia",
+    "uk": "Кенія"
+   },
+   "numeric": "404",
+   "official_name": "Republic of Kenya",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "KGZ",
+   "alt_names": [
+    "KG",
+    "Kirghizistan",
+    "Kirgisia",
+    "Kirgisistan",
+    "Kirgistan",
+    "Kirgizië",
+    "Kirguizistán",
+    "Kyrgyz Republic",
+    "Kyrgyz Respublikasy",
+    "Kyrgyzstan",
+    "Quirguistão",
+    "Киргизия",
+    "Кыргыз Республикасы",
+    "Кыргызстан",
+    "キルギス"
+   ],
+   "calling_codes": [
+    "996"
+   ],
+   "capital": "Bishkek",
+   "code": "KG",
+   "currencies": [
+    "KGS"
+   ],
+   "flag": "kg",
+   "languages": [
+    "kir",
+    "rus"
+   ],
+   "names": {
+    "en": "Kyrgyzstan",
+    "es": "Kirguistán",
+    "fr": "Kirghizstan",
+    "pt": "Quirguistão",
+    "uk": "Киргизстан"
+   },
+   "numeric": "417",
+   "official_name": "Kyrgyz Republic",
+   "region": "Asia",
+   "subregion": "Central Asia"
+  },
+  {
+   "alpha3": "KHM",
+   "alt_names": [
+    "Cambodge",
+    "Cambodia",
+    "Cambodja",
+    "Cambogia",
+    "Camboja",
+    "Camboya",
+    "KH",
+    "Kambodscha",
+    "Kambodža",
+    "Kingdom of Cambodia",
+    "Kâmpŭchéa",
+    "Камбоджа",
+    "カンボジア"
+   ],
+   "calling_codes": [
+    "855"
+   ],
+   "capital": "Phnom Penh",
+   "code": "KH",
+   "currencies": [
+    "KHR"
+   ],
+   "flag": "kh",
+   "languages": [
+    "khm"
+   ],
+   "names": {
+    "en": "Cambodia",
+    "es": "Camboya",
+    "fr": "Cambodge",
+    "pt": "Camboja",
+    "uk": "Камбоджа"
+   },
+   "numeric": "116",
+   "official_name": "Kingdom of Cambodia",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "KIR",
+   "alt_names": [
+    "Independent and Sovereign Republic of Kiribati",
+    "KI",
+    "Kiribati",
+    "Republic of Kiribati",
+    "Ribaberiki Kiribati",
+    "Кирибати",
+    "キリバス"
+   ],
+   "calling_codes": [
+    "686"
+   ],
+   "capital": "South Tarawa",
+   "code": "KI",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "ki",
+   "languages": [
+    "eng",
+    "gil"
+   ],
+   "names": {
+    "en": "Kiribati",
+    "es": "Kiribati",
+    "fr": "Kiribati",
+    "pt": "Quiribati",
+    "uk": "Кірибаті"
+   },
+   "numeric": "296",
+   "official_name": "Independent and Sovereign Republic of Kiribati",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "COM",
+   "alt_names": [
+    "Comoras",
+    "Comore",
+    "Comoren",
+    "Comores",
+    "Comoros",
+    "KM",
+    "Komori",
+    "Komorit",
+    "Udzima wa Komori",
+    "Union der Komoren",
+    "Union des Comores",
+    "Union of the Comoros",
+    "al-Ittiḥād al-Qumurī",
+    "Коморы",
+    "القمر‎",
+    "コモロ"
+   ],
+   "calling_codes": [
+    "269"
+   ],
+   "capital": "Moroni",
+   "code": "KM",
+   "currencies": [
+    "KMF"
+   ],
+   "flag": "km",
+   "languages": [
+    "ara",
+    "fra",
+    "zdj"
+   ],
+   "names": {
+    "en": "Comoros",
+    "es": "Comoras",
+    "fr": "Comores",
+    "pt": "Comores",
+    "uk": "Комори"
+   },
+   "numeric": "174",
+   "official_name": "Union of the Comoros",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "KNA",
+   "alt_names": [
+    "Federation of Saint Christopher and Nevis",
+    "Federation of Saint Christopher and Nevisa",
+    "KN",
+    "Saint Christopher und Nevis",
+    "Saint Kitts and Nevis",
+    "Saint Kitts e Nevis",
+    "Saint Kitts en Nevis",
+    "Saint Kitts ja Nevis",
+    "Saint-Christophe-et-Niévès",
+    "San Cristóbal y Nieves",
+    "Sveti Kristof i Nevis",
+    "São Cristóvão e Nevis",
+    "Сент-Китс и Невис",
+    "セントクリストファー・ネイビス"
+   ],
+   "calling_codes": [
+    "1869"
+   ],
+   "capital": "Basseterre",
+   "code": "KN",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "kn",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "St. Kitts & Nevis",
+    "es": "San Cristóbal y Nieves",
+    "fr": "Saint-Christophe-et-Niévès",
+    "pt": "São Cristóvão e Névis",
+    "uk": "Сент-Кітс і Невіс"
+   },
+   "numeric": "659",
+   "official_name": "Federation of Saint Christopher and Nevisa",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "PRK",
+   "alt_names": [
+    "Chosŏn Minjujuŭi Inmin Konghwaguk",
+    "Corea del Nord",
+    "Corea del Norte",
+    "Coreia do Norte",
+    "Corée du Nord",
+    "Democratic People's Republic of Korea",
+    "KP",
+    "Korea, Democratic People's Republic of",
+    "Noord-Korea",
+    "Nordkorea",
+    "North Korea",
+    "Pohjois-Korea",
+    "Sjeverna Koreja",
+    "Северная Корея",
+    "朝鮮民主主義人民共和国",
+    "북한",
+    "조선민주주의인민공화국"
+   ],
+   "calling_codes": [
+    "850"
+   ],
+   "capital": "Pyongyang",
+   "code": "KP",
+   "currencies": [
+    "KPW"
+   ],
+   "flag": "kp",
+   "languages": [
+    "kor"
+   ],
+   "names": {
+    "en": "North Korea",
+    "es": "Corea del Norte",
+    "fr": "Corée du Nord",
+    "pt": "Coreia do Norte",
+    "uk": "Північна Корея"
+   },
+   "numeric": "408",
+   "official_name": "Democratic People's Republic of Korea",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "KOR",
+   "alt_names": [
+    "Corea del Sud",
+    "Corea del Sur",
+    "Coreia do Sul",
+    "Corée du Sud",
+    "Etelä-Korea",
+    "Južna Koreja",
+    "KR",
+    "Korea, Republic of",
+    "Republic of Korea",
+    "South Korea",
+    "Südkorea",
+    "Zuid-Korea",
+    "Южная Корея",
+    "大韓民国",
+    "대한민국"
+   ],
+   "calling_codes": [
+    "82"
+   ],
+   "capital": "Seoul",
+   "code": "KR",
+   "currencies": [
+    "KRW"
+   ],
+   "flag": "kr",
+   "languages": [
+    "kor"
+   ],
+   "names": {
+    "en": "South Korea",
+    "es": "Corea del Sur",
+    "fr": "Corée du Sud",
+    "pt": "Coreia do Sul",
+    "uk": "Південна Корея"
+   },
+   "numeric": "410",
+   "official_name": "Republic of Korea",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "KWT",
+   "alt_names": [
+    "Dawlat al-Kuwait",
+    "KW",
+    "Koeweit",
+    "Koweït",
+    "Kuvajt",
+    "Kuwait",
+    "State of Kuwait",
+    "Кувейт",
+    "الكويت",
+    "クウェート"
+   ],
+   "calling_codes": [
+    "965"
+   ],
+   "capital": "Kuwait City",
+   "code": "KW",
+   "currencies": [
+    "KWD"
+   ],
+   "flag": "kw",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Kuwait",
+    "es": "Kuwait",
+    "fr": "Koweït",
+    "pt": "Kuwait",
+    "uk": "Кувейт"
+   },
+   "numeric": "414",
+   "official_name": "State of Kuwait",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "CYM",
+   "alt_names": [
+    "Cayman Islands",
+    "Caymaneilanden",
+    "Caymansaaret",
+    "Ilhas Caimão",
+    "Islas Caimán",
+    "Isole Cayman",
+    "KY",
+    "Kaimaninseln",
+    "Kajmanski otoci",
+    "Ynysoedd_Cayman",
+    "Îles Caïmans",
+    "Каймановы острова",
+    "ケイマン諸島"
+   ],
+   "calling_codes": [
+    "1345"
+   ],
+   "capital": "George Town",
+   "code": "KY",
+   "currencies": [
+    "KYD"
+   ],
+   "flag": "ky",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Cayman Islands",
+    "es": "Islas Caimán",
+    "fr": "Îles Caïmans",
+    "pt": "Ilhas Cayman",
+    "uk": "Кайманові Острови"
+   },
+   "numeric": "136",
+   "official_name": "Cayman Islands",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "KAZ",
+   "alt_names": [
+    "Cazaquistão",
+    "KZ",
+    "Kasachstan",
+    "Kazachstan",
+    "Kazahstan",
+    "Kazajistán",
+    "Kazakhstan",
+    "Kazakistan",
+    "Kazakstan",
+    "Qazaqstan",
+    "Qazaqstan Respublïkası",
+    "Republic of Kazakhstan",
+    "Respublika Kazakhstan",
+    "Казахстан",
+    "Республика Казахстан",
+    "Қазақстан",
+    "Қазақстан Республикасы",
+    "カザフスタン"
+   ],
+   "calling_codes": [
+    "76",
+    "77"
+   ],
+   "capital": "Astana",
+   "code": "KZ",
+   "currencies": [
+    "KZT"
+   ],
+   "flag": "kz",
+   "languages": [
+    "kaz",
+    "rus"
+   ],
+   "names": {
+    "en": "Kazakhstan",
+    "es": "Kazajistán",
+    "fr": "Kazakhstan",
+    "pt": "Cazaquistão",
+    "uk": "Казахстан"
+   },
+   "numeric": "398",
+   "official_name": "Republic of Kazakhstan",
+   "region": "Asia",
+   "subregion": "Central Asia"
+  },
+  {
+   "alpha3": "LAO",
+   "alt_names": [
+    "LA",
+    "Lao",
+    "Lao People's Democratic Republic",
+    "Laos",
+    "Sathalanalat Paxathipatai Paxaxon Lao",
+    "Лаос",
+    "ສປປລາວ",
+    "ラオス人民民主共和国"
+   ],
+   "calling_codes": [
+    "856"
+   ],
+   "capital": "Vientiane",
+   "code": "LA",
+   "currencies": [
+    "LAK"
+   ],
+   "flag": "la",
+   "languages": [
+    "lao"
+   ],
+   "names": {
+    "en": "Laos",
+    "es": "Laos",
+    "fr": "Laos",
+    "pt": "Laos",
+    "uk": "Лаос"
+   },
+   "numeric": "418",
+   "official_name": "Lao People's Democratic Republic",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "LBN",
+   "alt_names": [
+    "Al-Jumhūrīyah Al-Libnānīyah",
+    "LB",
+    "Lebanese Republic",
+    "Lebanon",
+    "Liban",
+    "Libano",
+    "Libanon",
+    "Líbano",
+    "Ливан",
+    "لبنان",
+    "レバノン"
+   ],
+   "calling_codes": [
+    "961"
+   ],
+   "capital": "Beirut",
+   "code": "LB",
+   "currencies": [
+    "LBP"
+   ],
+   "flag": "lb",
+   "languages": [
+    "ara",
+    "fra"
+   ],
+   "names": {
+    "en": "Lebanon",
+    "es": "Líbano",
+    "fr": "Liban",
+    "pt": "Líbano",
+    "uk": "Ліван"
+   },
+   "numeric": "422",
+   "official_name": "Lebanese Republic",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "LCA",
+   "alt_names": [
+    "LC",
+    "Saint Lucia",
+    "Sainte-Lucie",
+    "Santa Lucia",
+    "Santa Lucía",
+    "Santa Lúcia",
+    "Sveta Lucija",
+    "Сент-Люсия",
+    "セントルシア"
+   ],
+   "calling_codes": [
+    "1758"
+   ],
+   "capital": "Castries",
+   "code": "LC",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "lc",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "St. Lucia",
+    "es": "Santa Lucía",
+    "fr": "Sainte-Lucie",
+    "pt": "Santa Lúcia",
+    "uk": "Сент-Люсія"
+   },
+   "numeric": "662",
+   "official_name": "Saint Lucia",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "LIE",
+   "alt_names": [
+    "Fürstentum Liechtenstein",
+    "LI",
+    "Liechenstein",
+    "Liechtenstein",
+    "Lihtenštajn",
+    "Principality of Liechtenstein",
+    "Лихтенштейн",
+    "リヒテンシュタイン"
+   ],
+   "calling_codes": [
+    "423"
+   ],
+   "capital": "Vaduz",
+   "code": "LI",
+   "currencies": [
+    "CHF"
+   ],
+   "flag": "li",
+   "languages": [
+    "deu"
+   ],
+   "names": {
+    "en": "Liechtenstein",
+    "es": "Liechtenstein",
+    "fr": "Liechtenstein",
+    "pt": "Liechtenstein",
+    "uk": "Ліхтенштейн"
+   },
+   "numeric": "438",
+   "official_name": "Principality of Liechtenstein",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "LKA",
+   "alt_names": [
+    "Democratic Socialist Republic of Sri Lanka",
+    "LK",
+    "Sri Lanka",
+    "ilaṅkai",
+    "Šri Lanka",
+    "Шри-Ланка",
+    "இலங்கை",
+    "ශ්‍රී ලංකාව",
+    "スリランカ"
+   ],
+   "calling_codes": [
+    "94"
+   ],
+   "capital": "Colombo",
+   "code": "LK",
+   "currencies": [
+    "LKR"
+   ],
+   "flag": "lk",
+   "languages": [
+    "sin",
+    "tam"
+   ],
+   "names": {
+    "en": "Sri Lanka",
+    "es": "Sri Lanka",
+    "fr": "Sri Lanka",
+    "pt": "Sri Lanka",
+    "uk": "Шрі-Ланка"
+   },
+   "numeric": "144",
+   "official_name": "Democratic Socialist Republic of Sri Lanka",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "LBR",
+   "alt_names": [
+    "LR",
+    "Liberia",
+    "Liberija",
+    "Libéria",
+    "Republic of Liberia",
+    "Либерия",
+    "リベリア"
+   ],
+   "calling_codes": [
+    "231"
+   ],
+   "capital": "Monrovia",
+   "code": "LR",
+   "currencies": [
+    "LRD"
+   ],
+   "flag": "lr",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Liberia",
+    "es": "Liberia",
+    "fr": "Liberia",
+    "pt": "Libéria",
+    "uk": "Ліберія"
+   },
+   "numeric": "430",
+   "official_name": "Republic of Liberia",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "LSO",
+   "alt_names": [
+    "Kingdom of Lesotho",
+    "LS",
+    "Lesotho",
+    "Lesoto",
+    "Muso oa Lesotho",
+    "Лесото",
+    "レソト"
+   ],
+   "calling_codes": [
+    "266"
+   ],
+   "capital": "Maseru",
+   "code": "LS",
+   "currencies": [
+    "LSL",
+    "ZAR"
+   ],
+   "flag": "ls",
+   "languages": [
+    "eng",
+    "sot"
+   ],
+   "names": {
+    "en": "Lesotho",
+    "es": "Lesoto",
+    "fr": "Lesotho",
+    "pt": "Lesoto",
+    "uk": "Лесото"
+   },
+   "numeric": "426",
+   "official_name": "Kingdom of Lesotho",
+   "region": "Africa",
+   "subregion": "Southern Africa"
+  },
+  {
+   "alpha3": "LTU",
+   "alt_names": [
+    "LT",
+    "Liettua",
+    "Lietuva",
+    "Lietuvos Respublika",
+    "Litauen",
+    "Lithuania",
+    "Litouwen",
+    "Lituania",
+    "Lituanie",
+    "Lituânia",
+    "Litva",
+    "Republic of Lithuania",
+    "Литва",
+    "リトアニア"
+   ],
+   "calling_codes": [
+    "370"
+   ],
+   "capital": "Vilnius",
+   "code": "LT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "lt",
+   "languages": [
+    "lit"
+   ],
+   "names": {
+    "en": "Lithuania",
+    "es": "Lituania",
+    "fr": "Lituanie",
+    "pt": "Lituânia",
+    "uk": "Литва"
+   },
+   "numeric": "440",
+   "official_name": "Republic of Lithuania",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "LUX",
+   "alt_names": [
+    "Grand Duchy of Luxembourg",
+    "Grand-Duché de Luxembourg",
+    "Groussherzogtum Lëtzebuerg",
+    "Großherzogtum Luxemburg",
+    "LU",
+    "Luksemburg",
+    "Lussemburgo",
+    "Luxembourg",
+    "Luxemburg",
+    "Luxemburgo",
+    "Lëtzebuerg",
+    "Люксембург",
+    "ルクセンブルク"
+   ],
+   "calling_codes": [
+    "352"
+   ],
+   "capital": "Luxembourg",
+   "code": "LU",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "lu",
+   "languages": [
+    "deu",
+    "fra",
+    "ltz"
+   ],
+   "names": {
+    "en": "Luxembourg",
+    "es": "Luxemburgo",
+    "fr": "Luxembourg",
+    "pt": "Luxemburgo",
+    "uk": "Люксембург"
+   },
+   "numeric": "442",
+   "official_name": "Grand Duchy of Luxembourg",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "LVA",
+   "alt_names": [
+    "LV",
+    "Latvia",
+    "Latvija",
+    "Latvijas Republika",
+    "Letland",
+    "Letonia",
+    "Lettland",
+    "Lettonia",
+    "Lettonie",
+    "Letónia",
+    "Republic of Latvia",
+    "Латвия",
+    "ラトビア"
+   ],
+   "calling_codes": [
+    "371"
+   ],
+   "capital": "Riga",
+   "code": "LV",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "lv",
+   "languages": [
+    "lav"
+   ],
+   "names": {
+    "en": "Latvia",
+    "es": "Letonia",
+    "fr": "Lettonie",
+    "pt": "Letônia",
+    "uk": "Латвія"
+   },
+   "numeric": "428",
+   "official_name": "Republic of Latvia",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "LBY",
+   "alt_names": [
+    "Dawlat Libya",
+    "LY",
+    "Libia",
+    "Libija",
+    "Libië",
+    "Libya",
+    "Libye",
+    "Libyen",
+    "Líbia",
+    "State of Libya",
+    "Ливия",
+    "‏ليبيا",
+    "リビア"
+   ],
+   "calling_codes": [
+    "218"
+   ],
+   "capital": "Tripoli",
+   "code": "LY",
+   "currencies": [
+    "LYD"
+   ],
+   "flag": "ly",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Libya",
+    "es": "Libia",
+    "fr": "Libye",
+    "pt": "Líbia",
+    "uk": "Лівія"
+   },
+   "numeric": "434",
+   "official_name": "State of Libya",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "MAR",
+   "alt_names": [
+    "Al-Mamlakah al-Maġribiyah",
+    "Kingdom of Morocco",
+    "MA",
+    "Maroc",
+    "Marocco",
+    "Marokko",
+    "Maroko",
+    "Marrocos",
+    "Marruecos",
+    "Morocco",
+    "Марокко",
+    "المغرب",
+    "ⵍⵎⴰⵖⵔⵉⴱ",
+    "モロッコ"
+   ],
+   "calling_codes": [
+    "212"
+   ],
+   "capital": "Rabat",
+   "code": "MA",
+   "currencies": [
+    "MAD"
+   ],
+   "flag": "ma",
+   "languages": [
+    "ara",
+    "ber"
+   ],
+   "names": {
+    "en": "Morocco",
+    "es": "Marruecos",
+    "fr": "Maroc",
+    "pt": "Marrocos",
+    "uk": "Марокко"
+   },
+   "numeric": "504",
+   "official_name": "Kingdom of Morocco",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "MCO",
+   "alt_names": [
+    "MC",
+    "Monaco",
+    "Monako",
+    "Mónaco",
+    "Principality of Monaco",
+    "Principato di Monaco",
+    "Principauté de Monaco",
+    "Монако",
+    "モナコ"
+   ],
+   "calling_codes": [
+    "377"
+   ],
+   "capital": "Monaco",
+   "code": "MC",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "mc",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Monaco",
+    "es": "Mónaco",
+    "fr": "Monaco",
+    "pt": "Mônaco",
+    "uk": "Монако"
+   },
+   "numeric": "492",
+   "official_name": "Principality of Monaco",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "MDA",
+   "alt_names": [
+    "MD",
+    "Moldavia",
+    "Moldavie",
+    "Moldavië",
+    "Moldawie",
+    "Moldova",
+    "Moldova, Republic of",
+    "Moldávia",
+    "Republic of Moldova",
+    "Republica Moldova",
+    "Молдавия",
+    "モルドバ共和国"
+   ],
+   "calling_codes": [
+    "373"
+   ],
+   "capital": "Chișinău",
+   "code": "MD",
+   "currencies": [
+    "MDL"
+   ],
+   "flag": "md",
+   "languages": [
+    "ron"
+   ],
+   "names": {
+    "en": "Moldova",
+    "es": "Moldavia",
+    "fr": "Moldavie",
+    "pt": "Moldávia",
+    "uk": "Молдова"
+   },
+   "numeric": "498",
+   "official_name": "Republic of Moldova",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "MNE",
+   "alt_names": [
+    "Crna Gora",
+    "ME",
+    "Montenegro",
+    "Monténégro",
+    "Црна Гора",
+    "Черногория",
+    "モンテネグロ"
+   ],
+   "calling_codes": [
+    "382"
+   ],
+   "capital": "Podgorica",
+   "code": "ME",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "me",
+   "languages": [
+    "srp"
+   ],
+   "names": {
+    "en": "Montenegro",
+    "es": "Montenegro",
+    "fr": "Monténégro",
+    "pt": "Montenegro",
+    "uk": "Чорногорія"
+   },
+   "numeric": "499",
+   "official_name": "Montenegro",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "MAF",
+   "alt_names": [
+    "Collectivity of Saint Martin",
+    "Collectivité de Saint-Martin",
+    "MF",
+    "Saint Martin",
+    "Saint Martin (French part)",
+    "Saint-Martin",
+    "Sveti Martin",
+    "São Martinho",
+    "Сен-Мартен",
+    "サン・マルタン（フランス領）"
+   ],
+   "calling_codes": [
+    "590"
+   ],
+   "capital": "Marigot",
+   "code": "MF",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "mf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "St. Martin",
+    "es": "San Martín",
+    "fr": "Saint-Martin",
+    "pt": "São Martinho",
+    "uk": "Сен-Мартен"
+   },
+   "numeric": "663",
+   "official_name": "Saint Martin",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "MDG",
+   "alt_names": [
+    "MG",
+    "Madagascar",
+    "Madagasikara",
+    "Madagaskar",
+    "Madagáscar",
+    "Repoblikan'i Madagasikara",
+    "Republic of Madagascar",
+    "République de Madagascar",
+    "Мадагаскар",
+    "マダガスカル"
+   ],
+   "calling_codes": [
+    "261"
+   ],
+   "capital": "Antananarivo",
+   "code": "MG",
+   "currencies": [
+    "MGA"
+   ],
+   "flag": "mg",
+   "languages": [
+    "fra",
+    "mlg"
+   ],
+   "names": {
+    "en": "Madagascar",
+    "es": "Madagascar",
+    "fr": "Madagascar",
+    "pt": "Madagascar",
+    "uk": "Мадагаскар"
+   },
+   "numeric": "450",
+   "official_name": "Republic of Madagascar",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "MHL",
+   "alt_names": [
+    "Aolepān Aorōkin M̧ajeļ",
+    "Ilhas Marshall",
+    "Islas Marshall",
+    "Isole Marshall",
+    "MH",
+    "Marshall Islands",
+    "Marshalleilanden",
+    "Marshallinsaaret",
+    "Marshallinseln",
+    "Maršalovi Otoci",
+    "M̧ajeļ",
+    "Republic of the Marshall Islands",
+    "Îles Marshall",
+    "Маршалловы Острова",
+    "マーシャル諸島"
+   ],
+   "calling_codes": [
+    "692"
+   ],
+   "capital": "Majuro",
+   "code": "MH",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "mh",
+   "languages": [
+    "eng",
+    "mah"
+   ],
+   "names": {
+    "en": "Marshall Islands",
+    "es": "Islas Marshall",
+    "fr": "Îles Marshall",
+    "pt": "Ilhas Marshall",
+    "uk": "Маршаллові Острови"
+   },
+   "numeric": "584",
+   "official_name": "Republic of the Marshall Islands",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "MKD",
+   "alt_names": [
+    "MK",
+    "Macedonia",
+    "Macedonia, the Former Yugoslav Republic of",
+    "Macedonië",
+    "Macedónia",
+    "Macédoine",
+    "Makedonia",
+    "Makedonija",
+    "Mazedonien",
+    "Republic of Macedonia",
+    "Македонија",
+    "Република Македонија",
+    "Республика Македония",
+    "マケドニア旧ユーゴスラビア共和国"
+   ],
+   "calling_codes": [
+    "389"
+   ],
+   "capital": "Skopje",
+   "code": "MK",
+   "currencies": [
+    "MKD"
+   ],
+   "flag": "mk",
+   "languages": [
+    "mkd"
+   ],
+   "names": {
+    "en": "North Macedonia",
+    "es": "Macedonia del Norte",
+    "fr": "Macédoine du Nord",
+    "pt": "Macedônia do Norte",
+    "uk": "Північна Македонія"
+   },
+   "numeric": "807",
+   "official_name": "Republic of Macedonia",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "MLI",
+   "alt_names": [
+    "ML",
+    "Mali",
+    "Republic of Mali",
+    "République du Mali",
+    "Мали",
+    "マリ"
+   ],
+   "calling_codes": [
+    "223"
+   ],
+   "capital": "Bamako",
+   "code": "ML",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "ml",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Mali",
+    "es": "Mali",
+    "fr": "Mali",
+    "pt": "Mali",
+    "uk": "Малі"
+   },
+   "numeric": "466",
+   "official_name": "Republic of Mali",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "MMR",
+   "alt_names": [
+    "Birmania",
+    "Birmanie",
+    "Burma",
+    "MM",
+    "Mijanmar",
+    "Myanmar",
+    "Pyidaunzu Thanmăda Myăma Nainngandaw",
+    "Republic of the Union of Myanmar",
+    "Мьянма",
+    "မြန်မာ",
+    "ミャンマー"
+   ],
+   "calling_codes": [
+    "95"
+   ],
+   "capital": "Naypyidaw",
+   "code": "MM",
+   "currencies": [
+    "MMK"
+   ],
+   "flag": "mm",
+   "languages": [
+    "mya"
+   ],
+   "names": {
+    "en": "Myanmar (Burma)",
+    "es": "Myanmar (Birmania)",
+    "fr": "Myanmar (Birmanie)",
+    "pt": "Mianmar (Birmânia)",
+    "uk": "Мʼянма (Бірма)"
+   },
+   "numeric": "104",
+   "official_name": "Republic of the Union of Myanmar",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "MNG",
+   "alt_names": [
+    "MN",
+    "Mongolei",
+    "Mongolia",
+    "Mongolie",
+    "Mongolija",
+    "Mongolië",
+    "Mongólia",
+    "Монгол улс",
+    "Монголия",
+    "モンゴル"
+   ],
+   "calling_codes": [
+    "976"
+   ],
+   "capital": "Ulan Bator",
+   "code": "MN",
+   "currencies": [
+    "MNT"
+   ],
+   "flag": "mn",
+   "languages": [
+    "mon"
+   ],
+   "names": {
+    "en": "Mongolia",
+    "es": "Mongolia",
+    "fr": "Mongolie",
+    "pt": "Mongólia",
+    "uk": "Монголія"
+   },
+   "numeric": "496",
+   "official_name": "Mongolia",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "MAC",
+   "alt_names": [
+    "MO",
+    "Macao",
+    "Macao Special Administrative Region of the People's Republic of China",
+    "Macau",
+    "Makao",
+    "Região Administrativa Especial de Macau da República Popular da China",
+    "Макао",
+    "マカオ",
+    "中華人民共和國澳門特別行政區",
+    "澳門",
+    "澳门"
+   ],
+   "calling_codes": [
+    "853"
+   ],
+   "capital": null,
+   "code": "MO",
+   "currencies": [
+    "MOP"
+   ],
+   "flag": "mo",
+   "languages": [
+    "por",
+    "zho"
+   ],
+   "names": {
+    "en": "Macao SAR China",
+    "es": "RAE de Macao (China)",
+    "fr": "R.A.S. chinoise de Macao",
+    "pt": "Macau, RAE da China",
+    "uk": "Макао, ОАР Китаю"
+   },
+   "numeric": "446",
+   "official_name": "Macao Special Administrative Region of the People's Republic of China",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "MNP",
+   "alt_names": [
+    "Commonwealth of the Northern Mariana Islands",
+    "Islas Marianas del Norte",
+    "Isole Marianne Settentrionali",
+    "MP",
+    "Marianas Setentrionais",
+    "Na Islas Mariånas",
+    "Noordelijke Marianeneilanden",
+    "Northern Mariana Islands",
+    "Nördliche Marianen",
+    "Pohjois-Mariaanit",
+    "Sankattan Siha Na Islas Mariånas",
+    "Sjevernomarijanski otoci",
+    "Îles Mariannes du Nord",
+    "Северные Марианские острова",
+    "北マリアナ諸島"
+   ],
+   "calling_codes": [
+    "1670"
+   ],
+   "capital": "Saipan",
+   "code": "MP",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "mp",
+   "languages": [
+    "cal",
+    "cha",
+    "eng"
+   ],
+   "names": {
+    "en": "Northern Mariana Islands",
+    "es": "Islas Marianas del Norte",
+    "fr": "Îles Mariannes du Nord",
+    "pt": "Ilhas Marianas do Norte",
+    "uk": "Північні Маріанські Острови"
+   },
+   "numeric": "580",
+   "official_name": "Commonwealth of the Northern Mariana Islands",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "MTQ",
+   "alt_names": [
+    "MQ",
+    "Martinica",
+    "Martinique",
+    "Мартиника",
+    "マルティニーク"
+   ],
+   "calling_codes": [
+    "596"
+   ],
+   "capital": "Fort-de-France",
+   "code": "MQ",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "mq",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Martinique",
+    "es": "Martinica",
+    "fr": "Martinique",
+    "pt": "Martinica",
+    "uk": "Мартиніка"
+   },
+   "numeric": "474",
+   "official_name": "Martinique",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "MRT",
+   "alt_names": [
+    "Islamic Republic of Mauritania",
+    "MR",
+    "Mauretanien",
+    "Mauritania",
+    "Mauritanie",
+    "Mauritanija",
+    "Mauritanië",
+    "Mauritânia",
+    "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah",
+    "Мавритания",
+    "موريتانيا",
+    "モーリタニア"
+   ],
+   "calling_codes": [
+    "222"
+   ],
+   "capital": "Nouakchott",
+   "code": "MR",
+   "currencies": [
+    "MRO"
+   ],
+   "flag": "mr",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Mauritania",
+    "es": "Mauritania",
+    "fr": "Mauritanie",
+    "pt": "Mauritânia",
+    "uk": "Мавританія"
+   },
+   "numeric": "478",
+   "official_name": "Islamic Republic of Mauritania",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "MSR",
+   "alt_names": [
+    "MS",
+    "Montserrat",
+    "Монтсеррат",
+    "モントセラト"
+   ],
+   "calling_codes": [
+    "1664"
+   ],
+   "capital": "Plymouth",
+   "code": "MS",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "ms",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Montserrat",
+    "es": "Montserrat",
+    "fr": "Montserrat",
+    "pt": "Montserrat",
+    "uk": "Монтсеррат"
+   },
+   "numeric": "500",
+   "official_name": "Montserrat",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "MLT",
+   "alt_names": [
+    "MT",
+    "Malta",
+    "Malte",
+    "Repubblika ta' Malta",
+    "Republic of Malta",
+    "Мальта",
+    "マルタ"
+   ],
+   "calling_codes": [
+    "356"
+   ],
+   "capital": "Valletta",
+   "code": "MT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "mt",
+   "languages": [
+    "eng",
+    "mlt"
+   ],
+   "names": {
+    "en": "Malta",
+    "es": "Malta",
+    "fr": "Malte",
+    "pt": "Malta",
+    "uk": "Мальта"
+   },
+   "numeric": "470",
+   "official_name": "Republic of Malta",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "MUS",
+   "alt_names": [
+    "MU",
+    "Maurice",
+    "Mauricijus",
+    "Mauricio",
+    "Mauritius",
+    "Maurício",
+    "Moris",
+    "Republic of Mauritius",
+    "République de Maurice",
+    "Île Maurice",
+    "Маврикий",
+    "モーリシャス"
+   ],
+   "calling_codes": [
+    "230"
+   ],
+   "capital": "Port Louis",
+   "code": "MU",
+   "currencies": [
+    "MUR"
+   ],
+   "flag": "mu",
+   "languages": [
+    "eng",
+    "fra",
+    "mfe"
+   ],
+   "names": {
+    "en": "Mauritius",
+    "es": "Mauricio",
+    "fr": "Maurice",
+    "pt": "Maurício",
+    "uk": "Маврикій"
+   },
+   "numeric": "480",
+   "official_name": "Republic of Mauritius",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "MDV",
+   "alt_names": [
+    "Dhivehi Raajjeyge Jumhooriyya",
+    "MV",
+    "Maldivas",
+    "Maldive",
+    "Maldive Islands",
+    "Maldiven",
+    "Maldives",
+    "Maldivi",
+    "Malediivit",
+    "Malediven",
+    "Republic of the Maldives",
+    "Мальдивы",
+    "ދިވެހިރާއްޖޭގެ",
+    "モルディブ"
+   ],
+   "calling_codes": [
+    "960"
+   ],
+   "capital": "Malé",
+   "code": "MV",
+   "currencies": [
+    "MVR"
+   ],
+   "flag": "mv",
+   "languages": [
+    "div"
+   ],
+   "names": {
+    "en": "Maldives",
+    "es": "Maldivas",
+    "fr": "Maldives",
+    "pt": "Maldivas",
+    "uk": "Мальдіви"
+   },
+   "numeric": "462",
+   "official_name": "Republic of the Maldives",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "MWI",
+   "alt_names": [
+    "MW",
+    "Malavi",
+    "Malawi",
+    "Malaŵi",
+    "Republic of Malawi",
+    "Малави",
+    "マラウイ"
+   ],
+   "calling_codes": [
+    "265"
+   ],
+   "capital": "Lilongwe",
+   "code": "MW",
+   "currencies": [
+    "MWK"
+   ],
+   "flag": "mw",
+   "languages": [
+    "eng",
+    "nya"
+   ],
+   "names": {
+    "en": "Malawi",
+    "es": "Malaui",
+    "fr": "Malawi",
+    "pt": "Malaui",
+    "uk": "Малаві"
+   },
+   "numeric": "454",
+   "official_name": "Republic of Malawi",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "MEX",
+   "alt_names": [
+    "Estados Unidos Mexicanos",
+    "MX",
+    "Meksiko",
+    "Messico",
+    "Mexicanos",
+    "Mexico",
+    "Mexiko",
+    "Mexique",
+    "México",
+    "United Mexican States",
+    "Мексика",
+    "メキシコ"
+   ],
+   "calling_codes": [
+    "52"
+   ],
+   "capital": "Mexico City",
+   "code": "MX",
+   "currencies": [
+    "MXN"
+   ],
+   "flag": "mx",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Mexico",
+    "es": "México",
+    "fr": "Mexique",
+    "pt": "México",
+    "uk": "Мексика"
+   },
+   "numeric": "484",
+   "official_name": "United Mexican States",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "MYS",
+   "alt_names": [
+    "MY",
+    "Malaisie",
+    "Malasia",
+    "Malaysia",
+    "Maleisië",
+    "Malesia",
+    "Malezija",
+    "Malásia",
+    "Малайзия",
+    "مليسيا",
+    "マレーシア"
+   ],
+   "calling_codes": [
+    "60"
+   ],
+   "capital": "Kuala Lumpur",
+   "code": "MY",
+   "currencies": [
+    "MYR"
+   ],
+   "flag": "my",
+   "languages": [
+    "eng",
+    "msa"
+   ],
+   "names": {
+    "en": "Malaysia",
+    "es": "Malasia",
+    "fr": "Malaisie",
+    "pt": "Malásia",
+    "uk": "Малайзія"
+   },
+   "numeric": "458",
+   "official_name": "Malaysia",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "MOZ",
+   "alt_names": [
+    "MZ",
+    "Mosambik",
+    "Mozambico",
+    "Mozambik",
+    "Mozambique",
+    "Moçambique",
+    "Republic of Mozambique",
+    "República de Moçambique",
+    "Мозамбик",
+    "モザンビーク"
+   ],
+   "calling_codes": [
+    "258"
+   ],
+   "capital": "Maputo",
+   "code": "MZ",
+   "currencies": [
+    "MZN"
+   ],
+   "flag": "mz",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Mozambique",
+    "es": "Mozambique",
+    "fr": "Mozambique",
+    "pt": "Moçambique",
+    "uk": "Мозамбік"
+   },
+   "numeric": "508",
+   "official_name": "Republic of Mozambique",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "NAM",
+   "alt_names": [
+    "NA",
+    "Namibia",
+    "Namibie",
+    "Namibija",
+    "Namibië",
+    "Namíbia",
+    "Republic of Namibia",
+    "Намибия",
+    "ナミビア"
+   ],
+   "calling_codes": [
+    "264"
+   ],
+   "capital": "Windhoek",
+   "code": "NA",
+   "currencies": [
+    "NAD",
+    "ZAR"
+   ],
+   "flag": "na",
+   "languages": [
+    "afr",
+    "deu",
+    "eng",
+    "her",
+    "hgm",
+    "kwn",
+    "loz",
+    "ndo",
+    "tsn"
+   ],
+   "names": {
+    "en": "Namibia",
+    "es": "Namibia",
+    "fr": "Namibie",
+    "pt": "Namíbia",
+    "uk": "Намібія"
+   },
+   "numeric": "516",
+   "official_name": "Republic of Namibia",
+   "region": "Africa",
+   "subregion": "Southern Africa"
+  },
+  {
+   "alpha3": "NCL",
+   "alt_names": [
+    "NC",
+    "Neukaledonien",
+    "New Caledonia",
+    "Nieuw-Caledonië",
+    "Nouvelle-Calédonie",
+    "Nova Caledónia",
+    "Nova Kaledonija",
+    "Nueva Caledonia",
+    "Nuova Caledonia",
+    "Uusi-Kaledonia",
+    "Новая Каледония",
+    "ニューカレドニア"
+   ],
+   "calling_codes": [
+    "687"
+   ],
+   "capital": "Nouméa",
+   "code": "NC",
+   "currencies": [
+    "XPF"
+   ],
+   "flag": "nc",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "New Caledonia",
+    "es": "Nueva Caledonia",
+    "fr": "Nouvelle-Calédonie",
+    "pt": "Nova Caledônia",
+    "uk": "Нова Каледонія"
+   },
+   "numeric": "540",
+   "official_name": "New Caledonia",
+   "region": "Oceania",
+   "subregion": "Melanesia"
+  },
+  {
+   "alpha3": "NER",
+   "alt_names": [
+    "NE",
+    "Niger",
+    "Nijar",
+    "Níger",
+    "Republic of Niger",
+    "Нигер",
+    "ニジェール"
+   ],
+   "calling_codes": [
+    "227"
+   ],
+   "capital": "Niamey",
+   "code": "NE",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "ne",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Niger",
+    "es": "Níger",
+    "fr": "Niger",
+    "pt": "Níger",
+    "uk": "Нігер"
+   },
+   "numeric": "562",
+   "official_name": "Republic of Niger",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "NFK",
+   "alt_names": [
+    "Ilha Norfolk",
+    "Isla de Norfolk",
+    "Isola Norfolk",
+    "NF",
+    "Norf'k Ailen",
+    "Norfolk Island",
+    "Norfolkeiland",
+    "Norfolkinsaari",
+    "Norfolkinsel",
+    "Otok Norfolk",
+    "Teratri of Norf'k Ailen",
+    "Territory of Norfolk Island",
+    "Île Norfolk",
+    "Норфолк",
+    "ノーフォーク島"
+   ],
+   "calling_codes": [
+    "672"
+   ],
+   "capital": "Kingston",
+   "code": "NF",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "nf",
+   "languages": [
+    "eng",
+    "pih"
+   ],
+   "names": {
+    "en": "Norfolk Island",
+    "es": "Isla Norfolk",
+    "fr": "Île Norfolk",
+    "pt": "Ilha Norfolk",
+    "uk": "Острів Норфолк"
+   },
+   "numeric": "574",
+   "official_name": "Territory of Norfolk Island",
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand"
+  },
+  {
+   "alpha3": "NGA",
+   "alt_names": [
+    "Federal Republic of Nigeria",
+    "NG",
+    "Naíjíríà",
+    "Nigeria",
+    "Nigerija",
+    "Nigéria",
+    "Nijeriya",
+    "Нигерия",
+    "ナイジェリア"
+   ],
+   "calling_codes": [
+    "234"
+   ],
+   "capital": "Abuja",
+   "code": "NG",
+   "currencies": [
+    "NGN"
+   ],
+   "flag": "ng",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Nigeria",
+    "es": "Nigeria",
+    "fr": "Nigeria",
+    "pt": "Nigéria",
+    "uk": "Нігерія"
+   },
+   "numeric": "566",
+   "official_name": "Federal Republic of Nigeria",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "NIC",
+   "alt_names": [
+    "NI",
+    "Nicaragua",
+    "Nicarágua",
+    "Nikaragva",
+    "Republic of Nicaragua",
+    "República de Nicaragua",
+    "Никарагуа",
+    "ニカラグア"
+   ],
+   "calling_codes": [
+    "505"
+   ],
+   "capital": "Managua",
+   "code": "NI",
+   "currencies": [
+    "NIO"
+   ],
+   "flag": "ni",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Nicaragua",
+    "es": "Nicaragua",
+    "fr": "Nicaragua",
+    "pt": "Nicarágua",
+    "uk": "Нікарагуа"
+   },
+   "numeric": "558",
+   "official_name": "Republic of Nicaragua",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "NLD",
+   "alt_names": [
+    "Alankomaat",
+    "Holanda",
+    "Holland",
+    "NL",
+    "Nederland",
+    "Netherlands",
+    "Niederlande",
+    "Nizozemska",
+    "Paesi Bassi",
+    "Pays-Bas",
+    "Países Bajos",
+    "Нидерланды",
+    "オランダ"
+   ],
+   "calling_codes": [
+    "31"
+   ],
+   "capital": "Amsterdam",
+   "code": "NL",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "nl",
+   "languages": [
+    "nld"
+   ],
+   "names": {
+    "en": "Netherlands",
+    "es": "Países Bajos",
+    "fr": "Pays-Bas",
+    "pt": "Países Baixos",
+    "uk": "Нідерланди"
+   },
+   "numeric": "528",
+   "official_name": "Netherlands",
+   "region": "Europe",
+   "subregion": "Western Europe"
+  },
+  {
+   "alpha3": "NOR",
+   "alt_names": [
+    "Kingdom of Norway",
+    "Kongeriket Noreg",
+    "Kongeriket Norge",
+    "NO",
+    "Noorwegen",
+    "Noreg",
+    "Norge",
+    "Norgga",
+    "Norja",
+    "Noruega",
+    "Norvegia",
+    "Norveška",
+    "Norvège",
+    "Norway",
+    "Norwegen",
+    "Норвегия",
+    "ノルウェー"
+   ],
+   "calling_codes": [
+    "47"
+   ],
+   "capital": "Oslo",
+   "code": "NO",
+   "currencies": [
+    "NOK"
+   ],
+   "flag": "no",
+   "languages": [
+    "nno",
+    "nob",
+    "smi"
+   ],
+   "names": {
+    "en": "Norway",
+    "es": "Noruega",
+    "fr": "Norvège",
+    "pt": "Noruega",
+    "uk": "Норвегія"
+   },
+   "numeric": "578",
+   "official_name": "Kingdom of Norway",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "NPL",
+   "alt_names": [
+    "Federal Democratic Republic of Nepal",
+    "Loktāntrik Ganatantra Nepāl",
+    "NP",
+    "Nepal",
+    "Népal",
+    "Непал",
+    "नपल",
+    "ネパール"
+   ],
+   "calling_codes": [
+    "977"
+   ],
+   "capital": "Kathmandu",
+   "code": "NP",
+   "currencies": [
+    "NPR"
+   ],
+   "flag": "np",
+   "languages": [
+    "nep"
+   ],
+   "names": {
+    "en": "Nepal",
+    "es": "Nepal",
+    "fr": "Népal",
+    "pt": "Nepal",
+    "uk": "Непал"
+   },
+   "numeric": "524",
+   "official_name": "Federal Democratic Republic of Nepal",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "NRU",
+   "alt_names": [
+    "NR",
+    "Naoero",
+    "Nauru",
+    "Pleasant Island",
+    "Republic of Nauru",
+    "Ripublik Naoero",
+    "Науру",
+    "ナウル"
+   ],
+   "calling_codes": [
+    "674"
+   ],
+   "capital": "Yaren",
+   "code": "NR",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "nr",
+   "languages": [
+    "eng",
+    "nau"
+   ],
+   "names": {
+    "en": "Nauru",
+    "es": "Nauru",
+    "fr": "Nauru",
+    "pt": "Nauru",
+    "uk": "Науру"
+   },
+   "numeric": "520",
+   "official_name": "Republic of Nauru",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "NIU",
+   "alt_names": [
+    "NU",
+    "Niue",
+    "Niuē",
+    "Ниуэ",
+    "ニウエ"
+   ],
+   "calling_codes": [
+    "683"
+   ],
+   "capital": "Alofi",
+   "code": "NU",
+   "currencies": [
+    "NZD"
+   ],
+   "flag": "nu",
+   "languages": [
+    "eng",
+    "niu"
+   ],
+   "names": {
+    "en": "Niue",
+    "es": "Niue",
+    "fr": "Niue",
+    "pt": "Niue",
+    "uk": "Ніуе"
+   },
+   "numeric": "570",
+   "official_name": "Niue",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "NZL",
+   "alt_names": [
+    "Aotearoa",
+    "NZ",
+    "Neuseeland",
+    "New Zealand",
+    "Nieuw-Zeeland",
+    "Nouvelle-Zélande",
+    "Nova Zelândia",
+    "Novi Zeland",
+    "Nueva Zelanda",
+    "Nuova Zelanda",
+    "Uusi-Seelanti",
+    "Новая Зеландия",
+    "ニュージーランド"
+   ],
+   "calling_codes": [
+    "64"
+   ],
+   "capital": "Wellington",
+   "code": "NZ",
+   "currencies": [
+    "NZD"
+   ],
+   "flag": "nz",
+   "languages": [
+    "eng",
+    "mri",
+    "nzs"
+   ],
+   "names": {
+    "en": "New Zealand",
+    "es": "Nueva Zelanda",
+    "fr": "Nouvelle-Zélande",
+    "pt": "Nova Zelândia",
+    "uk": "Нова Зеландія"
+   },
+   "numeric": "554",
+   "official_name": "New Zealand",
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand"
+  },
+  {
+   "alpha3": "OMN",
+   "alt_names": [
+    "OM",
+    "Oman",
+    "Omán",
+    "Omã",
+    "Salṭanat ʻUmān",
+    "Sultanate of Oman",
+    "oman",
+    "Оман",
+    "عمان",
+    "オマーン"
+   ],
+   "calling_codes": [
+    "968"
+   ],
+   "capital": "Muscat",
+   "code": "OM",
+   "currencies": [
+    "OMR"
+   ],
+   "flag": "om",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Oman",
+    "es": "Omán",
+    "fr": "Oman",
+    "pt": "Omã",
+    "uk": "Оман"
+   },
+   "numeric": "512",
+   "official_name": "Sultanate of Oman",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "PAN",
+   "alt_names": [
+    "PA",
+    "Panama",
+    "Panamá",
+    "Republic of Panama",
+    "República de Panamá",
+    "Панама",
+    "パナマ"
+   ],
+   "calling_codes": [
+    "507"
+   ],
+   "capital": "Panama City",
+   "code": "PA",
+   "currencies": [
+    "PAB",
+    "USD"
+   ],
+   "flag": "pa",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Panama",
+    "es": "Panamá",
+    "fr": "Panama",
+    "pt": "Panamá",
+    "uk": "Панама"
+   },
+   "numeric": "591",
+   "official_name": "Republic of Panama",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "PER",
+   "alt_names": [
+    "PE",
+    "Peru",
+    "Perù",
+    "Perú",
+    "Piruw",
+    "Pérou",
+    "Republic of Peru",
+    "República del Perú",
+    "Перу",
+    "ペルー"
+   ],
+   "calling_codes": [
+    "51"
+   ],
+   "capital": "Lima",
+   "code": "PE",
+   "currencies": [
+    "PEN"
+   ],
+   "flag": "pe",
+   "languages": [
+    "aym",
+    "que",
+    "spa"
+   ],
+   "names": {
+    "en": "Peru",
+    "es": "Perú",
+    "fr": "Pérou",
+    "pt": "Peru",
+    "uk": "Перу"
+   },
+   "numeric": "604",
+   "official_name": "Republic of Peru",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "PYF",
+   "alt_names": [
+    "Francuska Polinezija",
+    "Frans-Polynesië",
+    "Französisch-Polynesien",
+    "French Polynesia",
+    "PF",
+    "Polinesia Francesa",
+    "Polinesia Francese",
+    "Polinésia Francesa",
+    "Polynésie française",
+    "Pōrīnetia Farāni",
+    "Ranskan Polynesia",
+    "Французская Полинезия",
+    "フランス領ポリネシア"
+   ],
+   "calling_codes": [
+    "689"
+   ],
+   "capital": "Papeetē",
+   "code": "PF",
+   "currencies": [
+    "XPF"
+   ],
+   "flag": "pf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "French Polynesia",
+    "es": "Polinesia Francesa",
+    "fr": "Polynésie française",
+    "pt": "Polinésia Francesa",
+    "uk": "Французька Полінезія"
+   },
+   "numeric": "258",
+   "official_name": "French Polynesia",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "PNG",
+   "alt_names": [
+    "Independen Stet bilong Papua Niugini",
+    "Independent State of Papua New Guinea",
+    "PG",
+    "Papoea-Nieuw-Guinea",
+    "Papouasie-Nouvelle-Guinée",
+    "Papua New Guinea",
+    "Papua Niu Gini",
+    "Papua Niugini",
+    "Papua Nova Guiné",
+    "Papua Nova Gvineja",
+    "Papua Nuova Guinea",
+    "Papua-Neuguinea",
+    "Papua-Uusi-Guinea",
+    "Papúa Nueva Guinea",
+    "Папуа — Новая Гвинея",
+    "パプアニューギニア"
+   ],
+   "calling_codes": [
+    "675"
+   ],
+   "capital": "Port Moresby",
+   "code": "PG",
+   "currencies": [
+    "PGK"
+   ],
+   "flag": "pg",
+   "languages": [
+    "eng",
+    "hmo",
+    "tpi"
+   ],
+   "names": {
+    "en": "Papua New Guinea",
+    "es": "Papúa Nueva Guinea",
+    "fr": "Papouasie-Nouvelle-Guinée",
+    "pt": "Papua-Nova Guiné",
+    "uk": "Папуа-Нова Гвінея"
+   },
+   "numeric": "598",
+   "official_name": "Independent State of Papua New Guinea",
+   "region": "Oceania",
+   "subregion": "Melanesia"
+  },
+  {
+   "alpha3": "PHL",
+   "alt_names": [
+    "Filipijnen",
+    "Filipinas",
+    "Filipini",
+    "Filippiinit",
+    "Filippine",
+    "PH",
+    "Philippinen",
+    "Philippines",
+    "Pilipinas",
+    "Republic of the Philippines",
+    "Repúblika ng Pilipinas",
+    "Филиппины",
+    "フィリピン"
+   ],
+   "calling_codes": [
+    "63"
+   ],
+   "capital": "Manila",
+   "code": "PH",
+   "currencies": [
+    "PHP"
+   ],
+   "flag": "ph",
+   "languages": [
+    "eng",
+    "fil"
+   ],
+   "names": {
+    "en": "Philippines",
+    "es": "Filipinas",
+    "fr": "Philippines",
+    "pt": "Filipinas",
+    "uk": "Філіппіни"
+   },
+   "numeric": "608",
+   "official_name": "Republic of the Philippines",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "PAK",
+   "alt_names": [
+    "Islamic Republic of Pakistan",
+    "Islāmī Jumhūriya'eh Pākistān",
+    "PK",
+    "Pakistan",
+    "Pakistán",
+    "Paquistão",
+    "Pākistān",
+    "Пакистан",
+    "پاكستان",
+    "パキスタン"
+   ],
+   "calling_codes": [
+    "92"
+   ],
+   "capital": "Islamabad",
+   "code": "PK",
+   "currencies": [
+    "PKR"
+   ],
+   "flag": "pk",
+   "languages": [
+    "eng",
+    "urd"
+   ],
+   "names": {
+    "en": "Pakistan",
+    "es": "Pakistán",
+    "fr": "Pakistan",
+    "pt": "Paquistão",
+    "uk": "Пакистан"
+   },
+   "numeric": "586",
+   "official_name": "Islamic Republic of Pakistan",
+   "region": "Asia",
+   "subregion": "Southern Asia"
+  },
+  {
+   "alpha3": "POL",
+   "alt_names": [
+    "PL",
+    "Poland",
+    "Polen",
+    "Poljska",
+    "Pologne",
+    "Polonia",
+    "Polska",
+    "Polónia",
+    "Puola",
+    "Republic of Poland",
+    "Rzeczpospolita Polska",
+    "Польша",
+    "ポーランド"
+   ],
+   "calling_codes": [
+    "48"
+   ],
+   "capital": "Warsaw",
+   "code": "PL",
+   "currencies": [
+    "PLN"
+   ],
+   "flag": "pl",
+   "languages": [
+    "pol"
+   ],
+   "names": {
+    "en": "Poland",
+    "es": "Polonia",
+    "fr": "Pologne",
+    "pt": "Polônia",
+    "uk": "Польща"
+   },
+   "numeric": "616",
+   "official_name": "Republic of Poland",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "SPM",
+   "alt_names": [
+    "Collectivité territoriale de Saint-Pierre-et-Miquelon",
+    "PM",
+    "Saint Pierre and Miquelon",
+    "Saint Pierre en Miquelon",
+    "Saint-Pierre e Miquelon",
+    "Saint-Pierre ja Miquelon",
+    "Saint-Pierre und Miquelon",
+    "Saint-Pierre-et-Miquelon",
+    "San Pedro y Miquelón",
+    "Sveti Petar i Mikelon",
+    "Сен-Пьер и Микелон",
+    "サンピエール島・ミクロン島"
+   ],
+   "calling_codes": [
+    "508"
+   ],
+   "capital": "Saint-Pierre",
+   "code": "PM",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "pm",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "St. Pierre & Miquelon",
+    "es": "San Pedro y Miquelón",
+    "fr": "Saint-Pierre-et-Miquelon",
+    "pt": "São Pedro e Miquelão",
+    "uk": "Сен-Пʼєр і Мікелон"
+   },
+   "numeric": "666",
+   "official_name": "Saint Pierre and Miquelon",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "PCN",
+   "alt_names": [
+    "Ilhas Pitcairn",
+    "Islas Pitcairn",
+    "Isole Pitcairn",
+    "PN",
+    "Pitcairn",
+    "Pitcairn Group of Islands",
+    "Pitcairn Henderson Ducie and Oeno Islands",
+    "Pitcairn Islands",
+    "Pitcairneilanden",
+    "Pitcairnovo otočje",
+    "Îles Pitcairn",
+    "Острова Питкэрн",
+    "ピトケアン"
+   ],
+   "calling_codes": [
+    "64"
+   ],
+   "capital": "Adamstown",
+   "code": "PN",
+   "currencies": [
+    "NZD"
+   ],
+   "flag": "pn",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Pitcairn Islands",
+    "es": "Islas Pitcairn",
+    "fr": "Îles Pitcairn",
+    "pt": "Ilhas Pitcairn",
+    "uk": "Острови Піткерн"
+   },
+   "numeric": "612",
+   "official_name": "Pitcairn Group of Islands",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "PRI",
+   "alt_names": [
+    "Commonwealth of Puerto Rico",
+    "Estado Libre Asociado de Puerto Rico",
+    "PR",
+    "Porto Rico",
+    "Portoriko",
+    "Puerto Rico",
+    "Пуэрто-Рико",
+    "プエルトリコ"
+   ],
+   "calling_codes": [
+    "1787",
+    "1939"
+   ],
+   "capital": "San Juan",
+   "code": "PR",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "pr",
+   "languages": [
+    "eng",
+    "spa"
+   ],
+   "names": {
+    "en": "Puerto Rico",
+    "es": "Puerto Rico",
+    "fr": "Porto Rico",
+    "pt": "Porto Rico",
+    "uk": "Пуерто-Рико"
+   },
+   "numeric": "630",
+   "official_name": "Commonwealth of Puerto Rico",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "PSE",
+   "alt_names": [
+    "Dawlat Filasṭin",
+    "PS",
+    "Palestiina",
+    "Palestijnse gebieden",
+    "Palestina",
+    "Palestine",
+    "Palestine, State of",
+    "Palästina",
+    "State of Palestine",
+    "Палестина",
+    "فلسطين",
+    "パレスチナ"
+   ],
+   "calling_codes": [
+    "970"
+   ],
+   "capital": "Ramallah",
+   "code": "PS",
+   "currencies": [
+    "ILS"
+   ],
+   "flag": "ps",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Palestinian Territories",
+    "es": "Territorios Palestinos",
+    "fr": "Territoires palestiniens",
+    "pt": "Territórios palestinos",
+    "uk": "Палестинські території"
+   },
+   "numeric": "275",
+   "official_name": "State of Palestine",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "PRT",
+   "alt_names": [
+    "PT",
+    "Portogallo",
+    "Portugal",
+    "Portugali",
+    "Portuguesa",
+    "Portuguese Republic",
+    "República Portuguesa",
+    "Португалия",
+    "ポルトガル"
+   ],
+   "calling_codes": [
+    "351"
+   ],
+   "capital": "Lisbon",
+   "code": "PT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "pt",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "Portugal",
+    "es": "Portugal",
+    "fr": "Portugal",
+    "pt": "Portugal",
+    "uk": "Португалія"
+   },
+   "numeric": "620",
+   "official_name": "Portuguese Republic",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "PLW",
+   "alt_names": [
+    "Belau",
+    "Beluu er a Belau",
+    "PW",
+    "Palaos (Palau)",
+    "Palau",
+    "Republic of Palau",
+    "Палау",
+    "パラオ"
+   ],
+   "calling_codes": [
+    "680"
+   ],
+   "capital": "Ngerulmud",
+   "code": "PW",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "pw",
+   "languages": [
+    "eng",
+    "pau"
+   ],
+   "names": {
+    "en": "Palau",
+    "es": "Palaos",
+    "fr": "Palaos",
+    "pt": "Palau",
+    "uk": "Палау"
+   },
+   "numeric": "585",
+   "official_name": "Republic of Palau",
+   "region": "Oceania",
+   "subregion": "Micronesia"
+  },
+  {
+   "alpha3": "PRY",
+   "alt_names": [
+    "PY",
+    "Paraguai",
+    "Paraguay",
+    "Paraguái",
+    "Paragvaj",
+    "Republic of Paraguay",
+    "República del Paraguay",
+    "Tetã Paraguái",
+    "Парагвай",
+    "パラグアイ"
+   ],
+   "calling_codes": [
+    "595"
+   ],
+   "capital": "Asunción",
+   "code": "PY",
+   "currencies": [
+    "PYG"
+   ],
+   "flag": "py",
+   "languages": [
+    "grn",
+    "spa"
+   ],
+   "names": {
+    "en": "Paraguay",
+    "es": "Paraguay",
+    "fr": "Paraguay",
+    "pt": "Paraguai",
+    "uk": "Парагвай"
+   },
+   "numeric": "600",
+   "official_name": "Republic of Paraguay",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "QAT",
+   "alt_names": [
+    "Catar",
+    "Dawlat Qaṭar",
+    "Katar",
+    "QA",
+    "Qatar",
+    "State of Qatar",
+    "Катар",
+    "قطر",
+    "カタール"
+   ],
+   "calling_codes": [
+    "974"
+   ],
+   "capital": "Doha",
+   "code": "QA",
+   "currencies": [
+    "QAR"
+   ],
+   "flag": "qa",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Qatar",
+    "es": "Catar",
+    "fr": "Qatar",
+    "pt": "Catar",
+    "uk": "Катар"
+   },
+   "numeric": "634",
+   "official_name": "State of Qatar",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "REU",
+   "alt_names": [
+    "La Réunion",
+    "RE",
+    "Reunion",
+    "Reunião",
+    "Reunión",
+    "Riunione",
+    "Réunion",
+    "Réunion Island",
+    "Реюньон",
+    "レユニオン"
+   ],
+   "calling_codes": [
+    "262"
+   ],
+   "capital": "Saint-Denis",
+   "code": "RE",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "re",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Réunion",
+    "es": "Reunión",
+    "fr": "La Réunion",
+    "pt": "Reunião",
+    "uk": "Реюньйон"
+   },
+   "numeric": "638",
+   "official_name": "Réunion Island",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "ROU",
+   "alt_names": [
+    "RO",
+    "Roemenië",
+    "Romania",
+    "România",
+    "Roménia",
+    "Roumania",
+    "Roumanie",
+    "Rumania",
+    "Rumunjska",
+    "Rumänien",
+    "Румыния",
+    "ルーマニア"
+   ],
+   "calling_codes": [
+    "40"
+   ],
+   "capital": "Bucharest",
+   "code": "RO",
+   "currencies": [
+    "RON"
+   ],
+   "flag": "ro",
+   "languages": [
+    "ron"
+   ],
+   "names": {
+    "en": "Romania",
+    "es": "Rumanía",
+    "fr": "Roumanie",
+    "pt": "Romênia",
+    "uk": "Румунія"
+   },
+   "numeric": "642",
+   "official_name": "Romania",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "SRB",
+   "alt_names": [
+    "RS",
+    "Republic of Serbia",
+    "Republika Srbija",
+    "Serbia",
+    "Serbie",
+    "Serbien",
+    "Servië",
+    "Srbija",
+    "Sérvia",
+    "Република Србија",
+    "Сербия",
+    "Србија",
+    "セルビア"
+   ],
+   "calling_codes": [
+    "381"
+   ],
+   "capital": "Belgrade",
+   "code": "RS",
+   "currencies": [
+    "RSD"
+   ],
+   "flag": "rs",
+   "languages": [
+    "srp"
+   ],
+   "names": {
+    "en": "Serbia",
+    "es": "Serbia",
+    "fr": "Serbie",
+    "pt": "Sérvia",
+    "uk": "Сербія"
+   },
+   "numeric": "688",
+   "official_name": "Republic of Serbia",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "RUS",
+   "alt_names": [
+    "RU",
+    "Rossiya",
+    "Rossiyskaya Federatsiya",
+    "Rusia",
+    "Rusija",
+    "Rusland",
+    "Russia",
+    "Russian Federation",
+    "Russie",
+    "Russland",
+    "Rússia",
+    "Venäjä",
+    "Российская Федерация",
+    "Россия",
+    "ロシア連邦"
+   ],
+   "calling_codes": [
+    "7"
+   ],
+   "capital": "Moscow",
+   "code": "RU",
+   "currencies": [
+    "RUB"
+   ],
+   "flag": "ru",
+   "languages": [
+    "rus"
+   ],
+   "names": {
+    "en": "Russia",
+    "es": "Rusia",
+    "fr": "Russie",
+    "pt": "Rússia",
+    "uk": "Росія"
+   },
+   "numeric": "643",
+   "official_name": "Russian Federation",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "RWA",
+   "alt_names": [
+    "RW",
+    "Republic of Rwanda",
+    "Repubulika y'u Rwanda",
+    "Ruanda",
+    "Rwanda",
+    "République du Rwanda",
+    "Руанда",
+    "ルワンダ"
+   ],
+   "calling_codes": [
+    "250"
+   ],
+   "capital": "Kigali",
+   "code": "RW",
+   "currencies": [
+    "RWF"
+   ],
+   "flag": "rw",
+   "languages": [
+    "eng",
+    "fra",
+    "kin"
+   ],
+   "names": {
+    "en": "Rwanda",
+    "es": "Ruanda",
+    "fr": "Rwanda",
+    "pt": "Ruanda",
+    "uk": "Руанда"
+   },
+   "numeric": "646",
+   "official_name": "Republic of Rwanda",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "SAU",
+   "alt_names": [
+    "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah",
+    "Arabia Saudita",
+    "Arabia Saudí",
+    "Arabie Saoudite",
+    "Arábia Saudita",
+    "Kingdom of Saudi Arabia",
+    "SA",
+    "Saoedi-Arabië",
+    "Saudi",
+    "Saudi Arabia",
+    "Saudi-Arabia",
+    "Saudi-Arabien",
+    "Saudijska Arabija",
+    "Саудовская Аравия",
+    "العربية السعودية",
+    "サウジアラビア"
+   ],
+   "calling_codes": [
+    "966"
+   ],
+   "capital": "Riyadh",
+   "code": "SA",
+   "currencies": [
+    "SAR"
+   ],
+   "flag": "sa",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Saudi Arabia",
+    "es": "Arabia Saudí",
+    "fr": "Arabie saoudite",
+    "pt": "Arábia Saudita",
+    "uk": "Саудівська Аравія"
+   },
+   "numeric": "682",
+   "official_name": "Kingdom of Saudi Arabia",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "SLB",
+   "alt_names": [
+    "Ilhas Salomão",
+    "Islas Salomón",
+    "Isole Salomone",
+    "SB",
+    "Salomonen",
+    "Salomonsaaret",
+    "Salomonseilanden",
+    "Solomon Islands",
+    "Solomonski Otoci",
+    "Îles Salomon",
+    "Соломоновы Острова",
+    "ソロモン諸島"
+   ],
+   "calling_codes": [
+    "677"
+   ],
+   "capital": "Honiara",
+   "code": "SB",
+   "currencies": [
+    "SBD"
+   ],
+   "flag": "sb",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Solomon Islands",
+    "es": "Islas Salomón",
+    "fr": "Îles Salomon",
+    "pt": "Ilhas Salomão",
+    "uk": "Соломонові Острови"
+   },
+   "numeric": "090",
+   "official_name": "Solomon Islands",
+   "region": "Oceania",
+   "subregion": "Melanesia"
+  },
+  {
+   "alpha3": "SYC",
+   "alt_names": [
+    "Repiblik Sesel",
+    "Republic of Seychelles",
+    "République des Seychelles",
+    "SC",
+    "Seicheles",
+    "Sejšeli",
+    "Sesel",
+    "Seychellen",
+    "Seychelles",
+    "Seychellit",
+    "Сейшельские Острова",
+    "セーシェル"
+   ],
+   "calling_codes": [
+    "248"
+   ],
+   "capital": "Victoria",
+   "code": "SC",
+   "currencies": [
+    "SCR"
+   ],
+   "flag": "sc",
+   "languages": [
+    "crs",
+    "eng",
+    "fra"
+   ],
+   "names": {
+    "en": "Seychelles",
+    "es": "Seychelles",
+    "fr": "Seychelles",
+    "pt": "Seicheles",
+    "uk": "Сейшельські Острови"
+   },
+   "numeric": "690",
+   "official_name": "Republic of Seychelles",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "SDN",
+   "alt_names": [
+    "Jumhūrīyat as-Sūdān",
+    "Republic of the Sudan",
+    "SD",
+    "Soedan",
+    "Soudan",
+    "Sudan",
+    "Sudán",
+    "Sudão",
+    "Судан",
+    "السودان",
+    "スーダン"
+   ],
+   "calling_codes": [
+    "249"
+   ],
+   "capital": "Khartoum",
+   "code": "SD",
+   "currencies": [
+    "SDG"
+   ],
+   "flag": "sd",
+   "languages": [
+    "ara",
+    "eng"
+   ],
+   "names": {
+    "en": "Sudan",
+    "es": "Sudán",
+    "fr": "Soudan",
+    "pt": "Sudão",
+    "uk": "Судан"
+   },
+   "numeric": "729",
+   "official_name": "Republic of the Sudan",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "SWE",
+   "alt_names": [
+    "Kingdom of Sweden",
+    "Konungariket Sverige",
+    "Ruotsi",
+    "SE",
+    "Schweden",
+    "Suecia",
+    "Suède",
+    "Suécia",
+    "Sverige",
+    "Svezia",
+    "Sweden",
+    "Zweden",
+    "Švedska",
+    "Швеция",
+    "スウェーデン"
+   ],
+   "calling_codes": [
+    "46"
+   ],
+   "capital": "Stockholm",
+   "code": "SE",
+   "currencies": [
+    "SEK"
+   ],
+   "flag": "se",
+   "languages": [
+    "swe"
+   ],
+   "names": {
+    "en": "Sweden",
+    "es": "Suecia",
+    "fr": "Suède",
+    "pt": "Suécia",
+    "uk": "Швеція"
+   },
+   "numeric": "752",
+   "official_name": "Kingdom of Sweden",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "SGP",
+   "alt_names": [
+    "Republic of Singapore",
+    "Republik Singapura",
+    "SG",
+    "Singapore",
+    "Singapour",
+    "Singapur",
+    "Singapura",
+    "Сингапур",
+    "சிங்கப்பூர்",
+    "シンガポール",
+    "新加坡",
+    "新加坡共和国"
+   ],
+   "calling_codes": [
+    "65"
+   ],
+   "capital": "Singapore",
+   "code": "SG",
+   "currencies": [
+    "SGD"
+   ],
+   "flag": "sg",
+   "languages": [
+    "cmn",
+    "eng",
+    "msa",
+    "tam"
+   ],
+   "names": {
+    "en": "Singapore",
+    "es": "Singapur",
+    "fr": "Singapour",
+    "pt": "Singapura",
+    "uk": "Сінгапур"
+   },
+   "numeric": "702",
+   "official_name": "Republic of Singapore",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "SVN",
+   "alt_names": [
+    "Eslovenia",
+    "Eslovénia",
+    "Republic of Slovenia",
+    "Republika Slovenija",
+    "SI",
+    "Slovenia",
+    "Slovenija",
+    "Slovenië",
+    "Slovénie",
+    "Slowenien",
+    "Словения",
+    "スロベニア"
+   ],
+   "calling_codes": [
+    "386"
+   ],
+   "capital": "Ljubljana",
+   "code": "SI",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "si",
+   "languages": [
+    "slv"
+   ],
+   "names": {
+    "en": "Slovenia",
+    "es": "Eslovenia",
+    "fr": "Slovénie",
+    "pt": "Eslovênia",
+    "uk": "Словенія"
+   },
+   "numeric": "705",
+   "official_name": "Republic of Slovenia",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "SJM",
+   "alt_names": [
+    "Huippuvuoret",
+    "Ilhas Svalbard e Jan Mayen",
+    "Islas Svalbard y Jan Mayen",
+    "SJ",
+    "Spitzbergen",
+    "Svalbard and Jan Mayen",
+    "Svalbard and Jan Mayen Islands",
+    "Svalbard e Jan Mayen",
+    "Svalbard en Jan Mayen",
+    "Svalbard et Jan Mayen",
+    "Svalbard i Jan Mayen",
+    "Svalbard og Jan Mayen",
+    "Шпицберген и Ян-Майен",
+    "スヴァールバル諸島およびヤンマイエン島"
+   ],
+   "calling_codes": [
+    "4779"
+   ],
+   "capital": "Longyearbyen",
+   "code": "SJ",
+   "currencies": [
+    "NOK"
+   ],
+   "flag": "sj",
+   "languages": [
+    "nor"
+   ],
+   "names": {
+    "en": "Svalbard & Jan Mayen",
+    "es": "Svalbard y Jan Mayen",
+    "fr": "Svalbard et Jan Mayen",
+    "pt": "Svalbard e Jan Mayen",
+    "uk": "Шпіцберген та Ян-Маєн"
+   },
+   "numeric": "744",
+   "official_name": "Svalbard og Jan Mayen",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  {
+   "alpha3": "SVK",
+   "alt_names": [
+    "Eslováquia",
+    "República Eslovaca",
+    "SK",
+    "Slovacchia",
+    "Slovak Republic",
+    "Slovakia",
+    "Slovaquie",
+    "Slovačka",
+    "Slovensko",
+    "Slovenská republika",
+    "Slowakei",
+    "Slowakije",
+    "Словакия",
+    "スロバキア"
+   ],
+   "calling_codes": [
+    "421"
+   ],
+   "capital": "Bratislava",
+   "code": "SK",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "sk",
+   "languages": [
+    "slk"
+   ],
+   "names": {
+    "en": "Slovakia",
+    "es": "Eslovaquia",
+    "fr": "Slovaquie",
+    "pt": "Eslováquia",
+    "uk": "Словаччина"
+   },
+   "numeric": "703",
+   "official_name": "Slovak Republic",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "SLE",
+   "alt_names": [
+    "Republic of Sierra Leone",
+    "SL",
+    "Serra Leoa",
+    "Sierra Leone",
+    "Sijera Leone",
+    "Сьерра-Леоне",
+    "シエラレオネ"
+   ],
+   "calling_codes": [
+    "232"
+   ],
+   "capital": "Freetown",
+   "code": "SL",
+   "currencies": [
+    "SLL"
+   ],
+   "flag": "sl",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Sierra Leone",
+    "es": "Sierra Leona",
+    "fr": "Sierra Leone",
+    "pt": "Serra Leoa",
+    "uk": "Сьєрра-Леоне"
+   },
+   "numeric": "694",
+   "official_name": "Republic of Sierra Leone",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "SMR",
+   "alt_names": [
+    "Most Serene Republic of San Marino",
+    "Repubblica di San Marino",
+    "Republic of San Marino",
+    "SM",
+    "Saint-Marin",
+    "San Marino",
+    "Сан-Марино",
+    "サンマリノ"
+   ],
+   "calling_codes": [
+    "378"
+   ],
+   "capital": "City of San Marino",
+   "code": "SM",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "sm",
+   "languages": [
+    "ita"
+   ],
+   "names": {
+    "en": "San Marino",
+    "es": "San Marino",
+    "fr": "Saint-Marin",
+    "pt": "San Marino",
+    "uk": "Сан-Марино"
+   },
+   "numeric": "674",
+   "official_name": "Most Serene Republic of San Marino",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "SEN",
+   "alt_names": [
+    "Republic of Senegal",
+    "République du Sénégal",
+    "SN",
+    "Senegal",
+    "Sénégal",
+    "Сенегал",
+    "セネガル"
+   ],
+   "calling_codes": [
+    "221"
+   ],
+   "capital": "Dakar",
+   "code": "SN",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "sn",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Senegal",
+    "es": "Senegal",
+    "fr": "Sénégal",
+    "pt": "Senegal",
+    "uk": "Сенегал"
+   },
+   "numeric": "686",
+   "official_name": "Republic of Senegal",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "SOM",
+   "alt_names": [
+    "Federal Republic of Somalia",
+    "Jamhuuriyadda Federaalka Soomaaliya",
+    "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya",
+    "SO",
+    "Somalia",
+    "Somalie",
+    "Somalija",
+    "Somalië",
+    "Somália",
+    "Soomaaliya",
+    "aṣ-Ṣūmāl",
+    "Сомали",
+    "الصومال‎‎",
+    "ソマリア"
+   ],
+   "calling_codes": [
+    "252"
+   ],
+   "capital": "Mogadishu",
+   "code": "SO",
+   "currencies": [
+    "SOS"
+   ],
+   "flag": "so",
+   "languages": [
+    "ara",
+    "som"
+   ],
+   "names": {
+    "en": "Somalia",
+    "es": "Somalia",
+    "fr": "Somalie",
+    "pt": "Somália",
+    "uk": "Сомалі"
+   },
+   "numeric": "706",
+   "official_name": "Federal Republic of Somalia",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "SUR",
+   "alt_names": [
+    "Republic of Suriname",
+    "Republiek Suriname",
+    "SR",
+    "Sarnam",
+    "Sranangron",
+    "Surinam",
+    "Suriname",
+    "Суринам",
+    "スリナム"
+   ],
+   "calling_codes": [
+    "597"
+   ],
+   "capital": "Paramaribo",
+   "code": "SR",
+   "currencies": [
+    "SRD"
+   ],
+   "flag": "sr",
+   "languages": [
+    "nld"
+   ],
+   "names": {
+    "en": "Suriname",
+    "es": "Surinam",
+    "fr": "Suriname",
+    "pt": "Suriname",
+    "uk": "Суринам"
+   },
+   "numeric": "740",
+   "official_name": "Republic of Suriname",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "SSD",
+   "alt_names": [
+    "Etelä-Sudan",
+    "Južni Sudan",
+    "Republic of South Sudan",
+    "SS",
+    "Soudan du Sud",
+    "South Sudan",
+    "Sudan del sud",
+    "Sudán del Sur",
+    "Sudão do Sul",
+    "Südsudan",
+    "Zuid-Soedan",
+    "Южный Судан",
+    "南スーダン"
+   ],
+   "calling_codes": [
+    "211"
+   ],
+   "capital": "Juba",
+   "code": "SS",
+   "currencies": [
+    "SSP"
+   ],
+   "flag": "ss",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "South Sudan",
+    "es": "Sudán del Sur",
+    "fr": "Soudan du Sud",
+    "pt": "Sudão do Sul",
+    "uk": "Південний Судан"
+   },
+   "numeric": "728",
+   "official_name": "Republic of South Sudan",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "STP",
+   "alt_names": [
+    "Democratic Republic of São Tomé and Príncipe",
+    "República Democrática de São Tomé e Príncipe",
+    "ST",
+    "Santo Tomé y Príncipe",
+    "Sao Tome and Principe",
+    "Sao Tomé en Principe",
+    "Sveti Toma i Princip",
+    "São Tomé and Príncipe",
+    "São Tomé e Príncipe",
+    "São Tomé et Príncipe",
+    "São Tomé und Príncipe",
+    "São Téme ja Príncipe",
+    "Сан-Томе и Принсипи",
+    "サントメ・プリンシペ"
+   ],
+   "calling_codes": [
+    "239"
+   ],
+   "capital": "São Tomé",
+   "code": "ST",
+   "currencies": [
+    "STD"
+   ],
+   "flag": "st",
+   "languages": [
+    "por"
+   ],
+   "names": {
+    "en": "São Tomé & Príncipe",
+    "es": "Santo Tomé y Príncipe",
+    "fr": "Sao Tomé-et-Principe",
+    "pt": "São Tomé e Príncipe",
+    "uk": "Сан-Томе і Принсіпі"
+   },
+   "numeric": "678",
+   "official_name": "Democratic Republic of São Tomé and Príncipe",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "SLV",
+   "alt_names": [
+    "El Salvador",
+    "Republic of El Salvador",
+    "República de El Salvador",
+    "SV",
+    "Salvador",
+    "Сальвадор",
+    "エルサルバドル"
+   ],
+   "calling_codes": [
+    "503"
+   ],
+   "capital": "San Salvador",
+   "code": "SV",
+   "currencies": [
+    "SVC",
+    "USD"
+   ],
+   "flag": "sv",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "El Salvador",
+    "es": "El Salvador",
+    "fr": "Salvador",
+    "pt": "El Salvador",
+    "uk": "Сальвадор"
+   },
+   "numeric": "222",
+   "official_name": "Republic of El Salvador",
+   "region": "Americas",
+   "subregion": "Central America"
+  },
+  {
+   "alpha3": "SXM",
+   "alt_names": [
+    "SX",
+    "Saint-Martin",
+    "Sint Maarten",
+    "Sint Maarten (Dutch part)",
+    "São Martinho",
+    "Синт-Мартен",
+    "シント・マールテン"
+   ],
+   "calling_codes": [
+    "1721"
+   ],
+   "capital": "Philipsburg",
+   "code": "SX",
+   "currencies": [
+    "ANG"
+   ],
+   "flag": "sx",
+   "languages": [
+    "eng",
+    "fra",
+    "nld"
+   ],
+   "names": {
+    "en": "Sint Maarten",
+    "es": "Sint Maarten",
+    "fr": "Saint-Martin (partie néerlandaise)",
+    "pt": "Sint Maarten",
+    "uk": "Сінт-Мартен"
+   },
+   "numeric": "534",
+   "official_name": "Sint Maarten",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "SYR",
+   "alt_names": [
+    "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah",
+    "SY",
+    "Siria",
+    "Sirija",
+    "Syria",
+    "Syrian Arab Republic",
+    "Syrie",
+    "Syrien",
+    "Syrië",
+    "Syyria",
+    "Síria",
+    "Сирия",
+    "سوريا",
+    "シリア・アラブ共和国"
+   ],
+   "calling_codes": [
+    "963"
+   ],
+   "capital": "Damascus",
+   "code": "SY",
+   "currencies": [
+    "SYP"
+   ],
+   "flag": "sy",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Syria",
+    "es": "Siria",
+    "fr": "Syrie",
+    "pt": "Síria",
+    "uk": "Сирія"
+   },
+   "numeric": "760",
+   "official_name": "Syrian Arab Republic",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "SWZ",
+   "alt_names": [
+    "Kingdom of Swaziland",
+    "Ngwane",
+    "SZ",
+    "Suazilandia",
+    "Suazilândia",
+    "Svazi",
+    "Swasiland",
+    "Swatini",
+    "Swaziland",
+    "Swazimaa",
+    "Umbuso waseSwatini",
+    "weSwatini",
+    "Свазиленд",
+    "スワジランド"
+   ],
+   "calling_codes": [
+    "268"
+   ],
+   "capital": "Lobamba",
+   "code": "SZ",
+   "currencies": [
+    "SZL"
+   ],
+   "flag": "sz",
+   "languages": [
+    "eng",
+    "ssw"
+   ],
+   "names": {
+    "en": "Eswatini",
+    "es": "Esuatini",
+    "fr": "Eswatini",
+    "pt": "Essuatíni",
+    "uk": "Есватіні"
+   },
+   "numeric": "748",
+   "official_name": "Kingdom of Swaziland",
+   "region": "Africa",
+   "subregion": "Southern Africa"
+  },
+  {
+   "alpha3": "TCA",
+   "alt_names": [
+    "Ilhas Turks e Caicos",
+    "Islas Turks y Caicos",
+    "Isole Turks e Caicos",
+    "Otoci Turks i Caicos",
+    "TC",
+    "Turks and Caicos Islands",
+    "Turks-en Caicoseilanden",
+    "Turks-ja Caicossaaret",
+    "Turks-und Caicosinseln",
+    "Îles Turques-et-Caïques",
+    "Теркс и Кайкос",
+    "タークス・カイコス諸島"
+   ],
+   "calling_codes": [
+    "1649"
+   ],
+   "capital": "Cockburn Town",
+   "code": "TC",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "tc",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Turks & Caicos Islands",
+    "es": "Islas Turcas y Caicos",
+    "fr": "Îles Turques-et-Caïques",
+    "pt": "Ilhas Turcas e Caicos",
+    "uk": "Острови Теркс і Кайкос"
+   },
+   "numeric": "796",
+   "official_name": "Turks and Caicos Islands",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "TCD",
+   "alt_names": [
+    "Chad",
+    "Chade",
+    "Ciad",
+    "Republic of Chad",
+    "République du Tchad",
+    "TD",
+    "Tchad",
+    "Tschad",
+    "Tsiad",
+    "Tsjaad",
+    "Tšad",
+    "Čad",
+    "Чад",
+    "تشاد‎",
+    "チャド"
+   ],
+   "calling_codes": [
+    "235"
+   ],
+   "capital": "N'Djamena",
+   "code": "TD",
+   "currencies": [
+    "XAF"
+   ],
+   "flag": "td",
+   "languages": [
+    "ara",
+    "fra"
+   ],
+   "names": {
+    "en": "Chad",
+    "es": "Chad",
+    "fr": "Tchad",
+    "pt": "Chade",
+    "uk": "Чад"
+   },
+   "numeric": "148",
+   "official_name": "Republic of Chad",
+   "region": "Africa",
+   "subregion": "Middle Africa"
+  },
+  {
+   "alpha3": "ATF",
+   "alt_names": [
+    "Francuski južni i antarktički teritoriji",
+    "Franse Gebieden in de zuidelijke Indische Oceaan",
+    "Französische Süd-und Antarktisgebiete",
+    "French Southern Territories",
+    "French Southern and Antarctic Lands",
+    "Ranskan eteläiset ja antarktiset alueet",
+    "TF",
+    "Terras Austrais e Antárticas Francesas",
+    "Terres australes et antarctiques françaises",
+    "Territori Francesi del Sud",
+    "Territory of the French Southern and Antarctic Lands",
+    "Tierras Australes y Antárticas Francesas",
+    "Французские Южные и Антарктические территории",
+    "フランス領南方・南極地域"
+   ],
+   "calling_codes": [],
+   "capital": "Port-aux-Français",
+   "code": "TF",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "tf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "French Southern Territories",
+    "es": "Territorios Australes Franceses",
+    "fr": "Terres australes françaises",
+    "pt": "Territórios Franceses do Sul",
+    "uk": "Французькі Південні Території"
+   },
+   "numeric": "260",
+   "official_name": "Territory of the French Southern and Antarctic Lands",
+   "region": null,
+   "subregion": null
+  },
+  {
+   "alpha3": "TGO",
+   "alt_names": [
+    "République Togolaise",
+    "TG",
+    "Togo",
+    "Togolese",
+    "Togolese Republic",
+    "Того",
+    "トーゴ"
+   ],
+   "calling_codes": [
+    "228"
+   ],
+   "capital": "Lomé",
+   "code": "TG",
+   "currencies": [
+    "XOF"
+   ],
+   "flag": "tg",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Togo",
+    "es": "Togo",
+    "fr": "Togo",
+    "pt": "Togo",
+    "uk": "Того"
+   },
+   "numeric": "768",
+   "official_name": "Togolese Republic",
+   "region": "Africa",
+   "subregion": "Western Africa"
+  },
+  {
+   "alpha3": "THA",
+   "alt_names": [
+    "Kingdom of Thailand",
+    "Prathet",
+    "Ratcha Anachak Thai",
+    "TH",
+    "Tailandia",
+    "Tailândia",
+    "Tajland",
+    "Thai",
+    "Thailand",
+    "Thaimaa",
+    "Thaïlande",
+    "Таиланд",
+    "ประเทศไทย",
+    "ราชอาณาจักรไทย",
+    "タイ"
+   ],
+   "calling_codes": [
+    "66"
+   ],
+   "capital": "Bangkok",
+   "code": "TH",
+   "currencies": [
+    "THB"
+   ],
+   "flag": "th",
+   "languages": [
+    "tha"
+   ],
+   "names": {
+    "en": "Thailand",
+    "es": "Tailandia",
+    "fr": "Thaïlande",
+    "pt": "Tailândia",
+    "uk": "Таїланд"
+   },
+   "numeric": "764",
+   "official_name": "Kingdom of Thailand",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "TJK",
+   "alt_names": [
+    "Republic of Tajikistan",
+    "TJ",
+    "Tadjikistan",
+    "Tadschikistan",
+    "Tadzjikistan",
+    "Tadžikistan",
+    "Tagikistan",
+    "Tajikistan",
+    "Tajiquistão",
+    "Tayikistán",
+    "Tađikistan",
+    "Toçikiston",
+    "Çumhuriyi Toçikiston",
+    "Таджикистан",
+    "Тоҷикистон",
+    "Ҷумҳурии Тоҷикистон",
+    "タジキスタン"
+   ],
+   "calling_codes": [
+    "992"
+   ],
+   "capital": "Dushanbe",
+   "code": "TJ",
+   "currencies": [
+    "TJS"
+   ],
+   "flag": "tj",
+   "languages": [
+    "rus",
+    "tgk"
+   ],
+   "names": {
+    "en": "Tajikistan",
+    "es": "Tayikistán",
+    "fr": "Tadjikistan",
+    "pt": "Tadjiquistão",
+    "uk": "Таджикистан"
+   },
+   "numeric": "762",
+   "official_name": "Republic of Tajikistan",
+   "region": "Asia",
+   "subregion": "Central Asia"
+  },
+  {
+   "alpha3": "TKL",
+   "alt_names": [
+    "Islas Tokelau",
+    "Isole Tokelau",
+    "TK",
+    "Tokelau",
+    "Токелау",
+    "トケラウ"
+   ],
+   "calling_codes": [
+    "690"
+   ],
+   "capital": "Fakaofo",
+   "code": "TK",
+   "currencies": [
+    "NZD"
+   ],
+   "flag": "tk",
+   "languages": [
+    "eng",
+    "smo",
+    "tkl"
+   ],
+   "names": {
+    "en": "Tokelau",
+    "es": "Tokelau",
+    "fr": "Tokelau",
+    "pt": "Tokelau",
+    "uk": "Токелау"
+   },
+   "numeric": "772",
+   "official_name": "Tokelau",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "TLS",
+   "alt_names": [
+    "Democratic Republic of Timor-Leste",
+    "East Timor",
+    "Istočni Timor",
+    "Itä-Timor",
+    "Oost-Timor",
+    "República Democrática de Timor-Leste",
+    "Repúblika Demokrátika Timór-Leste",
+    "TL",
+    "Timor Est",
+    "Timor Lorosae",
+    "Timor Oriental",
+    "Timor oriental",
+    "Timor-Leste",
+    "Timór Lorosa'e",
+    "Timór-Leste",
+    "Восточный Тимор",
+    "東ティモール"
+   ],
+   "calling_codes": [
+    "670"
+   ],
+   "capital": "Dili",
+   "code": "TL",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "tl",
+   "languages": [
+    "por",
+    "tet"
+   ],
+   "names": {
+    "en": "Timor-Leste",
+    "es": "Timor-Leste",
+    "fr": "Timor oriental",
+    "pt": "Timor-Leste",
+    "uk": "Тимор-Лешті"
+   },
+   "numeric": "626",
+   "official_name": "Democratic Republic of Timor-Leste",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "TKM",
+   "alt_names": [
+    "TM",
+    "Turkmenistan",
+    "Turkmenistán",
+    "Turkménistan",
+    "Turquemenistão",
+    "Türkmenistan",
+    "Туркмения",
+    "トルクメニスタン"
+   ],
+   "calling_codes": [
+    "993"
+   ],
+   "capital": "Ashgabat",
+   "code": "TM",
+   "currencies": [
+    "TMT"
+   ],
+   "flag": "tm",
+   "languages": [
+    "rus",
+    "tuk"
+   ],
+   "names": {
+    "en": "Turkmenistan",
+    "es": "Turkmenistán",
+    "fr": "Turkménistan",
+    "pt": "Turcomenistão",
+    "uk": "Туркменістан"
+   },
+   "numeric": "795",
+   "official_name": "Turkmenistan",
+   "region": "Asia",
+   "subregion": "Central Asia"
+  },
+  {
+   "alpha3": "TUN",
+   "alt_names": [
+    "Republic of Tunisia",
+    "TN",
+    "Tunesien",
+    "Tunesië",
+    "Tunis",
+    "Tunisia",
+    "Tunisian Republic",
+    "Tunisie",
+    "Tunísia",
+    "Túnez",
+    "al-Jumhūriyyah at-Tūnisiyyah",
+    "Тунис",
+    "تونس",
+    "チュニジア"
+   ],
+   "calling_codes": [
+    "216"
+   ],
+   "capital": "Tunis",
+   "code": "TN",
+   "currencies": [
+    "TND"
+   ],
+   "flag": "tn",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Tunisia",
+    "es": "Túnez",
+    "fr": "Tunisie",
+    "pt": "Tunísia",
+    "uk": "Туніс"
+   },
+   "numeric": "788",
+   "official_name": "Tunisian Republic",
+   "region": "Africa",
+   "subregion": "Northern Africa"
+  },
+  {
+   "alpha3": "TON",
+   "alt_names": [
+    "Kingdom of Tonga",
+    "TO",
+    "Tonga",
+    "Тонга",
+    "トンガ"
+   ],
+   "calling_codes": [
+    "676"
+   ],
+   "capital": "Nuku'alofa",
+   "code": "TO",
+   "currencies": [
+    "TOP"
+   ],
+   "flag": "to",
+   "languages": [
+    "eng",
+    "ton"
+   ],
+   "names": {
+    "en": "Tonga",
+    "es": "Tonga",
+    "fr": "Tonga",
+    "pt": "Tonga",
+    "uk": "Тонга"
+   },
+   "numeric": "776",
+   "official_name": "Kingdom of Tonga",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "TUR",
+   "alt_names": [
+    "Republic of Turkey",
+    "TR",
+    "Turchia",
+    "Turkey",
+    "Turkije",
+    "Turkiye",
+    "Turkki",
+    "Turquia",
+    "Turquie",
+    "Turquía",
+    "Turska",
+    "Türkei",
+    "Türkiye",
+    "Türkiye Cumhuriyeti",
+    "Турция",
+    "トルコ"
+   ],
+   "calling_codes": [
+    "90"
+   ],
+   "capital": "Ankara",
+   "code": "TR",
+   "currencies": [
+    "TRY"
+   ],
+   "flag": "tr",
+   "languages": [
+    "tur"
+   ],
+   "names": {
+    "en": "Türkiye",
+    "es": "Turquía",
+    "fr": "Turquie",
+    "pt": "Turquia",
+    "uk": "Туреччина"
+   },
+   "numeric": "792",
+   "official_name": "Republic of Turkey",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "TTO",
+   "alt_names": [
+    "Republic of Trinidad and Tobago",
+    "TT",
+    "Trinidad and Tobago",
+    "Trinidad e Tobago",
+    "Trinidad en Tobago",
+    "Trinidad i Tobago",
+    "Trinidad ja Tobago",
+    "Trinidad und Tobago",
+    "Trinidad y Tobago",
+    "Trinidade e Tobago",
+    "Trinité-et-Tobago",
+    "Тринидад и Тобаго",
+    "トリニダード・トバゴ"
+   ],
+   "calling_codes": [
+    "1868"
+   ],
+   "capital": "Port of Spain",
+   "code": "TT",
+   "currencies": [
+    "TTD"
+   ],
+   "flag": "tt",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Trinidad & Tobago",
+    "es": "Trinidad y Tobago",
+    "fr": "Trinité-et-Tobago",
+    "pt": "Trinidad e Tobago",
+    "uk": "Тринідад і Тобаго"
+   },
+   "numeric": "780",
+   "official_name": "Republic of Trinidad and Tobago",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "TUV",
+   "alt_names": [
+    "TV",
+    "Tuvalu",
+    "Тувалу",
+    "ツバル"
+   ],
+   "calling_codes": [
+    "688"
+   ],
+   "capital": "Funafuti",
+   "code": "TV",
+   "currencies": [
+    "AUD"
+   ],
+   "flag": "tv",
+   "languages": [
+    "eng",
+    "tvl"
+   ],
+   "names": {
+    "en": "Tuvalu",
+    "es": "Tuvalu",
+    "fr": "Tuvalu",
+    "pt": "Tuvalu",
+    "uk": "Тувалу"
+   },
+   "numeric": "798",
+   "official_name": "Tuvalu",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "TWN",
+   "alt_names": [
+    "Chinese Taipei for IOC",
+    "Ilha Formosa",
+    "Republic of China",
+    "Republic of China (Taiwan)",
+    "TW",
+    "Taiwan",
+    "Taiwan, Province of China",
+    "Taiwán",
+    "Tajvan",
+    "Taïwan",
+    "Táiwān",
+    "Zhōnghuá Mínguó",
+    "Тайвань",
+    "中華民國",
+    "台湾（台湾省/中華民国）",
+    "臺灣"
+   ],
+   "calling_codes": [
+    "886"
+   ],
+   "capital": "Taipei",
+   "code": "TW",
+   "currencies": [
+    "TWD"
+   ],
+   "flag": "tw",
+   "languages": [
+    "cmn"
+   ],
+   "names": {
+    "en": "Taiwan",
+    "es": "Taiwán",
+    "fr": "Taïwan",
+    "pt": "Taiwan",
+    "uk": "Тайвань"
+   },
+   "numeric": "158",
+   "official_name": "Republic of China (Taiwan)",
+   "region": "Asia",
+   "subregion": "Eastern Asia"
+  },
+  {
+   "alpha3": "TZA",
+   "alt_names": [
+    "Jamhuri ya Muungano wa Tanzania",
+    "TZ",
+    "Tansania",
+    "Tanzania",
+    "Tanzania, United Republic of",
+    "Tanzanie",
+    "Tanzanija",
+    "Tanzânia",
+    "United Republic of Tanzania",
+    "Танзания",
+    "タンザニア"
+   ],
+   "calling_codes": [
+    "255"
+   ],
+   "capital": "Dodoma",
+   "code": "TZ",
+   "currencies": [
+    "TZS"
+   ],
+   "flag": "tz",
+   "languages": [
+    "eng",
+    "swa"
+   ],
+   "names": {
+    "en": "Tanzania",
+    "es": "Tanzania",
+    "fr": "Tanzanie",
+    "pt": "Tanzânia",
+    "uk": "Танзанія"
+   },
+   "numeric": "834",
+   "official_name": "United Republic of Tanzania",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "UKR",
+   "alt_names": [
+    "Oekraïne",
+    "UA",
+    "Ucraina",
+    "Ucrania",
+    "Ucrânia",
+    "Ukraina",
+    "Ukraine",
+    "Ukrajina",
+    "Ukrayina",
+    "Украина",
+    "Україна",
+    "ウクライナ"
+   ],
+   "calling_codes": [
+    "380"
+   ],
+   "capital": "Kiev",
+   "code": "UA",
+   "currencies": [
+    "UAH"
+   ],
+   "flag": "ua",
+   "languages": [
+    "rus",
+    "ukr"
+   ],
+   "names": {
+    "en": "Ukraine",
+    "es": "Ucrania",
+    "fr": "Ukraine",
+    "pt": "Ucrânia",
+    "uk": "Україна"
+   },
+   "numeric": "804",
+   "official_name": "Ukraine",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "UGA",
+   "alt_names": [
+    "Jamhuri ya Uganda",
+    "Oeganda",
+    "Ouganda",
+    "Republic of Uganda",
+    "UG",
+    "Uganda",
+    "Уганда",
+    "ウガンダ"
+   ],
+   "calling_codes": [
+    "256"
+   ],
+   "capital": "Kampala",
+   "code": "UG",
+   "currencies": [
+    "UGX"
+   ],
+   "flag": "ug",
+   "languages": [
+    "eng",
+    "swa"
+   ],
+   "names": {
+    "en": "Uganda",
+    "es": "Uganda",
+    "fr": "Ouganda",
+    "pt": "Uganda",
+    "uk": "Уганда"
+   },
+   "numeric": "800",
+   "official_name": "Republic of Uganda",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "UMI",
+   "alt_names": [
+    "Ilhas Menores Distantes dos Estados Unidos",
+    "Islas Ultramarinas Menores de Estados Unidos",
+    "Isole minori esterne degli Stati Uniti d'America",
+    "Kleine afgelegen eilanden van de Verenigde Staten",
+    "Kleinere Inselbesitzungen der Vereinigten Staaten",
+    "Mali udaljeni otoci SAD-a",
+    "UM",
+    "United States Minor Outlying Islands",
+    "Yhdysvaltain asumattomat saaret",
+    "Îles mineures éloignées des États-Unis",
+    "Внешние малые острова США",
+    "合衆国領有小離島"
+   ],
+   "calling_codes": [],
+   "capital": null,
+   "code": "UM",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "um",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "U.S. Outlying Islands",
+    "es": "Islas menores alejadas de EE. UU.",
+    "fr": "Îles mineures éloignées des États-Unis",
+    "pt": "Ilhas Menores Distantes dos EUA",
+    "uk": "Віддалені острови США"
+   },
+   "numeric": "581",
+   "official_name": "United States Minor Outlying Islands",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "USA",
+   "alt_names": [
+    "Estados Unidos",
+    "Sjedinjene Američke Države",
+    "Stati Uniti d'America",
+    "US",
+    "USA",
+    "United States",
+    "United States of America",
+    "Vereinigte Staaten von Amerika",
+    "Verenigde Staten",
+    "Yhdysvallat",
+    "États-Unis",
+    "Соединённые Штаты Америки",
+    "アメリカ合衆国"
+   ],
+   "calling_codes": [
+    "1"
+   ],
+   "capital": "Washington D.C.",
+   "code": "US",
+   "currencies": [
+    "USD",
+    "USN",
+    "USS"
+   ],
+   "flag": "us",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "United States",
+    "es": "Estados Unidos",
+    "fr": "États-Unis",
+    "pt": "Estados Unidos",
+    "uk": "Сполучені Штати"
+   },
+   "numeric": "840",
+   "official_name": "United States of America",
+   "region": "Americas",
+   "subregion": "Northern America"
+  },
+  {
+   "alpha3": "URY",
+   "alt_names": [
+    "Oriental Republic of Uruguay",
+    "República Oriental del Uruguay",
+    "UY",
+    "Uruguai",
+    "Uruguay",
+    "Urugvaj",
+    "Уругвай",
+    "ウルグアイ"
+   ],
+   "calling_codes": [
+    "598"
+   ],
+   "capital": "Montevideo",
+   "code": "UY",
+   "currencies": [
+    "UYI",
+    "UYU"
+   ],
+   "flag": "uy",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Uruguay",
+    "es": "Uruguay",
+    "fr": "Uruguay",
+    "pt": "Uruguai",
+    "uk": "Уругвай"
+   },
+   "numeric": "858",
+   "official_name": "Oriental Republic of Uruguay",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "UZB",
+   "alt_names": [
+    "Oezbekistan",
+    "Ouzbékistan",
+    "O‘zbekiston",
+    "O‘zbekiston Respublikasi",
+    "Republic of Uzbekistan",
+    "UZ",
+    "Usbekistan",
+    "Uzbekistan",
+    "Uzbekistán",
+    "Uzbequistão",
+    "Ўзбекистон Республикаси",
+    "Узбекистан",
+    "ウズベキスタン"
+   ],
+   "calling_codes": [
+    "998"
+   ],
+   "capital": "Tashkent",
+   "code": "UZ",
+   "currencies": [
+    "UZS"
+   ],
+   "flag": "uz",
+   "languages": [
+    "rus",
+    "uzb"
+   ],
+   "names": {
+    "en": "Uzbekistan",
+    "es": "Uzbekistán",
+    "fr": "Ouzbékistan",
+    "pt": "Uzbequistão",
+    "uk": "Узбекистан"
+   },
+   "numeric": "860",
+   "official_name": "Republic of Uzbekistan",
+   "region": "Asia",
+   "subregion": "Central Asia"
+  },
+  {
+   "alpha3": "VAT",
+   "alt_names": [
+    "Cidade do Vaticano",
+    "Città del Vaticano",
+    "Cité du Vatican",
+    "Ciudad del Vaticano",
+    "Holy See (Vatican City State)",
+    "Stato della Città del Vaticano",
+    "VA",
+    "Vaticaanstad",
+    "Vatican City",
+    "Vatican City State",
+    "Vaticano",
+    "Vaticanæ",
+    "Vatikaani",
+    "Vatikan",
+    "Vatikanstadt",
+    "Ватикан",
+    "バチカン市国"
+   ],
+   "calling_codes": [
+    "3906698",
+    "379"
+   ],
+   "capital": "Vatican City",
+   "code": "VA",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "va",
+   "languages": [
+    "ita",
+    "lat"
+   ],
+   "names": {
+    "en": "Vatican City",
+    "es": "Ciudad del Vaticano",
+    "fr": "État de la Cité du Vatican",
+    "pt": "Cidade do Vaticano",
+    "uk": "Ватикан"
+   },
+   "numeric": "336",
+   "official_name": "Vatican City State",
+   "region": "Europe",
+   "subregion": "Southern Europe"
+  },
+  {
+   "alpha3": "VCT",
+   "alt_names": [
+    "Saint Vincent and the Grenadines",
+    "Saint Vincent e Grenadine",
+    "Saint Vincent en de Grenadines",
+    "Saint Vincent ja Grenadiinit",
+    "Saint Vincent und die Grenadinen",
+    "Saint-Vincent-et-les-Grenadines",
+    "San Vicente y Granadinas",
+    "Sveti Vincent i Grenadini",
+    "São Vincente e Granadinas",
+    "VC",
+    "Сент-Винсент и Гренадины",
+    "セントビンセントおよびグレナディーン諸島"
+   ],
+   "calling_codes": [
+    "1784"
+   ],
+   "capital": "Kingstown",
+   "code": "VC",
+   "currencies": [
+    "XCD"
+   ],
+   "flag": "vc",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "St. Vincent & Grenadines",
+    "es": "San Vicente y las Granadinas",
+    "fr": "Saint-Vincent-et-les Grenadines",
+    "pt": "São Vicente e Granadinas",
+    "uk": "Сент-Вінсент і Гренадіни"
+   },
+   "numeric": "670",
+   "official_name": "Saint Vincent and the Grenadines",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "VEN",
+   "alt_names": [
+    "Bolivarian Republic of Venezuela",
+    "República Bolivariana de Venezuela",
+    "VE",
+    "Venezuela",
+    "Venezuela, Bolivarian Republic of",
+    "Венесуэла",
+    "ベネズエラ・ボリバル共和国"
+   ],
+   "calling_codes": [
+    "58"
+   ],
+   "capital": "Caracas",
+   "code": "VE",
+   "currencies": [
+    "VEF"
+   ],
+   "flag": "ve",
+   "languages": [
+    "spa"
+   ],
+   "names": {
+    "en": "Venezuela",
+    "es": "Venezuela",
+    "fr": "Venezuela",
+    "pt": "Venezuela",
+    "uk": "Венесуела"
+   },
+   "numeric": "862",
+   "official_name": "Bolivarian Republic of Venezuela",
+   "region": "Americas",
+   "subregion": "South America"
+  },
+  {
+   "alpha3": "VGB",
+   "alt_names": [
+    "Britanski Djevičanski Otoci",
+    "Britische Jungferninseln",
+    "British Virgin Islands",
+    "Britse Maagdeneilanden",
+    "Ilhas Virgens",
+    "Islas Vírgenes del Reino Unido",
+    "Isole Vergini Britanniche",
+    "Neitsytsaaret",
+    "VG",
+    "Virgin Islands",
+    "Virgin Islands, British",
+    "Îles Vierges britanniques",
+    "Британские Виргинские острова",
+    "イギリス領ヴァージン諸島"
+   ],
+   "calling_codes": [
+    "1284"
+   ],
+   "capital": "Road Town",
+   "code": "VG",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "vg",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "British Virgin Islands",
+    "es": "Islas Vírgenes Británicas",
+    "fr": "Îles Vierges britanniques",
+    "pt": "Ilhas Virgens Britânicas",
+    "uk": "Британські Віргінські острови"
+   },
+   "numeric": "092",
+   "official_name": "Virgin Islands",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "VIR",
+   "alt_names": [
+    "Amerikaanse Maagdeneilanden",
+    "Amerikanische Jungferninseln",
+    "Američki Djevičanski Otoci",
+    "Ilhas Virgens dos Estados Unidos",
+    "Islas Vírgenes de los Estados Unidos",
+    "Isole Vergini americane",
+    "Neitsytsaaret",
+    "United States Virgin Islands",
+    "VI",
+    "Virgin Islands of the United States",
+    "Virgin Islands, U.S.",
+    "Îles Vierges des États-Unis",
+    "Виргинские Острова",
+    "アメリカ領ヴァージン諸島"
+   ],
+   "calling_codes": [
+    "1340"
+   ],
+   "capital": "Charlotte Amalie",
+   "code": "VI",
+   "currencies": [
+    "USD"
+   ],
+   "flag": "vi",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "U.S. Virgin Islands",
+    "es": "Islas Vírgenes de EE. UU.",
+    "fr": "Îles Vierges des États-Unis",
+    "pt": "Ilhas Virgens Americanas",
+    "uk": "Віргінські Острови (США)"
+   },
+   "numeric": "850",
+   "official_name": "Virgin Islands of the United States",
+   "region": "Americas",
+   "subregion": "Caribbean"
+  },
+  {
+   "alpha3": "VNM",
+   "alt_names": [
+    "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+    "Socialist Republic of Vietnam",
+    "VN",
+    "Viet Nam",
+    "Vietnam",
+    "Vietname",
+    "Vijetnam",
+    "Viêt Nam",
+    "Việt Nam",
+    "Вьетнам",
+    "ベトナム"
+   ],
+   "calling_codes": [
+    "84"
+   ],
+   "capital": "Hanoi",
+   "code": "VN",
+   "currencies": [
+    "VND"
+   ],
+   "flag": "vn",
+   "languages": [
+    "vie"
+   ],
+   "names": {
+    "en": "Vietnam",
+    "es": "Vietnam",
+    "fr": "Viêt Nam",
+    "pt": "Vietnã",
+    "uk": "Вʼєтнам"
+   },
+   "numeric": "704",
+   "official_name": "Socialist Republic of Vietnam",
+   "region": "Asia",
+   "subregion": "South-Eastern Asia"
+  },
+  {
+   "alpha3": "VUT",
+   "alt_names": [
+    "Republic of Vanuatu",
+    "Ripablik blong Vanuatu",
+    "République de Vanuatu",
+    "VU",
+    "Vanuatu",
+    "Вануату",
+    "バヌアツ"
+   ],
+   "calling_codes": [
+    "678"
+   ],
+   "capital": "Port Vila",
+   "code": "VU",
+   "currencies": [
+    "VUV"
+   ],
+   "flag": "vu",
+   "languages": [
+    "bis",
+    "eng",
+    "fra"
+   ],
+   "names": {
+    "en": "Vanuatu",
+    "es": "Vanuatu",
+    "fr": "Vanuatu",
+    "pt": "Vanuatu",
+    "uk": "Вануату"
+   },
+   "numeric": "548",
+   "official_name": "Republic of Vanuatu",
+   "region": "Oceania",
+   "subregion": "Melanesia"
+  },
+  {
+   "alpha3": "WLF",
+   "alt_names": [
+    "Territoire des îles Wallis et Futuna",
+    "Territory of the Wallis and Futuna Islands",
+    "WF",
+    "Wallis and Futuna",
+    "Wallis e Futuna",
+    "Wallis en Futuna",
+    "Wallis et Futuna",
+    "Wallis i Fortuna",
+    "Wallis ja Futuna",
+    "Wallis und Futuna",
+    "Wallis y Futuna",
+    "Wallis-et-Futuna",
+    "Уоллис и Футуна",
+    "ウォリス・フツナ"
+   ],
+   "calling_codes": [
+    "681"
+   ],
+   "capital": "Mata-Utu",
+   "code": "WF",
+   "currencies": [
+    "XPF"
+   ],
+   "flag": "wf",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Wallis & Futuna",
+    "es": "Wallis y Futuna",
+    "fr": "Wallis-et-Futuna",
+    "pt": "Wallis e Futuna",
+    "uk": "Уолліс і Футуна"
+   },
+   "numeric": "876",
+   "official_name": "Territory of the Wallis and Futuna Islands",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "WSM",
+   "alt_names": [
+    "Independent State of Samoa",
+    "Malo Saʻoloto Tutoʻatasi o Sāmoa",
+    "Samoa",
+    "Sāmoa",
+    "WS",
+    "Самоа",
+    "サモア"
+   ],
+   "calling_codes": [
+    "685"
+   ],
+   "capital": "Apia",
+   "code": "WS",
+   "currencies": [
+    "WST"
+   ],
+   "flag": "ws",
+   "languages": [
+    "eng",
+    "smo"
+   ],
+   "names": {
+    "en": "Samoa",
+    "es": "Samoa",
+    "fr": "Samoa",
+    "pt": "Samoa",
+    "uk": "Самоа"
+   },
+   "numeric": "882",
+   "official_name": "Independent State of Samoa",
+   "region": "Oceania",
+   "subregion": "Polynesia"
+  },
+  {
+   "alpha3": "UNK",
+   "alt_names": [
+    "Kosova",
+    "Kosovo",
+    "Republic of Kosovo",
+    "XK",
+    "Косово",
+    "Република Косово",
+    "Республика Косово"
+   ],
+   "calling_codes": [
+    "383"
+   ],
+   "capital": "Pristina",
+   "code": "XK",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "xk",
+   "languages": [
+    "sqi",
+    "srp"
+   ],
+   "names": {
+    "en": "Kosovo",
+    "es": "Kosovo",
+    "fr": "Kosovo",
+    "pt": "Kosovo",
+    "uk": "Косово"
+   },
+   "numeric": "",
+   "official_name": "Republic of Kosovo",
+   "region": "Europe",
+   "subregion": "Eastern Europe"
+  },
+  {
+   "alpha3": "YEM",
+   "alt_names": [
+    "Iémen",
+    "Jemen",
+    "Republic of Yemen",
+    "YE",
+    "Yemen",
+    "Yemeni Republic",
+    "Yémen",
+    "al-Jumhūriyyah al-Yamaniyyah",
+    "Йемен",
+    "اليَمَن",
+    "イエメン"
+   ],
+   "calling_codes": [
+    "967"
+   ],
+   "capital": "Sana'a",
+   "code": "YE",
+   "currencies": [
+    "YER"
+   ],
+   "flag": "ye",
+   "languages": [
+    "ara"
+   ],
+   "names": {
+    "en": "Yemen",
+    "es": "Yemen",
+    "fr": "Yémen",
+    "pt": "Iêmen",
+    "uk": "Ємен"
+   },
+   "numeric": "887",
+   "official_name": "Republic of Yemen",
+   "region": "Asia",
+   "subregion": "Western Asia"
+  },
+  {
+   "alpha3": "MYT",
+   "alt_names": [
+    "Department of Mayotte",
+    "Département de Mayotte",
+    "Mayotte",
+    "YT",
+    "Майотта",
+    "マヨット"
+   ],
+   "calling_codes": [
+    "262"
+   ],
+   "capital": "Mamoudzou",
+   "code": "YT",
+   "currencies": [
+    "EUR"
+   ],
+   "flag": "yt",
+   "languages": [
+    "fra"
+   ],
+   "names": {
+    "en": "Mayotte",
+    "es": "Mayotte",
+    "fr": "Mayotte",
+    "pt": "Mayotte",
+    "uk": "Майотта"
+   },
+   "numeric": "175",
+   "official_name": "Department of Mayotte",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "ZAF",
+   "alt_names": [
+    "Aforika Borwa",
+    "Afrika Borwa",
+    "Afrika Dzonga",
+    "Afrika-Borwa",
+    "Afrique du Sud",
+    "Afurika Tshipembe",
+    "Etelä-Afrikka",
+    "Južnoafrička Republika",
+    "Mzantsi Afrika",
+    "Ningizimu Afrika",
+    "RSA",
+    "Republic of South Africa",
+    "Republik Südafrika",
+    "República de Sudáfrica",
+    "Sewula Afrika",
+    "South Africa",
+    "Sud Africa",
+    "Suid-Afrika",
+    "ZA",
+    "Zuid-Afrika",
+    "África do Sul",
+    "Южно-Африканская Республика",
+    "南アフリカ"
+   ],
+   "calling_codes": [
+    "27"
+   ],
+   "capital": "Pretoria",
+   "code": "ZA",
+   "currencies": [
+    "ZAR"
+   ],
+   "flag": "za",
+   "languages": [
+    "afr",
+    "eng",
+    "nbl",
+    "nso",
+    "sot",
+    "ssw",
+    "tsn",
+    "tso",
+    "ven",
+    "xho",
+    "zul"
+   ],
+   "names": {
+    "en": "South Africa",
+    "es": "Sudáfrica",
+    "fr": "Afrique du Sud",
+    "pt": "África do Sul",
+    "uk": "Південно-Африканська Республіка"
+   },
+   "numeric": "710",
+   "official_name": "Republic of South Africa",
+   "region": "Africa",
+   "subregion": "Southern Africa"
+  },
+  {
+   "alpha3": "ZMB",
+   "alt_names": [
+    "Republic of Zambia",
+    "Sambia",
+    "ZM",
+    "Zambia",
+    "Zambie",
+    "Zambija",
+    "Zâmbia",
+    "Замбия",
+    "ザンビア"
+   ],
+   "calling_codes": [
+    "260"
+   ],
+   "capital": "Lusaka",
+   "code": "ZM",
+   "currencies": [
+    "ZMW"
+   ],
+   "flag": "zm",
+   "languages": [
+    "eng"
+   ],
+   "names": {
+    "en": "Zambia",
+    "es": "Zambia",
+    "fr": "Zambie",
+    "pt": "Zâmbia",
+    "uk": "Замбія"
+   },
+   "numeric": "894",
+   "official_name": "Republic of Zambia",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  },
+  {
+   "alpha3": "ZWE",
+   "alt_names": [
+    "Republic of Zimbabwe",
+    "Simbabwe",
+    "ZW",
+    "Zimbabue",
+    "Zimbabve",
+    "Zimbabwe",
+    "Зимбабве",
+    "ジンバブエ"
+   ],
+   "calling_codes": [
+    "263"
+   ],
+   "capital": "Harare",
+   "code": "ZW",
+   "currencies": [
+    "ZWL"
+   ],
+   "flag": "zw",
+   "languages": [
+    "bwg",
+    "eng",
+    "kck",
+    "khi",
+    "ndc",
+    "nde",
+    "nya",
+    "sna",
+    "sot",
+    "toi",
+    "tsn",
+    "tso",
+    "ven",
+    "xho",
+    "zib"
+   ],
+   "names": {
+    "en": "Zimbabwe",
+    "es": "Zimbabue",
+    "fr": "Zimbabwe",
+    "pt": "Zimbábue",
+    "uk": "Зімбабве"
+   },
+   "numeric": "716",
+   "official_name": "Republic of Zimbabwe",
+   "region": "Africa",
+   "subregion": "Eastern Africa"
+  }
+ ]
+}

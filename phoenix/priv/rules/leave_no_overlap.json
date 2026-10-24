@@ -1,0 +1,79 @@
+{
+  "key": "leave_no_overlap",
+  "version": 2,
+  "label": "Leave periods don't overlap",
+  "description": "The period overlaps no recorded leave and no leave request or order on its way.",
+  "severity": "flag",
+  "points": [
+    "document.submit",
+    "record.save"
+  ],
+  "subjects": [
+    "document:leave_request",
+    "record:leave"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "No overlap",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "leave.overlaps == 0"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(leave.overlaps == 0) ? null : 'leave_overlap'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(leave.overlaps == 0) ? null : 'The period overlaps another leave of this person.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

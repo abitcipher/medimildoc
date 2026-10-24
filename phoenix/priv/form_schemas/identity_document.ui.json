@@ -1,0 +1,17 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/document_type", "label": "Document type" },
+    { "type": "Control", "scope": "#/properties/series", "label": "Series" },
+    { "type": "Control", "scope": "#/properties/number", "label": "Number" },
+    { "type": "Control", "scope": "#/properties/issuing_authority", "label": "Issuing authority" },
+    {
+      "type": "Control",
+      "scope": "#/properties/issuing_country",
+      "label": "Issuing country"
+    },
+    { "type": "Control", "scope": "#/properties/issued_on", "label": "Issued on" },
+    { "type": "Control", "scope": "#/properties/expires_on", "label": "Expires on" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Note" }
+  ]
+}

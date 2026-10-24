@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AssignmentEdit",
+  "description": "The editable subset of Assignment — position_id/person_id are set once at creation (see assignment.schema.json) and aren't revisited here.",
+  "type": "object",
+  "required": ["starts_on"],
+  "properties": {
+    "starts_on": { "type": "string", "format": "date" },
+    "ends_on": { "type": "string", "format": "date" }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FilePlanCase",
+  "type": "object",
+  "required": [
+    "index",
+    "title",
+    "retention"
+  ],
+  "properties": {
+    "index": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "x-help": "The case index in the file plan, e.g. 03-01 (unit, then case number)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "retention": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "x-help": "As in the list of standard documents: 75 years, 5 years, permanently."
+    },
+    "retention_ref": {
+      "type": "string",
+      "maxLength": 60,
+      "x-help": "The article of the list of standard documents the period comes from."
+    },
+    "permanent": {
+      "type": "boolean",
+      "x-help": "Kept permanently (handed to the state archive)."
+    },
+    "retention_years": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "x-widget": "number",
+      "x-help": "How many years the case is kept, counted from the 1st of January after its year. Decides the inventory and when it may be disposed of."
+    },
+    "document_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "x-help": "Signed documents of these types and this year are filed into the case. A type goes into one case a year."
+    },
+    "organization_id": {
+      "type": "string",
+      "x-help": "The unit that keeps the case."
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

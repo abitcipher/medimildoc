@@ -1,0 +1,113 @@
+{
+  "id": "medical_board_referral",
+  "version": "1",
+  "label": "Referral to the medical board",
+  "icon": "hero-arrow-right-circle",
+  "summary": "Sends a person to the medical board: why, what to decide, when.",
+  "category": "personnel_private",
+  "access": {
+    "read": [
+      "people.hr_private.read",
+      "medical.read"
+    ],
+    "write": "people.write"
+  },
+  "register": {
+    "code": "нвлк",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 75,
+  "template": "medical_board_referral.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "Signed by",
+      "permission": "people.write"
+    }
+  ],
+  "effects": [
+    "open_conclusion"
+  ],
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "reason"
+    ],
+    "properties": {
+      "reason": {
+        "type": "string",
+        "enum": [
+          "entry",
+          "periodic",
+          "reexamination",
+          "after_illness_or_injury",
+          "other"
+        ],
+        "x-enum-labels": {
+          "entry": "Entry examination (newcomer)",
+          "periodic": "Periodic examination",
+          "reexamination": "Re-examination",
+          "after_illness_or_injury": "After illness or injury",
+          "other": "Other"
+        }
+      },
+      "intendedDuty": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "The post or duties the person is being assessed for."
+      },
+      "questions": {
+        "type": "string",
+        "maxLength": 2000,
+        "x-help": "What the board is asked to decide."
+      },
+      "plannedDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/reason",
+        "label": "Reason"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/intendedDuty",
+        "label": "Intended duties"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/questions",
+        "label": "Questions for the board",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/plannedDate",
+        "label": "Planned date"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

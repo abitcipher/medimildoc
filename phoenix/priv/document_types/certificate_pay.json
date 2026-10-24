@@ -1,0 +1,80 @@
+{
+  "id": "certificate_pay",
+  "version": "1",
+  "label": "Pay certificate",
+  "icon": "hero-banknotes",
+  "summary": "Pay for each month of a period, from the pay records; HR signs.",
+  "category": "personnel_private",
+  "access": {
+    "read": [
+      "people.hr_private.read"
+    ],
+    "write": "people.hr_private.write",
+    "self": true
+  },
+  "register": {
+    "code": "дов",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 5,
+  "template": "certificate.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "HR",
+      "permission": "people.hr_private.write"
+    }
+  ],
+  "effects": [],
+  "basis": [],
+  "facts": "pay",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "periodFrom",
+      "periodTo"
+    ],
+    "properties": {
+      "periodFrom": {
+        "type": "string",
+        "format": "date"
+      },
+      "periodTo": {
+        "type": "string",
+        "format": "date"
+      },
+      "presentTo": {
+        "type": "string",
+        "maxLength": 300,
+        "x-help": "Where the certificate will be presented; leave empty for \"wherever required\"."
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/periodFrom",
+            "label": "Period from"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/periodTo",
+            "label": "Period to"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/presentTo",
+        "label": "To be presented at"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/grade", "label": "NATO grade" },
+    { "type": "Control", "scope": "#/properties/gradeTitle", "label": "Rank title" },
+    { "type": "Control", "scope": "#/properties/effectiveDate", "label": "Effective date" },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Business-trip allowances (docs/design/business-trips.md §Report): per-diem rates by destination, in one currency. PLACEHOLDERS — replace with the rates of the organisation's own regulations before relying on the computed settlement.",
+  "currency": "UAH",
+  "per_diem": {
+    "domestic": "300.00",
+    "abroad": "1500.00"
+  }
+}

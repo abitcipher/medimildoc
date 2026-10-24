@@ -1,0 +1,10 @@
+{
+  "description": "Leave types and yearly entitlement in days (docs/design/leave.md). PLACEHOLDER numbers, to be confirmed against the applicable regulations; null = not counted against a yearly balance. Labels come from the leave record schema (priv/person_record_schemas/leave.schema.json).",
+  "types": [
+    { "id": "annual", "days_per_year": 30 },
+    { "id": "family", "days_per_year": 10 },
+    { "id": "study", "days_per_year": null },
+    { "id": "sick", "days_per_year": null },
+    { "id": "unpaid", "days_per_year": null }
+  ]
+}

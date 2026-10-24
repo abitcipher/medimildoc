@@ -1,0 +1,30 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/name",
+      "label": "Name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/kind",
+      "label": "Kind"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/parent_id",
+      "label": "Parent organization"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/country",
+      "label": "Country"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/locality",
+      "label": "Locality"
+    }
+  ]
+}

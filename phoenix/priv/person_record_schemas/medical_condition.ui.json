@@ -1,0 +1,19 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/code/properties/text", "label": "Condition" },
+    { "type": "Control", "scope": "#/properties/clinicalStatus", "label": "Status" },
+    { "type": "Control", "scope": "#/properties/verificationStatus", "label": "Verification status" },
+    { "type": "Control", "scope": "#/properties/severity", "label": "Severity" },
+    { "type": "Control", "scope": "#/properties/bodySite", "label": "Body site" },
+    { "type": "Control", "scope": "#/properties/onsetDate", "label": "Onset date" },
+    { "type": "Control", "scope": "#/properties/abatementDate", "label": "Resolved/remission date" },
+    { "type": "Control", "scope": "#/properties/recordedDate", "label": "Recorded date" },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

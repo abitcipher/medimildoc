@@ -1,0 +1,17 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/measuredAt", "label": "Measured at" },
+    { "type": "Control", "scope": "#/properties/systolic", "label": "Systolic blood pressure" },
+    { "type": "Control", "scope": "#/properties/diastolic", "label": "Diastolic blood pressure" },
+    { "type": "Control", "scope": "#/properties/heartRate", "label": "Heart rate" },
+    { "type": "Control", "scope": "#/properties/respiratoryRate", "label": "Respiratory rate" },
+    { "type": "Control", "scope": "#/properties/spo2", "label": "SpO₂" },
+    { "type": "Control", "scope": "#/properties/onOxygen", "label": "On supplemental oxygen" },
+    { "type": "Control", "scope": "#/properties/temperature", "label": "Temperature" },
+    { "type": "Control", "scope": "#/properties/consciousness", "label": "Consciousness (ACVPU)" },
+    { "type": "Control", "scope": "#/properties/gcs", "label": "GCS" },
+    { "type": "Control", "scope": "#/properties/pain", "label": "Pain" },
+    { "type": "Control", "scope": "#/properties/note", "label": "Notes", "options": { "multi": true } }
+  ]
+}

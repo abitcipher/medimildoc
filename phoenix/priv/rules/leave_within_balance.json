@@ -1,0 +1,79 @@
+{
+  "key": "leave_within_balance",
+  "version": 2,
+  "label": "Leave within the balance",
+  "description": "The days requested don't exceed what is left of the yearly entitlement for this type of leave (priv/leave_types.json); types without a yearly limit always pass.",
+  "severity": "flag",
+  "points": [
+    "document.submit",
+    "record.save"
+  ],
+  "subjects": [
+    "document:leave_request",
+    "record:leave"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "Within balance",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "leave.balance == null or leave.requestedDays <= leave.balance"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(leave.balance == null or leave.requestedDays <= leave.balance) ? null : 'leave_over_balance'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(leave.balance == null or leave.requestedDays <= leave.balance) ? null : 'More days are requested than are left for this type of leave this year.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

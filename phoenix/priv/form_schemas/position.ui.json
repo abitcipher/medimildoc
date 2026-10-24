@@ -1,0 +1,10 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/title", "label": "Title" },
+    { "type": "Control", "scope": "#/properties/organization_id", "label": "Organization" },
+    { "type": "Control", "scope": "#/properties/reports_to_id", "label": "Reports to" },
+    { "type": "Control", "scope": "#/properties/authorised_grade", "label": "Authorised grade" },
+    { "type": "Control", "scope": "#/properties/strength", "label": "Strength" }
+  ]
+}

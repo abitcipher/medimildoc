@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "2",
+  "x-label": "Allergy",
+  "x-icon": "hero-exclamation-triangle",
+  "x-summary": "An allergy or intolerance, how serious it is and the reaction.",
+  "title": "AllergyIntolerance",
+  "description": "FHIR AllergyIntolerance-flavored (not conformant) record. Field names checked against the vendored priv/fhir/R5/fhir.schema.json; the code lists (clinicalStatus, verificationStatus, type, category, criticality, reaction severity) are FHIR's value sets from memory, since that file doesn't carry them — same caveat as medical_condition. FHIR allows several categories and reactions per record; this form supports several categories and one reaction.",
+  "type": "object",
+  "required": ["code", "clinicalStatus"],
+  "properties": {
+    "resourceType": { "type": "string", "enum": ["AllergyIntolerance"] },
+    "code": {
+      "type": "object",
+      "description": "The substance, as free text plus optional coded terms.",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "coding": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "system": { "type": "string" },
+              "code": { "type": "string" },
+              "display": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "clinicalStatus": { "type": "string", "enum": ["active", "inactive", "resolved"] },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["unconfirmed", "presumed", "confirmed", "refuted", "entered-in-error"]
+    },
+    "type": { "type": "string", "enum": ["allergy", "intolerance"] },
+    "category": {
+      "type": "array",
+      "description": "FHIR AllergyIntolerance.category (0..*). A single string until x-version 2; App.People.RecordMigrations upgrades old records.",
+      "items": { "type": "string", "enum": ["food", "medication", "environment", "biologic"] },
+      "uniqueItems": true
+    },
+    "criticality": {
+      "x-help": "How dangerous a future reaction could be. High means potentially life-threatening.", "type": "string", "enum": ["low", "high", "unable-to-assess"] },
+    "reactionManifestation": {
+      "type": "string",
+      "description": "FHIR reaction.manifestation, free text (e.g. anaphylaxis, hives)."
+    },
+    "reactionSeverity": {
+      "x-help": "How severe the reaction was when it happened.", "type": "string", "enum": ["mild", "moderate", "severe"] },
+    "onsetDate": { "type": "string", "format": "date" },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

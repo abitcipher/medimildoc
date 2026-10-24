@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Status change",
+  "x-icon": "hero-arrows-right-left",
+  "x-summary": "A one-off change in a person's status that has no dedicated record type.",
+  "title": "StatusChange",
+  "description": "Generic life/career status change not yet modeled as a first-class resource (e.g. a pay change or marital status change) — escape hatch for growing a person's data modularly without a schema migration for every new kind of life event.",
+  "type": "object",
+  "required": ["changeType", "description"],
+  "properties": {
+    "changeType": {
+      "type": "string",
+      "enum": ["pay_change", "marital_status_change", "address_change", "rank_change", "other"]
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "previousValue": { "type": "string" },
+    "newValue": { "type": "string" }
+  },
+  "additionalProperties": false
+}

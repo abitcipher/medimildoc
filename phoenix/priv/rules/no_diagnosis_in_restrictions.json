@@ -1,0 +1,77 @@
+{
+  "key": "no_diagnosis_in_restrictions",
+  "version": 1,
+  "label": "No diagnosis in duty restrictions",
+  "description": "Fitness-for-duty restrictions are read by commanders; they say what the person may do, never why. A restriction text containing an ICD-10-like code (a letter and two digits, e.g. S83.2) is a probable disclosure of a diagnosis.",
+  "severity": "flag",
+  "points": [
+    "record.save"
+  ],
+  "subjects": [
+    "record:fitness_for_duty"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "type": "inputNode",
+        "name": "Request",
+        "position": {
+          "x": 40,
+          "y": 200
+        }
+      },
+      {
+        "id": "check",
+        "type": "expressionNode",
+        "name": "No diagnosis code",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "content": {
+          "expressions": [
+            {
+              "id": "e1",
+              "key": "valid",
+              "value": "data.restrictions == null or not matches(data.restrictions, \"(^|[^A-Za-z0-9])[A-TV-Z][0-9][0-9]([^0-9]|$)\")"
+            },
+            {
+              "id": "e2",
+              "key": "code",
+              "value": "(data.restrictions == null or not matches(data.restrictions, \"(^|[^A-Za-z0-9])[A-TV-Z][0-9][0-9]([^0-9]|$)\")) ? null : 'diagnosis_in_restrictions'"
+            },
+            {
+              "id": "e3",
+              "key": "message",
+              "value": "(data.restrictions == null or not matches(data.restrictions, \"(^|[^A-Za-z0-9])[A-TV-Z][0-9][0-9]([^0-9]|$)\")) ? null : 'The duty restrictions seem to contain a diagnosis code.'"
+            }
+          ]
+        }
+      },
+      {
+        "id": "output",
+        "type": "outputNode",
+        "name": "Response",
+        "position": {
+          "x": 560,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "in",
+        "sourceId": "input",
+        "targetId": "check",
+        "type": "edge"
+      },
+      {
+        "id": "out",
+        "sourceId": "check",
+        "targetId": "output",
+        "type": "edge"
+      }
+    ]
+  }
+}

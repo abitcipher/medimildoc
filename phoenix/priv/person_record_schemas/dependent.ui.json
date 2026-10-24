@@ -1,0 +1,14 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/name", "label": "Name" },
+    { "type": "Control", "scope": "#/properties/relationship", "label": "Relationship" },
+    { "type": "Control", "scope": "#/properties/dateOfBirth", "label": "Date of birth" },
+    {
+      "type": "Control",
+      "scope": "#/properties/note",
+      "label": "Notes",
+      "options": { "multi": true }
+    }
+  ]
+}

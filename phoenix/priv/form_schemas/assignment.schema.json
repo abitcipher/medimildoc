@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Assignment",
+  "type": "object",
+  "required": [
+    "position_id",
+    "starts_on"
+  ],
+  "properties": {
+    "position_id": {
+      "type": "string",
+      "description": "Options supplied at render time (existing positions).",
+      "x-help": "The post the person holds."
+    },
+    "starts_on": {
+      "type": "string",
+      "format": "date",
+      "x-help": "The first day in the post."
+    }
+  }
+}

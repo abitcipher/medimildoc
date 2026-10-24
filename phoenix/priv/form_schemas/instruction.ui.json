@@ -1,0 +1,13 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/text", "label": "Instruction", "options": { "multi": true } },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/executor_id", "label": "Executor" },
+        { "type": "Control", "scope": "#/properties/due_on", "label": "Due" }
+      ]
+    }
+  ]
+}

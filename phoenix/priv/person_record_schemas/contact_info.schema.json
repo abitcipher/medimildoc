@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Contact",
+  "x-icon": "hero-phone",
+  "x-summary": "A phone number, email address, radio callsign or unit address.",
+  "title": "ContactInfo",
+  "description": "Communications-directory-flavored (not STANAG 5046-conformant — ; that standard's exact field structure isn't verified here) contact record for a person. `use` is a genuinely verified addition: unlike most of this project's FHIR-flavored fields, FHIR's ContactPoint.system/.use ARE plain closed enums actually encoded in the vendored priv/fhir/R5/fhir.schema.json (ContactPoint isn't a generic CodeableConcept the way Condition.clinicalStatus etc. are) — confirmed by reading that file directly, not from memory.",
+  "type": "object",
+  "required": ["contactType", "value"],
+  "properties": {
+    "contactType": {
+      "type": "string",
+      "description": "Kept as originally defined — a mix of FHIR's ContactPoint.system values (phone/email/other) and this domain's own additions (radio_callsign/unit_address) that have no FHIR equivalent. NOT redefined to match ContactPoint.system exactly (that real enum is phone/fax/pager/url/sms/email/other) to avoid a breaking rename of existing data; `use` below is the additive way to get closer to FHIR's actual shape without that.",
+      "enum": ["phone", "mobile", "email", "radio_callsign", "unit_address", "other"]
+    },
+    "value": { "type": "string", "minLength": 1 },
+    "use": {
+      "x-enum-labels": {"temp": "Temporary", "old": "No longer in use"},
+      "x-help": "What the contact is for: home, work, mobile, temporary, or no longer in use.",
+      "type": "string",
+      "description": "FHIR ContactPoint.use — verified directly against priv/fhir/R5/fhir.schema.json (a real closed enum in that file, not a generic CodeableConcept). Complements contactType rather than replacing it: e.g. contactType=\"phone\" + use=\"mobile\" is more precise than contactType alone ever was.",
+      "enum": ["home", "work", "temp", "old", "mobile"]
+    },
+    "unit": {
+      "type": "string",
+      "description": "Organization/unit this contact is associated with, free text."
+    },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

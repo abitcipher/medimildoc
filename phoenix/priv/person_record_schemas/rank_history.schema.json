@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "personnel",
+  "x-confidentiality": "n",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Rank",
+  "x-icon": "hero-chevron-double-up",
+  "x-summary": "A NATO rank grade held from a given date.",
+  "title": "RankHistory",
+  "description": "Illustrative placeholder for NATO grade/rank history (APERSP-01 — NATO Codes for Grades of Military Personnel). The exact valid code set is NOT verified against the primary APERSP-01 text — `grade` is pattern-validated (OF-n / OR-n shape) rather than a closed enum, on purpose, to avoid presenting an unverified list as authoritative. Verify against the real standard before relying on this beyond illustration.",
+  "type": "object",
+  "required": ["grade", "effectiveDate"],
+  "properties": {
+    "grade": {
+      "x-help": "NATO rank code: OR-1 to OR-9 for other ranks, OF-1 to OF-10 for officers, e.g. OF-3.",
+      "type": "string",
+      "pattern": "^(OF|OR)-?[0-9]{1,2}$|^OF\\(D\\)$",
+      "description": "NATO grade code shape (e.g. OF-3, OR-6, OF(D)) — not a verified closed set."
+    },
+    "gradeTitle": {
+      "type": "string",
+      "description": "National-language rank title for this grade (e.g. \"Captain\") — free text, since national titles for the same NATO grade vary by country."
+    },
+    "effectiveDate": { "type": "string", "format": "date" },
+    "note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

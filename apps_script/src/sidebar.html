@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<style>html,body,iframe{margin:0;height:100%;width:100%;border:0}</style>
+<iframe id="app" src="<?!= appOrigin ?>/sheets"></iframe>
+<script>
+  // Plain browser JS — runs inside HtmlService's IFRAME sandbox, not
+  // compiled by the TS/rollup pipeline.
+  const APP_ORIGIN = '<?!= appOrigin ?>';
+  const frame = document.getElementById('app');
+  window.addEventListener('message', (e) => {
+    if (e.origin !== APP_ORIGIN) return;
+    if (e.data.type === 'REQUEST_CONTEXT') {
+      google.script.run
+        .withSuccessHandler((ctx) =>
+          frame.contentWindow.postMessage({ type: 'CONTEXT', payload: ctx }, APP_ORIGIN))
+        .withFailureHandler((err) => {
+          // getContext()/mintToken() threw server-side (e.g. SHARED_SECRET
+          // script property not set): tell the page, which shows the reason
+          // instead of a bare "missing token". No secret in the message.
+          const message = String(err && err.message ? err.message : err).slice(0, 300);
+          console.error('getContext() failed:', message);
+          frame.contentWindow.postMessage({ type: 'CONTEXT_ERROR', message: message }, APP_ORIGIN);
+        })
+        .getContext();
+    }
+    // SHEETS-UI: the selected cell for the row form (no token).
+    // SHEETS-UI.18: go to a row (Find a person).
+    if (e.data.type === 'SELECT_RANGE' && e.data.payload) {
+      google.script.run.selectRange(e.data.payload.sheetName, e.data.payload.a1);
+    }
+    if (e.data.type === 'REQUEST_SELECTION') {
+      google.script.run
+        .withSuccessHandler((sel) =>
+          frame.contentWindow.postMessage({ type: 'SELECTION', payload: sel }, APP_ORIGIN))
+        .getSelection();
+    }
+  });
+</script>

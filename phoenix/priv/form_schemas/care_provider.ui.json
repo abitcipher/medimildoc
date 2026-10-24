@@ -1,0 +1,39 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    { "type": "Control", "scope": "#/properties/name", "label": "Name" },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/provider_type", "label": "Type" },
+        { "type": "Control", "scope": "#/properties/registry_code", "label": "Registry code" }
+      ]
+    },
+    { "type": "Control", "scope": "#/properties/priority", "label": "Our own unit (priority)" },
+    { "type": "Control", "scope": "#/properties/organization_id", "label": "Unit" },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/country", "label": "Country" },
+        { "type": "Control", "scope": "#/properties/locality", "label": "Locality" }
+      ]
+    },
+    { "type": "Control", "scope": "#/properties/address", "label": "Address" },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/phone", "label": "Phone" },
+        { "type": "Control", "scope": "#/properties/email", "label": "Email" }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/agreement_ref", "label": "Agreement" },
+        { "type": "Control", "scope": "#/properties/agreement_until", "label": "Agreement valid until" }
+      ]
+    },
+    { "type": "Control", "scope": "#/properties/active", "label": "Active" },
+    { "type": "Control", "scope": "#/properties/notes", "label": "Notes", "options": { "multi": true } }
+  ]
+}

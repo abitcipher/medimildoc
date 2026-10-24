@@ -1,0 +1,66 @@
+# Structural rules for the Phoenix/Ash app half of the monorepo.
+# Enforced via `sentrux check .` (see for the rest of the
+# quality gate: mix format / credo --strict / dialyzer). Run `sentrux gate`
+# after a batch of changes to catch structural regression before it lands.
+#
+# NOTE: layer/boundary paths below intentionally use the BARE directory
+# form ("lib/app", not "lib/app/**"). sentrux 0.5.7's glob_match has a
+# real bug in its `dir/**` branch (sentrux-core/src/metrics/rules/mod.rs)
+# — it strips the "/**" suffix and does a plain `starts_with(prefix)`
+# with no path-segment boundary check, so "lib/app/**" also matches
+# "lib/app_web.ex"/"lib/app_web/**" (wrong — "app" is a string-prefix of
+# "app_web", not a parent directory of it). The bare-prefix fallback
+# branch (used when the pattern has no glob suffix at all) DOES check for
+# a "/" boundary after the prefix, so it doesn't have this bug — use that
+# form instead. Revisit this once upstream fixes glob_match to enforce a
+# path-segment boundary on "/**" too.
+
+[constraints]
+# No import cycles between modules — Ash resources/domains and LiveViews
+# are meant to be a DAG (resource -> domain -> web), not a tangle.
+max_cycles = 0
+# Keep individual modules from growing into unreviewable god-files (the
+# same instinct as PeopleLive.Show already being the largest file in the
+# project at 547 lines — don't let anything meaningfully exceed that
+# without a deliberate decision to split it).
+no_god_files = true
+
+# NOTE on `order`: sentrux's auto-generated "layer_direction" check reads
+# it backwards from what the field doc says ("lower order = more
+# foundational = can be depended on") — empirically (sentrux-core's
+# check_layers: violation iff from_ord > to_ord) a layer can only import
+# layers with an EQUAL OR HIGHER order number than its own, i.e. higher
+# order = "more foundational/importable", lower order = "must not be
+# imported from". So the web layer (which legitimately imports the
+# domain) gets the LOWER number, and the domain (which must never import
+# web — see the explicit [[boundaries]] rule below, which checks the
+# opposite direction and is unaffected by this quirk) gets the HIGHER
+# number. Confirmed empirically against this exact codebase — don't
+# "fix" this back to the intuitive 0/1 ordering without re-testing.
+
+# Web layer: Phoenix/LiveView/controllers/plugs — the two UIs (standalone
+# forms + embedded Sheets sidebar) over the domain. Allowed to import
+# domain.
+[[layers]]
+name = "web"
+paths = ["lib/app_web"]
+order = 0
+
+# Domain layer: Ash resources/domains/validations/changes — the actual
+# business logic (people, orgs, positions, PersonRecord
+# kinds, audit). Must never import web (enforced twice over: here via
+# layer_direction, and explicitly via [[boundaries]] below).
+[[layers]]
+name = "domain"
+paths = ["lib/app"]
+order = 1
+
+# ADR-3/ADR-4: Sheets is a view over Postgres, not the source of truth,
+# and the domain resources must stay usable independent of any UI
+# (standalone forms today, a future Envoy+OPA gateway
+# tomorrow). The domain layer must never reach up into LiveView/
+# controller/plug code.
+[[boundaries]]
+from = "lib/app"
+to = "lib/app_web"
+reason = "Domain (Ash resources/domains) must not depend on the web layer — keeps the domain usable from any future front end, not just this Phoenix app."

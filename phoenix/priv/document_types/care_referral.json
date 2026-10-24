@@ -1,0 +1,157 @@
+{
+  "id": "care_referral",
+  "version": "1",
+  "label": "Referral for care",
+  "icon": "hero-arrow-top-right-on-square",
+  "summary": "Sends a person to a care provider for a consultation, examination or treatment.",
+  "category": "medical",
+  "access": {
+    "read": [
+      "medical.read"
+    ],
+    "write": "medical.write"
+  },
+  "register": {
+    "code": "напр",
+    "format": "{seq}-{code}"
+  },
+  "retention_years": 25,
+  "template": "care_referral.typ",
+  "route": [
+    {
+      "action": "sign",
+      "label": "Referring clinician",
+      "permission": "medical.write"
+    }
+  ],
+  "effects": [
+    "open_discharge_summary"
+  ],
+  "basis": [],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+      "provider",
+      "service",
+      "priority",
+      "reason"
+    ],
+    "properties": {
+      "provider": {
+        "type": "string",
+        "x-entity": "provider",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+        "x-help": "From the register of care providers; our own units are listed first."
+      },
+      "service": {
+        "type": "string",
+        "enum": [
+          "consultation",
+          "diagnostics",
+          "hospitalization",
+          "surgery",
+          "rehabilitation"
+        ],
+        "x-enum-labels": {
+          "consultation": "Consultation",
+          "diagnostics": "Diagnostics",
+          "hospitalization": "Hospitalization",
+          "surgery": "Surgery",
+          "rehabilitation": "Rehabilitation"
+        }
+      },
+      "priority": {
+        "type": "string",
+        "enum": [
+          "routine",
+          "urgent",
+          "asap",
+          "stat"
+        ],
+        "x-enum-labels": {
+          "routine": "Routine",
+          "urgent": "Urgent",
+          "asap": "As soon as possible",
+          "stat": "Immediately"
+        },
+        "x-help": "FHIR request priority."
+      },
+      "reason": {
+        "type": "string",
+        "maxLength": 1000,
+        "x-help": "The problem or suspected diagnosis the provider is asked to address."
+      },
+      "reasonCode": {
+        "type": "string",
+        "pattern": "^[A-TV-Z][0-9]{2}(\\.[0-9A-Z]{1,4})?$",
+        "x-help": "ICD-10 code, e.g. S83.2."
+      },
+      "plannedDate": {
+        "type": "string",
+        "format": "date"
+      },
+      "note": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "additionalProperties": false
+  },
+  "ui": {
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/provider",
+        "label": "Care provider"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/service",
+            "label": "Service"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/priority",
+            "label": "Priority"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/reason",
+        "label": "Reason",
+        "options": {
+          "multi": true
+        }
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/reasonCode",
+            "label": "ICD-10 code"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/plannedDate",
+            "label": "Planned date"
+          }
+        ]
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/note",
+        "label": "Notes",
+        "options": {
+          "multi": true
+        }
+      }
+    ]
+  }
+}

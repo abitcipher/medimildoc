@@ -1,0 +1,133 @@
+{
+  "description": "Starting file plan (docs/design/registers-file-plan.md). Retention periods and article references are PLACEHOLDERS to be verified by the records officer against the list of standard documents in force for the organisation; they are not an authoritative list.",
+  "cases": [
+    {
+      "index": "01-01",
+      "title": "Вхідні листи та документи до них",
+      "retention": "3 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 3,
+      "document_types": [
+        "incoming_letter"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "01-02",
+      "title": "Копії вихідних листів",
+      "retention": "3 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 3,
+      "document_types": [
+        "outgoing_letter"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "03-01",
+      "title": "Накази з кадрових питань (особового складу): призначення, переміщення, звільнення, присвоєння звань",
+      "retention": "75 р.",
+      "retention_ref": "ст. 16-б",
+      "permanent": false,
+      "retention_years": 75,
+      "document_types": [
+        "personnel_order_appointment",
+        "personnel_order_transfer",
+        "personnel_order_dismissal",
+        "personnel_order_grade"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "03-02",
+      "title": "Накази з кадрових питань: відпустки, відрядження",
+      "retention": "5 р.",
+      "retention_ref": "ст. 16-б",
+      "permanent": false,
+      "retention_years": 5,
+      "document_types": [
+        "personnel_order_leave",
+        "personnel_order_business_trip"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "03-03",
+      "title": "Рапорти про надання відпусток і направлення у відрядження",
+      "retention": "5 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 5,
+      "document_types": [
+        "leave_request",
+        "business_trip_request"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "03-04",
+      "title": "Копії виданих довідок",
+      "retention": "3 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 3,
+      "document_types": [
+        "certificate_service",
+        "certificate_pay",
+        "certificate_family",
+        "certificate_leave"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "05-01",
+      "title": "Направлення на лікування",
+      "retention": "5 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 5,
+      "document_types": [
+        "care_referral"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "05-02",
+      "title": "Виписки із медичних карт стаціонарного хворого",
+      "retention": "25 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 25,
+      "document_types": [
+        "discharge_summary"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "05-03",
+      "title": "Направлення на військово-лікарську комісію",
+      "retention": "5 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 5,
+      "document_types": [
+        "medical_board_referral"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    },
+    {
+      "index": "05-04",
+      "title": "Висновки військово-лікарської комісії",
+      "retention": "75 р.",
+      "retention_ref": null,
+      "permanent": false,
+      "retention_years": 75,
+      "document_types": [
+        "medical_board_conclusion"
+      ],
+      "note": "Строк і стаття — заглушка; перевірте за чинним переліком."
+    }
+  ]
+}

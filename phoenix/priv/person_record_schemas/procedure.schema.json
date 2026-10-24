@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "x-category": "care",
+  "x-confidentiality": "r",
+  "x-classification": null,
+  "x-version": "1",
+  "x-label": "Procedure",
+  "x-icon": "hero-scissors",
+  "x-summary": "An intervention done for the person: tourniquet, airway, chest seal, IV/IO access and the like, where and with what result.",
+  "x-part-of": ["encounter"],
+  "title": "Procedure",
+  "description": "FHIR Procedure-flavored (not conformant). `code` is the app's own list of field-care interventions, ordered as in TCCC MARCH (massive haemorrhage, airway, respiration, circulation, hypothermia/head, other); FHIR would use SNOMED CT, which needs a licence. `endedAt` is when it ended, e.g. a tourniquet converted or removed.",
+  "type": "object",
+  "required": ["performed", "status", "code"],
+  "properties": {
+    "code": {
+      "type": "string",
+      "enum": [
+        "tourniquet_limb", "tourniquet_junctional", "wound_packing", "pressure_dressing",
+        "nasopharyngeal_airway", "supraglottic_airway", "intubation", "cricothyroidotomy",
+        "chest_seal", "needle_decompression", "finger_thoracostomy", "chest_tube",
+        "iv_access", "io_access", "transfusion", "pelvic_binder",
+        "hypothermia_prevention", "splint", "spinal_motion_restriction", "eye_shield",
+        "burn_dressing", "wound_irrigation", "cpr", "defibrillation", "other"
+      ],
+      "x-enum-labels": {
+        "tourniquet_limb": "Limb tourniquet",
+        "tourniquet_junctional": "Junctional tourniquet",
+        "wound_packing": "Wound packing (haemostatic dressing)",
+        "pressure_dressing": "Pressure dressing",
+        "nasopharyngeal_airway": "Nasopharyngeal airway",
+        "supraglottic_airway": "Supraglottic airway",
+        "intubation": "Endotracheal intubation",
+        "cricothyroidotomy": "Surgical cricothyroidotomy",
+        "chest_seal": "Chest seal",
+        "needle_decompression": "Needle decompression",
+        "finger_thoracostomy": "Finger thoracostomy",
+        "chest_tube": "Chest tube",
+        "iv_access": "IV access",
+        "io_access": "IO access",
+        "transfusion": "Blood transfusion",
+        "pelvic_binder": "Pelvic binder",
+        "hypothermia_prevention": "Hypothermia prevention",
+        "splint": "Splint",
+        "spinal_motion_restriction": "Spinal motion restriction",
+        "eye_shield": "Rigid eye shield",
+        "burn_dressing": "Burn dressing",
+        "wound_irrigation": "Wound irrigation",
+        "cpr": "CPR",
+        "defibrillation": "Defibrillation",
+        "other": "Other"
+      }
+    },
+    "detail": { "type": "string", "maxLength": 500, "x-help": "What exactly, e.g. the device used, or the procedure when Other." },
+    "status": {
+      "type": "string",
+      "enum": ["completed", "in-progress", "not-done", "entered-in-error"],
+      "x-enum-labels": {
+        "completed": "Done",
+        "in-progress": "In progress",
+        "not-done": "Not done",
+        "entered-in-error": "Entered in error"
+      }
+    },
+    "performed": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$"
+    },
+    "endedAt": {
+      "type": "string",
+      "x-format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}$",
+      "x-help": "When it ended, e.g. a tourniquet converted or removed."
+    },
+    "bodySite": { "type": "string", "maxLength": 200, "x-help": "E.g. left thigh, right chest." },
+    "side": {
+      "type": "string",
+      "enum": ["left", "right", "bilateral", "midline"],
+      "x-enum-labels": { "left": "Left", "right": "Right", "bilateral": "Both sides", "midline": "Midline" }
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["successful", "partially-successful", "unsuccessful"],
+      "x-enum-labels": {
+        "successful": "Successful",
+        "partially-successful": "Partly successful",
+        "unsuccessful": "Unsuccessful"
+      }
+    },
+    "note": { "type": "string", "maxLength": 2000 }
+  },
+  "additionalProperties": false
+}

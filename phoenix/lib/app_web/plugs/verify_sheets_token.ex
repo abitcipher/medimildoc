@@ -6,7 +6,7 @@ defmodule AppWeb.Plugs.VerifySheetsToken do
 
   The LiveView socket itself does NOT go through this plug — its token
   arrives via `connect_params` and is verified directly in
-  `AppWeb.SheetsLive.mount/3` (see there), per ADR-3. This plug exists for
+  `AppWeb.SheetsLive.mount/3` (see there). This plug exists for
   any *non*-LiveView route that needs the same verification. Not wired into
   any pipeline yet — nothing uses it until M2 adds such a route.
   """

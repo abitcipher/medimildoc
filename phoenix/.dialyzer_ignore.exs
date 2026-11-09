@@ -15,7 +15,7 @@
   # call site). Only triggered once a locale with a non-default
   # `Plural-Forms` header exists — first hit when the `uk` locale
   # (i18n) was merged; English's default `nplurals=2;
-  # plural=(n != 1);` doesn't hit this path. Adding `fr` 
+  # plural=(n != 1);` doesn't hit this path. Adding `fr`
   # ("full UI translation") triggers a second, distinct instance of the
   # same underlying issue (`nplurals=2; plural=(n>1);` — a different
   # formula from both `en`'s and `uk`'s) — this file-level (not

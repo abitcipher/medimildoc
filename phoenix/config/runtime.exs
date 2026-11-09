@@ -137,7 +137,7 @@ if config_env() == :prod do
          :require_second_approval,
          System.get_env("REQUIRE_SECOND_APPROVAL") in ~w(true 1)
 
-  # ADR-3 / ADR-5: must match the Apps Script shim's `SHARED_SECRET` script
+  # Must match the Apps Script shim's `SHARED_SECRET` script
   # property exactly (see apps_script/README.md) — no dev-only fallback here.
   config :app,
          :sheets_shared_secret,

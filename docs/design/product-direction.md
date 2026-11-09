@@ -45,7 +45,7 @@ goes into the web application.
 | Piece | What it does | Standard / best practice |
 |---|---|---|
 | **Document types** declared in JSON (like record kinds): fields (JSON Schema + UI Schema), route, template, numbering rule, retention, effect | adding a document type needs no code, as with record kinds | ISO 15489 (records management), MoReq2010 metadata; national rules for organisational documents (in Ukraine ДСТУ 4163) |
-| **Document** with a lifecycle: draft → in approval → approved → signed → registered → in force → executed / cancelled | state machine, every transition logged with who/when/why | ISO 15489 audit trail; our ADR-8 conflict log |
+| **Document** with a lifecycle: draft → in approval → approved → signed → registered → in force → executed / cancelled | state machine, every transition logged with who/when/why | ISO 15489 audit trail; our change-conflict log |
 | **Approval routes**: sequential and parallel steps, by role or by post in the chain of command, with deadlines, delegation, return for rework | the chain of command already exists (posts, "reports to") | BPMN 2.0 concepts (user task, gateway), kept declarative in JSON |
 | **Tasks and inbox** ("my tasks"): what waits for me to approve, sign, acknowledge or execute, with due dates and overdue marks | the first screen for most users instead of a list of people | standard in every ERP/EDMS |
 | **Registration**: registers (journals) with numbering per type and year, incoming/outgoing/internal, file plan (номенклатура справ) | numbers are never reused; cancelled documents stay | ISO 15489, national records rules |

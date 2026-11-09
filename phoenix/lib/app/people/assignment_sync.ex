@@ -396,7 +396,7 @@ defmodule App.People.AssignmentSync do
     has a personnel order open (a draft or in approval) is skipped, so an
     import twice drafts nothing twice;
   - a corrected start date is applied directly (a correction of the
-    record, audited like any direct change; last write wins, ADR-8, and a
+    record, audited like any direct change; last write wins, and a
     row changed since export is logged as a `ChangeConflict`).
 
   Returns `%{drafted: n, corrected: n, documents: [id], skipped: [{row,

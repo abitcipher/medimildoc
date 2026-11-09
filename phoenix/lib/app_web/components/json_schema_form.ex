@@ -492,8 +492,7 @@ defmodule AppWeb.JsonSchemaForm do
   defp step(_field_schema), do: nil
 
   # Tooltip text: the user-facing `x-help` only. A property's JSON Schema
-  # `description` is developer documentation (standards notes, DEVLOG
-  # references) and is never shown to users.
+  # `description` is developer documentation (standards notes) and is never shown to users.
   # A fixed suggestion list named by `x-suggest-list`, in the user's language.
   defp suggest_list(%{"x-suggest-list" => "drugs"}),
     do: Drugs.names(Gettext.get_locale(AppWeb.Gettext))

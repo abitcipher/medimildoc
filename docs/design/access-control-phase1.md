@@ -257,7 +257,7 @@ expand-contract rule anyway:
 3. Synthetic data generator (makes 1–2 testable by hand).
 4. Encryption at rest.
 5. Access log and `/access-log`.
-6. Docs: rules, DEVLOG entry, go-live checklist
+6. Docs: rules, go-live checklist
    (`ADMIN_FULL_DATA_ACCESS=false`, key custody).
 
 Each step ends green on the full quality gate and is committed

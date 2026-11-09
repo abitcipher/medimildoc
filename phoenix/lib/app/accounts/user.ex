@@ -2,8 +2,8 @@ defmodule App.Accounts.User do
   @moduledoc """
   A user of the standalone forms UI (`/people`, `/organizations`,
   `/positions`): Google OAuth, three-tier `role`
-  (`:admin`/`:hr`/`:viewer`). Unrelated to `App.SheetsToken`
-  (ADR-3): that HMAC token authenticates the *embedded* `/sheets` LiveView
+  (`:admin`/`:hr`/`:viewer`). Unrelated to `App.SheetsToken`:
+  that HMAC token authenticates the *embedded* `/sheets` LiveView
   session inside the Google Sheets sidebar, a completely different trust
   boundary with no login screen at all (identity comes from
   `Session.getActiveUser()` inside the Apps Script sandbox). This resource

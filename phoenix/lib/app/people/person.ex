@@ -94,7 +94,7 @@ defmodule App.People.Person do
     # free-text — administrative subdivisions and settlement names don't
     # have one universal code), forcing a closed code list on country of
     # birth would wrongly reject entries for places whose sovereignty
-    # changed, historical states, etc. Same reasoning as 
+    # changed, historical states, etc. Same reasoning as
     # `grade` fields: shape, not a verified authoritative list.
     attribute :birth_country, :string do
       allow_nil? true

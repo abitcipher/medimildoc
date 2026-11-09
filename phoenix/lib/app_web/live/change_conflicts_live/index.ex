@@ -3,7 +3,7 @@ defmodule AppWeb.ChangeConflictsLive.Index do
   View of `App.Audit.ChangeConflict` ) —
   the "observability" half of "last-write-wins, but log the incident".
   Read-only: nothing here ever resolves or dismisses a conflict, since
-  ADR-8 doesn't call for a resolution workflow, only a record that a
+  the design doesn't call for a resolution workflow, only a record that a
   collision happened. Needs `audit.read` (the CISO profile; route gate
   in the router, real enforcement in the resource policy) — conflict records can name any user
   involved as the overwriting actor, which is exactly the kind of detail
@@ -36,7 +36,7 @@ defmodule AppWeb.ChangeConflictsLive.Index do
             {gettext("Change conflicts")}
             <.field_description description={
               gettext(
-                "ADR-8: edits always win last-write-wins — nothing here was blocked or lost data beyond what last-write-wins itself implies. Each row is a detected case where a save was based on a version of a record that someone else had already changed by the time it was written."
+                "Edits always win last-write-wins — nothing here was blocked or lost data beyond what last-write-wins itself implies. Each row is a detected case where a save was based on a version of a record that someone else had already changed by the time it was written."
               )
             } />
           </h1>

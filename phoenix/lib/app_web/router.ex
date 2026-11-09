@@ -60,7 +60,7 @@ defmodule AppWeb.Router do
   # signed-in user at minimum; three routes below additionally require an
   # :admin/:hr role via a second on_mount hook stacked
   # after :live_user_required. Unrelated to `/sheets` below: that's
-  # ADR-3's separate HMAC-token trust boundary for the embedded sidebar
+  # the separate HMAC-token trust boundary for the embedded sidebar
   # session, not a Google-authenticated browser user.
   # FHIR R5 read API (docs/design/fhir-api.md): bearer tokens, no session.
   pipeline :fhir do
@@ -235,7 +235,7 @@ defmodule AppWeb.Router do
     sign_out_route AuthController, "/sign-out",
       overrides: [AppWeb.AuthOverrides, AshAuthentication.Phoenix.Overrides.Default]
 
-    # Only the Google strategy is configured on App.Accounts.User 
+    # Only the Google strategy is configured on App.Accounts.User
     # "just authenticated vs not", no password/magic-link/
     # confirmation strategies), so `sign_in_route` needs neither
     # `register_path`/`reset_path` (password-strategy-only options) nor the

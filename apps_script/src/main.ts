@@ -104,7 +104,7 @@ function getContext(): SheetContext {
     a1: activeRange ? activeRange.getA1Notation() : '',
     email: Session.getActiveUser().getEmail(),
     token: mintToken(ss.getId()),
-    // ADR-5: the user's own Sheets-scoped OAuth token, forwarded as-is so
+    // The user's own Sheets-scoped OAuth token, forwarded as-is so
     // Phoenix can call the Sheets API on their behalf. Always fresh/valid —
     // GAS mints it per execution, no manual refresh needed on our end.
     googleAccessToken: ScriptApp.getOAuthToken(),

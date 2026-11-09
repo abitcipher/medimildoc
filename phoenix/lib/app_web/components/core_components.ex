@@ -732,7 +732,7 @@ defmodule AppWeb.CoreComponents do
 
   @doc """
   Human, translated label for an `App.Accounts.User.role` value
-  (docs/DEVLOG.md §16/§38 "full UI translation") — the raw atom (`:admin`/
+  (full UI translation) — the raw atom (`:admin`/
   `:hr`/`:viewer`) was displayed directly in three places
   (`Layouts.app`'s account badge, `UsersLive.Index`'s role `<select>`,
   `home.html.heex`'s signed-in line); a `Gettext.PO`-catalog string,

@@ -47,9 +47,9 @@ the tunnel's own hostname, or Phoenix's `check_origin` rejects the
 WebSocket handshake outright. Swap `APP_ORIGIN` back to the real one
 before any actual deploy.
 
-`appsscript.json` declares explicit `oauthScopes` (minimal-privilege, ADR-7):
+`appsscript.json` declares explicit `oauthScopes` (minimal privilege):
 `spreadsheets` (SpreadsheetApp reads here + the OAuth token forwarded to
-Phoenix, ADR-5), `script.container.ui` (menu/sidebar), `script.external_request`
+Phoenix), `script.container.ui` (menu/sidebar), `script.external_request`
 (the onEdit webhook's `UrlFetchApp.fetch` to our own, non-Google domain),
 `userinfo.email`. Providing this list explicitly means GAS no longer
 auto-detects scopes from what the script calls — if you add a call needing a

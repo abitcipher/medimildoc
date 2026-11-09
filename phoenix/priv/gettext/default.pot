@@ -25,7 +25,7 @@ msgstr ""
 msgid "Assign to a position"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:329
+#: lib/app_web/live/people_live/show.ex:327
 #, elixir-autogen, elixir-format
 msgid "Assignment created"
 msgstr ""
@@ -35,12 +35,12 @@ msgstr ""
 msgid "Assignment history"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:390
+#: lib/app_web/live/people_live/show.ex:388
 #, elixir-autogen, elixir-format
 msgid "Assignment removed"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:370
+#: lib/app_web/live/people_live/show.ex:368
 #, elixir-autogen, elixir-format
 msgid "Assignment updated"
 msgstr ""
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Change conflicts"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:286
+#: lib/app_web/live/people_live/show.ex:284
 #, elixir-autogen, elixir-format
 msgid "Could not delete %{name}: still has assignments or records — remove those first (%{reason})"
 msgstr ""
@@ -99,12 +99,12 @@ msgstr ""
 msgid "Could not delete %{title}: still has assignments or positions reporting to it — remove those first (%{reason})"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:399
+#: lib/app_web/live/people_live/show.ex:397
 #, elixir-autogen, elixir-format
 msgid "Could not remove assignment: %{reason}"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:732
+#: lib/app_web/live/people_live/show.ex:730
 #, elixir-autogen, elixir-format
 msgid "Could not remove record: %{reason}"
 msgstr ""
@@ -118,7 +118,7 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:908
+#: lib/app_web/live/people_live/show.ex:906
 #, elixir-autogen, elixir-format
 msgid "Current position"
 msgstr ""
@@ -126,7 +126,7 @@ msgstr ""
 #: lib/app_web/components/data_list.ex:125
 #: lib/app_web/components/record_components.ex:165
 #: lib/app_web/live/organizations_live/index.ex:227
-#: lib/app_web/live/people_live/show.ex:890
+#: lib/app_web/live/people_live/show.ex:888
 #: lib/app_web/live/person_files_component.ex:309
 #: lib/app_web/live/positions_live/index.ex:216
 #, elixir-autogen, elixir-format
@@ -139,7 +139,7 @@ msgstr ""
 msgid "Delete %{name}?"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:885
+#: lib/app_web/live/people_live/show.ex:883
 #, elixir-autogen, elixir-format
 msgid "Delete %{name}? This cannot be undone."
 msgstr ""
@@ -155,7 +155,7 @@ msgstr ""
 #: lib/app_web/live/care_providers_live/index.ex:176
 #: lib/app_web/live/organizations_live/index.ex:218
 #: lib/app_web/live/organizations_live/index.ex:239
-#: lib/app_web/live/people_live/show.ex:879
+#: lib/app_web/live/people_live/show.ex:877
 #: lib/app_web/live/positions_live/index.ex:207
 #: lib/app_web/live/positions_live/index.ex:228
 #: lib/app_web/live/rules_live/index.ex:151
@@ -235,8 +235,8 @@ msgstr ""
 msgid "No assignments yet."
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:837
-#: lib/app_web/live/people_live/show.ex:922
+#: lib/app_web/live/people_live/show.ex:835
+#: lib/app_web/live/people_live/show.ex:920
 #, elixir-autogen, elixir-format
 msgid "No current assignment."
 msgstr ""
@@ -293,7 +293,7 @@ msgstr ""
 msgid "Person created"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:278
+#: lib/app_web/live/people_live/show.ex:276
 #, elixir-autogen, elixir-format
 msgid "Person deleted"
 msgstr ""
@@ -305,7 +305,7 @@ msgstr ""
 
 #: lib/app_web/components/person_list_sections.ex:50
 #: lib/app_web/live/people_list_component.ex:132
-#: lib/app_web/live/people_live/show.ex:911
+#: lib/app_web/live/people_live/show.ex:909
 #: lib/app_web/schema_text.ex:0
 #, elixir-autogen, elixir-format
 msgid "Position"
@@ -334,23 +334,23 @@ msgstr ""
 msgid "Positions"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:753
+#: lib/app_web/live/people_live/show.ex:751
 #, elixir-autogen, elixir-format
 msgid "Record added"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:724
+#: lib/app_web/live/people_live/show.ex:722
 #, elixir-autogen, elixir-format
 msgid "Record removed"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:771
+#: lib/app_web/live/people_live/show.ex:769
 #, elixir-autogen, elixir-format
 msgid "Record updated"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:901
-#: lib/app_web/live/people_live/show.ex:983
+#: lib/app_web/live/people_live/show.ex:899
+#: lib/app_web/live/people_live/show.ex:981
 #, elixir-autogen, elixir-format
 msgid "Records"
 msgstr ""
@@ -472,12 +472,12 @@ msgstr ""
 msgid "Add an identifier"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:584
+#: lib/app_web/live/people_live/show.ex:582
 #, elixir-autogen, elixir-format
 msgid "Could not remove document: %{reason}"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:492
+#: lib/app_web/live/people_live/show.ex:490
 #, elixir-autogen, elixir-format
 msgid "Could not remove identifier: %{reason}"
 msgstr ""
@@ -495,17 +495,17 @@ msgstr ""
 msgid "Current"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:514
+#: lib/app_web/live/people_live/show.ex:512
 #, elixir-autogen, elixir-format
 msgid "Document added"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:576
+#: lib/app_web/live/people_live/show.ex:574
 #, elixir-autogen, elixir-format
 msgid "Document removed"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:556
+#: lib/app_web/live/people_live/show.ex:554
 #, elixir-autogen, elixir-format
 msgid "Document updated"
 msgstr ""
@@ -515,17 +515,17 @@ msgstr ""
 msgid "Expires"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:421
+#: lib/app_web/live/people_live/show.ex:419
 #, elixir-autogen, elixir-format
 msgid "Identifier added"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:484
+#: lib/app_web/live/people_live/show.ex:482
 #, elixir-autogen, elixir-format
 msgid "Identifier removed"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:464
+#: lib/app_web/live/people_live/show.ex:462
 #, elixir-autogen, elixir-format
 msgid "Identifier updated"
 msgstr ""
@@ -597,7 +597,7 @@ msgstr ""
 msgid "Save identifier"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:863
+#: lib/app_web/live/people_live/show.ex:861
 #, elixir-autogen, elixir-format
 msgid "Secondary identifier — not the record's real key"
 msgstr ""
@@ -624,7 +624,7 @@ msgstr ""
 msgid "Superseded"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:899
+#: lib/app_web/live/people_live/show.ex:897
 #: lib/app_web/sheet_layout.ex:111
 #, elixir-autogen, elixir-format
 msgid "Assignments"
@@ -640,7 +640,7 @@ msgstr ""
 msgid "Close sidebar"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:900
+#: lib/app_web/live/people_live/show.ex:898
 #, elixir-autogen, elixir-format
 msgid "Identity"
 msgstr ""
@@ -663,7 +663,7 @@ msgstr ""
 
 #: lib/app_web/live/change_conflicts_live/index.ex:38
 #, elixir-autogen, elixir-format
-msgid "ADR-8: edits always win last-write-wins — nothing here was blocked or lost data beyond what last-write-wins itself implies. Each row is a detected case where a save was based on a version of a record that someone else had already changed by the time it was written."
+msgid "Edits always win last-write-wins — nothing here was blocked or lost data beyond what last-write-wins itself implies. Each row is a detected case where a save was based on a version of a record that someone else had already changed by the time it was written."
 msgstr ""
 
 #: lib/app_web/components/core_components.ex:742
@@ -886,7 +886,7 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:1022
+#: lib/app_web/live/people_live/show.ex:1020
 #, elixir-autogen, elixir-format
 msgid "Add record"
 msgstr ""
@@ -901,7 +901,7 @@ msgstr ""
 msgid "After this date the clearance must be renewed."
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:996
+#: lib/app_web/live/people_live/show.ex:994
 #, elixir-autogen, elixir-format
 msgid "All"
 msgstr ""
@@ -1009,7 +1009,7 @@ msgstr ""
 #: lib/app_web/live/duty_roster_live.ex:293
 #: lib/app_web/live/events_live/index.ex:210
 #: lib/app_web/live/org_graph_live.ex:742
-#: lib/app_web/live/people_live/show.ex:1022
+#: lib/app_web/live/people_live/show.ex:1020
 #: lib/app_web/live/sheets_live.ex:426
 #, elixir-autogen, elixir-format
 msgid "Close"
@@ -1632,7 +1632,7 @@ msgid "Remission"
 msgstr ""
 
 #: lib/app_web/live/org_graph_live.ex:330
-#: lib/app_web/live/people_live/show.ex:927
+#: lib/app_web/live/people_live/show.ex:925
 #: lib/app_web/schema_text.ex:0
 #, elixir-autogen, elixir-format
 msgid "Reports to"
@@ -1701,7 +1701,7 @@ msgstr ""
 msgid "Severity"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:986
+#: lib/app_web/live/people_live/show.ex:984
 #, elixir-autogen, elixir-format
 msgid "Show records of category"
 msgstr ""
@@ -1842,7 +1842,7 @@ msgstr ""
 msgid "Vetting"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:1031
+#: lib/app_web/live/people_live/show.ex:1029
 #, elixir-autogen, elixir-format
 msgid "What kind of record?"
 msgstr ""
@@ -2011,7 +2011,7 @@ msgstr ""
 msgid "Allergies:"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:944
+#: lib/app_web/live/people_live/show.ex:942
 #, elixir-autogen, elixir-format
 msgid "Direct reports"
 msgstr ""
@@ -2041,7 +2041,7 @@ msgstr ""
 msgid "expires soon"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:919
+#: lib/app_web/live/people_live/show.ex:917
 #: lib/app_web/sheet_card.ex:71
 #, elixir-autogen, elixir-format
 msgid "since %{date}"
@@ -2276,7 +2276,7 @@ msgstr ""
 msgid "Same email: %{name}"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:857
+#: lib/app_web/live/people_live/show.ex:855
 #, elixir-autogen, elixir-format
 msgid "Sign-in account linked to this person"
 msgstr ""
@@ -2309,7 +2309,7 @@ msgstr[1] ""
 msgid "Emergency access"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:608
+#: lib/app_web/live/people_live/show.ex:606
 #, elixir-autogen, elixir-format
 msgid "Emergency access granted. Every view is logged."
 msgstr ""
@@ -2512,7 +2512,7 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:847
+#: lib/app_web/live/people_live/show.ex:845
 #, elixir-autogen, elixir-format
 msgid "Date and place of birth"
 msgstr ""
@@ -2712,7 +2712,7 @@ msgstr ""
 
 #: lib/app_web/components/record_components.ex:214
 #: lib/app_web/live/document_files_component.ex:61
-#: lib/app_web/live/people_live/show.ex:902
+#: lib/app_web/live/people_live/show.ex:900
 #, elixir-autogen, elixir-format
 msgid "Files"
 msgstr ""
@@ -2732,7 +2732,7 @@ msgstr ""
 msgid "No files yet."
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:812
+#: lib/app_web/live/people_live/show.ex:810
 #, elixir-autogen, elixir-format
 msgid "Photo of %{name}"
 msgstr ""
@@ -4170,7 +4170,7 @@ msgstr ""
 
 #: lib/app_web/controllers/export_controller.ex:123
 #: lib/app_web/live/file_plan_live.ex:343
-#: lib/app_web/live/people_live/show.ex:903
+#: lib/app_web/live/people_live/show.ex:901
 #: lib/app_web/live/search_live.ex:72
 #, elixir-autogen, elixir-format
 msgid "Documents"
@@ -5841,7 +5841,7 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: lib/app_web/live/people_live/show.ex:904
+#: lib/app_web/live/people_live/show.ex:902
 #, elixir-autogen, elixir-format
 msgid "Timeline"
 msgstr ""

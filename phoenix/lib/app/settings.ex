@@ -30,7 +30,7 @@ defmodule App.Settings do
     # logged, App.EventLog).
     "events.logging" => true,
     "events.publishing" => false,
-    #signing in with a PersonID and a password.
+    # signing in with a PersonID and a password.
     "auth.person_login" => true
   }
 

@@ -55,7 +55,7 @@ name = "domain"
 paths = ["lib/app"]
 order = 1
 
-# ADR-3/ADR-4: Sheets is a view over Postgres, not the source of truth,
+# Sheets is a view over Postgres, not the source of truth,
 # and the domain resources must stay usable independent of any UI
 # (standalone forms today, a future Envoy+OPA gateway
 # tomorrow). The domain layer must never reach up into LiveView/

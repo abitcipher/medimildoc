@@ -22,7 +22,7 @@ a thin iframe host. See `/` for the full picture.
   `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` env vars, and register
   `http://localhost:4000/auth/user/google/callback` as an Authorized
   redirect URI. `/sheets` (the embedded sidebar) is unaffected — separate
-  ADR-3 token auth, no login screen.
+  HMAC token auth, no login screen.
 
 ## M0/M1 status
 
@@ -33,17 +33,17 @@ a thin iframe host. See `/` for the full picture.
   https://docs.google.com` and drops `x-frame-options`, scoped to the
   `/sheets` route only (other routes keep Phoenix's default
   `frame-ancestors 'self'`).
-* **M1 (§8 step 4-5, ADR-3):** `assets/js/sheets_bridge.js` holds the
+* **M1:** `assets/js/sheets_bridge.js` holds the
   LiveSocket connect until the parent sidebar answers a postMessage
   `REQUEST_CONTEXT` with `{spreadsheetId, sheetName, a1, email, token}` (or
   it times out / isn't embedded at all — e.g. opening `/sheets` directly in
   a plain tab during local dev). The token then rides as a `connect_params`
   entry (`sheets_token`) and `AppWeb.SheetsLive.mount/3` verifies it via
   `App.SheetsToken` — not a Plug, since connect_params only exist once the
-  socket is up, matching ADR-3's "LiveView verifies at mount/3". Only `sub`
+  socket is up, matching the "LiveView verifies at mount/3" rule. Only `sub`
   (email) and `ssid` (spreadsheet id) are cryptographically covered by the
   signature; `sheetName`/`a1` ride unsigned and are informational only.
-* **M2 (§8 steps 6-7, ADR-5):**
+* **M2:**
   * `App.Google.Sheets` — thin Sheets API v4 client (`Req`). Every call takes
     the caller's own Google access token explicitly; never a shared
     service-account/`goth` token (`goth` only re-enters the picture for
@@ -60,7 +60,7 @@ a thin iframe host. See `/` for the full picture.
     same HMAC way as the LiveView's `sheets_token`. On success it calls
     `App.Sheets.notify_edit/2`, which broadcasts over `Phoenix.PubSub` to
     `"sheets:#{spreadsheet_id}"`; any `AppWeb.SheetsLive` subscribed to that
-    spreadsheet re-fetches its range. Per §6, `onEdit` isn't transactional
+    spreadsheet re-fetches its range. `onEdit` isn't transactional
     and delivery isn't guaranteed — this is a best-effort nudge 
     Sheets is a view, never the source of truth), not a critical path.
 
@@ -70,7 +70,7 @@ a thin iframe host. See `/` for the full picture.
   kickoff decision) — the forms UI below is hand-rolled instead.
   * `App.People.Organization` — self-referential company/department/
     team/military-unit-echelon (`kind`, an open-ended atom — NATO-style
-    decomposition per §1, extend by adding an atom, not a migration).
+    decomposition, extend by adding an atom, not a migration).
   * `App.People.Position` — a billet in an org, with an optional
     `reports_to` position. Reporting chains attach to the *position*, not
     the person (NATO/military convention) — `App.People.current_manager/2`
@@ -80,11 +80,11 @@ a thin iframe host. See `/` for the full picture.
     that accrues over a person's life stays out of this resource.
   * `App.People.Assignment` — a person's full assignment history to a
     position (`ends_on: nil` = current), not a single overwritten field.
-  * `App.People.PersonRecord` — §1's "modular growth" mechanism: JSONB
+  * `App.People.PersonRecord` — the "modular growth" mechanism: JSONB
     `data` + a `kind` atom selecting which JSON Schema
     (`App.People.PersonRecordSchema`, loaded from
     `priv/person_record_schemas/*.schema.json` + matching `*.ui.json`
-    UI Schemas — §1 mandates both) governs it, validated on
+    UI Schemas — both are required) governs it, validated on
     create/update via `ex_json_schema`. Ships with five kinds:
     `:medical_condition` (FHIR `Condition`-flavored, not conformant — see
     the M3 kickoff decision on why no FHIR library), `:status_change`
@@ -104,7 +104,7 @@ a thin iframe host. See `/` for the full picture.
     this environment** (Postgres client only, no server available here);
     run `mix ecto.migrate` yourself once Postgres is reachable.
 
-* **M3 forms UI (§1's "форма для ввода... композиция"):** a standalone
+* **M3 forms UI (input form + composition):** a standalone
   admin UI at `/people`, `/organizations`, `/positions` — not embedded in
   the Sheets sidebar (no `:embeddable` pipeline). No auth model yet: every
   page passes `AppWeb.PlaceholderActor.get()` as `actor` — replace once an

@@ -86,7 +86,7 @@ config :app,
   google_client_secret: System.get_env("GOOGLE_CLIENT_SECRET", "dev-placeholder-client-secret"),
   google_redirect_uri: System.get_env("GOOGLE_REDIRECT_URI", "http://localhost:4000/auth/")
 
-# ADR-3 / ADR-5: HMAC secret shared with the Apps Script shim's
+# HMAC secret shared with the Apps Script shim's
 # `SHARED_SECRET` script property (see apps_script/README.md). Dev-only
 # fixed value so `mix phx.server` works without any Google setup — never
 # use this in prod (see config/runtime.exs, which requires the real env var).

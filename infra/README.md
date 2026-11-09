@@ -15,6 +15,40 @@ already installed and running.
 
 ---
 
+## Quick path (automated)
+
+Three scripts cover the manual steps below; read those for the details.
+
+```bash
+# 0. A dedicated SSH key for the deploy user (on your workstation)
+ssh-keygen -t ed25519 -N "" -f ~/.ssh/hrda_deploy
+
+# 1. Prepare the fresh VPS, once, as root: deploy user `hrda` with sudo
+#    and that key, swap, Docker + Compose, Nginx, certbot, firewall,
+#    unattended upgrades, /opt/medimildoc
+ssh root@<server> "DEPLOY_PUBKEY='$(cat ~/.ssh/hrda_deploy.pub)' bash -s" < infra/server/bootstrap.sh
+
+# 2. Deploy (every time): builds the images here, streams them to the
+#    server, syncs infra/, then on the server (infra/server/install.sh)
+#    creates infra/.env with fresh secrets on the first run, issues the
+#    Let's Encrypt certificate, installs the Nginx site and starts the stack
+SSH_KEY=~/.ssh/hrda_deploy infra/deploy.sh hrda@hrda.artcomplect.com
+```
+
+After the first deploy, fill in `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET`
+and copy `SHEETS_SHARED_SECRET` into the Apps Script project (section 3),
+then `docker compose up -d app` in `/opt/medimildoc/infra`. Back up
+`CLOAK_KEY` off the server.
+
+**GitHub Actions**: `.github/workflows/ci.yml` runs the checks on every
+push; `.github/workflows/deploy.yml` (manual, and after a green CI on
+`main`) pushes the images to `ghcr.io` and runs `infra/deploy.sh` in pull
+mode. It needs the repository secrets `DEPLOY_HOST`, `DEPLOY_USER` (`hrda`)
+and `DEPLOY_SSH_KEY` (the private half of the key above).
+
+Mail (`stalwart`) is not started unless `COMPOSE_PROFILES=mail` is set in
+`infra/.env` — see "Mail (Stalwart)" below.
+
 ## 1. One-time server setup
 
 Tested against Ubuntu 22.04/24.04; adjust package-manager commands if you're
@@ -46,13 +80,13 @@ it needs the domain to actually resolve here to issue a certificate.
 
 ## 1a. Nginx site config
 
-`infra/nginx/hrda.artcomplect.com.conf` is a **reference template** — on
-this deploy, the actual `server`/`upstream` blocks live inline in
-`/etc/nginx/sites-available/default` (a file shared with other sites on
-this box), not as their own file. Keep that file and this template in
-sync by hand; there's no `certbot --nginx` auto-edit step here, since the
-TLS cert (`/etc/letsencrypt/live/artcomplect.com/...`) already covers this
-subdomain.
+`infra/nginx/hrda.artcomplect.com.conf` is installed as-is as
+`/etc/nginx/sites-available/hrda.artcomplect.com` (symlinked into
+`sites-enabled`) by `infra/server/install.sh`. Its certificate is
+`/etc/letsencrypt/live/hrda.artcomplect.com/`, issued once with
+`sudo certbot certonly --nginx --cert-name hrda.artcomplect.com -d hrda.artcomplect.com`
+and renewed by certbot's timer. Edit the file in the repository, not on
+the server — the next deploy overwrites it.
 
 Read the comments at the top of `infra/nginx/hrda.artcomplect.com.conf`
 before changing the real config: every `proxy_set_header` in it maps to a
@@ -93,7 +127,7 @@ in every blank:
 The forms UI (`/people`, `/organizations`, `/positions`) requires a signed-in
 Google account to view at all — "just authenticated vs not", no roles yet
 The embedded `/sheets` sidebar route is unaffected: it
-authenticates via ADR-3's separate HMAC token, not this login.
+authenticates via its separate HMAC token, not this login.
 
 ## 4. Build and start
 
@@ -309,6 +343,10 @@ secrets go to `~/hrda-mail/`, never into the repository):
 ```bash
 cd ~/hrda && bash infra/mail/stalwart-setup.sh
 ```
+
+The service belongs to the `mail` compose profile: add
+`COMPOSE_PROFILES=mail` to `infra/.env` on the server that is the mail
+host, otherwise `docker compose up` leaves it out.
 
 What it does, step by step (the main commands):
 

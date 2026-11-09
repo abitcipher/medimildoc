@@ -6,8 +6,14 @@
 # its config. `app` binds only to loopback, never directly reachable from
 # the internet.
 #
-# Terraform (the *provisioning* half of ADR-6) isn't part of this pass —
-# this assumes the VPS already exists and Docker is installed on it.
+# This assumes the VPS already exists; infra/server/bootstrap.sh prepares
+# it (Docker, Nginx, firewall, deploy user) and infra/deploy.sh ships the
+# images and starts the stack.
+#
+# `app` and `ihds` have both `build:` and `image:` — `docker compose build`
+# tags the local build with that name, and a server that should not build
+# (small VPS) gets the same images from infra/deploy.sh or pulls them from
+# a registry (IMAGE_PREFIX/IMAGE_TAG, see .github/workflows/deploy.yml).
 
 services:
   db:
@@ -43,6 +49,7 @@ services:
   # (organisational names entered before, no link to any person) on the
   # ihds_data volume. No `ports:`: only the app talks to it.
   ihds:
+    image: ${IMAGE_PREFIX:-medimildoc}/ihds:${IMAGE_TAG:-latest}
     build:
       context: ../ihds
       dockerfile: Dockerfile
@@ -98,7 +105,11 @@ services:
   # TLS: the host certbot certificate, copied to ./mail-certs by the renewal
   # hook (infra/mail/certbot-deploy-hook.sh). The alias lets Apprise reach it
   # inside this network by the name on its certificate.
+  # Opt-in: started only with the `mail` profile (COMPOSE_PROFILES=mail in
+  # .env, after infra/mail/stalwart-setup.sh), so a box that is not the
+  # mail server never publishes ports 25/465/587/993.
   stalwart:
+    profiles: ["mail"]
     image: stalwartlabs/stalwart:v0.16.25
     restart: unless-stopped
     environment:
@@ -119,6 +130,7 @@ services:
           - mail.artcomplect.com
 
   app:
+    image: ${IMAGE_PREFIX:-medimildoc}/app:${IMAGE_TAG:-latest}
     build:
       context: ../phoenix
       dockerfile: Dockerfile
@@ -137,7 +149,7 @@ services:
     environment:
       DATABASE_URL: ecto://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB:-app_prod}
       SECRET_KEY_BASE: ${SECRET_KEY_BASE:?set SECRET_KEY_BASE in .env}
-      # ADR-3/ADR-5: must match the Apps Script shim's SHARED_SECRET script
+      # Must match the Apps Script shim's SHARED_SECRET script
       # property exactly — see apps_script/README.md.
       SHEETS_SHARED_SECRET: ${SHEETS_SHARED_SECRET:?set SHEETS_SHARED_SECRET in .env}
       # Signs JWTs for the standalone forms UI's login sessions

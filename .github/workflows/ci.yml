@@ -1,0 +1,198 @@
+# Quality gate on every push and pull request: format, compile warnings,
+# Credo, Dialyzer, tests and gettext catalogs for Phoenix, plus the Apps
+# Script typecheck, the IHDS Rust service (fmt, clippy, tests, seed up to
+# date) and builds of both production Docker images.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Superseded runs are cancelled only for pull requests: on main every run
+# finishes, so the Dialyzer PLT cache (slow to build) gets saved.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  phoenix:
+    runs-on: ubuntu-24.04
+    # Same toolchain as the production image (phoenix/Dockerfile builder).
+    container: hexpm/elixir:1.20.2-erlang-29.0.3-debian-trixie-20260713-slim
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      MIX_ENV: test
+      DB_HOST: postgres
+    defaults:
+      run:
+        working-directory: phoenix
+    steps:
+      - name: System packages
+        working-directory: /
+        run: apt-get update && apt-get install -y --no-install-recommends build-essential git ca-certificates
+
+      - uses: actions/checkout@v4
+
+      - name: Cache deps and build
+        uses: actions/cache@v4
+        with:
+          path: |
+            phoenix/deps
+            phoenix/_build
+          key: mix-${{ hashFiles('phoenix/mix.lock') }}
+          restore-keys: mix-
+
+      # The FSDC rules NIF (native/rules) is built by Rustler during compile.
+      - name: Rust
+        working-directory: /
+        run: |
+          apt-get install -y --no-install-recommends curl
+          curl -fsSL https://sh.rustup.rs | sh -s -- -y --profile minimal --default-toolchain 1.98.1
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+      - run: mix local.hex --force && mix local.rebar --force
+      - run: mix deps.get
+      # config :mime, :types (DICOM) is compiled into mime; a cached build
+      # of it may predate that config.
+      - run: mix deps.compile mime --force
+      - run: mix format --check-formatted
+      - run: mix compile --warnings-as-errors
+      - run: mix credo --strict
+      - run: mix gettext.extract --check-up-to-date
+      # Printed documents (App.Documents.Pdf) need Typst, as in the image.
+      - name: Typst
+        working-directory: /
+        run: |
+          apt-get install -y --no-install-recommends curl xz-utils
+          curl -fsSL -o /tmp/typst.tar.xz https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-unknown-linux-musl.tar.xz
+          echo "a6d077d0a95eed5a2eba715b2dae06be954f624ccbf85758a03f389ded33118c  /tmp/typst.tar.xz" | sha256sum -c -
+          tar -xJf /tmp/typst.tar.xz -C /tmp
+          install -m 0755 /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+      - run: mix test
+
+  dialyzer:
+    runs-on: ubuntu-24.04
+    container: hexpm/elixir:1.20.2-erlang-29.0.3-debian-trixie-20260713-slim
+    # Dialyzer analyses code and never loads the rules NIF: skip building it.
+    env:
+      RULES_NIF_PREBUILT: "1"
+    defaults:
+      run:
+        working-directory: phoenix
+    steps:
+      - name: System packages
+        working-directory: /
+        run: apt-get update && apt-get install -y --no-install-recommends build-essential git ca-certificates
+
+      - uses: actions/checkout@v4
+
+      - name: Restore deps and build
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            phoenix/deps
+            phoenix/_build
+          key: mix-dev-${{ hashFiles('phoenix/mix.lock') }}
+          restore-keys: mix-dev-
+
+      - name: Restore PLTs
+        id: plt
+        uses: actions/cache/restore@v4
+        with:
+          path: phoenix/priv/plts
+          key: plt-${{ hashFiles('phoenix/mix.lock') }}
+          restore-keys: plt-
+
+      - run: mix local.hex --force && mix local.rebar --force
+      - run: mix deps.get
+      - run: mix deps.compile mime --force
+      - run: mix compile
+
+      # Build the PLTs as a separate step and save them straight away, so
+      # a slow first build is kept even if a later step fails.
+      - name: Build PLTs
+        if: steps.plt.outputs.cache-hit != 'true'
+        run: mix dialyzer --plt
+
+      - name: Save PLTs
+        if: steps.plt.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: phoenix/priv/plts
+          key: plt-${{ hashFiles('phoenix/mix.lock') }}
+
+      - name: Save deps and build
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            phoenix/deps
+            phoenix/_build
+          key: mix-dev-${{ hashFiles('phoenix/mix.lock') }}-${{ github.run_id }}
+
+      - run: mix dialyzer --format github
+
+  apps-script:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: apps_script
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+
+  ihds:
+    runs-on: ubuntu-24.04
+    # Same toolchain as ihds/Dockerfile's builder.
+    container: rust:1.98-slim-trixie
+    defaults:
+      run:
+        working-directory: ihds
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ihds/target
+          key: cargo-${{ hashFiles('ihds/Cargo.lock') }}
+          restore-keys: cargo-
+      - run: rustup component add rustfmt clippy
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets --locked -- -D warnings
+      - run: cargo test --locked
+      # The seed must be exactly what the build script makes from the
+      # vendored sources (nobody edited the generated file by hand).
+      - name: Seed is up to date
+        run: |
+          apt-get update && apt-get install -y --no-install-recommends python3
+          mkdir /tmp/committed && cp seed/*.json /tmp/committed/
+          python3 scripts/build_seeds.py
+          for f in seed/*.json; do cmp "$f" "/tmp/committed/$(basename "$f")"; done
+
+  docker-image:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        context: [phoenix, ihds]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build the production image (not pushed)
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          push: false
+          cache-from: type=gha,scope=${{ matrix.context }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.context }}

@@ -12,6 +12,21 @@ defmodule App.DemoTest do
     Person |> Ash.Query.filter(synthetic == true) |> Ash.read!(authorize?: false)
   end
 
+  # Row count of every table, to catch anything a seed adds twice or a
+  # purge leaves behind.
+  defp table_counts do
+    %{rows: tables} =
+      App.Repo.query!(
+        "SELECT tablename FROM pg_tables WHERE schemaname = 'public' " <>
+          "AND tablename <> 'schema_migrations'"
+      )
+
+    for [table] <- tables, into: %{} do
+      %{rows: [[count]]} = App.Repo.query!(~s|SELECT count(*) FROM "#{table}"|)
+      {table, count}
+    end
+  end
+
   test "every kind's sample data is valid" do
     for kind <- PersonRecordSchema.kinds() do
       assert :ok ==
@@ -90,6 +105,36 @@ defmodule App.DemoTest do
 
     {:ok, _} = App.Demo.seed(people: 8, seed: 43)
     refute names.() == first
+  end
+
+  test "seeding again replaces the set, and purge leaves only the file plan" do
+    before = table_counts()
+    {:ok, _} = App.Demo.seed(people: 12, seed: 5)
+    first = table_counts()
+    {:ok, _} = App.Demo.seed(people: 12, seed: 5)
+
+    assert table_counts() == first
+
+    {:ok, _} = App.Demo.purge()
+    after_purge = table_counts()
+
+    # This year's file plan is configuration, not demo data: it stays.
+    assert Map.delete(after_purge, "file_plan_cases") == Map.delete(before, "file_plan_cases")
+  end
+
+  test "a fresh seed numbers demo documents from 1 again" do
+    numbers = fn ->
+      App.Repo.query!(
+        "SELECT register, max(register_seq) FROM documents " <>
+          "WHERE register LIKE 'TEST-%' GROUP BY register ORDER BY register"
+      ).rows
+    end
+
+    {:ok, _} = App.Demo.seed(people: 12, seed: 5)
+    first = numbers.()
+    {:ok, _} = App.Demo.seed(people: 12, seed: 5)
+
+    assert numbers.() == first
   end
 
   @tag :tmp_dir

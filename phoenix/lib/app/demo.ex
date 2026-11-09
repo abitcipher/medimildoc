@@ -242,6 +242,9 @@ defmodule App.Demo do
     steps = [
       # Demo letters are about no person: removed by their test register.
       {:letters, "DELETE FROM documents WHERE person_id IS NULL AND register LIKE 'TEST-%'"},
+      # Numbering of the demo's own test registers: a fresh seed starts at 1
+      # again. Real registers have no TEST- prefix and are left alone.
+      {:document_counters, "DELETE FROM document_counters WHERE register LIKE 'TEST-%'"},
       {:person_records, "DELETE FROM person_records WHERE person_id IN (#{@synthetic_people})"},
       {:person_identifiers,
        "DELETE FROM person_identifiers WHERE person_id IN (#{@synthetic_people})"},

@@ -67,18 +67,41 @@ jobs:
           cache-from: type=gha,scope=ihds
           cache-to: type=gha,mode=max,scope=ihds
 
+      # Every malformed key (empty, public key, CRLF, one line) gives the
+      # same "Load key: error in libcrypto", so check it here and say why.
       - name: SSH key
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
         run: |
+          for name in DEPLOY_SSH_KEY DEPLOY_HOST DEPLOY_USER; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Secret $name is empty or not set (repository or 'production' environment secrets)"
+              exit 1
+            fi
+          done
           install -m 700 -d ~/.ssh
-          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+          if ! grep -q -- '-----BEGIN .*PRIVATE KEY-----' ~/.ssh/deploy_key; then
+            echo "::error::DEPLOY_SSH_KEY is not a private key (no BEGIN ... PRIVATE KEY line; a .pub key does not work)"
+            exit 1
+          fi
+          if ! ssh-keygen -y -P "" -f ~/.ssh/deploy_key > /dev/null; then
+            echo "::error::DEPLOY_SSH_KEY cannot be read: paste the whole key file unchanged, line breaks included; it must have no passphrase"
+            exit 1
+          fi
+          echo "Deploy key fingerprint: $(ssh-keygen -l -f ~/.ssh/deploy_key)"
+          ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
       - name: Let the server pull from GHCR (token valid for this run only)
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}
         run: |
-          echo "${{ secrets.GITHUB_TOKEN }}" | ssh -i ~/.ssh/deploy_key \
-            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-            docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          printf '%s' "$GHCR_TOKEN" | ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes \
+            "$TARGET" docker login ghcr.io -u "${{ github.actor }}" --password-stdin
 
       - name: Deploy
         env:

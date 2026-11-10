@@ -45,6 +45,14 @@ defmodule App.Clinical.LabResultsTest do
              InterpretLab.interpret(%{"test" => "potassium", "value" => "5,6"})
   end
 
+  test "numbers print without float noise" do
+    assert LabTests.number(4.1 + 0.3) == "4.4"
+    assert LabTests.number(4.0) == "4"
+    assert LabTests.number(125) == "125"
+    assert AppWeb.RecordComponents.format_value(%{unit: "mmol/L"}, 4.1 + 0.3) == "4.4 mmol/L"
+    assert AppWeb.RecordComponents.format_value(%{}, 0.1 + 0.2) == "0.3"
+  end
+
   test "the server sets unit, range, flag and the previous value; the form can't", ctx do
     {:ok, _} = result(ctx, ctx.clinician, "hemoglobin", 131, "2026-09-01T08:00")
     {:ok, later} = result(ctx, ctx.clinician, "hemoglobin", 112, "2026-10-01T08:00")

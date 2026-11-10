@@ -45,8 +45,11 @@ defmodule App.Clinical.LabTests do
   def number(value) when is_integer(value), do: Integer.to_string(value)
 
   def number(value) when is_float(value) do
-    if value == Float.round(value),
-      do: value |> trunc() |> Integer.to_string(),
-      else: Float.to_string(value)
+    # Round off float noise (4.1 + 0.3 is 4.3999999999999995).
+    rounded = Float.round(value, 6)
+
+    if rounded == Float.round(rounded),
+      do: rounded |> trunc() |> Integer.to_string(),
+      else: Float.to_string(rounded)
   end
 end

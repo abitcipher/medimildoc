@@ -91,6 +91,21 @@ defmodule App.DemoTest do
     assert clearance.data["status"] == "granted"
   end
 
+  test "rifleman posts keep vacant places, for the vacancies overlay" do
+    {:ok, _} = App.Demo.seed(people: 100, seed: 3)
+
+    riflemen =
+      App.People.Position
+      |> Ash.Query.filter(title == "Rifleman")
+      |> Ash.Query.load(assignments: Ash.Query.filter(App.People.Assignment, is_nil(ends_on)))
+      |> Ash.read!(authorize?: false)
+
+    assert riflemen != []
+    # Later demo moves may fill a place here and there, but not all of them.
+    vacant = Enum.count(riflemen, &(&1.strength > length(&1.assignments)))
+    assert vacant >= length(riflemen) - 2
+  end
+
   test "the same seed gives the same people" do
     names = fn ->
       synthetic_people()

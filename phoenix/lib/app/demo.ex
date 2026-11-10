@@ -431,7 +431,9 @@ defmodule App.Demo do
   defp rifleman_billets(battalions, count) do
     companies = Enum.flat_map(battalions, fn {_battalion, companies} -> companies end)
 
-    # One Rifleman post per company, its strength the riflemen there.
+    # One Rifleman post per company, its strength the riflemen there plus
+    # one place left vacant, so the graph's vacancies overlay has
+    # something to show.
     per_company =
       companies
       |> Stream.cycle()
@@ -440,8 +442,9 @@ defmodule App.Demo do
 
     for company <- companies,
         n = per_company[company.id],
-        post <- slots(position("Rifleman", "OR-3", company, nil, n)),
-        do: post
+        post = position("Rifleman", "OR-3", company, nil, n + 1),
+        slot <- List.duplicate(post, n),
+        do: slot
   end
 
   defp position(title, grade, organization, reports_to, strength \\ 1) do
@@ -796,7 +799,7 @@ defmodule App.Demo do
       if rem(spread, 3) == 0 do
         create_record(person, :lab_result, %{
           "test" => "potassium",
-          "value" => 4.1 + spread / 20,
+          "value" => Float.round(4.1 + spread / 20, 1),
           "collectedAt" => later <> "T08:15"
         })
       end

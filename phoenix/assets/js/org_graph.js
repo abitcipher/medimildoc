@@ -49,6 +49,9 @@ const style = (c) => [
       return text
     }, color: c.text, "font-size": 11, "text-valign": "bottom", "text-margin-y": 4,
     "text-wrap": "ellipsis", "text-max-width": 140, "min-zoomed-font-size": 7,
+    // Edges pass behind labels instead of striking names through.
+    "text-background-color": c.bg, "text-background-opacity": 1, "text-background-padding": 1,
+    "text-background-shape": "roundrectangle",
     "border-width": 1, "border-color": c.line, "background-color": c.post,
   } },
   { selector: "node.unit", style: {

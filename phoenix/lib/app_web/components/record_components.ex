@@ -568,9 +568,19 @@ defmodule AppWeb.RecordComponents do
   def format_value(%{format: "date-time"}, value), do: AppWeb.DateFormat.display_datetime(value)
 
   def format_value(%{unit: unit}, value) when is_binary(unit) and is_number(value),
-    do: "#{value} #{unit}"
+    do: "#{number(value)} #{unit}"
 
+  def format_value(_field, value) when is_float(value), do: number(value)
   def format_value(_field, value), do: to_string(value)
+
+  # Floats from arithmetic (4.1 + 0.3) print as 4.3999999999999995;
+  # six decimals is far beyond what any measured value carries.
+  defp number(value) when is_float(value) do
+    rounded = Float.round(value, 6)
+    if rounded == trunc(rounded), do: Integer.to_string(trunc(rounded)), else: to_string(rounded)
+  end
+
+  defp number(value), do: to_string(value)
 
   @doc """
   The record form (new or edit) in a panel shown as the viewer's interface

@@ -63,7 +63,7 @@ msgstr ""
 #: lib/app_web/components/person_list_sections.ex:122
 #: lib/app_web/components/person_list_sections.ex:247
 #: lib/app_web/components/person_list_sections.ex:354
-#: lib/app_web/components/record_components.ex:619
+#: lib/app_web/components/record_components.ex:629
 #: lib/app_web/components/sheet_plan.ex:113
 #: lib/app_web/live/care_providers_live/index.ex:197
 #: lib/app_web/live/incidents_live.ex:118
@@ -372,8 +372,8 @@ msgstr ""
 #: lib/app_web/components/person_list_sections.ex:245
 #: lib/app_web/components/person_list_sections.ex:336
 #: lib/app_web/components/person_list_sections.ex:352
-#: lib/app_web/components/record_components.ex:601
-#: lib/app_web/components/record_components.ex:616
+#: lib/app_web/components/record_components.ex:611
+#: lib/app_web/components/record_components.ex:626
 #: lib/app_web/live/care_providers_live/index.ex:179
 #: lib/app_web/live/care_providers_live/index.ex:195
 #: lib/app_web/live/file_plan_live.ex:389
@@ -1143,7 +1143,7 @@ msgstr ""
 msgid "Edit %{kind}"
 msgstr ""
 
-#: lib/app_web/components/record_components.ex:630
+#: lib/app_web/components/record_components.ex:640
 #, elixir-autogen, elixir-format
 msgid "Edit: %{kind}"
 msgstr ""
@@ -1405,7 +1405,7 @@ msgstr ""
 msgid "New value"
 msgstr ""
 
-#: lib/app_web/components/record_components.ex:633
+#: lib/app_web/components/record_components.ex:643
 #, elixir-autogen, elixir-format
 msgid "New: %{kind}"
 msgstr ""
